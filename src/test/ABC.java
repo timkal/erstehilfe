@@ -32,7 +32,7 @@ public class ABC extends JFrame implements ActionListener {
 		ABC frame = new ABC ("Erste Hilfe");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(400,800);
-		frame.getContentPane().setBackground(Color.PINK);
+		frame.getContentPane().setBackground(Color.GREEN);
 		
 		frame.setLayout(null);
 		frame.setVisible(true);
