@@ -24,7 +24,7 @@ public class ABC extends JFrame implements ActionListener {
 	private JButton verletzt;
 	private JButton absetzen;
 	private JButton land;
-	private JButton möglichefragen;
+	private JButton moeglichefragen;
 	
 	
 	public static void main(String[] args) {
@@ -32,7 +32,7 @@ public class ABC extends JFrame implements ActionListener {
 		ABC frame = new ABC ("Erste Hilfe");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(400,800);
-		frame.getContentPane().setBackground(Color.GREEN);
+		frame.getContentPane().setBackground(Color.PINK);
 		
 		frame.setLayout(null);
 		frame.setVisible(true);
@@ -110,7 +110,7 @@ public class ABC extends JFrame implements ActionListener {
 				
 				absetzen.setVisible(false);
 				land.setVisible(false);
-				möglichefragen.setVisible(false);
+				moeglichefragen.setVisible(false);
 				}
  
 			}
@@ -136,14 +136,14 @@ public class ABC extends JFrame implements ActionListener {
 				land.addActionListener(this);
 				add(land);
 				
-				möglichefragen = new JButton("Wo geschah es? "
+				moeglichefragen = new JButton("Wo geschah es? "
 						+ "Was geschah?"
 						+ "Wie viele Personen sind betroffen?"
 						+ "Welche Art von Erkrankung/Verletzung liegt vor?"
 						+ "Warten auf Rückfragen");
-				möglichefragen.setBounds(50,300,200,100);
-				möglichefragen.addActionListener(this);
-				add(möglichefragen);
+				moeglichefragen.setBounds(50,300,200,100);
+				moeglichefragen.addActionListener(this);
+				add(moeglichefragen);
 				
 				
 				
