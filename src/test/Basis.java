@@ -14,8 +14,8 @@ public class Basis extends Application{
 	StackPane stack = new StackPane();
 	Scene szene = new Scene (stack, 300, 550);
 	Button taste = new Button ("Notruf");
-	Button menü = new Button ("Menü");
-	Button krankenhaus = new Button ("Nächstes \nKrankenhaus ");
+	Button menÃ¼ = new Button ("MenÃ¼");
+	Button krankenhaus = new Button ("NÃ¤chstes \nKrankenhaus ");
 	Button notruf = new Button ("Notruf");
 	Button verkehrsunfall = new Button ("Verkehrsunfall");
 	Button verletzt = new Button ("Verletzte Person");
@@ -25,7 +25,7 @@ public class Basis extends Application{
 		stack.getStylesheets().add("test/styles.css");
 		
 		stack.getChildren().add(taste);
-		stack.getChildren().add(menü);
+		stack.getChildren().add(menÃ¼);
 		stack.getChildren().add(krankenhaus);
 		stack.getChildren().add(notruf);
 		stack.getChildren().add(verkehrsunfall);
@@ -33,8 +33,8 @@ public class Basis extends Application{
 		
 		taste.setTranslateX(0);
 		taste.setTranslateY(-100);
-		menü.setTranslateX(-105);
-		menü.setTranslateY(248);
+		menÃ¼.setTranslateX(-105);
+		menÃ¼.setTranslateY(248);
 		krankenhaus.setTranslateX(-4);
 		krankenhaus.setTranslateY(247);
 		notruf.setTranslateX(101);
@@ -48,7 +48,7 @@ public class Basis extends Application{
 		
 		stack.getStyleClass().add("custom-stack");
 		taste.getStyleClass().add("custom-button");
-		menü.getStyleClass().add("custom-button2");
+		menÃ¼.getStyleClass().add("custom-button2");
 		krankenhaus.getStyleClass().add("custom-button3");
 		notruf.getStyleClass().add("custom-button2");
 		verkehrsunfall.getStyleClass().add("custom-button4");
