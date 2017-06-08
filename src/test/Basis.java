@@ -17,7 +17,7 @@ public class Basis extends Application{
 	StackPane stack = new StackPane();
 	Scene szene = new Scene (stack, 300, 550);
 
-	Button menÃ¼ = new Button ("MenÃ¼");
+	Button menü = new Button ("Menü");
 	Button krankenhaus = new Button ("Hospital");
 	Button notruf = new Button ("Notruf");
 	
@@ -54,15 +54,15 @@ public class Basis extends Application{
 		
 		//Tap Bar importieren
 		
-		stack.getChildren().add(menÃ¼);
+		stack.getChildren().add(menü);
 		stack.getChildren().add(krankenhaus);
 		stack.getChildren().add(notruf);
 	
 		
 		
 		
-		//menÃ¼.setTranslateX(-105);
-		//menÃ¼.setTranslateY(248);
+		//menü.setTranslateX(-105);
+		//menü.setTranslateY(248);
 		//krankenhaus.setTranslateX(-4);
 		//krankenhaus.setTranslateY(247);
 		//notruf.setTranslateX(101);
@@ -70,14 +70,14 @@ public class Basis extends Application{
 		
 		
 		stack.setAlignment(notruf, Pos.BOTTOM_RIGHT);
-		stack.setAlignment(menÃ¼, Pos.BOTTOM_LEFT);
+		stack.setAlignment(menü, Pos.BOTTOM_LEFT);
 		stack.setAlignment(krankenhaus, Pos.BOTTOM_CENTER);
 		
 		
 		
 		stack.getStyleClass().add("custom-stack");
 		
-		menÃ¼.getStyleClass().add("button_tapbar");
+		menü.getStyleClass().add("button_tapbar");
 		krankenhaus.getStyleClass().add("button_tapbar");
 		notruf.getStyleClass().add("button_tapbar");
 		
