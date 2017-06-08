@@ -37,8 +37,7 @@
 	-fx-font-weight: bold;
 	-fx-max-width: 100px;
 	-fx-max-height: 60px;
-	-fx-vertical-align: baseline;
-
+	
 	
    
 }
@@ -55,7 +54,7 @@
     -fx-font-family: Helvetica;
 	-fx-font-weight: bold;
 	-fx-max-width: 100px;
-	-fx-max-height: 40px;
+	-fx-max-height: 60px;
    
 }
 
@@ -72,8 +71,7 @@
     -fx-font-family: Helvetica;
 	-fx-font-weight: bold;
 	-fx-max-width: 100px;
-	-fx-max-height: 40px;
-	-fx-alignment: left;
+	-fx-max-height: 60px;
    
 }
  

@@ -6,6 +6,7 @@ import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ContentDisplay;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -17,9 +18,20 @@ public class Basis extends Application{
 	StackPane stack = new StackPane();
 	Scene szene = new Scene (stack, 300, 550);
 
-	Button menu = new Button ("Menu");
-	Button krankenhaus = new Button ("Hospital");
-	Button notruf = new Button ("Notruf");
+	Button menu = new Button ("\nMenu");
+	Image home_image = new Image ("file:images/Home.png");
+	ImageView home_view = new ImageView("file:images/Home.png");
+	
+	Button krankenhaus = new Button ("\nHospital");
+	Image krankenhaus_image = new Image ("file:images/Hospital.png");
+	ImageView krankenhaus_view = new ImageView("file:images/Hospital.png");
+	
+	Button notruf = new Button ("\nNotruf");
+	Image notruf_image = new Image ("file:images/Notruf.png");
+	ImageView notruf_view = new ImageView("file:images/Notruf.png");
+	
+	
+	
 	
 	Image akku = new Image ("file:images/Akku.png");
 	ImageView akku_view = new ImageView("file:images/Akku.png");
@@ -27,11 +39,6 @@ public class Basis extends Application{
 	Image empfang = new Image ("file:images/Empfang3.png");
 	ImageView empfang_view = new ImageView("file:images/Empfang3.png");
 	
-	Image notruf2 = new Image ("file:images/Notruf.png");
-	ImageView notruf2_view = new ImageView("file:images/Notruf.png");
-	
-	Image home = new Image ("file:images/Home.png");
-	ImageView home_view = new ImageView("file:images/Home.png");
 	
 	Label zeit = new Label("09:41 AM");
 	
@@ -61,34 +68,31 @@ public class Basis extends Application{
 		
 		//Tap Bar importieren
 		
-		stack.getChildren().add(menu);
+			//Krankenhaus
 		stack.getChildren().add(krankenhaus);
-		stack.getChildren().add(notruf);
-		
-		stack.getChildren().add(notruf2_view);
-		notruf2_view.setFitHeight(20);
-		notruf2_view.setFitWidth(19);
-		notruf2_view.setTranslateX(130);
-		notruf2_view.setTranslateY(255);
+		stack.getChildren().add(krankenhaus_view);
+		krankenhaus_view.setFitHeight(20);
+		krankenhaus_view.setFitWidth(20);
+		krankenhaus_view.setTranslateX(0);
+		krankenhaus_view.setTranslateY(235);
 	
+			//Notruf
+		stack.getChildren().add(notruf);
+		stack.getChildren().add(notruf_view);
+		notruf_view.setFitHeight(20);
+		notruf_view.setFitWidth(19);
+		notruf_view.setTranslateX(100);
+		notruf_view.setTranslateY(235);
+			
+			//Menu
+		stack.getChildren().add(menu);
 		stack.getChildren().add(home_view);
 		home_view.setFitHeight(19);
 		home_view.setFitWidth(20);
-		home_view.setTranslateX(-75);
-		home_view.setTranslateY(255);
+		home_view.setTranslateX(-100);
+		home_view.setTranslateY(235);
 	
 		
-		
-	
-		
-		
-		
-		//menï¿½.setTranslateX(-105);
-		//menï¿½.setTranslateY(248);
-		//krankenhaus.setTranslateX(-4);
-		//krankenhaus.setTranslateY(247);
-		//notruf.setTranslateX(101);
-		//notruf.setTranslateY(248);
 		
 		
 		stack.setAlignment(notruf, Pos.BOTTOM_RIGHT);
@@ -99,15 +103,15 @@ public class Basis extends Application{
 		
 		stack.getStyleClass().add("custom-stack");
 		
-<<<<<<< HEAD
+
 		menu.getStyleClass().add("button_tapbar");
 		krankenhaus.getStyleClass().add("button_tapbar");
 		notruf.getStyleClass().add("button_tapbar");
-=======
-		menü.getStyleClass().add("button_menu");
+
+		menu.getStyleClass().add("button_menu");
 		krankenhaus.getStyleClass().add("button_hospital");
 		notruf.getStyleClass().add("button_notruf");
->>>>>>> 070fb8cb3d7006caff2f85b41720d6b1c8a4adfc
+
 		
 		
 	primaryStage.setScene(szene);
