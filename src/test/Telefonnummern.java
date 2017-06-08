@@ -1,8 +1,5 @@
 package test;
 
-
-
-import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -10,10 +7,14 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
-import javafx.stage.Stage;
 
-public class Basis extends Application{
-
+/**
+ * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls plaziert sind
+ */
+public class Telefonnummern extends StackPane {
+	
+	
+	//Basis-Elemente
 	StackPane stack = new StackPane();
 	Scene szene = new Scene (stack, 300, 550);
 
@@ -30,66 +31,67 @@ public class Basis extends Application{
 	Label zeit = new Label("09:41 AM");
 	
 	
-	public void start(Stage primaryStage) throws Exception {
-		
-		stack.getStylesheets().add("test/styles.css");
+	//Weitere Elemente
+	Label nummer = new Label("015777240271");
+
+	
+	
+
+  /**
+   * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, bezeihen sich die Aufrufe von add auf
+   * Pane1 selbst.
+   */
+  public Telefonnummern() {
+    
+	  	getStylesheets().add("test/styles.css");
 		
 		
 		//Top Bar importieren
-		stack.getChildren().add(akku_view);
+		getChildren().add(akku_view);
 		akku_view.setFitHeight(10);
 		akku_view.setFitWidth(32);
-		stack.setAlignment(akku_view, Pos.TOP_RIGHT);
+		setAlignment(akku_view, Pos.TOP_RIGHT);
 		
-		stack.getChildren().add(zeit);
+		getChildren().add(zeit);
 		zeit.getStyleClass().add("topbar_label");
-		stack.setAlignment(zeit, Pos.TOP_CENTER);
+		setAlignment(zeit, Pos.TOP_CENTER);
 		
-		stack.getChildren().add(empfang_view);
+		getChildren().add(empfang_view);
 		empfang_view.setFitHeight(10);
 		empfang_view.setFitWidth(75);
-		stack.setAlignment(empfang_view, Pos.TOP_LEFT);
+		setAlignment(empfang_view, Pos.TOP_LEFT);
 		
 	
 		
 		//Tap Bar importieren
 		
-		stack.getChildren().add(menu);
-		stack.getChildren().add(krankenhaus);
-		stack.getChildren().add(notruf);
+		getChildren().add(menu);
+		getChildren().add(krankenhaus);
+		getChildren().add(notruf);
 	
 		
+		//Weitere Elemente
+		getChildren().add(nummer);
 		
 		
-		//men�.setTranslateX(-105);
-		//men�.setTranslateY(248);
-		//krankenhaus.setTranslateX(-4);
-		//krankenhaus.setTranslateY(247);
-		//notruf.setTranslateX(101);
-		//notruf.setTranslateY(248);
-		
-		
-		stack.setAlignment(notruf, Pos.BOTTOM_RIGHT);
-		stack.setAlignment(menu, Pos.BOTTOM_LEFT);
-		stack.setAlignment(krankenhaus, Pos.BOTTOM_CENTER);
-		
+		setAlignment(notruf, Pos.BOTTOM_RIGHT);
+		setAlignment(menu, Pos.BOTTOM_LEFT);
+		setAlignment(krankenhaus, Pos.BOTTOM_CENTER);
 		
 		
 		stack.getStyleClass().add("custom-stack");
-		
 		menu.getStyleClass().add("button_tapbar");
 		krankenhaus.getStyleClass().add("button_tapbar");
 		notruf.getStyleClass().add("button_tapbar");
-		
-		
-	primaryStage.setScene(szene);
-	primaryStage.setTitle("Basis");
-	primaryStage.show();
-		
-	}
-	
-	public static void main(String [] args) {
-		launch();
-	}
-	
+    
+  }
+
+  /**
+   * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
+   * @return Der weiter-Button
+   */
+  //Button getButton() {
+  //  return land;
+  //}
+
 }
