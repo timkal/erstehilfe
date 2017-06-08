@@ -24,8 +24,8 @@ public class Basis extends Application{
 	Image akku = new Image ("file:images/Akku.png");
 	ImageView akku_view = new ImageView("file:images/Akku.png");
 	
-	Image empfang = new Image ("file:images/Empfang2.png");
-	ImageView empfang_view = new ImageView("file:images/Empfang2.png");
+	Image empfang = new Image ("file:images/Empfang3.png");
+	ImageView empfang_view = new ImageView("file:images/Empfang3.png");
 	
 	Label zeit = new Label("09:41 AM");
 	
@@ -47,7 +47,7 @@ public class Basis extends Application{
 		
 		stack.getChildren().add(empfang_view);
 		empfang_view.setFitHeight(10);
-		empfang_view.setFitWidth(95);
+		empfang_view.setFitWidth(75);
 		stack.setAlignment(empfang_view, Pos.TOP_LEFT);
 		
 	
