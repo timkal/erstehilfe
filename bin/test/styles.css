@@ -22,7 +22,27 @@
    
 }
 
-  .button_tapbar{
+  
+.button_menu {
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #808080;
+    -fx-background-color: #808080;
+    -fx-border-radius: 1px;
+    -fx-padding-left: 10px;
+    -fx-padding-right: 10px;
+    -fx-border-style: solid;
+   	-fx-border-color: #ffffff;
+    -fx-font-size: 15px;
+    -fx-font-family: Helvetica;
+	-fx-font-weight: bold;
+	-fx-max-width: 100px;
+	-fx-max-height: 60px;
+	-fx-vertical-align: baseline;
+
+	
+   
+}
+.button_hospital{
     -fx-text-fill: #ffffff;
     -fx-border-color: #808080;
     -fx-background-color: #808080;
@@ -36,6 +56,24 @@
 	-fx-font-weight: bold;
 	-fx-max-width: 100px;
 	-fx-max-height: 40px;
+   
+}
+
+.button_notruf{
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #808080;
+    -fx-background-color: #808080;
+    -fx-border-radius: 1px;
+    -fx-padding-left: 10px;
+    -fx-padding-right: 10px;
+    -fx-border-style: solid;
+   	-fx-border-color: #ffffff;
+    -fx-font-size: 15px;
+    -fx-font-family: Helvetica;
+	-fx-font-weight: bold;
+	-fx-max-width: 100px;
+	-fx-max-height: 40px;
+	-fx-alignment: left;
    
 }
  

@@ -27,6 +27,12 @@ public class Basis extends Application{
 	Image empfang = new Image ("file:images/Empfang3.png");
 	ImageView empfang_view = new ImageView("file:images/Empfang3.png");
 	
+	Image notruf2 = new Image ("file:images/Notruf.png");
+	ImageView notruf2_view = new ImageView("file:images/Notruf.png");
+	
+	Image home = new Image ("file:images/Home.png");
+	ImageView home_view = new ImageView("file:images/Home.png");
+	
 	Label zeit = new Label("09:41 AM");
 	
 	
@@ -51,12 +57,28 @@ public class Basis extends Application{
 		stack.setAlignment(empfang_view, Pos.TOP_LEFT);
 		
 	
+	
 		
 		//Tap Bar importieren
 		
 		stack.getChildren().add(menü);
 		stack.getChildren().add(krankenhaus);
 		stack.getChildren().add(notruf);
+		
+		stack.getChildren().add(notruf2_view);
+		notruf2_view.setFitHeight(20);
+		notruf2_view.setFitWidth(19);
+		notruf2_view.setTranslateX(130);
+		notruf2_view.setTranslateY(255);
+	
+		stack.getChildren().add(home_view);
+		home_view.setFitHeight(19);
+		home_view.setFitWidth(20);
+		home_view.setTranslateX(-75);
+		home_view.setTranslateY(255);
+	
+		
+		
 	
 		
 		
@@ -77,9 +99,9 @@ public class Basis extends Application{
 		
 		stack.getStyleClass().add("custom-stack");
 		
-		menü.getStyleClass().add("button_tapbar");
-		krankenhaus.getStyleClass().add("button_tapbar");
-		notruf.getStyleClass().add("button_tapbar");
+		menü.getStyleClass().add("button_menu");
+		krankenhaus.getStyleClass().add("button_hospital");
+		notruf.getStyleClass().add("button_notruf");
 		
 		
 	primaryStage.setScene(szene);
