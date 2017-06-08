@@ -92,15 +92,14 @@ public class Basis extends Application {
 		
 		
 		//Zuruck Button und Symbol
-		stack.getChildren().add(back);
-		back.setTranslateX(-100);
-		back.setTranslateY(-240);
-		back.getStyleClass().add("button_back");
-		stack.getChildren().add(back_view);
-		back_view.setFitHeight(15);
-		back_view.setFitWidth(10);
-		back_view.setTranslateX(-135);
-		back_view.setTranslateY(-240);
+		//back.setTranslateX(-100);
+		//back.setTranslateY(-240);
+		//back.getStyleClass().add("button_back");
+		//stack.getChildren().add(back_view);
+		//back_view.setFitHeight(15);
+		//back_view.setFitWidth(10);
+		//back_view.setTranslateX(-135);
+		//back_view.setTranslateY(-240);
 
 		// Akku-Symbol und Text
 		stack.getChildren().add(akku_view);
