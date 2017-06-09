@@ -8,6 +8,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
 
 /**
@@ -60,18 +61,45 @@ public class Telefonnummern extends StackPane {
 		// Uhrzeit
 		Label zeit = new Label("09:41 AM");
 		
-		//ZurÃ¼ck Button und Symbol
-		Button back = new Button("ZurÃ¼ck");
+		//Zurück Button und Symbol
+		Button back = new Button("Zurück");
 		Image back_image = new Image("file:images/back_symbol.png");
 		ImageView back_view = new ImageView("file:images/back_symbol.png");
 
+		//Linie 1
+		Line line = new Line();
+		
+		//Linie 2
+		Line line2 = new Line();
+		
+		//Label 1
+		Label europa = new Label("European Union:     112");
+		
+		//Label 2
+		Label alleländer = new Label("Argentinia    107\n"
+				+ "Australia       000\n"
+				+ "Brasil             192\n"
+				+ "Canada          911\n"
+				+ "China             120\n"
+				+ "Hongkong     999\n"
+				+ "Israel              101\n"
+				+ "Japan             119\n"
+				+ "Mexico           006\n"
+				+ "New Zealand 111\n"
+				+ "Norway          113\n"
+				+ "Switzerland   144\n"
+				+ "Turkey           112\n"
+				+ "UK                  999\n"
+				+ "USA                911\n");
+				
+									
+		
 		// ------------------------------------------------------------------------------------------
 		
 		// =================================
 		// Weitere Elemente
 		// =================================
 		
-		Label nummer = new Label("015777240271");
 		
 		
 	
@@ -146,7 +174,6 @@ public class Telefonnummern extends StackPane {
 		krankenhaus_view.setTranslateX(0);
 		krankenhaus_view.setTranslateY(235);
 		setAlignment(krankenhaus, Pos.BOTTOM_CENTER);
-		krankenhaus.getStyleClass().add("button_tapbar");
 		krankenhaus.getStyleClass().add("button_hospital");
 
 		// Notruf
@@ -157,7 +184,6 @@ public class Telefonnummern extends StackPane {
 		notruf_view.setTranslateX(100);
 		notruf_view.setTranslateY(235);
 		setAlignment(notruf, Pos.BOTTOM_RIGHT);
-		notruf.getStyleClass().add("button_tapbar");
 		notruf.getStyleClass().add("button_notruf");
 
 		// Menu
@@ -168,13 +194,40 @@ public class Telefonnummern extends StackPane {
 		home_view.setTranslateX(-100);
 		home_view.setTranslateY(235);
 		setAlignment(menu, Pos.BOTTOM_LEFT);
-		menu.getStyleClass().add("button_tapbar");
 		menu.getStyleClass().add("button_menu");
 		
+		// Linie 
+		getChildren().add(line);
+		line.setStartX(0);
+		line.setStartY(0);
+		line.setEndX(300);
+		line.setEndY(0);
+		line.setStrokeWidth(0.5);
+		line.setTranslateY(-222);
 		
+		// Linie 2
+		getChildren().add(line2);
+		line.setStartX(0);
+		line.setStartY(0);
+		line.setEndX(300);
+		line.setEndY(0);
+		line.setStrokeWidth(0.5);
+		line.setTranslateY(-160);
+		
+		
+		// Oberes Label Nummer
+		getChildren().add(europa);
+		europa.setTranslateX(0);
+		europa.setTranslateY(-190);
+		
+		// Unteres Label Nummer
+		getChildren().add(alleländer);
+		alleländer.setTranslateX(0);
+		alleländer.setTranslateY(30);
+		alleländer.getStyleClass().add("land_label");
 		
 		//Weitere Elemente hinzufÃ¼gen
-		getChildren().add(nummer);
+		
 		
 		
 		

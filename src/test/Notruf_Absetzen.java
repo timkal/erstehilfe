@@ -8,10 +8,11 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
 
 /**
- * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls plaziert sind
+ * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert sind
  */
 public class Notruf_Absetzen extends StackPane {
 	
@@ -56,27 +57,42 @@ public class Notruf_Absetzen extends StackPane {
 		// Empfang Symbol
 		Image empfang = new Image("file:images/Empfang3.png");
 		ImageView empfang_view = new ImageView("file:images/Empfang3.png");
-
+		
+		// Notruf Symbol
+		Image phone = new Image("file:images/Phone.png");
+		ImageView phone_view = new ImageView("file:images/Phone.png");
+	
+		//Infos
+		Label infos = new Label ("Wo geschah es?\n"
+				+ "Was geschah?\n"
+				+ "Wie viele Personen sind betroffen?\n"
+				+ "Welche Art von Erkrankung/\n"
+				+ "Verletzung liegt vor?\n"
+				+ "Warten auf Rückfragen.");
+		
 		// Uhrzeit
 		Label zeit = new Label("09:41 AM");
 		
 		//ZurÃ¼ck Button und Symbol
-		Button back = new Button("ZurÃ¼ck");
+		Button back = new Button("Zurück");
 		Image back_image = new Image("file:images/back_symbol.png");
 		ImageView back_view = new ImageView("file:images/back_symbol.png");
 
+		// Linie
+		Line line = new Line();
+		
 		// ------------------------------------------------------------------------------------------
 		
 		// =================================
 		// Weitere Elemente
 		// =================================
 		
-		Button land = new Button("Anderes Land?");
+		Button anderesland = new Button("Anderes Land?");
 		Button weiter = new Button("Weiter");
-		
+		Button notrufabsetzen = new Button("Notruf\nabsetzen");
 	
   /**
-   * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, bezeihen sich die Aufrufe von add auf
+   * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich die Aufrufe von add auf
    * Pane1 selbst.
    */
   public Notruf_Absetzen() {
@@ -96,6 +112,30 @@ public class Notruf_Absetzen extends StackPane {
 		getChildren().add(top);
 		top.setTranslateX(0);
 		top.setTranslateY(-250);
+		
+		// Notruf absetzen
+		getChildren().add(notrufabsetzen);
+		notrufabsetzen.setTranslateX(0);
+		notrufabsetzen.setTranslateY(-150);
+		notrufabsetzen.getStyleClass().add("button_notrufabsetzen");
+		
+		//Button Anderes Land
+		getChildren().add(anderesland);
+		anderesland.setTranslateX(0);
+		anderesland.setTranslateY(-45);
+		anderesland.getStyleClass().add("button_anderesland");
+		
+		//Button Weiter
+		getChildren().add(weiter);
+		weiter.setTranslateX(0);
+		weiter.setTranslateY(185);
+		weiter.getStyleClass().add("button_weiter");
+		
+		// Label Infos
+		getChildren().add(infos);
+		infos.setTranslateX(0);
+		infos.setTranslateY(80);
+		infos.getStyleClass().add("infos_label");
 		
 		//Titel
 		getChildren().add(title);
@@ -145,7 +185,6 @@ public class Notruf_Absetzen extends StackPane {
 		krankenhaus_view.setTranslateX(0);
 		krankenhaus_view.setTranslateY(235);
 		setAlignment(krankenhaus, Pos.BOTTOM_CENTER);
-		krankenhaus.getStyleClass().add("button_tapbar");
 		krankenhaus.getStyleClass().add("button_hospital");
 
 		// Notruf
@@ -156,7 +195,6 @@ public class Notruf_Absetzen extends StackPane {
 		notruf_view.setTranslateX(100);
 		notruf_view.setTranslateY(235);
 		setAlignment(notruf, Pos.BOTTOM_RIGHT);
-		notruf.getStyleClass().add("button_tapbar");
 		notruf.getStyleClass().add("button_notruf");
 
 		// Menu
@@ -167,19 +205,30 @@ public class Notruf_Absetzen extends StackPane {
 		home_view.setTranslateX(-100);
 		home_view.setTranslateY(235);
 		setAlignment(menu, Pos.BOTTOM_LEFT);
-		menu.getStyleClass().add("button_tapbar");
 		menu.getStyleClass().add("button_menu");
+	
+		// Phone
+		getChildren().add(phone_view);
+		phone_view.setFitHeight(50);
+		phone_view.setFitWidth(50);
+		phone_view.setTranslateX(-55);
+		phone_view.setTranslateY(-150);
 		
+		
+		// Linie 
+		getChildren().add(line);
+		line.setStartX(0);
+		line.setStartY(0);
+		line.setEndX(300);
+		line.setEndY(0);
+		line.setStrokeWidth(0.5);
+		line.setTranslateY(-222);
 		
 		
 		//Weitere Elemente hinzufÃ¼gen
-			//Button Anderes Land
-		getChildren().add(land);
 		
-			//Button Weiter
-		getChildren().add(weiter);
-		weiter.setTranslateX(0);
-		weiter.setTranslateY(135);
+		
+	
 		
 		
 		
@@ -190,7 +239,7 @@ public class Notruf_Absetzen extends StackPane {
    * @return Der weiter-Button
    */
   Button getButton_land() {
-    return land;
+    return anderesland;
   }
   
   Button getButton_weiter() {

@@ -1,6 +1,7 @@
 package test;
 
 import javafx.geometry.Pos;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -8,6 +9,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
 
 /**
@@ -61,9 +63,16 @@ public class Menu extends StackPane {
 		Label zeit = new Label("09:41 AM");
 		
 		//Zurück Button und Symbol
-		Button back = new Button("Zurück");
+		Button back = new Button("Zur�ck");
 		Image back_image = new Image("file:images/back_symbol.png");
 		ImageView back_view = new ImageView("file:images/back_symbol.png");
+		
+		//Linie
+		
+		Line line = new Line();
+		
+
+		 
 
 		// ------------------------------------------------------------------------------------------
 		
@@ -148,7 +157,6 @@ public class Menu extends StackPane {
 		krankenhaus_view.setTranslateX(0);
 		krankenhaus_view.setTranslateY(235);
 		setAlignment(krankenhaus, Pos.BOTTOM_CENTER);
-		krankenhaus.getStyleClass().add("button_tapbar");
 		krankenhaus.getStyleClass().add("button_hospital");
 
 		// Notruf
@@ -159,7 +167,6 @@ public class Menu extends StackPane {
 		notruf_view.setTranslateX(100);
 		notruf_view.setTranslateY(235);
 		setAlignment(notruf, Pos.BOTTOM_RIGHT);
-		notruf.getStyleClass().add("button_tapbar");
 		notruf.getStyleClass().add("button_notruf");
 
 		// Menu
@@ -170,8 +177,16 @@ public class Menu extends StackPane {
 		home_view.setTranslateX(-100);
 		home_view.setTranslateY(235);
 		setAlignment(menu, Pos.BOTTOM_LEFT);
-		menu.getStyleClass().add("button_tapbar");
 		menu.getStyleClass().add("button_menu");
+		
+		// Linie 
+		getChildren().add(line);
+		line.setStartX(0);
+		line.setStartY(0);
+		line.setEndX(300);
+		line.setEndY(0);
+		line.setStrokeWidth(0.5);
+		line.setTranslateY(-222);
 		
 		
 		
@@ -185,8 +200,8 @@ public class Menu extends StackPane {
 		getChildren().add(verletzt);
 		verletzt.getStyleClass().add("custom_button");
 		verletzt.setTranslateY(-50);
-		
-		
+
+
 		
   }
 

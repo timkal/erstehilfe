@@ -9,6 +9,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
@@ -64,6 +65,10 @@ public class Basis extends Application {
 	Image back_image = new Image("file:images/back_symbol.png");
 	ImageView back_view = new ImageView("file:images/back_symbol.png");
 
+	//Linie
+	
+	Line line = new Line();
+	
 	// ------------------------------------------------------------------------------------------
 
 	public void start(Stage primaryStage) throws Exception {
@@ -156,6 +161,15 @@ public class Basis extends Application {
 		stack.setAlignment(menu, Pos.BOTTOM_LEFT);
 		menu.getStyleClass().add("button_tapbar");
 		menu.getStyleClass().add("button_menu");
+		
+		// Linie 
+		stack.getChildren().add(line);
+		line.setStartX(0);
+		line.setStartY(0);
+		line.setEndX(300);
+		line.setEndY(0);
+		line.setStrokeWidth(0.5);
+		line.setTranslateY(-222);
 
 		// ------------------------------------------------------------------------------------------
 
