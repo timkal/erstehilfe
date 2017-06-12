@@ -22,7 +22,18 @@ public class Main extends Application {
   
   Unfallstelle_abgesichert p5 = new Unfallstelle_abgesichert();
   Scene s5 = new Scene(p5, 300, 550);
+  
+  Absicherung p6 = new Absicherung();
+  Scene s6 = new Scene(p6, 300, 550);
 
+  Person_entfernt p7 = new Person_entfernt();
+  Scene s7 = new Scene (p7, 300, 550);
+  
+  Rettungsgriff p8 = new Rettungsgriff();
+  Scene s8 = new Scene (p8, 300, 550);
+  
+  Person_Bewusstsein p9 = new Person_Bewusstsein();
+  Scene s9 = new Scene (p9, 300, 550);
 
   public void start(Stage primaryStage) throws Exception {
 
@@ -36,7 +47,18 @@ public class Main extends Application {
     p1.getButton_ja().setOnAction(e -> primaryStage.setScene(s2));
     p1.getButton_nein().setOnAction(e -> primaryStage.setScene(s3));
     p5.getButton_back().setOnAction(e -> primaryStage.setScene(s2));
-
+    p6.getButton_back().setOnAction(e -> primaryStage.setScene(s5));
+    p5.getButton_nein().setOnAction(e -> primaryStage.setScene(s6));
+    p5.getButton_ja().setOnAction(e -> primaryStage.setScene(s7));
+    p6.getButton_weiter().setOnAction(e -> primaryStage.setScene(s7));
+    p7.getButton_back().setOnAction(e -> primaryStage.setScene(s5));
+    p7.getButton_nein().setOnAction(e -> primaryStage.setScene(s8));
+    p7.getButton_ja().setOnAction(e -> primaryStage.setScene(s9));
+    p8.getButton_back().setOnAction(e -> primaryStage.setScene(s7));
+    p8.getButton_weiter().setOnAction(e -> primaryStage.setScene(s9));
+    p9.getButton_back().setOnAction(e -> primaryStage.setScene(s7));
+    
+    
     primaryStage.setScene(s1);
     primaryStage.setTitle("Startscreen");
     primaryStage.show();
