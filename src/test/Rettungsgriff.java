@@ -62,7 +62,7 @@ public class Rettungsgriff extends StackPane {
 		Label zeit = new Label("09:41 AM");
 		
 		//ZurÃ¼ck Button und Symbol
-		Button back = new Button("Zurück");
+		Button back = new Button("Zurueck");
 		Image back_image = new Image("file:images/back_symbol.png");
 		ImageView back_view = new ImageView("file:images/back_symbol.png");
 

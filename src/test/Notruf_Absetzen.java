@@ -14,7 +14,7 @@ import javafx.scene.shape.Rectangle;
 /**
  * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert sind
  */
-public class Notruf_absetzen extends StackPane {
+public class Notruf_Absetzen extends StackPane {
 	
 	// ------------------------------------------------------------------------------------------
 
@@ -68,13 +68,13 @@ public class Notruf_absetzen extends StackPane {
 				+ "Wie viele Personen sind betroffen?\n"
 				+ "Welche Art von Erkrankung/\n"
 				+ "Verletzung liegt vor?\n"
-				+ "Warten auf Rückfragen.");
+				+ "Warten auf Rï¿½ckfragen.");
 		
 		// Uhrzeit
 		Label zeit = new Label("09:41 AM");
 		
 		//ZurÃ¼ck Button und Symbol
-		Button back = new Button("Zurück");
+		Button back = new Button("Zurï¿½ck");
 		Image back_image = new Image("file:images/back_symbol.png");
 		ImageView back_view = new ImageView("file:images/back_symbol.png");
 
@@ -95,7 +95,7 @@ public class Notruf_absetzen extends StackPane {
    * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich die Aufrufe von add auf
    * Pane1 selbst.
    */
-  public Notruf_absetzen() {
+  public Notruf_Absetzen() {
     
 	  	getStylesheets().add("test/styles.css");
 

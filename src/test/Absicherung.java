@@ -59,19 +59,19 @@ public class Absicherung extends StackPane {
 		ImageView empfang_view = new ImageView("file:images/Empfang3.png");
 	
 		//Infos
-		Label infos2 = new Label ("1. Wenn möglich, Fahrzeug\n"
+		Label infos2 = new Label ("1. Wenn moeglich, Fahrzeug\n"
 				+ "an den Fahrbahnrand\n"
 				+ "2. Warnweste anlegen \n"
 				+ "3. Warndreieck aufstellen\n"
 				+ "Innerorts: 50 m\n"
-				+ "Landstraße: 100 m\n"
+				+ "Landstrasse: 100 m\n"
 				+ "Autobahn: 150 m\n");
 		
 		// Uhrzeit
 		Label zeit = new Label("09:41 AM");
 		
 		//ZurÃ¼ck Button und Symbol
-		Button back = new Button("Zurück");
+		Button back = new Button("Zurueck");
 		Image back_image = new Image("file:images/back_symbol.png");
 		ImageView back_view = new ImageView("file:images/back_symbol.png");
 

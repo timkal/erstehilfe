@@ -57,16 +57,16 @@ package test;
 		// Uhrzeit
 		Label zeit = new Label("09:41 AM");
 		
-		//Zurück Button und Symbol
-		Button back = new Button("Zurück");
+		//Zurï¿½ck Button und Symbol
+		Button back = new Button("Zurï¿½ck");
 		Image back_image = new Image("file:images/back_symbol.png");
 		ImageView back_view = new ImageView("file:images/back_symbol.png");
 
 		//Linie 1
 		Line line = new Line();
 				
-		// Notruf gewählt Label
-		Label notrufgewählt = new Label("Person vom\nUnfallort entfernt?");
+		// Notruf gewï¿½hlt Label
+		Label notrufgewaehlt = new Label("Person vom\nUnfallort entfernt?");
 		
 		// Linie darunter
 		Line line2 = new Line();
@@ -80,8 +80,8 @@ package test;
 		//Label Hinweis
 		Label hinweis = new Label("Beachte:\n"
 				+ "Bei Verdacht auf eine\n"
-				+ "Wirbelsäulenverletzung nur\n"
-				+ "aus lebensgefährlicher\n"
+				+ "Wirbelsï¿½ulenverletzung nur\n"
+				+ "aus lebensgefï¿½hrlicher\n"
 				+ "Umgebung entfernen!");
 		
 	public Person_entfernt() {
@@ -183,10 +183,10 @@ package test;
 		line.setStrokeWidth(0.5);
 		line.setTranslateY(-222);
 		
-		// Label Notruf gewählt
-		getChildren().add(notrufgewählt);
-		notrufgewählt.setTranslateX(0);
-		notrufgewählt.setTranslateY(-175);
+		// Label Notruf gewï¿½hlt
+		getChildren().add(notrufgewaehlt);
+		notrufgewaehlt.setTranslateX(0);
+		notrufgewaehlt.setTranslateY(-175);
 		
 		// Label Hinweis
 		getChildren().add(hinweis);

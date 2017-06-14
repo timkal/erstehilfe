@@ -61,8 +61,8 @@ public class Telefonnummern extends StackPane {
 		// Uhrzeit
 		Label zeit = new Label("09:41 AM");
 		
-		//Zurück Button und Symbol
-		Button back = new Button("Zurück");
+		//Zurï¿½ck Button und Symbol
+		Button back = new Button("Zurueck");
 		Image back_image = new Image("file:images/back_symbol.png");
 		ImageView back_view = new ImageView("file:images/back_symbol.png");
 
@@ -76,7 +76,7 @@ public class Telefonnummern extends StackPane {
 		Label europa = new Label("European Union:     112");
 		
 		//Label 2
-		Label alleländer = new Label("Argentinia    107\n"
+		Label allelaender = new Label("Argentinia    107\n"
 				+ "Australia       000\n"
 				+ "Brasil             192\n"
 				+ "Canada          911\n"
@@ -221,10 +221,10 @@ public class Telefonnummern extends StackPane {
 		europa.setTranslateY(-190);
 		
 		// Unteres Label Nummer
-		getChildren().add(alleländer);
-		alleländer.setTranslateX(0);
-		alleländer.setTranslateY(30);
-		alleländer.getStyleClass().add("land_label");
+		getChildren().add(allelaender);
+		allelaender.setTranslateX(0);
+		allelaender.setTranslateY(30);
+		allelaender.getStyleClass().add("land_label");
 		
 		//Weitere Elemente hinzufÃ¼gen
 		

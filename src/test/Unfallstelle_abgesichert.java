@@ -57,16 +57,16 @@ package test;
 		// Uhrzeit
 		Label zeit = new Label("09:41 AM");
 		
-		//Zurück Button und Symbol
-		Button back = new Button("Zurück");
+		//Zurï¿½ck Button und Symbol
+		Button back = new Button("Zurueck");
 		Image back_image = new Image("file:images/back_symbol.png");
 		ImageView back_view = new ImageView("file:images/back_symbol.png");
 
 		//Linie 1
 		Line line = new Line();
 				
-		// Notruf gewählt Label
-		Label notrufgewählt = new Label("Unfallstelle\nabgesichert?");
+		// Notruf gewï¿½hlt Label
+		Label notrufgewaehlt = new Label("Unfallstelle\nabgesichert?");
 		
 		// Linie darunter
 		Line line2 = new Line();
@@ -177,9 +177,9 @@ package test;
 		line.setTranslateY(-222);
 		
 		// Label 
-		getChildren().add(notrufgewählt);
-		notrufgewählt.setTranslateX(0);
-		notrufgewählt.setTranslateY(-175);
+		getChildren().add(notrufgewaehlt);
+		notrufgewaehlt.setTranslateX(0);
+		notrufgewaehlt.setTranslateY(-175);
 		
 		// Linie 2 
 		getChildren().add(line2);

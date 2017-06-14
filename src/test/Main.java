@@ -8,7 +8,7 @@ public class Main extends Application {
 
   // Panes und Szenen aller Klassen definieren
   // Panes abgek√ºrzt mit pZAHL, Scenes mit sZAHL
-  Notruf_absetzen p3 = new Notruf_absetzen();
+  Notruf_Absetzen p3 = new Notruf_Absetzen();
   Scene s3 = new Scene(p3, 300, 550);
   
   Telefonnummern p4 = new Telefonnummern();
@@ -17,8 +17,11 @@ public class Main extends Application {
   Menu p2 = new Menu();
   Scene s2 = new Scene(p2, 300, 550);
 
-  Notruf_gew‰hlt p1 = new Notruf_gew‰hlt();
+  Notruf_gewaehlt p1 = new Notruf_gewaehlt();
   Scene s1 = new Scene(p1, 300, 550);
+  
+  
+  
   
   Unfallstelle_abgesichert p5 = new Unfallstelle_abgesichert();
   Scene s5 = new Scene(p5, 300, 550);
