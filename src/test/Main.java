@@ -60,6 +60,7 @@ public class Main extends Application {
     p4.getButton_back().setOnAction(e -> primaryStage.setScene(s3));
     p2.getButton_back().setOnAction(e -> primaryStage.setScene(s3));
     p2.getButton_unfall().setOnAction(e -> primaryStage.setScene(s5));
+    p2.getButton_verletzt().setOnAction(e -> primaryStage.setScene(s9));
     p1.getButton_ja().setOnAction(e -> primaryStage.setScene(s2));
     p1.getButton_nein().setOnAction(e -> primaryStage.setScene(s3));
     p5.getButton_back().setOnAction(e -> primaryStage.setScene(s2));

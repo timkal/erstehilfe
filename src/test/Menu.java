@@ -216,7 +216,9 @@ public class Menu extends StackPane {
 	    return unfall;
 	  }
 
- 
+  Button getButton_verletzt() {
+	    return verletzt;
+	  }
   
   
 }
