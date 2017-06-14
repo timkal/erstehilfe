@@ -8,13 +8,14 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
 
 /**
  * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert sind
  */
-public class Rettungsgriff extends StackPane {
+public class Herzdruckmassage extends StackPane {
 	
 	// ------------------------------------------------------------------------------------------
 
@@ -75,17 +76,41 @@ public class Rettungsgriff extends StackPane {
 		// Weitere Elemente
 		// =================================
 		
+		// Linie darunter
+		Line line2 = new Line();
 		
-		Button weiter = new Button("Weiter");
-		Label rettungsgriff = new Label("Rettungsgriff");
-		Image rettungsgriffbild = new Image("file:images/Rettungsgriff.png");
-		ImageView rettungsgriffbild_view = new ImageView("file:images/Rettungsgriff.png");
+		// Schritt 2 Button
+		Button schritt2 = new Button("Schritt 2");
+		
+		// Herzdruckmassage Label
+		Label herzdruck1 = new Label("1. Herzdruck-\n    massage");
+		
+		// Herzdruckmassage Label 2
+		Label herzdruck2 = new Label("30x druecken");
+		
+		// Herzdruckmassage Label 2
+		Label herzdruck3 = new Label("Brustkorb freimachen\n"
+				+ "Druckpunkt auf der Mitte des Brustkorbes\n"
+				+ "30 mal kurz und kraeftig herunterduecken\n"
+				+ "Zwischen Pumpstoessen Brustkorb komplett\nentlasten");
+				
+		// Herzdruckmassage Image
+		Image herzdruck = new Image("file:images/Herzdruckmassage.png");
+		ImageView herzdruck_view = new ImageView("file:images/Herzdruckmassage.png");
+		
+		//Druck Label&Kreis&Symbol
+		Label druck = new Label("Druck-\nfrequenz");
+		final int radius = 40;
+		Circle druck1 = new Circle(radius, Color.GREY);
+		Image druckfrequenz = new Image("file:images/Druckfrequenz.png");
+		ImageView druckfrequenz_view = new ImageView("file:images/Druckfrequenz.png");
 	
+		
   /**
    * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich die Aufrufe von add auf
    * Pane1 selbst.
    */
-  public Rettungsgriff() {
+  public Herzdruckmassage() {
     
 	  	getStylesheets().add("test/styles.css");
 
@@ -105,10 +130,10 @@ public class Rettungsgriff extends StackPane {
 		
 		
 		//Button Weiter
-		getChildren().add(weiter);
-		weiter.setTranslateX(0);
-		weiter.setTranslateY(185);
-		weiter.getStyleClass().add("button_weiter");
+		getChildren().add(schritt2);
+		schritt2.setTranslateX(0);
+		schritt2.setTranslateY(185);
+		schritt2.getStyleClass().add("button_weiter");
 		
 		//Titel
 		getChildren().add(title);
@@ -195,21 +220,54 @@ public class Rettungsgriff extends StackPane {
 		//Weitere Elemente hinzufügen
 		
 		
-		// Rettungsgriff Label
-		getChildren().add(rettungsgriff);
-		rettungsgriff.setTranslateX(0);
-		rettungsgriff.setTranslateY(-175);
-		rettungsgriff.getStyleClass().add("button_absicherung");
+		// Herzdruckmassage Label
+		getChildren().add(herzdruck1);
+		herzdruck1.setTranslateX(0);
+		herzdruck1.setTranslateY(-160);
+		herzdruck1.getStyleClass().add("button_absicherung");
 		
-		// Rettungsgriff Image
-		getChildren().add(rettungsgriffbild_view);
-		rettungsgriffbild_view.setFitHeight(220);
-		rettungsgriffbild_view.setFitWidth(220);
-		rettungsgriffbild_view.setTranslateX(0);
-		rettungsgriffbild_view.setTranslateY(0);
+		// Herzdruckmassage Label 1
+		getChildren().add(herzdruck2);
+		herzdruck2.setTranslateX(70);
+		herzdruck2.setTranslateY(10);
+		herzdruck2.getStyleClass().add("button_anderesland");
 		
+		// Herzdruckmassage Label 2
+		getChildren().add(herzdruck3);
+		herzdruck3.setTranslateX(0);
+		herzdruck3.setTranslateY(120);
+		herzdruck3.getStyleClass().add("beatmunginfo_label");
 		
+		// Herzdruckmassage Image
+		getChildren().add(herzdruck_view);
+		herzdruck_view.setFitHeight(150);
+		herzdruck_view.setFitWidth(126);
+		herzdruck_view.setTranslateX(-70);
+		herzdruck_view.setTranslateY(-20);
 		
+		//Druckfrequenz Label&Kreis&Symbol
+		getChildren().add(druck1);
+		druck1.setFill(Color.GREEN);
+		druck1.setTranslateX(70);
+		druck1.setTranslateY(-60);
+		getChildren().add(druck);
+		druck.setTranslateX(72);
+		druck.setTranslateY(-70);
+		druck.getStyleClass().add("druck_label");
+		getChildren().add(druckfrequenz_view);
+		druckfrequenz_view.setFitHeight(25);
+		druckfrequenz_view.setFitWidth(25);
+		druckfrequenz_view.setTranslateX(70);
+		druckfrequenz_view.setTranslateY(-38);
+		
+		// Linie 2 
+		getChildren().add(line2);
+		line2.setStartX(0);
+		line2.setStartY(0);
+		line2.setEndX(240);
+		line2.setEndY(0);
+		line2.setStrokeWidth(1.5);
+		line2.setTranslateY(70);
   }
 
   /**
@@ -217,8 +275,8 @@ public class Rettungsgriff extends StackPane {
    * @return Der weiter-Button
    */
   
-  Button getButton_weiter() {
-    return weiter;
+  Button getButton_schritt2() {
+    return schritt2;
     
   }
   Button getButton_back() {
@@ -229,4 +287,6 @@ public class Rettungsgriff extends StackPane {
 }
  
   
+  
+
   

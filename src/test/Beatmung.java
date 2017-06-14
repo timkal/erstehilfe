@@ -8,13 +8,14 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
 
 /**
  * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert sind
  */
-public class Rettungsgriff extends StackPane {
+public class Beatmung extends StackPane {
 	
 	// ------------------------------------------------------------------------------------------
 
@@ -75,17 +76,42 @@ public class Rettungsgriff extends StackPane {
 		// Weitere Elemente
 		// =================================
 		
+		// Linie darunter
+		Line line2 = new Line();
+				
+		// Zurueck zur Reanimation Button
+		Button back1 = new Button("Zurueck zur Reanimation");
 		
-		Button weiter = new Button("Weiter");
-		Label rettungsgriff = new Label("Rettungsgriff");
-		Image rettungsgriffbild = new Image("file:images/Rettungsgriff.png");
-		ImageView rettungsgriffbild_view = new ImageView("file:images/Rettungsgriff.png");
+		// Beatmung Label
+		Label reanimation = new Label("2. Beatmung");
 	
+		// Beatmung Label
+		Label beatmung1 = new Label("2x beatmen");
+		
+		// Beatmung Label 2
+		Label beatmung2 = new Label("Nase der Person bei der Mund zu Mund\n"
+				+ "            Beatmung verschliessen\n"
+				+ "Beatmungsphase betraegt eine Sekunde\n"
+				+ "30 mal kurz und kraeftig herunterduecken\n"
+				+ "Bei richtiger Durchfuehrung hebt sich der\n"
+				+ "          Brustkorb der Person sichtbar");
+		
+		// Beatmung Label 3
+		Label beatmung3 = new Label("Schritt 1 und 2 solange wiederholen\n,"
+				+ "bis der Notarzt da ist oder keine\n"
+				+ "Reanimation mehr benoetigt wird");		
+				
+		// Beatmung Image
+		Image beatmung = new Image("file:images/Beatmung.png");
+		ImageView beatmung_view = new ImageView("file:images/Beatmung.png");
+		
+	
+		
   /**
    * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich die Aufrufe von add auf
    * Pane1 selbst.
    */
-  public Rettungsgriff() {
+  public Beatmung() {
     
 	  	getStylesheets().add("test/styles.css");
 
@@ -104,11 +130,11 @@ public class Rettungsgriff extends StackPane {
 		top.setTranslateY(-250);
 		
 		
-		//Button Weiter
-		getChildren().add(weiter);
-		weiter.setTranslateX(0);
-		weiter.setTranslateY(185);
-		weiter.getStyleClass().add("button_weiter");
+		//Button Zurueck zur Reanimation
+		getChildren().add(back1);
+		back1.setTranslateX(0);
+		back1.setTranslateY(185);
+		back1.getStyleClass().add("button_weiter");
 		
 		//Titel
 		getChildren().add(title);
@@ -195,21 +221,45 @@ public class Rettungsgriff extends StackPane {
 		//Weitere Elemente hinzufügen
 		
 		
-		// Rettungsgriff Label
-		getChildren().add(rettungsgriff);
-		rettungsgriff.setTranslateX(0);
-		rettungsgriff.setTranslateY(-175);
-		rettungsgriff.getStyleClass().add("button_absicherung");
+		// Reanimation Label
+		getChildren().add(reanimation);
+		reanimation.setTranslateX(0);
+		reanimation.setTranslateY(-185);
+		reanimation.getStyleClass().add("button_absicherung");
 		
-		// Rettungsgriff Image
-		getChildren().add(rettungsgriffbild_view);
-		rettungsgriffbild_view.setFitHeight(220);
-		rettungsgriffbild_view.setFitWidth(220);
-		rettungsgriffbild_view.setTranslateX(0);
-		rettungsgriffbild_view.setTranslateY(0);
+		// Beatmung Label 
+		getChildren().add(beatmung1);
+		beatmung1.setTranslateX(54);
+		beatmung1.setTranslateY(-100);
+		beatmung1.getStyleClass().add("button_anderesland");
 		
+		// Beatmung Image
+		getChildren().add(beatmung_view);
+		beatmung_view.setFitHeight(100);
+		beatmung_view.setFitWidth(91);
+		beatmung_view.setTranslateX(-65);
+		beatmung_view.setTranslateY(-90);
 		
+		// Linie 2 
+		getChildren().add(line2);
+		line2.setStartX(0);
+		line2.setStartY(0);
+		line2.setEndX(240);
+		line2.setEndY(0);
+		line2.setStrokeWidth(1.5);
+		line2.setTranslateY(-30);
 		
+		// Beatmung Label 2
+		getChildren().add(beatmung2);
+		beatmung2.setTranslateX(0);
+		beatmung2.setTranslateY(30);
+		beatmung2.getStyleClass().add("beatmunginfo_label");
+		
+		// Beatmung Label 3
+		getChildren().add(beatmung3);
+		beatmung3.setTranslateX(0);
+		beatmung3.setTranslateY(128);
+		beatmung3.getStyleClass().add("beatmunginfo_label2");
   }
 
   /**
@@ -217,8 +267,8 @@ public class Rettungsgriff extends StackPane {
    * @return Der weiter-Button
    */
   
-  Button getButton_weiter() {
-    return weiter;
+  Button getButton_back1() {
+    return back1;
     
   }
   Button getButton_back() {
@@ -228,5 +278,4 @@ public class Rettungsgriff extends StackPane {
 
 }
  
-  
   

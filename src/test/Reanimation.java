@@ -8,13 +8,14 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
 
 /**
  * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert sind
  */
-public class Rettungsgriff extends StackPane {
+public class Reanimation extends StackPane {
 	
 	// ------------------------------------------------------------------------------------------
 
@@ -75,17 +76,39 @@ public class Rettungsgriff extends StackPane {
 		// Weitere Elemente
 		// =================================
 		
+		// Anleitung Button
+		Button anleitung = new Button("Anleitung");
 		
-		Button weiter = new Button("Weiter");
-		Label rettungsgriff = new Label("Rettungsgriff");
-		Image rettungsgriffbild = new Image("file:images/Rettungsgriff.png");
-		ImageView rettungsgriffbild_view = new ImageView("file:images/Rettungsgriff.png");
+		// Reanimation Label
+		Label reanimation = new Label("Reanimation\nWiederholen bis\nder Notarzt da ist");
 	
+		// Beatmung Label
+		Label beatmung1 = new Label("2x beatmen");
+		
+		// Herzdruck Label 
+		Label herzdruck2 = new Label("30x druecken");
+		
+		// Herzdruckmassage Image
+		Image herzdruck = new Image("file:images/Herzdruckmassage.png");
+		ImageView herzdruck_view = new ImageView("file:images/Herzdruckmassage.png");
+
+		// Beatmung Image
+		Image beatmung = new Image("file:images/Beatmung.png");
+		ImageView beatmung_view = new ImageView("file:images/Beatmung.png");
+		
+		//Druck Label&Kreis&Symbol
+		Label druck = new Label("Druck-\nfrequenz");
+		final int radius = 40;
+		Circle druck1 = new Circle(radius, Color.GREY);
+		Image druckfrequenz = new Image("file:images/Druckfrequenz.png");
+		ImageView druckfrequenz_view = new ImageView("file:images/Druckfrequenz.png");
+	
+		
   /**
    * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich die Aufrufe von add auf
    * Pane1 selbst.
    */
-  public Rettungsgriff() {
+  public Reanimation() {
     
 	  	getStylesheets().add("test/styles.css");
 
@@ -105,10 +128,10 @@ public class Rettungsgriff extends StackPane {
 		
 		
 		//Button Weiter
-		getChildren().add(weiter);
-		weiter.setTranslateX(0);
-		weiter.setTranslateY(185);
-		weiter.getStyleClass().add("button_weiter");
+		getChildren().add(anleitung);
+		anleitung.setTranslateX(0);
+		anleitung.setTranslateY(185);
+		anleitung.getStyleClass().add("button_anleitung");
 		
 		//Titel
 		getChildren().add(title);
@@ -195,21 +218,52 @@ public class Rettungsgriff extends StackPane {
 		//Weitere Elemente hinzufügen
 		
 		
-		// Rettungsgriff Label
-		getChildren().add(rettungsgriff);
-		rettungsgriff.setTranslateX(0);
-		rettungsgriff.setTranslateY(-175);
-		rettungsgriff.getStyleClass().add("button_absicherung");
+		// Reanimation Label
+		getChildren().add(reanimation);
+		reanimation.setTranslateX(0);
+		reanimation.setTranslateY(-160);
+		reanimation.getStyleClass().add("button_absicherung");
 		
-		// Rettungsgriff Image
-		getChildren().add(rettungsgriffbild_view);
-		rettungsgriffbild_view.setFitHeight(220);
-		rettungsgriffbild_view.setFitWidth(220);
-		rettungsgriffbild_view.setTranslateX(0);
-		rettungsgriffbild_view.setTranslateY(0);
+		// Beatmung Label 
+		getChildren().add(beatmung1);
+		beatmung1.setTranslateX(-70);
+		beatmung1.setTranslateY(90);
+		beatmung1.getStyleClass().add("button_anderesland");
 		
+		// Herzdruck Label
+		getChildren().add(herzdruck2);
+		herzdruck2.setTranslateX(70);
+		herzdruck2.setTranslateY(10);
+		herzdruck2.getStyleClass().add("button_anderesland");
 		
+		// Herzdruckmassage Image
+		getChildren().add(herzdruck_view);
+		herzdruck_view.setFitHeight(150);
+		herzdruck_view.setFitWidth(126);
+		herzdruck_view.setTranslateX(-70);
+		herzdruck_view.setTranslateY(-20);
 		
+		// Beatmung Image
+		getChildren().add(beatmung_view);
+		beatmung_view.setFitHeight(100);
+		beatmung_view.setFitWidth(91);
+		beatmung_view.setTranslateX(65);
+		beatmung_view.setTranslateY(100);
+		
+		//Druckfrequenz Label&Kreis&Symbol
+		getChildren().add(druck1);
+		druck1.setFill(Color.GREEN);
+		druck1.setTranslateX(70);
+		druck1.setTranslateY(-60);
+		getChildren().add(druck);
+		druck.setTranslateX(72);
+		druck.setTranslateY(-70);
+		druck.getStyleClass().add("druck_label");
+		getChildren().add(druckfrequenz_view);
+		druckfrequenz_view.setFitHeight(25);
+		druckfrequenz_view.setFitWidth(25);
+		druckfrequenz_view.setTranslateX(70);
+		druckfrequenz_view.setTranslateY(-38);
   }
 
   /**
@@ -217,8 +271,8 @@ public class Rettungsgriff extends StackPane {
    * @return Der weiter-Button
    */
   
-  Button getButton_weiter() {
-    return weiter;
+  Button getButton_anleitung() {
+    return anleitung;
     
   }
   Button getButton_back() {
@@ -228,5 +282,8 @@ public class Rettungsgriff extends StackPane {
 
 }
  
+  
+  
+
   
   

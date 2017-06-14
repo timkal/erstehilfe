@@ -1,26 +1,22 @@
 package test;
 
-import javafx.geometry.Pos;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.StackPane;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Line;
-import javafx.scene.shape.Rectangle;
+	import javafx.geometry.Pos;
+	import javafx.scene.Scene;
+	import javafx.scene.control.Button;
+	import javafx.scene.control.Label;
+	import javafx.scene.image.Image;
+	import javafx.scene.image.ImageView;
+	import javafx.scene.layout.StackPane;
+	import javafx.scene.paint.Color;
+	import javafx.scene.shape.Line;
+	import javafx.scene.shape.Rectangle;
 
-/**
- * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert sind
- */
-public class Rettungsgriff extends StackPane {
-	
-	// ------------------------------------------------------------------------------------------
+	public class Person_Atmung extends StackPane {
 
 		// Pane und Scene
 		StackPane stack = new StackPane();
 		Scene szene = new Scene(stack, 300, 550);
+		
 
 		// =================================
 		// Basis-Elemente TAP Bar
@@ -57,36 +53,52 @@ public class Rettungsgriff extends StackPane {
 		// Empfang Symbol
 		Image empfang = new Image("file:images/Empfang3.png");
 		ImageView empfang_view = new ImageView("file:images/Empfang3.png");
-		
+
 		// Uhrzeit
 		Label zeit = new Label("09:41 AM");
 		
-		//Zurück Button und Symbol
-		Button back = new Button("Zurueck");
+		//Zur�ck Button und Symbol
+		Button back = new Button("Zur�ck");
 		Image back_image = new Image("file:images/back_symbol.png");
 		ImageView back_view = new ImageView("file:images/back_symbol.png");
 
-		// Linie
+		//Linie 1
 		Line line = new Line();
+				
+		// Atmet Person Label
+		Label atmetpersonfrage = new Label("Atmet die Person?");
 		
-		// ------------------------------------------------------------------------------------------
+		// Linie darunter
+		Line line2 = new Line();
 		
-		// =================================
-		// Weitere Elemente
-		// =================================
+		// Linie darunter 2
+		Line line3 = new Line();
 		
+		//Button Ja
+		Button ja = new Button("Ja");
 		
-		Button weiter = new Button("Weiter");
-		Label rettungsgriff = new Label("Rettungsgriff");
-		Image rettungsgriffbild = new Image("file:images/Rettungsgriff.png");
-		ImageView rettungsgriffbild_view = new ImageView("file:images/Rettungsgriff.png");
-	
-  /**
-   * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich die Aufrufe von add auf
-   * Pane1 selbst.
-   */
-  public Rettungsgriff() {
-    
+		//Button Nein
+		Button nein = new Button("Nein");
+		
+		//Label Atmung Info
+		Label atmunginfo = new Label("Sehen (Brustbewegung, Hautfarbe)\n"
+				+ "Hoeren (Atemgeraeusche)\n"
+				+ "Fuehlen (Atemhauch)");
+		
+		//Atem-Check Symbol
+		Image atemcheck_image = new Image("file:images/Atem-Check.png");
+		ImageView atemcheck_view = new ImageView("file:images/Atem-Check.png");
+		
+		//Label Atmung Info2
+		Label atmunginfo2 = new Label("Atemwege\nfreimachen!");
+		
+		//Atemwege Symbol
+		Image atemwege_image = new Image("file:images/Atemwege.png");
+		ImageView atemwege_view = new ImageView("file:images/Atemwege.png");
+				
+	public Person_Atmung() {
+		
+
 	  	getStylesheets().add("test/styles.css");
 
 		// ------------------------------------------------------------------------------------------
@@ -102,13 +114,6 @@ public class Rettungsgriff extends StackPane {
 		getChildren().add(top);
 		top.setTranslateX(0);
 		top.setTranslateY(-250);
-		
-		
-		//Button Weiter
-		getChildren().add(weiter);
-		weiter.setTranslateX(0);
-		weiter.setTranslateY(185);
-		weiter.getStyleClass().add("button_weiter");
 		
 		//Titel
 		getChildren().add(title);
@@ -180,7 +185,6 @@ public class Rettungsgriff extends StackPane {
 		home_view.setTranslateY(235);
 		setAlignment(menu, Pos.BOTTOM_LEFT);
 		menu.getStyleClass().add("button_menu");
-
 		
 		// Linie 
 		getChildren().add(line);
@@ -191,42 +195,83 @@ public class Rettungsgriff extends StackPane {
 		line.setStrokeWidth(0.5);
 		line.setTranslateY(-222);
 		
+		// Label Notruf gew�hlt
+		getChildren().add(atmetpersonfrage);
+		atmetpersonfrage.setTranslateX(0);
+		atmetpersonfrage.setTranslateY(-175);
 		
-		//Weitere Elemente hinzufügen
+		// Label Atmung Info
+		getChildren().add(atmunginfo);
+		atmunginfo.setTranslateX(0);
+		atmunginfo.setTranslateY(50);
+		atmunginfo.getStyleClass().add("atmunginfo_label");
+		
+		// Label Atmung Info 2
+		getChildren().add(atmunginfo2);
+		atmunginfo2.setTranslateX(87);
+		atmunginfo2.setTranslateY(-100);
+		atmunginfo2.getStyleClass().add("infos2_label");
 		
 		
-		// Rettungsgriff Label
-		getChildren().add(rettungsgriff);
-		rettungsgriff.setTranslateX(0);
-		rettungsgriff.setTranslateY(-175);
-		rettungsgriff.getStyleClass().add("button_absicherung");
+		// Linie 2 
+		getChildren().add(line2);
+		line2.setStartX(0);
+		line2.setStartY(0);
+		line2.setEndX(240);
+		line2.setEndY(0);
+		line2.setStrokeWidth(1.5);
+		line2.setTranslateY(-130);
 		
-		// Rettungsgriff Image
-		getChildren().add(rettungsgriffbild_view);
-		rettungsgriffbild_view.setFitHeight(220);
-		rettungsgriffbild_view.setFitWidth(220);
-		rettungsgriffbild_view.setTranslateX(0);
-		rettungsgriffbild_view.setTranslateY(0);
+		// Linie 3
+		getChildren().add(line3);
+		line3.setStartX(0);
+		line3.setStartY(0);
+		line3.setEndX(240);
+		line3.setEndY(0);
+		line3.setStrokeWidth(1.5);
+		line3.setTranslateY(105);
 		
+		// Button ja
+		getChildren().add(ja);
+		ja.setTranslateX(62.5);
+		ja.setTranslateY(150);
+		ja.getStyleClass().add("button_ja");
 		
+		//Button nein
+		getChildren().add(nein);
+		nein.setTranslateX(-62.5);
+		nein.setTranslateY(150);
+		nein.getStyleClass().add("button_nein");
 		
-  }
+		//Atem-Check Symbol
+		getChildren().add(atemcheck_view);
+		atemcheck_view.setFitHeight(114);
+		atemcheck_view.setFitWidth(150);
+		atemcheck_view.setTranslateX(-50);
+		atemcheck_view.setTranslateY(-60);
+		
+		//Atemwege Symbol
+		getChildren().add(atemwege_view);
+		atemwege_view.setFitHeight(70);
+		atemwege_view.setFitWidth(80);
+		atemwege_view.setTranslateX(87);
+		atemwege_view.setTranslateY(-38);
+		}
+	
+	
 
-  /**
-   * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
-   * @return Der weiter-Button
-   */
-  
-  Button getButton_weiter() {
-    return weiter;
-    
-  }
-  Button getButton_back() {
-	return back;
-  }
+	/**
+	 * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
+	 * @return Der weiter-Button
+	 */
+	Button getButton_ja() {
+	  return ja;
+	}
 
-
-}
- 
-  
-  
+	Button getButton_nein() {
+		    return nein;
+		  }
+	Button getButton_back() {
+	    return back;
+	  }
+	 }

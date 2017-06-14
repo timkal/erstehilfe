@@ -37,7 +37,20 @@ public class Main extends Application {
   
   Person_Bewusstsein p9 = new Person_Bewusstsein();
   Scene s9 = new Scene (p9, 300, 550);
+  
+  Person_Atmung p10 = new Person_Atmung();
+  Scene s10 = new Scene (p10, 300, 550);
+  
+  Reanimation p11 = new Reanimation();
+  Scene s11 = new Scene (p11, 300, 550);
+  
+  Herzdruckmassage p12 = new Herzdruckmassage();
+  Scene s12 = new Scene (p12, 300, 550);
+  
+  Beatmung p13 = new Beatmung();
+  Scene s13 = new Scene (p13, 300, 550);
 
+  
   public void start(Stage primaryStage) throws Exception {
 
     // Aktion des Buttons in der Szene 1
@@ -60,8 +73,16 @@ public class Main extends Application {
     p8.getButton_back().setOnAction(e -> primaryStage.setScene(s7));
     p8.getButton_weiter().setOnAction(e -> primaryStage.setScene(s9));
     p9.getButton_back().setOnAction(e -> primaryStage.setScene(s7));
-    
-    
+    p9.getButton_nein().setOnAction(e -> primaryStage.setScene(s10));
+    p10.getButton_back().setOnAction(e -> primaryStage.setScene(s9));
+    p10.getButton_nein().setOnAction(e -> primaryStage.setScene(s11));
+    p11.getButton_back().setOnAction(e -> primaryStage.setScene(s10));
+    p11.getButton_anleitung().setOnAction(e -> primaryStage.setScene(s12));
+    p12.getButton_back().setOnAction(e -> primaryStage.setScene(s11));
+    p12.getButton_schritt2().setOnAction(e -> primaryStage.setScene(s13));
+    p13.getButton_back().setOnAction(e -> primaryStage.setScene(s12));
+    p13.getButton_back1().setOnAction(e -> primaryStage.setScene(s11));
+
     primaryStage.setScene(s1);
     primaryStage.setTitle("Startscreen");
     primaryStage.show();
