@@ -2,6 +2,7 @@ package test;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -71,6 +72,12 @@ public class Main extends Application {
   Druckverband p20 = new Druckverband();
   Scene s20 = new Scene (p20, 300, 550);
   
+  Knochen_verletzt p21 = new Knochen_verletzt();
+  Scene s21 = new Scene (p21, 300, 550);
+  
+  Knochenbrueche p22 = new Knochenbrueche();
+  Scene s22 = new Scene (p22, 300, 550);
+  
   public void start(Stage primaryStage) throws Exception {
 
     // Aktion des Buttons in der Szene 1
@@ -119,6 +126,59 @@ public class Main extends Application {
     p19.getButton_back().setOnAction(e -> primaryStage.setScene(s14));
     p19.getButton_ja().setOnAction(e -> primaryStage.setScene(s20));
     p20.getButton_back().setOnAction(e -> primaryStage.setScene(s19));
+    p20.getButton_weiter().setOnAction(e -> primaryStage.setScene(s21));
+    p19.getButton_nein().setOnAction(e -> primaryStage.setScene(s21));
+    p21.getButton_back().setOnAction(e -> primaryStage.setScene(s19));
+    p21.getButton_ja().setOnAction(e -> primaryStage.setScene(s22));
+    p22.getButton_back().setOnAction(e -> primaryStage.setScene(s21));
+    p22.getButton_weiter().setOnAction(e -> primaryStage.setScene(s17));
+    p21.getButton_nein().setOnAction(e -> primaryStage.setScene(s16));
+    p16.getButton_weiter().setOnAction(e -> primaryStage.setScene(s17));
+
+    p1.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    p3.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    p4.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    p5.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    p6.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    p7.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    p8.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    p9.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    p10.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    p11.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    p12.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    p13.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    p14.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    p15.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    p16.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    p17.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    p18.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    p19.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    p20.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    p21.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    p22.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+    
+    p1.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    p2.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    p4.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    p5.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    p6.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    p7.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    p8.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    p9.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    p10.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    p11.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    p12.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    p13.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    p14.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    p15.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    p16.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    p17.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    p18.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    p19.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    p20.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    p21.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    p22.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+    
     
     primaryStage.setScene(s1);
     primaryStage.setTitle("Startscreen");

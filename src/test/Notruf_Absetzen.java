@@ -250,10 +250,10 @@ public class Notruf_Absetzen extends StackPane {
   Button getButton_back() {
 	return back;
   }
-
-
-
- 
   
+  Button getButton_menu() {
+	    return menu;
+	  }
+
   
 }

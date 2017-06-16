@@ -274,8 +274,12 @@ public class Beatmung extends StackPane {
   Button getButton_back() {
 	return back;
   }
-
-
+  Button getButton_menu() {
+    return menu;
+		  }
+  Button getButton_notruf() {
+		return notruf;
+	  }
 }
  
   

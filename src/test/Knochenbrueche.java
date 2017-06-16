@@ -14,7 +14,7 @@ import javafx.scene.shape.Rectangle;
 /**
  * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert sind
  */
-public class Rettungsgriff extends StackPane {
+public class Knochenbrueche extends StackPane {
 	
 	// ------------------------------------------------------------------------------------------
 
@@ -78,16 +78,33 @@ public class Rettungsgriff extends StackPane {
 		// Weiter Button
 		Button weiter = new Button("Weiter");
 		
-		// Rettungsgriff Label&Symbol
-		Label rettungsgriff = new Label("Rettungsgriff");
-		Image rettungsgriffbild = new Image("file:images/Rettungsgriff.png");
-		ImageView rettungsgriffbild_view = new ImageView("file:images/Rettungsgriff.png");
+		// Knochenbrueche Label
+		Label knochenbrueche = new Label("Knochenbrueche");
+		
+		// Knochenbrueche Label 2
+		Label knochenbrueche2 = new Label("   Bruchstelle\nnicht bewegen!");
+				
+		// Knochenbrueche Label 3
+		Label knochenbrueche3 = new Label("Offener Bruch:\n"
+				+ "Mit keimfreier\n"
+				+ "Wundauflage\n"
+				+ "bedecken");
+				
+		// Knochenbrueche Label 4
+		Label knochenbrueche4 = new Label("Geschlossener\n"
+				+ "Bruch: Kuehlen\n");
+				
+		// Knochenbrueche Label 5
+		Label knochenbrueche5 = new Label("Abgetrennte Koerperteile\n"
+				+ "             sichern");
+			
+		
 	
   /**
    * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich die Aufrufe von add auf
    * Pane1 selbst.
    */
-  public Rettungsgriff() {
+  public Knochenbrueche() {
     
 	  	getStylesheets().add("test/styles.css");
 
@@ -197,21 +214,37 @@ public class Rettungsgriff extends StackPane {
 		//Weitere Elemente hinzufügen
 		
 		
-		// Rettungsgriff Label
-		getChildren().add(rettungsgriff);
-		rettungsgriff.setTranslateX(0);
-		rettungsgriff.setTranslateY(-175);
-		rettungsgriff.getStyleClass().add("button_absicherung");
+		// Knochenbrueche Label
+		getChildren().add(knochenbrueche);
+		knochenbrueche.setTranslateX(0);
+		knochenbrueche.setTranslateY(-185);
+		knochenbrueche.getStyleClass().add("button_absicherung");
 		
-		// Rettungsgriff Image
-		getChildren().add(rettungsgriffbild_view);
-		rettungsgriffbild_view.setFitHeight(220);
-		rettungsgriffbild_view.setFitWidth(220);
-		rettungsgriffbild_view.setTranslateX(0);
-		rettungsgriffbild_view.setTranslateY(0);
+		// Knochenbrueche Label 2
+		getChildren().add(knochenbrueche2);
+		knochenbrueche2.setTranslateX(0);
+		knochenbrueche2.setTranslateY(-120);
 		
+		// Knochenbrueche Label 3
+		getChildren().add(knochenbrueche3);
+		knochenbrueche3.setTranslateX(0);
+		knochenbrueche3.setTranslateY(-40);
+		knochenbrueche3.getStyleClass().add("button_brueche");
 		
-		
+		// Knochenbrueche Label 4
+		getChildren().add(knochenbrueche4);
+		knochenbrueche4.setTranslateX(0);
+		knochenbrueche4.setTranslateY(36);
+		knochenbrueche4.getStyleClass().add("button_brueche");
+	
+		// Knochenbrueche Label 5
+		getChildren().add(knochenbrueche5);
+		knochenbrueche5.setTranslateX(0);
+		knochenbrueche5.setTranslateY(115);
+		knochenbrueche5.getStyleClass().add("land_label");
+			
+	
+			
   }
 
   /**
@@ -227,12 +260,12 @@ public class Rettungsgriff extends StackPane {
 	return back;
   }
   Button getButton_menu() {
-	return menu;
-	  }
+	    return menu;
+		  }
   Button getButton_notruf() {
 		return notruf;
 	  }
+
 }
  
-  
   

@@ -180,6 +180,18 @@
 	
 }
 
+.button_brueche {
+	-fx-text-fill: #ff0000;
+	-fx-border-color: #808080;
+	-fx-background-color: #dedede;
+	-fx-border-radius: 5;
+	-fx-padding: 10 60 10 60;
+	-fx-font-size: 12px;
+	-fx-font-family: Helvetica;
+	
+	
+}
+
 
 /*	============================================================================================================
   	 LABELS

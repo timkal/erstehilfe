@@ -234,7 +234,12 @@ public class Beduerfnisse_Person extends StackPane {
 	return back;
   }
 
-
+  Button getButton_menu() {
+   return menu;
+		  }
+  Button getButton_notruf() {
+		return notruf;
+	  }
 }
  
   

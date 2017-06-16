@@ -219,6 +219,8 @@ public class Menu extends StackPane {
   Button getButton_verletzt() {
 	    return verletzt;
 	  }
-  
+  Button getButton_notruf() {
+		return notruf;
+	  }
   
 }

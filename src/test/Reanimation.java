@@ -265,6 +265,7 @@ public class Reanimation extends StackPane {
 		druckfrequenz_view.setTranslateX(70);
 		druckfrequenz_view.setTranslateY(-38);
   }
+  
 
   /**
    * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
@@ -278,8 +279,12 @@ public class Reanimation extends StackPane {
   Button getButton_back() {
 	return back;
   }
-
-
+  Button getButton_menu() {
+    return menu;
+	  }
+  Button getButton_notruf() {
+		return notruf;
+	  }
 }
  
   
