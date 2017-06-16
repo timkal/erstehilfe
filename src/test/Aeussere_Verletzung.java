@@ -1,26 +1,22 @@
 package test;
 
-import javafx.geometry.Pos;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.StackPane;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Line;
-import javafx.scene.shape.Rectangle;
+	import javafx.geometry.Pos;
+	import javafx.scene.Scene;
+	import javafx.scene.control.Button;
+	import javafx.scene.control.Label;
+	import javafx.scene.image.Image;
+	import javafx.scene.image.ImageView;
+	import javafx.scene.layout.StackPane;
+	import javafx.scene.paint.Color;
+	import javafx.scene.shape.Line;
+	import javafx.scene.shape.Rectangle;
 
-/**
- * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert sind
- */
-public class Rettungsgriff extends StackPane {
-	
-	// ------------------------------------------------------------------------------------------
+	public class Aeussere_Verletzung extends StackPane {
 
 		// Pane und Scene
 		StackPane stack = new StackPane();
 		Scene szene = new Scene(stack, 300, 550);
+		
 
 		// =================================
 		// Basis-Elemente TAP Bar
@@ -57,38 +53,35 @@ public class Rettungsgriff extends StackPane {
 		// Empfang Symbol
 		Image empfang = new Image("file:images/Empfang3.png");
 		ImageView empfang_view = new ImageView("file:images/Empfang3.png");
-		
+
 		// Uhrzeit
 		Label zeit = new Label("09:41 AM");
 		
-		//Zurück Button und Symbol
-		Button back = new Button("Zurueck");
+		//Zur�ck Button und Symbol
+		Button back = new Button("Zur�ck");
 		Image back_image = new Image("file:images/back_symbol.png");
 		ImageView back_view = new ImageView("file:images/back_symbol.png");
 
-		// Linie
+		//Linie 1
 		Line line = new Line();
+				
+		// Aeussere Verletzung Label
+		Label aeussereverletzung = new Label("Hat die Person\n"
+				+ "aeussere Verletzungen?");
+				
 		
-		// ------------------------------------------------------------------------------------------
+		// Linie darunter
+		Line line2 = new Line();
 		
-		// =================================
-		// Weitere Elemente
-		// =================================
+		//Button Ja
+		Button ja = new Button("Ja");
 		
-		// Weiter Button
-		Button weiter = new Button("Weiter");
+		//Button Nein
+		Button nein = new Button("Nein");
 		
-		// Rettungsgriff Label&Symbol
-		Label rettungsgriff = new Label("Rettungsgriff");
-		Image rettungsgriffbild = new Image("file:images/Rettungsgriff.png");
-		ImageView rettungsgriffbild_view = new ImageView("file:images/Rettungsgriff.png");
-	
-  /**
-   * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich die Aufrufe von add auf
-   * Pane1 selbst.
-   */
-  public Rettungsgriff() {
-    
+	public Aeussere_Verletzung() {
+		
+
 	  	getStylesheets().add("test/styles.css");
 
 		// ------------------------------------------------------------------------------------------
@@ -104,13 +97,6 @@ public class Rettungsgriff extends StackPane {
 		getChildren().add(top);
 		top.setTranslateX(0);
 		top.setTranslateY(-250);
-		
-		
-		//Button Weiter
-		getChildren().add(weiter);
-		weiter.setTranslateX(0);
-		weiter.setTranslateY(185);
-		weiter.getStyleClass().add("button_weiter");
 		
 		//Titel
 		getChildren().add(title);
@@ -182,7 +168,6 @@ public class Rettungsgriff extends StackPane {
 		home_view.setTranslateY(235);
 		setAlignment(menu, Pos.BOTTOM_LEFT);
 		menu.getStyleClass().add("button_menu");
-
 		
 		// Linie 
 		getChildren().add(line);
@@ -193,42 +178,45 @@ public class Rettungsgriff extends StackPane {
 		line.setStrokeWidth(0.5);
 		line.setTranslateY(-222);
 		
+		// Label Aeussere Verletzung
+		getChildren().add(aeussereverletzung);
+		aeussereverletzung.setTranslateX(0);
+		aeussereverletzung.setTranslateY(-175);
 		
-		//Weitere Elemente hinzufügen
+		// Linie 2 
+		getChildren().add(line2);
+		line2.setStartX(0);
+		line2.setStartY(0);
+		line2.setEndX(240);
+		line2.setEndY(0);
+		line2.setStrokeWidth(1.5);
+		line2.setTranslateY(-130);
 		
+		// Button ja
+		getChildren().add(ja);
+		ja.setTranslateX(62.5);
+		ja.setTranslateY(50);
+		ja.getStyleClass().add("button_ja");
 		
-		// Rettungsgriff Label
-		getChildren().add(rettungsgriff);
-		rettungsgriff.setTranslateX(0);
-		rettungsgriff.setTranslateY(-175);
-		rettungsgriff.getStyleClass().add("button_absicherung");
-		
-		// Rettungsgriff Image
-		getChildren().add(rettungsgriffbild_view);
-		rettungsgriffbild_view.setFitHeight(220);
-		rettungsgriffbild_view.setFitWidth(220);
-		rettungsgriffbild_view.setTranslateX(0);
-		rettungsgriffbild_view.setTranslateY(0);
-		
-		
-		
-  }
+		//Button nein
+		getChildren().add(nein);
+		nein.setTranslateX(-62.5);
+		nein.setTranslateY(50);
+		nein.getStyleClass().add("button_nein");
+		}
 
-  /**
-   * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
-   * @return Der weiter-Button
-   */
-  
-  Button getButton_weiter() {
-    return weiter;
-    
-  }
-  Button getButton_back() {
-	return back;
-  }
+	/**
+	 * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
+	 * @return Der weiter-Button
+	 */
+	Button getButton_ja() {
+	  return ja;
+	}
 
-
-}
- 
-  
-  
+	Button getButton_nein() {
+		    return nein;
+		  }
+	Button getButton_back() {
+	    return back;
+	  }
+	  }

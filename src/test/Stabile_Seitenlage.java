@@ -14,7 +14,7 @@ import javafx.scene.shape.Rectangle;
 /**
  * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert sind
  */
-public class Rettungsgriff extends StackPane {
+public class Stabile_Seitenlage extends StackPane {
 	
 	// ------------------------------------------------------------------------------------------
 
@@ -78,16 +78,16 @@ public class Rettungsgriff extends StackPane {
 		// Weiter Button
 		Button weiter = new Button("Weiter");
 		
-		// Rettungsgriff Label&Symbol
-		Label rettungsgriff = new Label("Rettungsgriff");
-		Image rettungsgriffbild = new Image("file:images/Rettungsgriff.png");
-		ImageView rettungsgriffbild_view = new ImageView("file:images/Rettungsgriff.png");
+		// Stabile Seitenlage Label&Symbol
+		Label stabileseitenlage = new Label("Stabile Seitenlage");
+		Image stabileseitenlagebild = new Image("file:images/Stabile Seitenlage.png");
+		ImageView stabileseitenlagebild_view = new ImageView("file:images/Stabile Seitenlage.png");
 	
   /**
    * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich die Aufrufe von add auf
    * Pane1 selbst.
    */
-  public Rettungsgriff() {
+  public Stabile_Seitenlage() {
     
 	  	getStylesheets().add("test/styles.css");
 
@@ -197,18 +197,18 @@ public class Rettungsgriff extends StackPane {
 		//Weitere Elemente hinzufügen
 		
 		
-		// Rettungsgriff Label
-		getChildren().add(rettungsgriff);
-		rettungsgriff.setTranslateX(0);
-		rettungsgriff.setTranslateY(-175);
-		rettungsgriff.getStyleClass().add("button_absicherung");
+		// Stabile Seitenlage Label
+		getChildren().add(stabileseitenlage);
+		stabileseitenlage.setTranslateX(0);
+		stabileseitenlage.setTranslateY(-175);
+		stabileseitenlage.getStyleClass().add("button_absicherung");
 		
 		// Rettungsgriff Image
-		getChildren().add(rettungsgriffbild_view);
-		rettungsgriffbild_view.setFitHeight(220);
-		rettungsgriffbild_view.setFitWidth(220);
-		rettungsgriffbild_view.setTranslateX(0);
-		rettungsgriffbild_view.setTranslateY(0);
+		getChildren().add(stabileseitenlagebild_view);
+		stabileseitenlagebild_view.setFitHeight(220);
+		stabileseitenlagebild_view.setFitWidth(292);
+		stabileseitenlagebild_view.setTranslateX(0);
+		stabileseitenlagebild_view.setTranslateY(0);
 		
 		
 		
@@ -232,3 +232,4 @@ public class Rettungsgriff extends StackPane {
  
   
   
+

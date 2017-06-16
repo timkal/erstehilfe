@@ -14,7 +14,7 @@ import javafx.scene.shape.Rectangle;
 /**
  * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert sind
  */
-public class Rettungsgriff extends StackPane {
+public class Schocklage extends StackPane {
 	
 	// ------------------------------------------------------------------------------------------
 
@@ -78,16 +78,23 @@ public class Rettungsgriff extends StackPane {
 		// Weiter Button
 		Button weiter = new Button("Weiter");
 		
-		// Rettungsgriff Label&Symbol
-		Label rettungsgriff = new Label("Rettungsgriff");
-		Image rettungsgriffbild = new Image("file:images/Rettungsgriff.png");
-		ImageView rettungsgriffbild_view = new ImageView("file:images/Rettungsgriff.png");
+		// Schocklage Label
+		Label schocklage = new Label("Schocklage");
+		
+		// Schocklage Label 2
+		Label schocklage2 = new Label ("ggf. Person zudecken und\n"
+				+ "beengende Kleidung\n"
+				+ "oeffnen");
+		
+		// Schocklage Image
+		Image schocklagebild = new Image("file:images/Schocklage.png");
+		ImageView schocklagebild_view = new ImageView("file:images/Schocklage.png");
 	
   /**
    * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich die Aufrufe von add auf
    * Pane1 selbst.
    */
-  public Rettungsgriff() {
+  public Schocklage() {
     
 	  	getStylesheets().add("test/styles.css");
 
@@ -197,18 +204,24 @@ public class Rettungsgriff extends StackPane {
 		//Weitere Elemente hinzufügen
 		
 		
-		// Rettungsgriff Label
-		getChildren().add(rettungsgriff);
-		rettungsgriff.setTranslateX(0);
-		rettungsgriff.setTranslateY(-175);
-		rettungsgriff.getStyleClass().add("button_absicherung");
+		// Schocklage Label
+		getChildren().add(schocklage);
+		schocklage.setTranslateX(0);
+		schocklage.setTranslateY(-185);
+		schocklage.getStyleClass().add("button_absicherung");
 		
-		// Rettungsgriff Image
-		getChildren().add(rettungsgriffbild_view);
-		rettungsgriffbild_view.setFitHeight(220);
-		rettungsgriffbild_view.setFitWidth(220);
-		rettungsgriffbild_view.setTranslateX(0);
-		rettungsgriffbild_view.setTranslateY(0);
+		// Schocklage Label 2
+		getChildren().add(schocklage2);
+		schocklage2.setTranslateX(0);
+		schocklage2.setTranslateY(100);
+		schocklage2.getStyleClass().add("land_label");
+		
+		// Schocklage Image
+		getChildren().add(schocklagebild_view);
+		schocklagebild_view.setFitHeight(213);
+		schocklagebild_view.setFitWidth(290);
+		schocklagebild_view.setTranslateX(0);
+		schocklagebild_view.setTranslateY(-50);
 		
 		
 		
@@ -220,15 +233,14 @@ public class Rettungsgriff extends StackPane {
    */
   
   Button getButton_weiter() {
-    return weiter;
-    
-  }
-  Button getButton_back() {
-	return back;
-  }
+	    return weiter;
+	    
+	  }
+	  Button getButton_back() {
+		return back;
+	  }
 
 
-}
- 
-  
-  
+	}
+	 
+	  

@@ -14,7 +14,7 @@ import javafx.scene.shape.Rectangle;
 /**
  * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert sind
  */
-public class Rettungsgriff extends StackPane {
+public class Beduerfnisse_Person extends StackPane {
 	
 	// ------------------------------------------------------------------------------------------
 
@@ -75,19 +75,28 @@ public class Rettungsgriff extends StackPane {
 		// Weitere Elemente
 		// =================================
 		
-		// Weiter Button
-		Button weiter = new Button("Weiter");
+		// Beduerfnisse Label
+		Label beduerfnisse = new Label("Beduerfnisse\nder Person");
 		
-		// Rettungsgriff Label&Symbol
-		Label rettungsgriff = new Label("Rettungsgriff");
-		Image rettungsgriffbild = new Image("file:images/Rettungsgriff.png");
-		ImageView rettungsgriffbild_view = new ImageView("file:images/Rettungsgriff.png");
+		// Beduerfnisse Label 2
+		Label beduerfnisse2 = new Label("-> Ist der Person kalt?\n"
+				+ "\n"
+				+ "-> Moechten Sie, dass Sie\n"
+				+ "     eine vertraute Person\n"
+				+ "     anrufen?");
+				
+		// Beduerfnisse Label 3
+		Label beduerfnisse3 = new Label("Kommen Sie den\n"
+				+ "Beduerfnissen der\n"
+				+ "Person nach,\n"
+				+ "waehrend sie auf den\n"
+				+ "Notarzt warten.");
 	
   /**
    * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich die Aufrufe von add auf
    * Pane1 selbst.
    */
-  public Rettungsgriff() {
+  public Beduerfnisse_Person() {
     
 	  	getStylesheets().add("test/styles.css");
 
@@ -104,13 +113,7 @@ public class Rettungsgriff extends StackPane {
 		getChildren().add(top);
 		top.setTranslateX(0);
 		top.setTranslateY(-250);
-		
-		
-		//Button Weiter
-		getChildren().add(weiter);
-		weiter.setTranslateX(0);
-		weiter.setTranslateY(185);
-		weiter.getStyleClass().add("button_weiter");
+
 		
 		//Titel
 		getChildren().add(title);
@@ -197,18 +200,24 @@ public class Rettungsgriff extends StackPane {
 		//Weitere Elemente hinzufügen
 		
 		
-		// Rettungsgriff Label
-		getChildren().add(rettungsgriff);
-		rettungsgriff.setTranslateX(0);
-		rettungsgriff.setTranslateY(-175);
-		rettungsgriff.getStyleClass().add("button_absicherung");
+		// Beduerfnisse Person Label
+		getChildren().add(beduerfnisse);
+		beduerfnisse.setTranslateX(0);
+		beduerfnisse.setTranslateY(-160);
+		beduerfnisse.getStyleClass().add("button_absicherung");
 		
-		// Rettungsgriff Image
-		getChildren().add(rettungsgriffbild_view);
-		rettungsgriffbild_view.setFitHeight(220);
-		rettungsgriffbild_view.setFitWidth(220);
-		rettungsgriffbild_view.setTranslateX(0);
-		rettungsgriffbild_view.setTranslateY(0);
+		// Beduerfnisse Person Label 2
+		getChildren().add(beduerfnisse2);
+		beduerfnisse2.setTranslateX(0);
+		beduerfnisse2.setTranslateY(-30);
+		beduerfnisse2.getStyleClass().add("land_label");
+
+		
+		// Beduerfnisse Person Label 3
+		getChildren().add(beduerfnisse3);
+		beduerfnisse3.setTranslateX(0);
+		beduerfnisse3.setTranslateY(120);
+		beduerfnisse3.getStyleClass().add("atmunginfo_label");
 		
 		
 		
@@ -219,10 +228,8 @@ public class Rettungsgriff extends StackPane {
    * @return Der weiter-Button
    */
   
-  Button getButton_weiter() {
-    return weiter;
-    
-  }
+ 
+  
   Button getButton_back() {
 	return back;
   }
@@ -232,3 +239,5 @@ public class Rettungsgriff extends StackPane {
  
   
   
+
+

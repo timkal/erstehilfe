@@ -8,13 +8,14 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
 
 /**
  * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert sind
  */
-public class Rettungsgriff extends StackPane {
+public class Druckverband extends StackPane {
 	
 	// ------------------------------------------------------------------------------------------
 
@@ -75,19 +76,37 @@ public class Rettungsgriff extends StackPane {
 		// Weitere Elemente
 		// =================================
 		
-		// Weiter Button
+		// Linie darunter
+		Line line2 = new Line();
+		
+		// Zurueck zur Reanimation Button
 		Button weiter = new Button("Weiter");
 		
-		// Rettungsgriff Label&Symbol
-		Label rettungsgriff = new Label("Rettungsgriff");
-		Image rettungsgriffbild = new Image("file:images/Rettungsgriff.png");
-		ImageView rettungsgriffbild_view = new ImageView("file:images/Rettungsgriff.png");
+		// Druckverband Label
+		Label druckverband = new Label("Druckverband");
+		
+		// Druckverband Label 2
+		Label druckverband2 = new Label("1. Betroffenes Körperteil hochhalten\n"
+				+ "2. Wunde mit steriler Wundauflage\n"
+				+ "    bedecken\n"
+				+ "   (Alternative sauberes Taschentuch)\n"
+				+ "3. nicht saugfähiger Druckkörper auf der\n"
+				+ "    bereits abgedeckten Wunde fixieren");
+		
+				
+		// Druckverband Image
+		Image druckverbandbild = new Image("file:images/Druckverband.png");
+		ImageView druckverbandbild_view = new ImageView("file:images/Druckverband.png");
+		
+		
+		
 	
+		
   /**
    * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich die Aufrufe von add auf
    * Pane1 selbst.
    */
-  public Rettungsgriff() {
+  public Druckverband() {
     
 	  	getStylesheets().add("test/styles.css");
 
@@ -196,21 +215,35 @@ public class Rettungsgriff extends StackPane {
 		
 		//Weitere Elemente hinzufÃ¼gen
 		
+		// Linie 2 
+		getChildren().add(line2);
+		line2.setStartX(0);
+		line2.setStartY(0);
+		line2.setEndX(240);
+		line2.setEndY(0);
+		line2.setStrokeWidth(1.5);
+		line2.setTranslateY(-10);
 		
-		// Rettungsgriff Label
-		getChildren().add(rettungsgriff);
-		rettungsgriff.setTranslateX(0);
-		rettungsgriff.setTranslateY(-175);
-		rettungsgriff.getStyleClass().add("button_absicherung");
+		// Druckverband Label
+		getChildren().add(druckverband);
+		druckverband.setTranslateX(0);
+		druckverband.setTranslateY(-185);
+		druckverband.getStyleClass().add("button_absicherung");
 		
-		// Rettungsgriff Image
-		getChildren().add(rettungsgriffbild_view);
-		rettungsgriffbild_view.setFitHeight(220);
-		rettungsgriffbild_view.setFitWidth(220);
-		rettungsgriffbild_view.setTranslateX(0);
-		rettungsgriffbild_view.setTranslateY(0);
+		// Druckverband Label 2
+		getChildren().add(druckverband2);
+		druckverband2.setTranslateX(0);
+		druckverband2.setTranslateY(50);
+		druckverband2.getStyleClass().add("beatmunginfo_label");
 		
+		// Druckverband Image
+		getChildren().add(druckverbandbild_view);
+		druckverbandbild_view.setFitHeight(123);
+		druckverbandbild_view.setFitWidth(150);
+		druckverbandbild_view.setTranslateX(0);
+		druckverbandbild_view.setTranslateY(-85);
 		
+	
 		
   }
 
@@ -230,5 +263,3 @@ public class Rettungsgriff extends StackPane {
 
 }
  
-  
-  

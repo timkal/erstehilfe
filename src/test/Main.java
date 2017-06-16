@@ -49,7 +49,27 @@ public class Main extends Application {
   
   Beatmung p13 = new Beatmung();
   Scene s13 = new Scene (p13, 300, 550);
+  
+  Aeussere_Verletzung p14 = new Aeussere_Verletzung();
+  Scene s14 = new Scene (p14, 300, 550);
 
+  Innere_Verletzung p15 = new Innere_Verletzung();
+  Scene s15 = new Scene (p15, 300, 550);
+  
+  Stabile_Seitenlage p16 = new Stabile_Seitenlage();
+  Scene s16 = new Scene (p16, 300, 550);
+  
+  Beduerfnisse_Person p17 = new Beduerfnisse_Person();
+  Scene s17 = new Scene (p17, 300, 550);
+  
+  Schocklage p18 = new Schocklage();
+  Scene s18 = new Scene (p18, 300, 550);
+  
+  Blutet_Person p19 = new Blutet_Person();
+  Scene s19 = new Scene (p19, 300, 550);
+  
+  Druckverband p20 = new Druckverband();
+  Scene s20 = new Scene (p20, 300, 550);
   
   public void start(Stage primaryStage) throws Exception {
 
@@ -83,7 +103,23 @@ public class Main extends Application {
     p12.getButton_schritt2().setOnAction(e -> primaryStage.setScene(s13));
     p13.getButton_back().setOnAction(e -> primaryStage.setScene(s12));
     p13.getButton_back1().setOnAction(e -> primaryStage.setScene(s11));
-
+    p9.getButton_ja().setOnAction(e -> primaryStage.setScene(s14));
+    p14.getButton_back().setOnAction(e -> primaryStage.setScene(s9));
+    p10.getButton_ja().setOnAction(e -> primaryStage.setScene(s14));
+    p14.getButton_nein().setOnAction(e -> primaryStage.setScene(s15));
+    p15.getButton_back().setOnAction(e -> primaryStage.setScene(s14));
+    p15.getButton_nein().setOnAction(e -> primaryStage.setScene(s16));
+    p16.getButton_back().setOnAction(e -> primaryStage.setScene(s15));
+    p16.getButton_weiter().setOnAction(e -> primaryStage.setScene(s17));
+    p17.getButton_back().setOnAction(e -> primaryStage.setScene(s16));
+    p15.getButton_ja().setOnAction(e -> primaryStage.setScene(s18));
+    p18.getButton_weiter().setOnAction(e -> primaryStage.setScene(s17));
+    p18.getButton_back().setOnAction(e -> primaryStage.setScene(s15));
+    p14.getButton_ja().setOnAction(e -> primaryStage.setScene(s19));
+    p19.getButton_back().setOnAction(e -> primaryStage.setScene(s14));
+    p19.getButton_ja().setOnAction(e -> primaryStage.setScene(s20));
+    p20.getButton_back().setOnAction(e -> primaryStage.setScene(s19));
+    
     primaryStage.setScene(s1);
     primaryStage.setTitle("Startscreen");
     primaryStage.show();
