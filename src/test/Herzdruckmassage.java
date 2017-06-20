@@ -79,6 +79,12 @@ public class Herzdruckmassage extends Basis {
 
 		// Weitere Elemente hinzufügen
 
+		// Schritt 2 Button
+		getChildren().add(schritt2);
+		schritt2.setTranslateX(0);
+		schritt2.setTranslateY(185);
+		schritt2.getStyleClass().add("button_weiter");
+				
 		// Herzdruckmassage Label
 		getChildren().add(herzdruck1);
 		herzdruck1.setTranslateX(0);

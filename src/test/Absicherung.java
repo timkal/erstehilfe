@@ -28,14 +28,19 @@ public class Absicherung extends Basis {
 	// Weitere Elemente
 	// =================================
 
-	// Infos
+	// Infos Label
 	Label infos2 = new Label("1. Wenn moeglich, Fahrzeug\n" + "an den Fahrbahnrand\n" + "2. Warnweste anlegen \n"
 			+ "3. Warndreieck aufstellen\n" + "Innerorts: 50 m\n" + "Landstrasse: 100 m\n" + "Autobahn: 150 m\n");
+	
+	// Button weiter
 	Button weiter = new Button("Weiter");
+	
+	// Button Absicherung&Symbol
 	Button absicherung = new Button("Absicherung der\nUnfallstelle");
 	Image absicherung_image = new Image("file:images/Absicherung Unfallstelle.png");
 	ImageView absicherung_view = new ImageView("file:images/Absicherung Unfallstelle.png");
 
+	
 	/**
 	 * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich
 	 * die Aufrufe von add auf Pane1 selbst.
@@ -60,6 +65,12 @@ public class Absicherung extends Basis {
 		back_view.setTranslateY(-240);
 
 		// Weitere Elemente hinzufügen
+		
+		// Button Weiter
+		getChildren().add(weiter);
+		weiter.setTranslateX(0);
+		weiter.setTranslateY(185);
+		weiter.getStyleClass().add("button_weiter");
 
 		// Absicherung
 		getChildren().add(absicherung);

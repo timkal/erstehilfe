@@ -1,6 +1,7 @@
 package test;
 
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
@@ -23,13 +24,28 @@ public class Notruf_Absetzen extends Basis {
 	// Weitere Elemente
 	// =================================
 	
+	// Telefon Symbol
 	Image phone = new Image("file:images/Phone.png");
 	ImageView phone_view = new ImageView("file:images/Phone.png");
 	
-
+	// Anderes Land Button
 	Button anderesland = new Button("Anderes Land?");
+	
+	// Button Weiter
 	Button weiter = new Button("Weiter");
+	
+	// Button Notruf absetzen 
 	Button notrufabsetzen = new Button("Notruf\nabsetzen");
+	
+	// Label Notruf absetzen
+	Label notrufabsetzeninfo = new Label ("Wo geschah es?\n"
+			+ "Was geschah?\n"
+			+ "Wie viele Personen sind\n"
+			+ "betroffen?\n"
+			+ "Welche Art von Erkrankung/\n"
+			+ "Verletzung liegt vor?\n"
+			+ "Warten auf Rückfragen.");
+			
 
 	/**
 	 * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich
@@ -43,7 +59,7 @@ public class Notruf_Absetzen extends Basis {
 
 		getStyleClass().add("custom-stack");
 
-		// Notruf absetzen
+		// Button Notruf absetzen
 		getChildren().add(notrufabsetzen);
 		notrufabsetzen.setTranslateX(0);
 		notrufabsetzen.setTranslateY(-150);
@@ -52,7 +68,7 @@ public class Notruf_Absetzen extends Basis {
 		// Button Anderes Land
 		getChildren().add(anderesland);
 		anderesland.setTranslateX(0);
-		anderesland.setTranslateY(-45);
+		anderesland.setTranslateY(-60);
 		anderesland.getStyleClass().add("button_anderesland");
 
 		// Button Weiter
@@ -72,13 +88,18 @@ public class Notruf_Absetzen extends Basis {
 		back_view.setTranslateX(-135);
 		back_view.setTranslateY(-240);
 		
-		//Phone Symbol
+		// Telefon Symbol
 		getChildren().add(phone_view);
 		phone_view.setTranslateX(-70);
 		phone_view.setTranslateY(-150);
 		phone_view.setFitHeight(50);
 		phone_view.setFitWidth(50);
 		
+		// Label Notruf absetzen
+		getChildren().add(notrufabsetzeninfo);
+		notrufabsetzeninfo.setTranslateX(0);
+		notrufabsetzeninfo.setTranslateY(64);
+		notrufabsetzeninfo.getStyleClass().add("infos_label");
 
 	
 

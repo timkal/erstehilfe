@@ -78,6 +78,13 @@ public class Reanimation extends Basis {
 
 		// Weitere Elemente hinzufügen
 
+		
+		// Anleitung Button
+		getChildren().add(anleitung);
+		anleitung.setTranslateX(0);
+		anleitung.setTranslateY(185);
+		anleitung.getStyleClass().add("button_anleitung");
+
 		// Reanimation Label
 		getChildren().add(reanimation);
 		reanimation.setTranslateX(0);

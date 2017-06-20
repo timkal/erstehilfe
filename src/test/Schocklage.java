@@ -62,6 +62,12 @@ public class Schocklage extends Basis {
 
 		// Weitere Elemente hinzufügen
 
+		// Button Weiter
+		getChildren().add(weiter);
+		weiter.setTranslateX(0);
+		weiter.setTranslateY(185);
+		weiter.getStyleClass().add("button_weiter");
+				
 		// Schocklage Label
 		getChildren().add(schocklage);
 		schocklage.setTranslateX(0);

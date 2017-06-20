@@ -66,6 +66,12 @@ public class Knochenbrueche extends Basis {
 		back_view.setTranslateY(-240);
 
 		// Weitere Elemente hinzufügen
+		
+		// Button Weiter
+		getChildren().add(weiter);
+		weiter.setTranslateX(0);
+		weiter.setTranslateY(185);
+		weiter.getStyleClass().add("button_weiter");
 
 		// Knochenbrueche Label
 		getChildren().add(knochenbrueche);
