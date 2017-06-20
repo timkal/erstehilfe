@@ -43,7 +43,7 @@ public class Beatmung extends Basis {
 			+ "Bei richtiger Durchfuehrung hebt sich der\n" + "          Brustkorb der Person sichtbar");
 
 	// Beatmung Label 3
-	Label beatmung3 = new Label("Schritt 1 und 2 solange wiederholen\n," + "bis der Notarzt da ist oder keine\n"
+	Label beatmung3 = new Label("Schritt 1 und 2 solange wiederholen,\n" + "bis der Notarzt da ist oder keine\n"
 			+ "Reanimation mehr benoetigt wird");
 
 	// Beatmung Image
