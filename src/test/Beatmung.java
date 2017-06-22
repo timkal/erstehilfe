@@ -126,7 +126,6 @@ public class Beatmung extends Basis {
 
 	Button getButton_back_reanimation() {
 		return back_reanimation;
-
 	}
 
 	Button getButton_back() {

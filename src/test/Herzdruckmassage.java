@@ -39,7 +39,7 @@ public class Herzdruckmassage extends Basis {
 	// Herzdruckmassage Label 2
 	Label herzdruck2 = new Label("30x druecken");
 
-	// Herzdruckmassage Label 2
+	// Herzdruckmassage Label 3
 	Label herzdruck3 = new Label("Brustkorb freimachen\n" + "Druckpunkt auf der Mitte des Brustkorbes\n"
 			+ "30 mal kurz und kraeftig herunterduecken\n" + "Zwischen Pumpstoessen Brustkorb komplett\nentlasten");
 
@@ -78,6 +78,15 @@ public class Herzdruckmassage extends Basis {
 		back_view.setTranslateY(-240);
 
 		// Weitere Elemente hinzufügen
+		
+		// Linie 2
+				getChildren().add(line2);
+				line2.setStartX(0);
+				line2.setStartY(0);
+				line2.setEndX(240);
+				line2.setEndY(0);
+				line2.setStrokeWidth(1.5);
+				line2.setTranslateY(70);
 
 		// Schritt 2 Button
 		getChildren().add(schritt2);
@@ -125,14 +134,6 @@ public class Herzdruckmassage extends Basis {
 		druckfrequenz_view.setTranslateX(70);
 		druckfrequenz_view.setTranslateY(-38);
 
-		// Linie 2
-		getChildren().add(line2);
-		line2.setStartX(0);
-		line2.setStartY(0);
-		line2.setEndX(240);
-		line2.setEndY(0);
-		line2.setStrokeWidth(1.5);
-		line2.setTranslateY(70);
 	}
 
 	/**

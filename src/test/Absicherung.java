@@ -76,7 +76,7 @@ public class Absicherung extends Basis {
 		getChildren().add(absicherung);
 		absicherung.setTranslateX(0);
 		absicherung.setTranslateY(-165);
-		absicherung.getStyleClass().add("button_absicherung");
+		absicherung.getStyleClass().add("button_ueberschrift");
 
 		// Absicherung Image
 		getChildren().add(absicherung_view);

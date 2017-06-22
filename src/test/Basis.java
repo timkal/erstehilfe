@@ -20,7 +20,7 @@ public class Basis extends StackPane {
 	Scene szene = new Scene(stack, 300, 550);
 
 	// =================================
-	// Basis-Elemente TAP Bar
+	// Basis-Elemente TAB Bar
 	// =================================
 	
 	// Rectangle
@@ -126,7 +126,7 @@ public class Basis extends StackPane {
 		setAlignment(empfang_view, Pos.TOP_LEFT);
 
 		// =================================
-		// TAP Bar importieren und anordnen
+		// TAB Bar importieren und anordnen
 		// =================================
 
 		// Krankenhaus
