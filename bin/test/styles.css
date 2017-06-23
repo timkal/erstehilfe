@@ -183,6 +183,19 @@
 	-fx-font-family: Helvetica;
 }
 
+.button_reanimation {
+	-fx-text-fill: rgb(0, 0, 0);
+	-fx-border-color: rgb(0, 0, 0);
+	-fx-background-color: #ffffff;
+	-fx-font-size: 30px;
+	-fx-font-family: Helvetica;
+	-fx-font-weight: bold;
+	-fx-border: 1px;
+	-fx-display: block;
+	-fx-border-radius: 50%;
+	-fx-overflow: hidden;
+}
+
 /*	============================================================================================================
   	 LABELS
    	*/

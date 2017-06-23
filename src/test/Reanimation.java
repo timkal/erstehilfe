@@ -1,11 +1,18 @@
 package test;
 
+import java.net.URI;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Circle;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.scene.media.MediaPlayer.Status;
 
 /**
  * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert
@@ -46,12 +53,14 @@ public class Reanimation extends Basis {
 	Image beatmung = new Image("file:images/Beatmung.png");
 	ImageView beatmung_view = new ImageView("file:images/Beatmung.png");
 
-	// Druck Label&Kreis&Symbol
-	Label druck = new Label("Druck-\nfrequenz");
-	final int radius = 40;
-	Circle druck1 = new Circle(radius, Color.GREY);
-	Image druckfrequenz = new Image("file:images/Druckfrequenz.png");
-	ImageView druckfrequenz_view = new ImageView("file:images/Druckfrequenz.png");
+	// Button Druckfrequenz
+	Button druckfrequenz = new Button("▷");
+
+	// Media-Player + Audio-Datei einbinden
+	Path path1 = Paths.get("src", "Audio", "reanimation.mp3"); // src/audio/reanimate1.mp3
+	URI uri1 = path1.toUri();
+	Media hit = new Media(uri1.toString());
+	MediaPlayer player = new MediaPlayer(hit);
 
 	/**
 	 * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich
@@ -78,7 +87,6 @@ public class Reanimation extends Basis {
 
 		// Weitere Elemente hinzufügen
 
-		
 		// Anleitung Button
 		getChildren().add(anleitung);
 		anleitung.setTranslateX(0);
@@ -117,20 +125,32 @@ public class Reanimation extends Basis {
 		beatmung_view.setTranslateX(65);
 		beatmung_view.setTranslateY(100);
 
-		// Druckfrequenz Label&Kreis&Symbol
-		getChildren().add(druck1);
-		druck1.setFill(Color.GREEN);
-		druck1.setTranslateX(70);
-		druck1.setTranslateY(-60);
-		getChildren().add(druck);
-		druck.setTranslateX(72);
-		druck.setTranslateY(-70);
-		druck.getStyleClass().add("druck_label");
-		getChildren().add(druckfrequenz_view);
-		druckfrequenz_view.setFitHeight(25);
-		druckfrequenz_view.setFitWidth(25);
-		druckfrequenz_view.setTranslateX(70);
-		druckfrequenz_view.setTranslateY(-38);
+		// Druckfrequenz Button
+		getChildren().add(druckfrequenz);
+		druckfrequenz.setTranslateX(80);
+		druckfrequenz.setTranslateY(-50);
+		druckfrequenz.getStyleClass().add("button_reanimation");
+		
+		// Event-Handler und Action
+		EventHandler<ActionEvent> e1 = new EventHandler<ActionEvent>() {
+
+			public void handle(ActionEvent event) {
+
+				if (event.getSource() == druckfrequenz) {
+
+					if (player.getStatus() == Status.PLAYING) {
+						player.stop();
+					} else {
+						player.play();
+
+					}
+
+				}
+			};
+		};
+
+		druckfrequenz.setOnAction(e1);
+
 	}
 
 	/**
@@ -155,4 +175,9 @@ public class Reanimation extends Basis {
 	Button getButton_notruf() {
 		return notruf;
 	}
+
+	Button getButton_druckfrequenz() {
+		return druckfrequenz;
+	}
+
 }

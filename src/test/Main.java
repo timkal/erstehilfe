@@ -175,6 +175,9 @@ public class Main extends Application {
 		p20.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p21.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p22.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		
+		//Testbereich für Media-Player
+		//p11.getButton_druckfrequenz().setOnAction(e1);
 
 		primaryStage.setScene(s1);
 		primaryStage.setTitle("Startscreen");
