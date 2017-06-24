@@ -8,17 +8,18 @@ public class Main extends Application {
 
 	// Panes und Szenen aller Klassen definieren
 	// Panes abgekürzt mit pZAHL, Scenes mit sZAHL
+	
+	Notruf_gewaehlt p1 = new Notruf_gewaehlt();
+	Scene s1 = new Scene(p1, 300, 550);
+	
+	Menu p2 = new Menu();
+	Scene s2 = new Scene(p2, 300, 550);
+	
 	Notruf_Absetzen p3 = new Notruf_Absetzen();
 	Scene s3 = new Scene(p3, 300, 550);
 
 	Telefonnummern p4 = new Telefonnummern();
 	Scene s4 = new Scene(p4, 300, 550);
-
-	Menu p2 = new Menu();
-	Scene s2 = new Scene(p2, 300, 550);
-
-	Notruf_gewaehlt p1 = new Notruf_gewaehlt();
-	Scene s1 = new Scene(p1, 300, 550);
 
 	Unfallstelle_abgesichert p5 = new Unfallstelle_abgesichert();
 	Scene s5 = new Scene(p5, 300, 550);
@@ -34,58 +35,111 @@ public class Main extends Application {
 
 	Person_Bewusstsein p9 = new Person_Bewusstsein();
 	Scene s9 = new Scene(p9, 300, 550);
-
-	Person_Atmung p10 = new Person_Atmung();
+	
+	Person_Bewusstsein p10 = new Person_Bewusstsein();
 	Scene s10 = new Scene(p10, 300, 550);
 
-	Reanimation p11 = new Reanimation();
+	Person_Atmung p11 = new Person_Atmung();
 	Scene s11 = new Scene(p11, 300, 550);
-
-	Herzdruckmassage p12 = new Herzdruckmassage();
+	
+	Person_Atmung p12 = new Person_Atmung();
 	Scene s12 = new Scene(p12, 300, 550);
 
-	Beatmung p13 = new Beatmung();
+	Reanimation p13 = new Reanimation();
 	Scene s13 = new Scene(p13, 300, 550);
-
-	Aeussere_Verletzung p14 = new Aeussere_Verletzung();
+	
+	Reanimation p14 = new Reanimation();
 	Scene s14 = new Scene(p14, 300, 550);
 
-	Innere_Verletzung p15 = new Innere_Verletzung();
+	Herzdruckmassage p15 = new Herzdruckmassage();
 	Scene s15 = new Scene(p15, 300, 550);
 
-	Stabile_Seitenlage p16 = new Stabile_Seitenlage();
+	Herzdruckmassage p16 = new Herzdruckmassage();
 	Scene s16 = new Scene(p16, 300, 550);
-
-	Beduerfnisse_Person p17 = new Beduerfnisse_Person();
+	
+	Beatmung p17 = new Beatmung();
 	Scene s17 = new Scene(p17, 300, 550);
-
-	Schocklage p18 = new Schocklage();
+	
+	Beatmung p18 = new Beatmung();
 	Scene s18 = new Scene(p18, 300, 550);
 
-	Blutet_Person p19 = new Blutet_Person();
+	Aeussere_Verletzung p19 = new Aeussere_Verletzung();
 	Scene s19 = new Scene(p19, 300, 550);
-
-	Druckverband p20 = new Druckverband();
+	
+	Aeussere_Verletzung p20 = new Aeussere_Verletzung();
 	Scene s20 = new Scene(p20, 300, 550);
 
-	Knochen_verletzt p21 = new Knochen_verletzt();
+	Innere_Verletzung p21 = new Innere_Verletzung();
 	Scene s21 = new Scene(p21, 300, 550);
-
-	Knochenbrueche p22 = new Knochenbrueche();
+	
+	Innere_Verletzung p22 = new Innere_Verletzung();
 	Scene s22 = new Scene(p22, 300, 550);
+
+	Stabile_Seitenlage p23 = new Stabile_Seitenlage();
+	Scene s23 = new Scene(p23, 300, 550);
+	
+	Stabile_Seitenlage p24 = new Stabile_Seitenlage();
+	Scene s24 = new Scene(p24, 300, 550);
+	
+	Stabile_Seitenlage p25 = new Stabile_Seitenlage();
+	Scene s25 = new Scene(p25, 300, 550);
+	
+	Stabile_Seitenlage p26 = new Stabile_Seitenlage();
+	Scene s26 = new Scene(p26, 300, 550);
+
+	Beduerfnisse_Person p27 = new Beduerfnisse_Person();
+	Scene s27 = new Scene(p27, 300, 550);
+	
+	Beduerfnisse_Person p28 = new Beduerfnisse_Person();
+	Scene s28 = new Scene(p28, 300, 550);
+
+	Beduerfnisse_Person p29 = new Beduerfnisse_Person();
+	Scene s29 = new Scene(p29, 300, 550);
+
+	Beduerfnisse_Person p30 = new Beduerfnisse_Person();
+	Scene s30 = new Scene(p30, 300, 550);
+
+	Schocklage p31 = new Schocklage();
+	Scene s31 = new Scene(p31, 300, 550);
+
+	Schocklage p32 = new Schocklage();
+	Scene s32 = new Scene(p32, 300, 550);
+	
+	Blutet_Person p33 = new Blutet_Person();
+	Scene s33 = new Scene(p33, 300, 550);
+	
+	Blutet_Person p34 = new Blutet_Person();
+	Scene s34 = new Scene(p34, 300, 550);
+
+	Druckverband p35 = new Druckverband();
+	Scene s35 = new Scene(p35, 300, 550);
+
+	Druckverband p36 = new Druckverband();
+	Scene s36 = new Scene(p36, 300, 550);
+
+	Knochen_verletzt p37 = new Knochen_verletzt();
+	Scene s37 = new Scene(p37, 300, 550);
+	
+	Knochen_verletzt p38 = new Knochen_verletzt();
+	Scene s38 = new Scene(p38, 300, 550);
+
+	Knochenbrueche p39 = new Knochenbrueche();
+	Scene s39 = new Scene(p29, 300, 550);
+	
+	Knochenbrueche p40 = new Knochenbrueche();
+	Scene s40 = new Scene(p40, 300, 550);
 
 	public void start(Stage primaryStage) throws Exception {
 
 		// Aktion des Buttons in der Szene 1
+		p1.getButton_ja().setOnAction(e -> primaryStage.setScene(s2));
+		p1.getButton_nein().setOnAction(e -> primaryStage.setScene(s3));
 		p3.getButton_land().setOnAction(e -> primaryStage.setScene(s4));
 		p3.getButton_weiter().setOnAction(e -> primaryStage.setScene(s2));
 		p3.getButton_back().setOnAction(e -> primaryStage.setScene(s1));
 		p4.getButton_back().setOnAction(e -> primaryStage.setScene(s3));
-		p2.getButton_back().setOnAction(e -> primaryStage.setScene(s3));
+		p2.getButton_back().setOnAction(e -> primaryStage.setScene(s1));
 		p2.getButton_unfall().setOnAction(e -> primaryStage.setScene(s5));
-		p2.getButton_verletzt().setOnAction(e -> primaryStage.setScene(s9));
-		p1.getButton_ja().setOnAction(e -> primaryStage.setScene(s2));
-		p1.getButton_nein().setOnAction(e -> primaryStage.setScene(s3));
 		p5.getButton_back().setOnAction(e -> primaryStage.setScene(s2));
 		p6.getButton_back().setOnAction(e -> primaryStage.setScene(s5));
 		p5.getButton_nein().setOnAction(e -> primaryStage.setScene(s6));
@@ -97,40 +151,72 @@ public class Main extends Application {
 		p8.getButton_back().setOnAction(e -> primaryStage.setScene(s7));
 		p8.getButton_weiter().setOnAction(e -> primaryStage.setScene(s9));
 		p9.getButton_back().setOnAction(e -> primaryStage.setScene(s7));
-		p9.getButton_nein().setOnAction(e -> primaryStage.setScene(s10));
-		p10.getButton_back().setOnAction(e -> primaryStage.setScene(s9));
-		p10.getButton_nein().setOnAction(e -> primaryStage.setScene(s11));
-		p11.getButton_back().setOnAction(e -> primaryStage.setScene(s10));
-		p11.getButton_anleitung().setOnAction(e -> primaryStage.setScene(s12));
-		p12.getButton_back().setOnAction(e -> primaryStage.setScene(s11));
-		p12.getButton_schritt2().setOnAction(e -> primaryStage.setScene(s13));
-		p13.getButton_back().setOnAction(e -> primaryStage.setScene(s12));
-		p13.getButton_back_reanimation().setOnAction(e -> primaryStage.setScene(s11));
-		p9.getButton_ja().setOnAction(e -> primaryStage.setScene(s14));
-		p14.getButton_back().setOnAction(e -> primaryStage.setScene(s9));
-		p10.getButton_ja().setOnAction(e -> primaryStage.setScene(s14));
-		p14.getButton_nein().setOnAction(e -> primaryStage.setScene(s15));
-		p15.getButton_back().setOnAction(e -> primaryStage.setScene(s14));
-		p15.getButton_nein().setOnAction(e -> primaryStage.setScene(s16));
-		p16.getButton_back().setOnAction(e -> primaryStage.setScene(s15));
-		p16.getButton_weiter().setOnAction(e -> primaryStage.setScene(s17));
-		p17.getButton_back().setOnAction(e -> primaryStage.setScene(s16));
-		p15.getButton_ja().setOnAction(e -> primaryStage.setScene(s18));
-		p18.getButton_weiter().setOnAction(e -> primaryStage.setScene(s17));
-		p18.getButton_back().setOnAction(e -> primaryStage.setScene(s15));
-		p14.getButton_ja().setOnAction(e -> primaryStage.setScene(s19));
-		p19.getButton_back().setOnAction(e -> primaryStage.setScene(s14));
-		p19.getButton_ja().setOnAction(e -> primaryStage.setScene(s20));
-		p20.getButton_back().setOnAction(e -> primaryStage.setScene(s19));
-		p20.getButton_weiter().setOnAction(e -> primaryStage.setScene(s21));
+		p9.getButton_nein().setOnAction(e -> primaryStage.setScene(s11));
+		p11.getButton_back().setOnAction(e -> primaryStage.setScene(s9));
+		p11.getButton_nein().setOnAction(e -> primaryStage.setScene(s13));
+		p13.getButton_back().setOnAction(e -> primaryStage.setScene(s11));
+		p13.getButton_anleitung().setOnAction(e -> primaryStage.setScene(s15));
+		p15.getButton_back().setOnAction(e -> primaryStage.setScene(s13));
+		p15.getButton_schritt2().setOnAction(e -> primaryStage.setScene(s17));
+		p17.getButton_back().setOnAction(e -> primaryStage.setScene(s15));
+		p17.getButton_back_reanimation().setOnAction(e -> primaryStage.setScene(s13));
+		p9.getButton_ja().setOnAction(e -> primaryStage.setScene(s19));
+		p19.getButton_back().setOnAction(e -> primaryStage.setScene(s9));
 		p19.getButton_nein().setOnAction(e -> primaryStage.setScene(s21));
 		p21.getButton_back().setOnAction(e -> primaryStage.setScene(s19));
-		p21.getButton_ja().setOnAction(e -> primaryStage.setScene(s22));
-		p22.getButton_back().setOnAction(e -> primaryStage.setScene(s21));
-		p22.getButton_weiter().setOnAction(e -> primaryStage.setScene(s17));
-		p21.getButton_nein().setOnAction(e -> primaryStage.setScene(s16));
-		p16.getButton_weiter().setOnAction(e -> primaryStage.setScene(s17));
+		p21.getButton_nein().setOnAction(e -> primaryStage.setScene(s23));
+		p23.getButton_back().setOnAction(e -> primaryStage.setScene(s21));
+		p23.getButton_weiter().setOnAction(e -> primaryStage.setScene(s27));
+		p21.getButton_ja().setOnAction(e -> primaryStage.setScene(s31));
+		p31.getButton_back().setOnAction(e -> primaryStage.setScene(s21));
+		p31.getButton_weiter().setOnAction(e -> primaryStage.setScene(s27));
+		p19.getButton_ja().setOnAction(e -> primaryStage.setScene(s33));
+		p33.getButton_back().setOnAction(e -> primaryStage.setScene(s19));
+		p33.getButton_nein().setOnAction(e -> primaryStage.setScene(s37));
+		p37.getButton_back().setOnAction(e -> primaryStage.setScene(s33));
+		p37.getButton_nein().setOnAction(e -> primaryStage.setScene(s24));
+		p24.getButton_back().setOnAction(e -> primaryStage.setScene(s37));
+		p24.getButton_weiter().setOnAction(e -> primaryStage.setScene(s28));
+		p37.getButton_ja().setOnAction(e -> primaryStage.setScene(s39));
+		p39.getButton_back().setOnAction(e -> primaryStage.setScene(s37));
+		p39.getButton_weiter().setOnAction(e -> primaryStage.setScene(s28));
+		p2.getButton_verletzt().setOnAction(e -> primaryStage.setScene(s10));
+		p10.getButton_back().setOnAction(e -> primaryStage.setScene(s2));
+		p10.getButton_nein().setOnAction(e -> primaryStage.setScene(s12));
+		p12.getButton_back().setOnAction(e -> primaryStage.setScene(s10));
+		p12.getButton_nein().setOnAction(e -> primaryStage.setScene(s14));
+		p14.getButton_back().setOnAction(e -> primaryStage.setScene(s12));
+		p14.getButton_anleitung().setOnAction(e -> primaryStage.setScene(s16));
+		p16.getButton_back().setOnAction(e -> primaryStage.setScene(s14));
+		p16.getButton_schritt2().setOnAction(e -> primaryStage.setScene(s18));
+		p18.getButton_back().setOnAction(e -> primaryStage.setScene(s16));
+		p18.getButton_back_reanimation().setOnAction(e -> primaryStage.setScene(s14));
+		p10.getButton_ja().setOnAction(e -> primaryStage.setScene(s20));
+		p20.getButton_back().setOnAction(e -> primaryStage.setScene(s10));
+		p12.getButton_ja().setOnAction(e -> primaryStage.setScene(s20));
+		p20.getButton_nein().setOnAction(e -> primaryStage.setScene(s22));
+		p22.getButton_back().setOnAction(e -> primaryStage.setScene(s20));
+		p22.getButton_nein().setOnAction(e -> primaryStage.setScene(s25));
+		p25.getButton_back().setOnAction(e -> primaryStage.setScene(s22));
+		p25.getButton_weiter().setOnAction(e -> primaryStage.setScene(s29));
+		p22.getButton_ja().setOnAction(e -> primaryStage.setScene(s32));
+		p32.getButton_back().setOnAction(e -> primaryStage.setScene(s22));
+		p32.getButton_weiter().setOnAction(e -> primaryStage.setScene(s29));
+		p20.getButton_ja().setOnAction(e -> primaryStage.setScene(s34));
+		p34.getButton_back().setOnAction(e -> primaryStage.setScene(s20));
+		p34.getButton_nein().setOnAction(e -> primaryStage.setScene(s38));
+		p38.getButton_back().setOnAction(e -> primaryStage.setScene(s34));
+		p38.getButton_nein().setOnAction(e -> primaryStage.setScene(s26));
+		p26.getButton_back().setOnAction(e -> primaryStage.setScene(s38));
+		p26.getButton_weiter().setOnAction(e -> primaryStage.setScene(s30));
+		p38.getButton_ja().setOnAction(e -> primaryStage.setScene(s40));
+		p40.getButton_back().setOnAction(e -> primaryStage.setScene(s38));
+		p40.getButton_weiter().setOnAction(e -> primaryStage.setScene(s30));
+		p34.getButton_ja().setOnAction(e -> primaryStage.setScene(s36));
+		p36.getButton_back().setOnAction(e -> primaryStage.setScene(s34));
+		p36.getButton_weiter().setOnAction(e -> primaryStage.setScene(s38));
 
+		
 		p1.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 		p3.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 		p4.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
@@ -151,8 +237,26 @@ public class Main extends Application {
 		p19.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 		p20.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 		p21.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
-		
 		p22.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p23.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p24.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p25.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p26.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p27.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p28.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p29.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p30.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p31.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p32.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p33.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p34.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p35.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p36.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p37.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p38.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p39.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p40.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+
 
 		p1.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p2.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
@@ -175,7 +279,25 @@ public class Main extends Application {
 		p20.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p21.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p22.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
-		
+		p23.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p24.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p25.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p26.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p27.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p28.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p29.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p30.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p31.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p32.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p33.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p34.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p35.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p36.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p37.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p38.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p39.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p40.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+
 		//Testbereich für Media-Player
 		//p11.getButton_druckfrequenz().setOnAction(e1);
 
