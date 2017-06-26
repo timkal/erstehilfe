@@ -8,11 +8,7 @@ import javafx.scene.shape.Line;
 
 public class Notruf_gewaehlt extends Basis {
 
-	// Zurueck Button und Symbol
-	Button back = new Button("Zurueck");
-	Image back_image = new Image("file:images/back_symbol.png");
-	ImageView back_view = new ImageView("file:images/back_symbol.png");
-
+	
 	// Notruf gewaehlt Label
 	Label notrufgewaehlt = new Label("Notruf gewaehlt?");
 
@@ -37,16 +33,7 @@ public class Notruf_gewaehlt extends Basis {
 		// TOP Bar importieren und anordnen
 		// =================================
 
-		// Zuruck Button und Symbol
-		getChildren().add(back);
-		back.setTranslateX(-100);
-		back.setTranslateY(-240);
-		back.getStyleClass().add("button_back");
-		getChildren().add(back_view);
-		back_view.setFitHeight(15);
-		back_view.setFitWidth(10);
-		back_view.setTranslateX(-135);
-		back_view.setTranslateY(-240);
+		
 
 		// Label
 		getChildren().add(notrufgewaehlt);
