@@ -152,4 +152,8 @@ public class Person_Atmung extends Basis {
 	Button getButton_notruf() {
 		return notruf;
 	}
+	
+	Button getButton_krankenhaus() {
+		return krankenhaus;
+	}
 }

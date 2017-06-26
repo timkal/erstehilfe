@@ -24,29 +24,24 @@ public class Notruf_Absetzen extends Basis {
 	// =================================
 	// Weitere Elemente
 	// =================================
-	
+
 	// Telefon Symbol
 	Image phone = new Image("file:images/Phone.png");
 	ImageView phone_view = new ImageView("file:images/Phone.png");
-	
+
 	// Anderes Land Button
 	Button anderesland = new Button("Anderes Land?");
-	
+
 	// Button Weiter
 	Button weiter = new Button("Weiter");
-	
+
 	// Notruf absetzen Label
 	Label notrufabsetzen = new Label("Notruf\nabsetzen");
-	
+
 	// Label Notruf absetzen
-	Label notrufabsetzeninfo = new Label ("- Wo geschah es?\n"
-			+ "- Was geschah?\n"
-			+ "- Wie viele Personen sind\n"
-			+ "  betroffen?\n"
-			+ "- Welche Art von Erkrankung/\n"
-			+ "  Verletzung liegt vor?\n"
-			+ "- Warten auf Rückfragen");
-			
+	Label notrufabsetzeninfo = new Label(
+			"- Wo geschah es?\n" + "- Was geschah?\n" + "- Wie viele Personen sind\n" + "  betroffen?\n"
+					+ "- Welche Art von Erkrankung/\n" + "  Verletzung liegt vor?\n" + "- Warten auf Rï¿½ckfragen");
 
 	/**
 	 * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich
@@ -88,21 +83,19 @@ public class Notruf_Absetzen extends Basis {
 		back_view.setFitWidth(10);
 		back_view.setTranslateX(-135);
 		back_view.setTranslateY(-240);
-		
+
 		// Telefon Symbol
 		getChildren().add(phone_view);
 		phone_view.setTranslateX(-70);
 		phone_view.setTranslateY(-150);
 		phone_view.setFitHeight(50);
 		phone_view.setFitWidth(50);
-		
+
 		// Label Notruf absetzen
 		getChildren().add(notrufabsetzeninfo);
 		notrufabsetzeninfo.setTranslateX(0);
 		notrufabsetzeninfo.setTranslateY(64);
 		notrufabsetzeninfo.getStyleClass().add("infos_label");
-
-	
 
 	}
 
@@ -126,6 +119,10 @@ public class Notruf_Absetzen extends Basis {
 
 	Button getButton_menu() {
 		return menu;
+	}
+
+	Button getButton_krankenhaus() {
+		return krankenhaus;
 	}
 
 }

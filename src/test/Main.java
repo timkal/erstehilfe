@@ -8,13 +8,13 @@ public class Main extends Application {
 
 	// Panes und Szenen aller Klassen definieren
 	// Panes abgekürzt mit pZAHL, Scenes mit sZAHL
-	
+
 	Notruf_gewaehlt p1 = new Notruf_gewaehlt();
 	Scene s1 = new Scene(p1, 300, 550);
-	
+
 	Menu p2 = new Menu();
 	Scene s2 = new Scene(p2, 300, 550);
-	
+
 	Notruf_Absetzen p3 = new Notruf_Absetzen();
 	Scene s3 = new Scene(p3, 300, 550);
 
@@ -35,19 +35,19 @@ public class Main extends Application {
 
 	Person_Bewusstsein p9 = new Person_Bewusstsein();
 	Scene s9 = new Scene(p9, 300, 550);
-	
+
 	Person_Bewusstsein p10 = new Person_Bewusstsein();
 	Scene s10 = new Scene(p10, 300, 550);
 
 	Person_Atmung p11 = new Person_Atmung();
 	Scene s11 = new Scene(p11, 300, 550);
-	
+
 	Person_Atmung p12 = new Person_Atmung();
 	Scene s12 = new Scene(p12, 300, 550);
 
 	Reanimation p13 = new Reanimation();
 	Scene s13 = new Scene(p13, 300, 550);
-	
+
 	Reanimation p14 = new Reanimation();
 	Scene s14 = new Scene(p14, 300, 550);
 
@@ -56,40 +56,40 @@ public class Main extends Application {
 
 	Herzdruckmassage p16 = new Herzdruckmassage();
 	Scene s16 = new Scene(p16, 300, 550);
-	
+
 	Beatmung p17 = new Beatmung();
 	Scene s17 = new Scene(p17, 300, 550);
-	
+
 	Beatmung p18 = new Beatmung();
 	Scene s18 = new Scene(p18, 300, 550);
 
 	Aeussere_Verletzung p19 = new Aeussere_Verletzung();
 	Scene s19 = new Scene(p19, 300, 550);
-	
+
 	Aeussere_Verletzung p20 = new Aeussere_Verletzung();
 	Scene s20 = new Scene(p20, 300, 550);
 
 	Innere_Verletzung p21 = new Innere_Verletzung();
 	Scene s21 = new Scene(p21, 300, 550);
-	
+
 	Innere_Verletzung p22 = new Innere_Verletzung();
 	Scene s22 = new Scene(p22, 300, 550);
 
 	Stabile_Seitenlage p23 = new Stabile_Seitenlage();
 	Scene s23 = new Scene(p23, 300, 550);
-	
+
 	Stabile_Seitenlage p24 = new Stabile_Seitenlage();
 	Scene s24 = new Scene(p24, 300, 550);
-	
+
 	Stabile_Seitenlage p25 = new Stabile_Seitenlage();
 	Scene s25 = new Scene(p25, 300, 550);
-	
+
 	Stabile_Seitenlage p26 = new Stabile_Seitenlage();
 	Scene s26 = new Scene(p26, 300, 550);
 
 	Beduerfnisse_Person p27 = new Beduerfnisse_Person();
 	Scene s27 = new Scene(p27, 300, 550);
-	
+
 	Beduerfnisse_Person p28 = new Beduerfnisse_Person();
 	Scene s28 = new Scene(p28, 300, 550);
 
@@ -104,10 +104,10 @@ public class Main extends Application {
 
 	Schocklage p32 = new Schocklage();
 	Scene s32 = new Scene(p32, 300, 550);
-	
+
 	Blutet_Person p33 = new Blutet_Person();
 	Scene s33 = new Scene(p33, 300, 550);
-	
+
 	Blutet_Person p34 = new Blutet_Person();
 	Scene s34 = new Scene(p34, 300, 550);
 
@@ -119,15 +119,18 @@ public class Main extends Application {
 
 	Knochen_verletzt p37 = new Knochen_verletzt();
 	Scene s37 = new Scene(p37, 300, 550);
-	
+
 	Knochen_verletzt p38 = new Knochen_verletzt();
 	Scene s38 = new Scene(p38, 300, 550);
 
 	Knochenbrueche p39 = new Knochenbrueche();
 	Scene s39 = new Scene(p39, 300, 550);
-	
+
 	Knochenbrueche p40 = new Knochenbrueche();
 	Scene s40 = new Scene(p40, 300, 550);
+
+	Krankenhaus p41 = new Krankenhaus();
+	Scene s41 = new Scene(p41, 300, 550);
 
 	public void start(Stage primaryStage) throws Exception {
 
@@ -219,8 +222,8 @@ public class Main extends Application {
 		p34.getButton_ja().setOnAction(e -> primaryStage.setScene(s36));
 		p36.getButton_back().setOnAction(e -> primaryStage.setScene(s34));
 		p36.getButton_weiter().setOnAction(e -> primaryStage.setScene(s38));
+		p41.getButton_back().setOnAction(e -> primaryStage.setScene(s1));
 
-		
 		p1.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 		p3.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 		p4.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
@@ -260,7 +263,6 @@ public class Main extends Application {
 		p38.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 		p39.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 		p40.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
-
 
 		p1.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p2.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
@@ -302,8 +304,49 @@ public class Main extends Application {
 		p39.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p40.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 
-		//Testbereich für Media-Player
-		//p11.getButton_druckfrequenz().setOnAction(e1);
+		p1.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p2.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p3.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p4.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p5.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p6.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p7.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p8.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p9.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p10.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p11.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p12.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p13.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p14.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p15.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p16.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p17.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p18.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p19.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p20.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p21.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p22.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p23.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p24.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p25.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p26.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p27.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p28.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p29.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p30.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p31.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p32.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p33.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p34.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p35.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p36.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p37.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p38.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p39.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+		p40.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
+
+		// Testbereich für Media-Player
+		// p11.getButton_druckfrequenz().setOnAction(e1);
 
 		primaryStage.setScene(s1);
 		primaryStage.setTitle("Startscreen");

@@ -179,5 +179,9 @@ public class Reanimation extends Basis {
 	Button getButton_druckfrequenz() {
 		return druckfrequenz;
 	}
+	
+	Button getButton_krankenhaus() {
+		return krankenhaus;
+	}
 
 }
