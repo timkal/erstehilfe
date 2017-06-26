@@ -31,7 +31,8 @@ public class Schocklage extends Basis {
 	Label schocklage = new Label("Schocklage");
 
 	// Schocklage Label 2
-	Label schocklage2 = new Label("ggf. Person zudecken und\n" + "beengende Kleidung\n" + "oeffnen");
+	Label schocklage2 = new Label("- Person zudecken\n" + 
+			"- beengende Kleidung\n   oeffnen");
 
 	// Schocklage Image
 	Image schocklagebild = new Image("file:images/Schocklage.png");
@@ -77,8 +78,8 @@ public class Schocklage extends Basis {
 		// Schocklage Label 2
 		getChildren().add(schocklage2);
 		schocklage2.setTranslateX(0);
-		schocklage2.setTranslateY(100);
-		schocklage2.getStyleClass().add("land_label");
+		schocklage2.setTranslateY(95);
+		schocklage2.getStyleClass().add("schocklage_label");
 
 		// Schocklage Image
 		getChildren().add(schocklagebild_view);

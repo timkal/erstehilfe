@@ -4,6 +4,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.text.TextAlignment;
 
 /**
  * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert
@@ -24,16 +25,17 @@ public class Beduerfnisse_Person extends Basis {
 	// Weitere Elemente
 	// =================================
 
-	// Beduerfnisse Label
+	// Beduerfnisse Person Label
 	Label beduerfnisse = new Label("Beduerfnisse\nder Person");
 
-	// Beduerfnisse Label 2
-	Label beduerfnisse2 = new Label("-> Ist der Person kalt?\n" + "\n" + "-> Moechten Sie, dass Sie\n"
-			+ "     eine vertraute Person\n" + "     anrufen?");
+	// Beduerfnisse Person Label 2
+	Label beduerfnisse2 = new Label("- Ist der Person kalt?\n"
+			+ "- Moechten Sie, dass Sie\n"
+			+ "   eine vertraute Person\n" + "   anrufen?");
 
-	// Beduerfnisse Label 3
-	Label beduerfnisse3 = new Label("Kommen Sie den\n" + "Beduerfnissen der\n" + "Person nach,\n"
-			+ "waehrend sie auf den\n" + "Notarzt warten.");
+	// Beduerfnisse Person Label 3
+	Label beduerfnisse3 = new Label("Kommen Sie den\nBeduerfnissen der\nPerson nach,\n"
+			+ "waehrend sie auf den\nNotarzt warten.");
 
 	/**
 	 * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich
@@ -69,14 +71,15 @@ public class Beduerfnisse_Person extends Basis {
 		// Beduerfnisse Person Label 2
 		getChildren().add(beduerfnisse2);
 		beduerfnisse2.setTranslateX(0);
-		beduerfnisse2.setTranslateY(-30);
-		beduerfnisse2.getStyleClass().add("land_label");
+		beduerfnisse2.setTranslateY(-50);
+		beduerfnisse2.getStyleClass().add("beduerfnisse_label");
 
 		// Beduerfnisse Person Label 3
 		getChildren().add(beduerfnisse3);
 		beduerfnisse3.setTranslateX(0);
-		beduerfnisse3.setTranslateY(120);
-		beduerfnisse3.getStyleClass().add("atmunginfo_label");
+		beduerfnisse3.setTranslateY(100);
+		beduerfnisse3.setTextAlignment(TextAlignment.CENTER);
+		beduerfnisse3.getStyleClass().add("beduerfnisse2_label");
 
 	}
 

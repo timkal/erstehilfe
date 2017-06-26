@@ -35,9 +35,9 @@ public class Druckverband extends Basis {
 	Label druckverband = new Label("Druckverband");
 
 	// Druckverband Label 2
-	Label druckverband2 = new Label("1. Betroffenes K�rperteil hochhalten\n" + "2. Wunde mit steriler Wundauflage\n"
-			+ "    bedecken\n" + "   (Alternative sauberes Taschentuch)\n"
-			+ "3. nicht saugf�higer Druckk�rper auf der\n" + "    bereits abgedeckten Wunde fixieren");
+	Label druckverband2 = new Label("1. Betroffenes Koerperteil hochhalten\n" + "2. Wunde mit steriler Wundauflage\n"
+			+ "    bedecken\n" + "   (Alternative = sauberes Taschentuch)\n"
+			+ "3. Nicht saugfaehiger Druckkoerper auf der\n" + "    bereits abgedeckten Wunde fixieren");
 
 	// Druckverband Image
 	Image druckverbandbild = new Image("file:images/Druckverband.png");

@@ -5,6 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Line;
+import javafx.scene.text.TextAlignment;
 
 /**
  * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert
@@ -38,9 +39,10 @@ public class Beatmung extends Basis {
 	Label beatmung1 = new Label("2x beatmen");
 
 	// Beatmung Label 2
-	Label beatmung2 = new Label("Nase der Person bei der Mund zu Mund\n" + "            Beatmung verschliessen\n"
-			+ "Beatmungsphase betraegt eine Sekunde\n" + "30 mal kurz und kraeftig herunterduecken\n"
-			+ "Bei richtiger Durchfuehrung hebt sich der\n" + "          Brustkorb der Person sichtbar");
+	Label beatmung2 = new Label("- Nase der Person bei der Mund zu Mund\n   Beatmung verschliessen\n"
+			+ "- Beatmungsphase betraegt eine Sekunde\n"
+			+ "- 30 mal kurz und kraeftig herunterduecken\n"
+			+ "- Bei richtiger Durchfuehrung hebt sich der\n   Brustkorb der Person sichtbar");
 
 	// Beatmung Label 3
 	Label beatmung3 = new Label("Schritt 1 und 2 solange wiederholen,\n" + "bis der Notarzt da ist oder keine\n"
@@ -116,6 +118,8 @@ public class Beatmung extends Basis {
 		beatmung3.setTranslateX(0);
 		beatmung3.setTranslateY(128);
 		beatmung3.getStyleClass().add("beatmunginfo_label2");
+		beatmung3.setTextAlignment(TextAlignment.CENTER);
+
 	}
 
 	/**

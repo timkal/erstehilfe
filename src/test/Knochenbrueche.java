@@ -82,25 +82,25 @@ public class Knochenbrueche extends Basis {
 		// Knochenbrueche Label 2
 		getChildren().add(knochenbrueche2);
 		knochenbrueche2.setTranslateX(0);
-		knochenbrueche2.setTranslateY(-120);
+		knochenbrueche2.setTranslateY(-105);
 
 		// Knochenbrueche Label 3
 		getChildren().add(knochenbrueche3);
 		knochenbrueche3.setTranslateX(0);
-		knochenbrueche3.setTranslateY(-40);
-		knochenbrueche3.getStyleClass().add("button_brueche");
+		knochenbrueche3.setTranslateY(0);
+		knochenbrueche3.getStyleClass().add("brueche_label");
 
 		// Knochenbrueche Label 4
 		getChildren().add(knochenbrueche4);
 		knochenbrueche4.setTranslateX(0);
-		knochenbrueche4.setTranslateY(36);
-		knochenbrueche4.getStyleClass().add("button_brueche");
+		knochenbrueche4.setTranslateY(80);
+		knochenbrueche4.getStyleClass().add("brueche_label");
 
 		// Knochenbrueche Label 5
 		getChildren().add(knochenbrueche5);
 		knochenbrueche5.setTranslateX(0);
-		knochenbrueche5.setTranslateY(115);
-		knochenbrueche5.getStyleClass().add("land_label");
+		knochenbrueche5.setTranslateY(140);
+		knochenbrueche5.getStyleClass().add("schocklage_label");
 
 	}
 
