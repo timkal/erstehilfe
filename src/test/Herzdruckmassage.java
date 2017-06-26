@@ -41,8 +41,8 @@ public class Herzdruckmassage extends Basis {
 	Label herzdruck2 = new Label("30x druecken");
 
 	// Herzdruckmassage Label 3
-	Label herzdruck3 = new Label("Brustkorb freimachen\n" + "Druckpunkt auf der Mitte des Brustkorbes\n"
-			+ "30 mal kurz und kraeftig herunterduecken\n" + "Zwischen Pumpstoessen Brustkorb komplett\nentlasten");
+	Label herzdruck3 = new Label("- Brustkorb freimachen\n" + "- Druckpunkt auf der Mitte des Brustkorbes\n"
+			+ "- 30 mal kurz und kraeftig herunterduecken\n" + "- Zwischen Pumpstoessen Brustkorb komplett\n  entlasten");
 
 	// Herzdruckmassage Image
 	Image herzdruck = new Image("file:images/Herzdruckmassage.png");
@@ -112,8 +112,6 @@ public class Herzdruckmassage extends Basis {
 		herzdruck3.setTranslateX(0);
 		herzdruck3.setTranslateY(120);
 		herzdruck3.getStyleClass().add("beatmunginfo_label");
-		herzdruck3.setTextAlignment(TextAlignment.CENTER);
-
 
 		// Herzdruckmassage Image
 		getChildren().add(herzdruck_view);

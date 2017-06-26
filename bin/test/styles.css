@@ -262,6 +262,7 @@
 	-fx-padding: 10 10 10 10;
 	-fx-font-size: 14px;
 	-fx-font-family: Helvetica;
+	-fx-font-style: italic
 }
 
 .atmunginfo_label {
