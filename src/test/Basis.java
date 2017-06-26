@@ -1,5 +1,8 @@
 package test;
 
+import java.time.LocalTime;
+
+import javafx.animation.AnimationTimer;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -22,7 +25,7 @@ public class Basis extends StackPane {
 	// =================================
 	// Basis-Elemente TAB Bar
 	// =================================
-	
+
 	// Rectangle
 	Rectangle top = new Rectangle(300, 60);
 	Label title = new Label("Lebensretter");
@@ -56,17 +59,17 @@ public class Basis extends StackPane {
 	ImageView empfang_view = new ImageView("file:images/Empfang3.png");
 
 	// Uhrzeit
-	Label zeit = new Label("09:41 AM");
-	
-	//Zurück Button und Symbol
-	//Button back = new Button("Zurueck");
-	//Image back_image = new Image("file:images/back_symbol.png");
-	//ImageView back_view = new ImageView("file:images/back_symbol.png");
+	Label zeit = new Label(LocalTime.now().toString().substring(0, 5));
 
-	//Linie
-	
+	// Zurück Button und Symbol
+	// Button back = new Button("Zurueck");
+	// Image back_image = new Image("file:images/back_symbol.png");
+	// ImageView back_view = new ImageView("file:images/back_symbol.png");
+
+	// Linie
+
 	Line line = new Line();
-	
+
 	// ------------------------------------------------------------------------------------------
 
 	public Basis() {
@@ -80,29 +83,28 @@ public class Basis extends StackPane {
 		// =================================
 		// TOP Bar importieren und anordnen
 		// =================================
-		
+
 		// Rechteck Abgrenzung oben
 		top.setFill(Color.web("#F9F9F9"));
 		getChildren().add(top);
 		top.setTranslateX(0);
 		top.setTranslateY(-250);
-		
-		//Titel
+
+		// Titel
 		getChildren().add(title);
 		title.setTranslateX(0);
 		title.setTranslateY(-240);
 		title.getStyleClass().add("title_label");
-		
-		
-		//Zuruck Button und Symbol
-		//back.setTranslateX(-100);
-		//back.setTranslateY(-240);
-		//back.getStyleClass().add("button_back");
-		//stack.getChildren().add(back_view);
-		//back_view.setFitHeight(15);
-		//back_view.setFitWidth(10);
-		//back_view.setTranslateX(-135);
-		//back_view.setTranslateY(-240);
+
+		// Zuruck Button und Symbol
+		// back.setTranslateX(-100);
+		// back.setTranslateY(-240);
+		// back.getStyleClass().add("button_back");
+		// stack.getChildren().add(back_view);
+		// back_view.setFitHeight(15);
+		// back_view.setFitWidth(10);
+		// back_view.setTranslateX(-135);
+		// back_view.setTranslateY(-240);
 
 		// Akku-Symbol und Text
 		getChildren().add(akku_view);
@@ -113,13 +115,20 @@ public class Basis extends StackPane {
 		prozent.getStyleClass().add("topbar_label");
 		prozent.setTranslateX(103);
 		prozent.setTranslateY(-270);
-		
-		//Zeit
+
+		// Zeit hinzufügen und Echtzeit einbauen
 		getChildren().add(zeit);
 		zeit.getStyleClass().add("topbar_label");
 		setAlignment(zeit, Pos.TOP_CENTER);
 
-		//Empfang
+		new AnimationTimer() {
+			@Override
+			public void handle(long now) {
+				zeit.setText(LocalTime.now().toString().substring(0, 5));
+			}
+		}.start();
+
+		// Empfang
 		getChildren().add(empfang_view);
 		empfang_view.setFitHeight(10);
 		empfang_view.setFitWidth(75);
@@ -161,8 +170,8 @@ public class Basis extends StackPane {
 		setAlignment(menu, Pos.BOTTOM_LEFT);
 		menu.getStyleClass().add("button_tapbar");
 		menu.getStyleClass().add("button_menu");
-		
-		// Linie 
+
+		// Linie
 		getChildren().add(line);
 		line.setStartX(0);
 		line.setStartY(0);
@@ -173,10 +182,6 @@ public class Basis extends StackPane {
 
 		// ------------------------------------------------------------------------------------------
 
-		
-
 	}
-
-	
 
 }
