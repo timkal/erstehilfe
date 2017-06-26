@@ -124,7 +124,7 @@ public class Main extends Application {
 	Scene s38 = new Scene(p38, 300, 550);
 
 	Knochenbrueche p39 = new Knochenbrueche();
-	Scene s39 = new Scene(p29, 300, 550);
+	Scene s39 = new Scene(p39, 300, 550);
 	
 	Knochenbrueche p40 = new Knochenbrueche();
 	Scene s40 = new Scene(p40, 300, 550);
@@ -154,6 +154,7 @@ public class Main extends Application {
 		p9.getButton_nein().setOnAction(e -> primaryStage.setScene(s11));
 		p11.getButton_back().setOnAction(e -> primaryStage.setScene(s9));
 		p11.getButton_nein().setOnAction(e -> primaryStage.setScene(s13));
+		p11.getButton_ja().setOnAction(e -> primaryStage.setScene(s19));
 		p13.getButton_back().setOnAction(e -> primaryStage.setScene(s11));
 		p13.getButton_anleitung().setOnAction(e -> primaryStage.setScene(s15));
 		p15.getButton_back().setOnAction(e -> primaryStage.setScene(s13));
@@ -180,6 +181,9 @@ public class Main extends Application {
 		p37.getButton_ja().setOnAction(e -> primaryStage.setScene(s39));
 		p39.getButton_back().setOnAction(e -> primaryStage.setScene(s37));
 		p39.getButton_weiter().setOnAction(e -> primaryStage.setScene(s28));
+		p33.getButton_ja().setOnAction(e -> primaryStage.setScene(s35));
+		p35.getButton_back().setOnAction(e -> primaryStage.setScene(s33));
+		p35.getButton_weiter().setOnAction(e -> primaryStage.setScene(s37));
 		p2.getButton_verletzt().setOnAction(e -> primaryStage.setScene(s10));
 		p10.getButton_back().setOnAction(e -> primaryStage.setScene(s2));
 		p10.getButton_nein().setOnAction(e -> primaryStage.setScene(s12));

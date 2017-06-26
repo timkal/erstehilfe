@@ -97,7 +97,7 @@ public class Reanimation extends Basis {
 		getChildren().add(reanimation);
 		reanimation.setTranslateX(0);
 		reanimation.setTranslateY(-160);
-		reanimation.getStyleClass().add("button_absicherung");
+		reanimation.getStyleClass().add("button_ueberschrift");
 
 		// Beatmung Label
 		getChildren().add(beatmung1);

@@ -7,6 +7,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
+import javafx.scene.text.TextAlignment;
 
 /**
  * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert
@@ -34,7 +35,7 @@ public class Herzdruckmassage extends Basis {
 	Button schritt2 = new Button("Schritt 2");
 
 	// Herzdruckmassage Label
-	Label herzdruck1 = new Label("1. Herzdruck-\n    massage");
+	Label herzdruck1 = new Label("1. Herzdruck-\nmassage");
 
 	// Herzdruckmassage Label 2
 	Label herzdruck2 = new Label("30x druecken");
@@ -98,7 +99,7 @@ public class Herzdruckmassage extends Basis {
 		getChildren().add(herzdruck1);
 		herzdruck1.setTranslateX(0);
 		herzdruck1.setTranslateY(-160);
-		herzdruck1.getStyleClass().add("button_absicherung");
+		herzdruck1.getStyleClass().add("button_ueberschrift");
 
 		// Herzdruckmassage Label 1
 		getChildren().add(herzdruck2);
@@ -111,6 +112,8 @@ public class Herzdruckmassage extends Basis {
 		herzdruck3.setTranslateX(0);
 		herzdruck3.setTranslateY(120);
 		herzdruck3.getStyleClass().add("beatmunginfo_label");
+		herzdruck3.setTextAlignment(TextAlignment.CENTER);
+
 
 		// Herzdruckmassage Image
 		getChildren().add(herzdruck_view);

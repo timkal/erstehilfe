@@ -5,6 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Line;
+import javafx.scene.text.TextAlignment;
 
 public class Knochen_verletzt extends Basis {
 
@@ -14,7 +15,7 @@ public class Knochen_verletzt extends Basis {
 	ImageView back_view = new ImageView("file:images/back_symbol.png");
 
 	// Knochen verletzt Label
-	Label knochenverletzt = new Label("Sind Knochen der\n" + "Person verletzt?");
+	Label knochenverletzt = new Label("Sind Knochen der\nPerson verletzt?");
 
 	// Linie darunter
 	Line line2 = new Line();
@@ -52,6 +53,7 @@ public class Knochen_verletzt extends Basis {
 		getChildren().add(knochenverletzt);
 		knochenverletzt.setTranslateX(0);
 		knochenverletzt.setTranslateY(-175);
+        knochenverletzt.setTextAlignment(TextAlignment.CENTER);
 
 		// Linie 2
 		getChildren().add(line2);

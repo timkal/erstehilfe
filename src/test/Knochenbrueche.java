@@ -77,7 +77,7 @@ public class Knochenbrueche extends Basis {
 		getChildren().add(knochenbrueche);
 		knochenbrueche.setTranslateX(0);
 		knochenbrueche.setTranslateY(-185);
-		knochenbrueche.getStyleClass().add("button_absicherung");
+		knochenbrueche.getStyleClass().add("button_ueberschrift");
 
 		// Knochenbrueche Label 2
 		getChildren().add(knochenbrueche2);

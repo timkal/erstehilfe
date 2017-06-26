@@ -4,6 +4,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.text.TextAlignment;
 
 /**
  * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert
@@ -34,17 +35,17 @@ public class Notruf_Absetzen extends Basis {
 	// Button Weiter
 	Button weiter = new Button("Weiter");
 	
-	// Button Notruf absetzen 
-	Button notrufabsetzen = new Button("Notruf\nabsetzen");
+	// Notruf absetzen Label
+	Label notrufabsetzen = new Label("Notruf\nabsetzen");
 	
 	// Label Notruf absetzen
-	Label notrufabsetzeninfo = new Label ("Wo geschah es?\n"
-			+ "Was geschah?\n"
-			+ "Wie viele Personen sind\n"
-			+ "betroffen?\n"
-			+ "Welche Art von Erkrankung/\n"
-			+ "Verletzung liegt vor?\n"
-			+ "Warten auf Rückfragen.");
+	Label notrufabsetzeninfo = new Label ("- Wo geschah es?\n"
+			+ "- Was geschah?\n"
+			+ "- Wie viele Personen sind\n"
+			+ "  betroffen?\n"
+			+ "- Welche Art von Erkrankung/\n"
+			+ "  Verletzung liegt vor?\n"
+			+ "- Warten auf Rückfragen");
 			
 
 	/**
@@ -59,11 +60,11 @@ public class Notruf_Absetzen extends Basis {
 
 		getStyleClass().add("custom-stack");
 
-		// Button Notruf absetzen
+		// Notruf absetzen Label
 		getChildren().add(notrufabsetzen);
 		notrufabsetzen.setTranslateX(0);
 		notrufabsetzen.setTranslateY(-150);
-		notrufabsetzen.getStyleClass().add("button_notrufabsetzen");
+		notrufabsetzen.getStyleClass().add("notrufabsetzen_label");
 
 		// Button Anderes Land
 		getChildren().add(anderesland);

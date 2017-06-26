@@ -64,7 +64,7 @@ public class Beduerfnisse_Person extends Basis {
 		getChildren().add(beduerfnisse);
 		beduerfnisse.setTranslateX(0);
 		beduerfnisse.setTranslateY(-160);
-		beduerfnisse.getStyleClass().add("button_absicherung");
+		beduerfnisse.getStyleClass().add("button_ueberschrift");
 
 		// Beduerfnisse Person Label 2
 		getChildren().add(beduerfnisse2);
@@ -86,9 +86,6 @@ public class Beduerfnisse_Person extends Basis {
 	 * @return Der weiter-Button
 	 */
 
-	Button getButton_back() {
-		return back;
-	}
 
 	Button getButton_menu() {
 		return menu;

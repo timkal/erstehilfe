@@ -71,7 +71,7 @@ public class Rettungsgriff extends Basis {
 		getChildren().add(rettungsgriff);
 		rettungsgriff.setTranslateX(0);
 		rettungsgriff.setTranslateY(-175);
-		rettungsgriff.getStyleClass().add("button_absicherung");
+		rettungsgriff.getStyleClass().add("button_ueberschrift");
 
 		// Rettungsgriff Image
 		getChildren().add(rettungsgriffbild_view);

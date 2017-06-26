@@ -29,14 +29,15 @@ public class Absicherung extends Basis {
 	// =================================
 
 	// Infos Label
-	Label infos2 = new Label("1. Wenn moeglich, Fahrzeug\n" + "an den Fahrbahnrand\n" + "2. Warnweste anlegen \n"
-			+ "3. Warndreieck aufstellen\n" + "Innerorts: 50 m\n" + "Landstrasse: 100 m\n" + "Autobahn: 150 m\n");
+	Label infos2 = new Label("1. Wenn moeglich, Fahrzeug\n" + "     an den Fahrbahnrand\n" + "2. Warnweste anlegen \n"
+			+ "3. Warndreieck aufstellen\n" + "        Innerorts: 50 m\n" + 
+			"        Landstrasse: 100 m\n" + "        Autobahn: 150 m\n");
 	
 	// Button weiter
 	Button weiter = new Button("Weiter");
 	
-	// Button Absicherung&Symbol
-	Button absicherung = new Button("Absicherung der\nUnfallstelle");
+	// Label Absicherung&Symbol
+	Label absicherung = new Label("Absicherung der\nUnfallstelle");
 	Image absicherung_image = new Image("file:images/Absicherung Unfallstelle.png");
 	ImageView absicherung_view = new ImageView("file:images/Absicherung Unfallstelle.png");
 
@@ -72,7 +73,7 @@ public class Absicherung extends Basis {
 		weiter.setTranslateY(185);
 		weiter.getStyleClass().add("button_weiter");
 
-		// Absicherung
+		// Label Absicherung
 		getChildren().add(absicherung);
 		absicherung.setTranslateX(0);
 		absicherung.setTranslateY(-165);

@@ -5,6 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Line;
+import javafx.scene.text.TextAlignment;
 
 public class Aeussere_Verletzung extends Basis {
 
@@ -18,7 +19,7 @@ public class Aeussere_Verletzung extends Basis {
 	// =================================
 
 	// Aeussere Verletzung Label
-	Label aeussereverletzung = new Label("Hat die Person\n" + "aeussere Verletzungen?");
+	Label aeussereverletzung = new Label("Hat die Person aeussere\nVerletzungen?");
 
 	// Linie darunter
 	Line line2 = new Line();
@@ -48,10 +49,12 @@ public class Aeussere_Verletzung extends Basis {
 		back_view.setTranslateX(-135);
 		back_view.setTranslateY(-240);
 
-		// Label Aeussere Verletzung
+		// Aeussere Verletzung Label
 		getChildren().add(aeussereverletzung);
 		aeussereverletzung.setTranslateX(0);
 		aeussereverletzung.setTranslateY(-175);
+		aeussereverletzung.setTextAlignment(TextAlignment.CENTER);
+
 
 		// Linie 2
 		getChildren().add(line2);

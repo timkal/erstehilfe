@@ -71,7 +71,7 @@ public class Stabile_Seitenlage extends Basis {
 		getChildren().add(stabileseitenlage);
 		stabileseitenlage.setTranslateX(0);
 		stabileseitenlage.setTranslateY(-175);
-		stabileseitenlage.getStyleClass().add("button_absicherung");
+		stabileseitenlage.getStyleClass().add("button_ueberschrift");
 
 		// Rettungsgriff Image
 		getChildren().add(stabileseitenlagebild_view);

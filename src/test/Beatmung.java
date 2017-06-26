@@ -31,10 +31,10 @@ public class Beatmung extends Basis {
 	// Zurueck zur Reanimation Button
 	Button back_reanimation = new Button("Zurueck zur Reanimation");
 
-	// Beatmung Label
+	// Reanimation Label
 	Label reanimation = new Label("2. Beatmung");
 
-	// Beatmung Label
+	// Beatmung Label 
 	Label beatmung1 = new Label("2x beatmen");
 
 	// Beatmung Label 2
@@ -81,7 +81,7 @@ public class Beatmung extends Basis {
 		getChildren().add(reanimation);
 		reanimation.setTranslateX(0);
 		reanimation.setTranslateY(-185);
-		reanimation.getStyleClass().add("button_absicherung");
+		reanimation.getStyleClass().add("button_ueberschrift");
 
 		// Beatmung Label
 		getChildren().add(beatmung1);

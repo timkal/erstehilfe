@@ -5,6 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Line;
+import javafx.scene.text.TextAlignment;
 
 public class Person_entfernt extends Basis {
 
@@ -13,8 +14,8 @@ public class Person_entfernt extends Basis {
 	Image back_image = new Image("file:images/back_symbol.png");
 	ImageView back_view = new ImageView("file:images/back_symbol.png");
 
-	// Notruf gewaehlt Label
-	Label notrufgewaehlt = new Label("Person vom\nUnfallort entfernt?");
+	// Person entfernt Label
+	Label personentfernt = new Label("Person vom Unfallort\nentfernt?");
 
 	// Linie darunter
 	Line line2 = new Line();
@@ -48,16 +49,18 @@ public class Person_entfernt extends Basis {
 		back_view.setTranslateX(-135);
 		back_view.setTranslateY(-240);
 
-		// Label Notruf gew�hlt
-		getChildren().add(notrufgewaehlt);
-		notrufgewaehlt.setTranslateX(0);
-		notrufgewaehlt.setTranslateY(-175);
-
+		// Label Person entfernt 
+		getChildren().add(personentfernt);
+		personentfernt.setTranslateX(0);
+		personentfernt.setTranslateY(-175);
+        personentfernt.setTextAlignment(TextAlignment.CENTER);
+        
 		// Label Hinweis
 		getChildren().add(hinweis);
 		hinweis.setTranslateX(0);
 		hinweis.setTranslateY(-60);
 		hinweis.getStyleClass().add("hinweis_label");
+		hinweis.setTextAlignment(TextAlignment.CENTER);
 
 		// Linie 2
 		getChildren().add(line2);

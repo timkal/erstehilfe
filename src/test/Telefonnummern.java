@@ -22,15 +22,15 @@ public class Telefonnummern extends Basis {
 	// Linie 2
 	Line line2 = new Line();
 
-	// Label 1
+	// Oberes Label Nummer
 	Label europa = new Label("European Union:     112");
 
-	// Label 2
-	Label allelaender = new Label("Argentinia    107\n" + "Australia       000\n" + "Brasil             192\n"
-			+ "Canada          911\n" + "China             120\n" + "Hongkong     999\n" + "Israel              101\n"
-			+ "Japan             119\n" + "Mexico           006\n" + "New Zealand 111\n" + "Norway          113\n"
-			+ "Switzerland   144\n" + "Turkey           112\n" + "UK                  999\n"
-			+ "USA                911\n");
+	// Unteres Label Nummern
+	Label allelaender = new Label("Argentinia:\nAustralia:\nBrasil:\nCanada:\nChina:\nHongkong:\nIsrael:\nJapan:\nMexico:\n"
+			+ "New Zealand:\nNorway:\nSwitzerland:\nTurkey:\nUK:\nUSA:");
+	
+	// Zahlen Label
+	Label zahlen = new Label("107\n000\n192\n911\n120\n999\n101\n119\n006\n111\n113\n144\n112\n999\n911");
 
 	// ------------------------------------------------------------------------------------------
 
@@ -70,16 +70,22 @@ public class Telefonnummern extends Basis {
 		line.setStrokeWidth(0.5);
 		line.setTranslateY(-160);
 
-		// Oberes Label Nummer
+		// Oberes Label Nummer 
 		getChildren().add(europa);
 		europa.setTranslateX(0);
 		europa.setTranslateY(-190);
 
-		// Unteres Label Nummer
+		// Unteres Label Nummern
 		getChildren().add(allelaender);
-		allelaender.setTranslateX(0);
-		allelaender.setTranslateY(30);
+		allelaender.setTranslateX(-30);
+		allelaender.setTranslateY(28);
 		allelaender.getStyleClass().add("land_label");
+		
+		// Zahlen Label
+		getChildren().add(zahlen);
+		zahlen.setTranslateX(60);
+		zahlen.setTranslateY(28);
+		zahlen.getStyleClass().add("zahlen_label");
 
 		// Weitere Elemente hinzufügen
 

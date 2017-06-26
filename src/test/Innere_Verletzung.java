@@ -5,6 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Line;
+import javafx.scene.text.TextAlignment;
 
 public class Innere_Verletzung extends Basis {
 
@@ -16,7 +17,7 @@ public class Innere_Verletzung extends Basis {
 	
 
 	// Innere Verletzung Label
-	Label innereverletzung = new Label("Hat die Person\n" + "innere Verletzungen?");
+	Label innereverletzung = new Label("Hat die Person innere\nVerletzungen?");
 
 	// Linie darunter
 	Line line2 = new Line();
@@ -46,10 +47,12 @@ public class Innere_Verletzung extends Basis {
 		back_view.setTranslateX(-135);
 		back_view.setTranslateY(-240);
 
-		// Label
+		// Innere Verletzung Label
 		getChildren().add(innereverletzung);
 		innereverletzung.setTranslateX(0);
 		innereverletzung.setTranslateY(-175);
+		innereverletzung.setTextAlignment(TextAlignment.CENTER);
+
 
 		// Linie 2
 		getChildren().add(line2);

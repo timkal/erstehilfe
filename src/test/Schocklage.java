@@ -72,7 +72,7 @@ public class Schocklage extends Basis {
 		getChildren().add(schocklage);
 		schocklage.setTranslateX(0);
 		schocklage.setTranslateY(-185);
-		schocklage.getStyleClass().add("button_absicherung");
+		schocklage.getStyleClass().add("button_ueberschrift");
 
 		// Schocklage Label 2
 		getChildren().add(schocklage2);

@@ -91,7 +91,7 @@ public class Druckverband extends Basis {
 		getChildren().add(druckverband);
 		druckverband.setTranslateX(0);
 		druckverband.setTranslateY(-185);
-		druckverband.getStyleClass().add("button_absicherung");
+		druckverband.getStyleClass().add("button_ueberschrift");
 
 		// Druckverband Label 2
 		getChildren().add(druckverband2);

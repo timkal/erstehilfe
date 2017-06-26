@@ -5,6 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Line;
+import javafx.scene.text.TextAlignment;
 
 	public class Unfallstelle_abgesichert extends Basis {
 
@@ -15,8 +16,8 @@ import javafx.scene.shape.Line;
 		ImageView back_view = new ImageView("file:images/back_symbol.png");
 
 				
-		// Notruf gewaehlt Label
-		Label notrufgewaehlt = new Label("Unfallstelle\nabgesichert?");
+		// Unfallstelle abgesichert Label
+		Label unfallstelleabgesichert = new Label("Unfallstelle\nabgesichert?");
 		
 		// Linie darunter
 		Line line2 = new Line();
@@ -43,7 +44,7 @@ import javafx.scene.shape.Line;
 		
 		
 		
-		//Zuruck Button und Symbol
+		// Zuruck Button und Symbol
 		getChildren().add(back);
 		back.setTranslateX(-100);
 		back.setTranslateY(-240);
@@ -53,16 +54,13 @@ import javafx.scene.shape.Line;
 		back_view.setFitWidth(10);
 		back_view.setTranslateX(-135);
 		back_view.setTranslateY(-240);
+		
+		// Unfallstelle abgesichert Label
+		getChildren().add(unfallstelleabgesichert);
+		unfallstelleabgesichert.setTranslateX(0);
+		unfallstelleabgesichert.setTranslateY(-175);
+		unfallstelleabgesichert.setTextAlignment(TextAlignment.CENTER);
 
-	
-		
-		
-		
-		// Label 
-		getChildren().add(notrufgewaehlt);
-		notrufgewaehlt.setTranslateX(0);
-		notrufgewaehlt.setTranslateY(-175);
-		
 		// Linie 2 
 		getChildren().add(line2);
 		line2.setStartX(0);

@@ -5,6 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Line;
+import javafx.scene.text.TextAlignment;
 
 public class Blutet_Person extends Basis {
 
@@ -14,7 +15,7 @@ public class Blutet_Person extends Basis {
 	ImageView back_view = new ImageView("file:images/back_symbol.png");
 
 	// Person Blutung Label
-	Label blutetperson = new Label("Blutet die Person\n" + "stark?");
+	Label blutetperson = new Label("Blutet die Person\nstark?");
 
 	// Linie darunter
 	Line line2 = new Line();
@@ -44,10 +45,12 @@ public class Blutet_Person extends Basis {
 		back_view.setTranslateX(-135);
 		back_view.setTranslateY(-240);
 
-		// Label Person Blutung
+		// Person Blutung Label
 		getChildren().add(blutetperson);
 		blutetperson.setTranslateX(0);
 		blutetperson.setTranslateY(-175);
+        blutetperson.setTextAlignment(TextAlignment.CENTER);
+
 
 		// Linie 2
 		getChildren().add(line2);

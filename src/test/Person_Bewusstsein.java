@@ -5,6 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Line;
+import javafx.scene.text.TextAlignment;
 
 public class Person_Bewusstsein extends Basis {
 
@@ -16,8 +17,8 @@ public class Person_Bewusstsein extends Basis {
 	// Linie 1
 	Line line = new Line();
 
-	// Notruf gewaehlt Label
-	Label notrufgewaehlt = new Label("Ist die Person bei\nBewusstsein?");
+	// Person bei Bewusstsein Label
+	Label personbewusstsein = new Label("Ist die Person bei\nBewusstsein?");
 
 	// Linie darunter
 	Line line2 = new Line();
@@ -47,10 +48,11 @@ public class Person_Bewusstsein extends Basis {
 		back_view.setTranslateX(-135);
 		back_view.setTranslateY(-240);
 
-		// Label
-		getChildren().add(notrufgewaehlt);
-		notrufgewaehlt.setTranslateX(0);
-		notrufgewaehlt.setTranslateY(-175);
+		// Person bei Bewusstsein Label
+		getChildren().add(personbewusstsein);
+		personbewusstsein.setTranslateX(0);
+		personbewusstsein.setTranslateY(-175);
+		personbewusstsein.setTextAlignment(TextAlignment.CENTER);
 
 		// Linie 2
 		getChildren().add(line2);
