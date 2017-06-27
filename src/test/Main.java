@@ -263,6 +263,7 @@ public class Main extends Application {
 		p38.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 		p39.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 		p40.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p41.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 
 		p1.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p2.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
@@ -303,6 +304,7 @@ public class Main extends Application {
 		p38.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p39.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p40.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p41.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 
 		p1.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
 		p2.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s41));
