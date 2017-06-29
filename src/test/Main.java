@@ -8,6 +8,9 @@ public class Main extends Application {
 
 	// Panes und Szenen aller Klassen definieren
 	// Panes abgekürzt mit pZAHL, Scenes mit sZAHL
+	
+	Startseite p0 = new Startseite();
+	Scene s0 = new Scene(p0, 300, 550);
 
 	Notruf_gewaehlt p1 = new Notruf_gewaehlt();
 	Scene s1 = new Scene(p1, 300, 550);
@@ -134,7 +137,8 @@ public class Main extends Application {
 
 	public void start(Stage primaryStage) throws Exception {
 
-		// Aktion des Buttons in der Szene 1
+		// Aktion des Buttons in der Szene 0
+		p0.getButton_back().setOnAction(e -> primaryStage.setScene(s1));
 		p1.getButton_ja().setOnAction(e -> primaryStage.setScene(s2));
 		p1.getButton_nein().setOnAction(e -> primaryStage.setScene(s3));
 		p3.getButton_land().setOnAction(e -> primaryStage.setScene(s4));
@@ -350,7 +354,7 @@ public class Main extends Application {
 		// Testbereich für Media-Player
 		// p11.getButton_druckfrequenz().setOnAction(e1);
 
-		primaryStage.setScene(s1);
+		primaryStage.setScene(s0);
 		primaryStage.setTitle("Startscreen");
 		primaryStage.show();
 	}
