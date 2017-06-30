@@ -36,7 +36,7 @@ public class Krankenhaus extends Basis {
 
 		// Web-View Integration
 		getChildren().add(browser);
-		webEngine.load("http://www.deutsches-krankenhaus-verzeichnis.de/");
+		webEngine.load("http://www.maps.google.com");
 		browser.setMaxWidth(300);
 		browser.setMaxHeight(442);
 

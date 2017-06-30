@@ -143,7 +143,8 @@ public class Startseite extends StackPane {
 		line.setStartX(0);
 		line.setStartY(0);
 		line.setEndX(300);
-		line.setEndY(0);
+		line.setEndY(0);
+
 		line.setStrokeWidth(0.5);
 		line.setTranslateY(-222);
 		

@@ -127,8 +127,8 @@ public class Reanimation extends Basis {
 
 		// Druckfrequenz Button
 		getChildren().add(druckfrequenz);
-		druckfrequenz.setTranslateX(80);
-		druckfrequenz.setTranslateY(-50);
+		druckfrequenz.setTranslateX(70);
+		druckfrequenz.setTranslateY(-62);
 		druckfrequenz.getStyleClass().add("button_reanimation");
 		
 		// Event-Handler und Action
