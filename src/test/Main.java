@@ -277,6 +277,10 @@ public class Main extends Application {
 		p28.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 		p29.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 		p30.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p31.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p32.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p33.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p34.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 		p35.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 		p36.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 		p37.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
@@ -318,6 +322,10 @@ public class Main extends Application {
 		p28.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p29.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p30.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p31.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p32.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p33.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p34.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p35.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p36.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p37.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
@@ -360,6 +368,10 @@ public class Main extends Application {
 		p28.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s45));
 		p29.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s45));
 		p30.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s45));
+		p31.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s45));
+		p32.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s45));
+		p33.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s45));
+		p34.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s45));
 		p35.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s45));
 		p36.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s45));
 		p37.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s45));
