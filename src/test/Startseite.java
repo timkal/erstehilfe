@@ -1,9 +1,9 @@
 package test;
 
 import java.time.LocalTime;
-import java.util.concurrent.TimeUnit;
 
 import javafx.animation.AnimationTimer;
+import javafx.concurrent.Task;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -32,7 +32,6 @@ public class Startseite extends StackPane {
 	Rectangle top = new Rectangle(300, 60);
 	Label title = new Label("Erste Hilfe");
 
-
 	// =================================
 	// Basis-Elemente TOP Bar
 	// =================================
@@ -57,17 +56,16 @@ public class Startseite extends StackPane {
 	// Linie
 
 	Line line = new Line();
-	
+
 	// Label Lebensretter
 	Label lebensretter = new Label("Lebensretter");
-	
+
 	// Erste Hilfe Symbol
 	Image erstehilfe = new Image("file:images/Startseite Logo.png");
 	ImageView erstehilfe_view = new ImageView("file:images/Startseite Logo.png");
-	
+
 	// Progress Bar
 	ProgressBar progressBar = new ProgressBar();
-	
 
 	// ------------------------------------------------------------------------------------------
 
@@ -143,32 +141,49 @@ public class Startseite extends StackPane {
 		line.setStartX(0);
 		line.setStartY(0);
 		line.setEndX(300);
-		line.setEndY(0);
+		line.setEndY(0);
 
 		line.setStrokeWidth(0.5);
 		line.setTranslateY(-222);
-		
+
 		// Erste Hilfe Symbol
 		getChildren().add(erstehilfe_view);
 		erstehilfe_view.setFitHeight(300);
 		erstehilfe_view.setFitWidth(300);
 		erstehilfe_view.setTranslateX(0);
-		erstehilfe_view.setTranslateY(28);
+		erstehilfe_view.setTranslateY(-71);
 
 		// Progress Bar
 		getChildren().add(progressBar);
 		progressBar.setTranslateX(0);
-		progressBar.setTranslateY(227);
-		progressBar.setProgress(0f);
-		progressBar.setProgress(0.1f);
-		progressBar.setProgress(0.5f);
-		progressBar.setProgress(0.8f);
+		progressBar.setTranslateY(180);
+		progressBar.getStyleClass().add("Ladebalken");
 
+		Task<Void> sleeper = new Task<Void>() {
+			@Override
+			protected Void call() throws Exception {
+
+				final int zähler = 130;
+				for (int i = 0; i < zähler; i++) {
+					updateProgress(i, zähler);
+					try {
+						Thread.sleep(50);
+					} catch (InterruptedException e) {
+					}
+				}
+				updateProgress(zähler, zähler);
+				return null;
+			}
+		};
+
+		progressBar.progressProperty().bind(sleeper.progressProperty());
+
+		new Thread(sleeper).start();
 
 		// ------------------------------------------------------------------------------------------
 
 	}
-	
+
 	Button getButton_back() {
 		return back;
 	}
