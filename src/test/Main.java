@@ -376,6 +376,7 @@ public class Main extends Application {
 
 		primaryStage.setScene(s0);
 		primaryStage.setTitle("Startscreen");
+		primaryStage.setResizable(false);
 		primaryStage.show();
 	}
 
