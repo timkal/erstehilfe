@@ -101,4 +101,8 @@ public class Beduerfnisse_Person extends Basis {
 	Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
+	
+	Button getButton_back() {
+		return back;
+	}
 }

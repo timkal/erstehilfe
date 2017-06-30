@@ -1,6 +1,8 @@
 package test;
 
 import java.time.LocalTime;
+import java.util.concurrent.TimeUnit;
+
 import javafx.animation.AnimationTimer;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -156,7 +158,11 @@ public class Startseite extends StackPane {
 		getChildren().add(progressBar);
 		progressBar.setTranslateX(0);
 		progressBar.setTranslateY(227);
-		
+		progressBar.setProgress(0f);
+		progressBar.setProgress(0.1f);
+		progressBar.setProgress(0.5f);
+		progressBar.setProgress(0.8f);
+
 
 		// ------------------------------------------------------------------------------------------
 
