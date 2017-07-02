@@ -4,7 +4,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.text.TextAlignment;
 
 public class Notruf_absetzen extends Basis {
 
@@ -57,8 +56,8 @@ public class Notruf_absetzen extends Basis {
 		// Button Anderes Land
 		getChildren().add(anderesland);
 		anderesland.setTranslateX(0);
-		anderesland.setTranslateY(-60);
-		anderesland.getStyleClass().add("button_anderesland");
+		anderesland.setTranslateY(-55);
+		anderesland.getStyleClass().add("button_zusatzinfos");
 
 		// Button Weiter
 		getChildren().add(weiter);

@@ -90,7 +90,7 @@ public class Druckverband extends Basis {
 		getChildren().add(druckverband2);
 		druckverband2.setTranslateX(0);
 		druckverband2.setTranslateY(50);
-		druckverband2.getStyleClass().add("beatmunginfo_label");
+		druckverband2.getStyleClass().add("anweisungen_label");
 
 		// Image Druckverband
 		getChildren().add(druckverbandbild_view);

@@ -71,7 +71,7 @@ public class Schocklage extends Basis {
 		getChildren().add(schocklage2);
 		schocklage2.setTranslateX(0);
 		schocklage2.setTranslateY(95);
-		schocklage2.getStyleClass().add("schocklage_label");
+		schocklage2.getStyleClass().add("anweisungen_label2");
 
 		// Schocklage Image
 		getChildren().add(schocklagebild_view);

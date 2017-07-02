@@ -95,13 +95,13 @@ public class Reanimation extends Basis {
 		getChildren().add(beatmung1);
 		beatmung1.setTranslateX(-70);
 		beatmung1.setTranslateY(90);
-		beatmung1.getStyleClass().add("button_anderesland");
+		beatmung1.getStyleClass().add("button_zusatzinfos");
 
 		// Herzdruck Label
 		getChildren().add(herzdruck2);
 		herzdruck2.setTranslateX(70);
 		herzdruck2.setTranslateY(10);
-		herzdruck2.getStyleClass().add("button_anderesland");
+		herzdruck2.getStyleClass().add("button_zusatzinfos");
 
 		// Herzdruckmassage Image
 		getChildren().add(herzdruck_view);
@@ -121,7 +121,7 @@ public class Reanimation extends Basis {
 		getChildren().add(druckfrequenz);
 		druckfrequenz.setTranslateX(70);
 		druckfrequenz.setTranslateY(-62);
-		druckfrequenz.getStyleClass().add("button_reanimation");
+		druckfrequenz.getStyleClass().add("button_druckfrequenz");
 		
 		// Event-Handler und Action
 		EventHandler<ActionEvent> e1 = new EventHandler<ActionEvent>() {
@@ -148,7 +148,6 @@ public class Reanimation extends Basis {
 
 	Button getButton_anleitung() {
 		return anleitung;
-
 	}
 
 	Button getButton_back() {

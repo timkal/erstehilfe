@@ -4,7 +4,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.text.TextAlignment;
 
 public class Bedürfnisse_Person extends Basis {
 
@@ -71,8 +70,7 @@ public class Bedürfnisse_Person extends Basis {
 		getChildren().add(beduerfnisse3);
 		beduerfnisse3.setTranslateX(0);
 		beduerfnisse3.setTranslateY(100);
-		beduerfnisse3.setTextAlignment(TextAlignment.CENTER);
-		beduerfnisse3.getStyleClass().add("beduerfnisse2_label");
+		beduerfnisse3.getStyleClass().add("beduerfnisse_label2");
 
 	}
 

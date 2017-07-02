@@ -76,7 +76,7 @@ Seitenspezifische Elemente formatieren
 		getChildren().add(infos2);
 		infos2.setTranslateX(0);
 		infos2.setTranslateY(88);
-		infos2.getStyleClass().add("infos2_label");
+		infos2.getStyleClass().add("infos_label2");
 
 	}
 

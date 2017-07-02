@@ -93,7 +93,7 @@ public class Knochenbrüche extends Basis {
 		getChildren().add(knochenbrueche5);
 		knochenbrueche5.setTranslateX(0);
 		knochenbrueche5.setTranslateY(140);
-		knochenbrueche5.getStyleClass().add("schocklage_label");
+		knochenbrueche5.getStyleClass().add("anweisungen_label2");
 
 	}
 

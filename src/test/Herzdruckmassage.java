@@ -13,10 +13,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaPlayer.Status;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
-import javafx.scene.text.TextAlignment;
 
 public class Herzdruckmassage extends Basis {
 
@@ -108,13 +105,13 @@ public class Herzdruckmassage extends Basis {
 		getChildren().add(herzdruck2);
 		herzdruck2.setTranslateX(70);
 		herzdruck2.setTranslateY(-5);
-		herzdruck2.getStyleClass().add("button_anderesland");
+		herzdruck2.getStyleClass().add("button_zusatzinfos");
 
 		// Herzdruckmassage Label 2
 		getChildren().add(herzdruck3);
 		herzdruck3.setTranslateX(0);
 		herzdruck3.setTranslateY(105);
-		herzdruck3.getStyleClass().add("beatmunginfo_label");
+		herzdruck3.getStyleClass().add("anweisungen_label");
 
 		// Herzdruckmassage Image
 		getChildren().add(herzdruck_view);
@@ -127,7 +124,7 @@ public class Herzdruckmassage extends Basis {
 		getChildren().add(druckfrequenz);
 		druckfrequenz.setTranslateX(70);
 		druckfrequenz.setTranslateY(-78);
-		druckfrequenz.getStyleClass().add("button_reanimation");
+		druckfrequenz.getStyleClass().add("button_druckfrequenz");
 		
 		// Event-Handler und Action
 		EventHandler<ActionEvent> e1 = new EventHandler<ActionEvent>() {

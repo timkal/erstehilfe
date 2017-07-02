@@ -14,7 +14,7 @@
 /*	============================================================================================================
   	 BUTTONS
    	*/
-.custom_button {
+.button_menue {
 	-fx-text-fill: rgb(255, 255, 255);
 	-fx-border-color: rgb(255, 255, 255);
 	-fx-background-color: #FF4242;
@@ -105,7 +105,7 @@
 	-fx-font-weight: bold;
 }
 
-.button_anderesland {
+.button_zusatzinfos {
 	-fx-text-fill: #000000;
 	-fx-border-color: #808080;
 	-fx-background-color: #ffc1c1;
@@ -164,7 +164,7 @@
 	-fx-font-family: Helvetica;
 }
 
-.button_reanimation {
+.button_druckfrequenz {
 	-fx-text-fill: rgb(0, 0, 0);
 	-fx-border-color: rgb(0, 0, 0);
 	-fx-background-color: #ffffff;
@@ -214,6 +214,16 @@
 	-fx-font-family: Helvetica;
 }
 
+.infos_label2 {
+	-fx-text-fill: #000000;
+	-fx-border-color: #ffffff;
+	-fx-background-color: #ffffff;
+	-fx-border-radius: 0;
+	-fx-padding: 10 10 10 10;
+	-fx-font-size: 14px;
+	-fx-font-family: Helvetica;
+}
+
 .land_label {
 	-fx-text-fill: #000000;
 	-fx-border-color: #ffffff;
@@ -231,16 +241,6 @@
 	-fx-border-radius: 0;
 	-fx-padding: 0 10 0 10;
 	-fx-font-size: 15,5px;
-	-fx-font-family: Helvetica;
-}
-
-.infos2_label {
-	-fx-text-fill: #000000;
-	-fx-border-color: #ffffff;
-	-fx-background-color: #ffffff;
-	-fx-border-radius: 0;
-	-fx-padding: 10 10 10 10;
-	-fx-font-size: 14px;
 	-fx-font-family: Helvetica;
 }
 
@@ -273,7 +273,7 @@
 	-fx-font-family: Helvetica;
 }
 
-.beatmunginfo_label {
+.anweisungen_label {
 	-fx-text-fill: #008000;
 	-fx-border-radius: 0;
 	-fx-padding: 10 10 10 10;
@@ -281,7 +281,16 @@
 	-fx-font-family: Helvetica;
 }
 
-.beatmunginfo_label2 {
+.anweisungen_label2 {
+	-fx-text-fill: #008000;
+	-fx-border-radius: 0;
+	-fx-padding: 10 10 10 10;
+	-fx-font-size: 16px;
+	-fx-font-family: Helvetica;
+	-fx-font-style: italic
+}
+
+.beatmunginfo_label {
 	-fx-text-fill: #ffffff;
 	-fx-background-color: #008040;
 	-fx-border-radius: 10;
@@ -300,7 +309,7 @@
 	-fx-font-family: Helvetica;
 }	
 
-.beduerfnisse2_label {
+.beduerfnisse_label2 {
 	-fx-text-fill: #000000;
 	-fx-border-color: #808080;
 	-fx-background-color: #dedede;
@@ -308,15 +317,7 @@
 	-fx-padding: 15 20 15 20;
 	-fx-font-size: 16px;
 	-fx-font-family: Helvetica;
-}
-
-.schocklage_label {
-	-fx-text-fill: #008000;
-	-fx-border-radius: 0;
-	-fx-padding: 10 10 10 10;
-	-fx-font-size: 16px;
-	-fx-font-family: Helvetica;
-	-fx-font-style: italic
+	-fx-text-alignment: center;
 }
 
 .brueche_label {
@@ -330,9 +331,4 @@
 	-fx-text-alignment: center;
 }
 
-.Ladebalken {
-	
-	-fx-max-height: 20px;
-	-fx-max-width: 180px;
-	
-}
+

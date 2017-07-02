@@ -81,7 +81,7 @@ public class Person_Atmung extends Basis {
 		getChildren().add(atmunginfo2);
 		atmunginfo2.setTranslateX(87);
 		atmunginfo2.setTranslateY(-100);
-		atmunginfo2.getStyleClass().add("infos2_label");
+		atmunginfo2.getStyleClass().add("infos_label2");
 
 		// Linie 2
 		getChildren().add(line2);

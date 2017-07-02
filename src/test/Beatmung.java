@@ -85,7 +85,7 @@ public class Beatmung extends Basis {
 		getChildren().add(beatmung1);
 		beatmung1.setTranslateX(54);
 		beatmung1.setTranslateY(-100);
-		beatmung1.getStyleClass().add("button_anderesland");
+		beatmung1.getStyleClass().add("button_zusatzinfos");
 
 		// Beatmung Image
 		getChildren().add(beatmung_view);
@@ -107,13 +107,13 @@ public class Beatmung extends Basis {
 		getChildren().add(beatmung2);
 		beatmung2.setTranslateX(0);
 		beatmung2.setTranslateY(30);
-		beatmung2.getStyleClass().add("beatmunginfo_label");
+		beatmung2.getStyleClass().add("anweisungen_label");
 
 		// Beatmung Label 3
 		getChildren().add(beatmung3);
 		beatmung3.setTranslateX(0);
 		beatmung3.setTranslateY(128);
-		beatmung3.getStyleClass().add("beatmunginfo_label2");
+		beatmung3.getStyleClass().add("beatmunginfo_label");
 		beatmung3.setTextAlignment(TextAlignment.CENTER);
 
 	}

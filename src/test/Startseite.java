@@ -16,7 +16,6 @@ public class Startseite extends Basis {
 
 	
 	// Linie
-
 	Line line = new Line();
 
 	// Label Lebensretter
@@ -60,7 +59,9 @@ public class Startseite extends Basis {
 		getChildren().add(progressBar);
 		progressBar.setTranslateX(0);
 		progressBar.setTranslateY(180);
-		progressBar.getStyleClass().add("Ladebalken");
+		progressBar.setMaxHeight(20);
+		progressBar.setMaxWidth(180);
+		
 		
 		getChildren().add(weiter);
 		weiter.getStyleClass().add("button_weiter");

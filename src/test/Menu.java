@@ -45,11 +45,11 @@ public class Menu extends Basis {
 		// Weitere Elemente hinzufügen
 
 		getChildren().add(unfall);
-		unfall.getStyleClass().add("custom_button");
+		unfall.getStyleClass().add("button_menue");
 		unfall.setTranslateY(50);
 
 		getChildren().add(verletzt);
-		verletzt.getStyleClass().add("custom_button");
+		verletzt.getStyleClass().add("button_menue");
 		verletzt.setTranslateY(-50);
 
 	}
