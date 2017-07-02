@@ -5,16 +5,12 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-/**
- * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert
- * sind
- */
 public class Rettungsgriff extends Basis {
 
 	// ------------------------------------------------------------------------------------------
 
 	// Zurück Button und Symbol
-	Button back = new Button("Zurueck");
+	Button back = new Button("Zurück");
 	Image back_image = new Image("file:images/back_symbol.png");
 	ImageView back_view = new ImageView("file:images/back_symbol.png");
 
@@ -32,10 +28,7 @@ public class Rettungsgriff extends Basis {
 	Image rettungsgriffbild = new Image("file:images/Rettungsgriff.png");
 	ImageView rettungsgriffbild_view = new ImageView("file:images/Rettungsgriff.png");
 
-	/**
-	 * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich
-	 * die Aufrufe von add auf Pane1 selbst.
-	 */
+
 	public Rettungsgriff() {
 
 		getStylesheets().add("test/styles.css");
@@ -82,11 +75,6 @@ public class Rettungsgriff extends Basis {
 
 	}
 
-	/**
-	 * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
-	 * 
-	 * @return Der weiter-Button
-	 */
 
 	Button getButton_weiter() {
 		return weiter;

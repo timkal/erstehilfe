@@ -6,11 +6,11 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Line;
 
-public class Notruf_gewaehlt extends Basis {
+public class Notruf_gewählt extends Basis {
 
 	
-	// Notruf gewaehlt Label
-	Label notrufgewaehlt = new Label("Notruf gewaehlt?");
+	// Notruf gewaählt Label
+	Label notrufgewaehlt = new Label("Notruf gewählt?");
 
 	// Linie darunter
 	Line line2 = new Line();
@@ -21,7 +21,7 @@ public class Notruf_gewaehlt extends Basis {
 	// Button Nein
 	Button nein = new Button("Nein");
 
-	public Notruf_gewaehlt() {
+	public Notruf_gewählt() {
 
 		getStylesheets().add("test/styles.css");
 
@@ -62,11 +62,6 @@ public class Notruf_gewaehlt extends Basis {
 		nein.getStyleClass().add("button_nein");
 	}
 
-	/**
-	 * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
-	 * 
-	 * @return Der weiter-Button
-	 */
 	Button getButton_ja() {
 		return ja;
 	}

@@ -6,19 +6,19 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-	// Panes und Szenen aller Klassen definieren
-	// Panes abgekürzt mit pZAHL, Scenes mit sZAHL
+	/*Panes und Szenen aller Klassen definieren
+	Panes abgekürzt mit pZAHL, Scenes mit sZAHL*/
 	
 	Startseite p0 = new Startseite();
 	Scene s0 = new Scene(p0, 300, 550);
 
-	Notruf_gewaehlt p1 = new Notruf_gewaehlt();
+	Notruf_gewählt p1 = new Notruf_gewählt();
 	Scene s1 = new Scene(p1, 300, 550);
 
 	Menu p2 = new Menu();
 	Scene s2 = new Scene(p2, 300, 550);
 
-	Notruf_Absetzen p3 = new Notruf_Absetzen();
+	Notruf_absetzen p3 = new Notruf_absetzen();
 	Scene s3 = new Scene(p3, 300, 550);
 
 	Telefonnummern p4 = new Telefonnummern();
@@ -66,10 +66,10 @@ public class Main extends Application {
 	Beatmung p18 = new Beatmung();
 	Scene s18 = new Scene(p18, 300, 550);
 
-	Aeussere_Verletzung p19 = new Aeussere_Verletzung();
+	Äussere_Verletzung p19 = new Äussere_Verletzung();
 	Scene s19 = new Scene(p19, 300, 550);
 
-	Aeussere_Verletzung p20 = new Aeussere_Verletzung();
+	Äussere_Verletzung p20 = new Äussere_Verletzung();
 	Scene s20 = new Scene(p20, 300, 550);
 
 	Innere_Verletzung p21 = new Innere_Verletzung();
@@ -90,28 +90,28 @@ public class Main extends Application {
 	Stabile_Seitenlage p26 = new Stabile_Seitenlage();
 	Scene s26 = new Scene(p26, 300, 550);
 
-	Beduerfnisse_Person p27 = new Beduerfnisse_Person();
+	Bedürfnisse_Person p27 = new Bedürfnisse_Person();
 	Scene s27 = new Scene(p27, 300, 550);
 
-	Beduerfnisse_Person p28 = new Beduerfnisse_Person();
+	Bedürfnisse_Person p28 = new Bedürfnisse_Person();
 	Scene s28 = new Scene(p28, 300, 550);
 
-	Beduerfnisse_Person p29 = new Beduerfnisse_Person();
+	Bedürfnisse_Person p29 = new Bedürfnisse_Person();
 	Scene s29 = new Scene(p29, 300, 550);
 
-	Beduerfnisse_Person p30 = new Beduerfnisse_Person();
+	Bedürfnisse_Person p30 = new Bedürfnisse_Person();
 	Scene s30 = new Scene(p30, 300, 550);
 
-	Beduerfnisse_Person p31 = new Beduerfnisse_Person();
+	Bedürfnisse_Person p31 = new Bedürfnisse_Person();
 	Scene s31 = new Scene(p31, 300, 550);
 
-	Beduerfnisse_Person p32 = new Beduerfnisse_Person();
+	Bedürfnisse_Person p32 = new Bedürfnisse_Person();
 	Scene s32 = new Scene(p32, 300, 550);
 
-	Beduerfnisse_Person p33 = new Beduerfnisse_Person();
+	Bedürfnisse_Person p33 = new Bedürfnisse_Person();
 	Scene s33 = new Scene(p33, 300, 550);
 
-	Beduerfnisse_Person p34 = new Beduerfnisse_Person();
+	Bedürfnisse_Person p34 = new Bedürfnisse_Person();
 	Scene s34 = new Scene(p34, 300, 550);
 	
 	Schocklage p35 = new Schocklage();
@@ -138,10 +138,10 @@ public class Main extends Application {
 	Knochen_verletzt p42 = new Knochen_verletzt();
 	Scene s42 = new Scene(p42, 300, 550);
 
-	Knochenbrueche p43 = new Knochenbrueche();
+	Knochenbrüche p43 = new Knochenbrüche();
 	Scene s43 = new Scene(p43, 300, 550);
 
-	Knochenbrueche p44 = new Knochenbrueche();
+	Knochenbrüche p44 = new Knochenbrüche();
 	Scene s44 = new Scene(p44, 300, 550);
 
 	Krankenhaus p45 = new Krankenhaus();

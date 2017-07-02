@@ -9,8 +9,8 @@ import javafx.scene.text.TextAlignment;
 
 public class Person_entfernt extends Basis {
 
-	// Zurueck Button und Symbol
-	Button back = new Button("Zurueck");
+	// Zurück Button und Symbol
+	Button back = new Button("Zurück");
 	Image back_image = new Image("file:images/back_symbol.png");
 	ImageView back_view = new ImageView("file:images/back_symbol.png");
 
@@ -27,8 +27,8 @@ public class Person_entfernt extends Basis {
 	Button nein = new Button("Nein");
 
 	// Label Hinweis
-	Label hinweis = new Label("Beachte:\n" + "Bei Verdacht auf eine\n" + "Wirbels�ulenverletzung nur\n"
-			+ "aus lebensgef�hrlicher\n" + "Umgebung entfernen!");
+	Label hinweis = new Label("Beachte:\n" + "Bei Verdacht auf eine\n" + "Wirbelsäulenverletzung nur\n"
+			+ "aus lebensgefährlicher\n" + "Umgebung entfernen!");
 
 	public Person_entfernt() {
 
@@ -38,7 +38,7 @@ public class Person_entfernt extends Basis {
 
 		getStyleClass().add("custom-stack");
 
-		// Zuruck Button und Symbol
+		// Zurück Button und Symbol
 		getChildren().add(back);
 		back.setTranslateX(-100);
 		back.setTranslateY(-240);
@@ -84,11 +84,6 @@ public class Person_entfernt extends Basis {
 		nein.getStyleClass().add("button_nein");
 	}
 
-	/**
-	 * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
-	 * 
-	 * @return Der weiter-Button
-	 */
 	Button getButton_ja() {
 		return ja;
 	}

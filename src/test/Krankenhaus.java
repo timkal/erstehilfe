@@ -8,7 +8,7 @@ import javafx.scene.web.WebView;
 
 public class Krankenhaus extends Basis {
 
-	Button back = new Button("Zurueck");
+	Button back = new Button("Zurück");
 	Image back_image = new Image("file:images/back_symbol.png");
 	ImageView back_view = new ImageView("file:images/back_symbol.png");
 
@@ -23,7 +23,7 @@ public class Krankenhaus extends Basis {
 
 		getStyleClass().add("custom-stack");
 
-		// Zuruck Button und Symbol
+		// Zurück Button und Symbol
 		getChildren().add(back);
 		back.setTranslateX(-100);
 		back.setTranslateY(-240);

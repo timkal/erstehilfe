@@ -6,16 +6,12 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.TextAlignment;
 
-/**
- * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert
- * sind
- */
-public class Beduerfnisse_Person extends Basis {
+public class Bedürfnisse_Person extends Basis {
 
 	// ------------------------------------------------------------------------------------------
 
 	// Zurück Button und Symbol
-	Button back = new Button("Zurueck");
+	Button back = new Button("Zurück");
 	Image back_image = new Image("file:images/back_symbol.png");
 	ImageView back_view = new ImageView("file:images/back_symbol.png");
 
@@ -25,23 +21,20 @@ public class Beduerfnisse_Person extends Basis {
 	// Weitere Elemente
 	// =================================
 
-	// Beduerfnisse Person Label
-	Label beduerfnisse = new Label("Beduerfnisse\nder Person");
+	// Bedürfnisse Person Label
+	Label beduerfnisse = new Label("Bedürfnisse\nder Person");
 
-	// Beduerfnisse Person Label 2
+	// Bedürfnisse Person Label 2
 	Label beduerfnisse2 = new Label("- Ist der Person kalt?\n"
-			+ "- Moechten Sie, dass Sie\n"
+			+ "- Möchten Sie, dass Sie\n"
 			+ "   eine vertraute Person\n" + "   anrufen?");
 
-	// Beduerfnisse Person Label 3
-	Label beduerfnisse3 = new Label("Kommen Sie den\nBeduerfnissen der\nPerson nach,\n"
-			+ "waehrend sie auf den\nNotarzt warten.");
+	// Bedürfnisse Person Label 3
+	Label beduerfnisse3 = new Label("Kommen Sie den\nBedürfnissen der\nPerson nach,\n"
+			+ "während sie auf den\nNotarzt warten.");
 
-	/**
-	 * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich
-	 * die Aufrufe von add auf Pane1 selbst.
-	 */
-	public Beduerfnisse_Person() {
+	
+	public Bedürfnisse_Person() {
 
 		getStylesheets().add("test/styles.css");
 
@@ -62,19 +55,19 @@ public class Beduerfnisse_Person extends Basis {
 
 		// Weitere Elemente hinzufügen
 
-		// Beduerfnisse Person Label
+		// Bedürfnisse Person Label
 		getChildren().add(beduerfnisse);
 		beduerfnisse.setTranslateX(0);
 		beduerfnisse.setTranslateY(-160);
 		beduerfnisse.getStyleClass().add("button_ueberschrift");
 
-		// Beduerfnisse Person Label 2
+		// Bedürfnisse Person Label 2
 		getChildren().add(beduerfnisse2);
 		beduerfnisse2.setTranslateX(0);
 		beduerfnisse2.setTranslateY(-50);
 		beduerfnisse2.getStyleClass().add("beduerfnisse_label");
 
-		// Beduerfnisse Person Label 3
+		// Bedürfnisse Person Label 3
 		getChildren().add(beduerfnisse3);
 		beduerfnisse3.setTranslateX(0);
 		beduerfnisse3.setTranslateY(100);
@@ -82,12 +75,6 @@ public class Beduerfnisse_Person extends Basis {
 		beduerfnisse3.getStyleClass().add("beduerfnisse2_label");
 
 	}
-
-	/**
-	 * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
-	 * 
-	 * @return Der weiter-Button
-	 */
 
 
 	Button getButton_menu() {

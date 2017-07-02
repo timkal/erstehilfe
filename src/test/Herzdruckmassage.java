@@ -18,16 +18,12 @@ import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 import javafx.scene.text.TextAlignment;
 
-/**
- * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert
- * sind
- */
 public class Herzdruckmassage extends Basis {
 
 	// ------------------------------------------------------------------------------------------
 
 	// Zurück Button und Symbol
-	Button back = new Button("Zurueck");
+	Button back = new Button("Zurück");
 	Image back_image = new Image("file:images/back_symbol.png");
 	ImageView back_view = new ImageView("file:images/back_symbol.png");
 
@@ -47,11 +43,11 @@ public class Herzdruckmassage extends Basis {
 	Label herzdruck1 = new Label("1. Herzdruckmassage");
 
 	// Herzdruckmassage Label 2
-	Label herzdruck2 = new Label("30x druecken");
+	Label herzdruck2 = new Label("30x drücken");
 
 	// Herzdruckmassage Label 3
 	Label herzdruck3 = new Label("- Brustkorb freimachen\n" + "- Druckpunkt auf der Mitte des Brustkorbes\n"
-			+ "- 30 mal kurz und kraeftig herunterduecken\n" + "- Zwischen Pumpstoessen Brustkorb komplett\n   entlasten");
+			+ "- 30 mal kurz und kräftig herunterdrücken\n" + "- Zwischen Pumpstössen Brustkorb komplett\n   entlasten");
 
 	// Herzdruckmassage Image
 	Image herzdruck = new Image("file:images/Herzdruckmassage.png");
@@ -66,10 +62,6 @@ public class Herzdruckmassage extends Basis {
 	Media hit = new Media(uri1.toString());
 	MediaPlayer player = new MediaPlayer(hit);
 
-	/**
-	 * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich
-	 * die Aufrufe von add auf Pane1 selbst.
-	 */
 	public Herzdruckmassage() {
 
 		getStylesheets().add("test/styles.css");
@@ -78,7 +70,7 @@ public class Herzdruckmassage extends Basis {
 
 		getStyleClass().add("custom-stack");
 
-		// Zuruck Button und Symbol
+		// Zurück Button und Symbol
 		getChildren().add(back);
 		back.setTranslateX(-100);
 		back.setTranslateY(-240);
@@ -159,13 +151,7 @@ public class Herzdruckmassage extends Basis {
 
 	}
 
-	
 
-	/**
-	 * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
-	 * 
-	 * @return Der weiter-Button
-	 */
 
 	Button getButton_schritt2() {
 		return schritt2;

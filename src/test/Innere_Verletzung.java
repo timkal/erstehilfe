@@ -9,12 +9,10 @@ import javafx.scene.text.TextAlignment;
 
 public class Innere_Verletzung extends Basis {
 
-	// Zur�ck Button und Symbol
-	Button back = new Button("Zurueck");
+	// Zurück Button und Symbol
+	Button back = new Button("Zurück");
 	Image back_image = new Image("file:images/back_symbol.png");
 	ImageView back_view = new ImageView("file:images/back_symbol.png");
-
-	
 
 	// Innere Verletzung Label
 	Label innereverletzung = new Label("Hat die Person innere\nVerletzungen?");
@@ -36,7 +34,7 @@ public class Innere_Verletzung extends Basis {
 
 		getStyleClass().add("custom-stack");
 
-		// Zuruck Button und Symbol
+		// Zurück Button und Symbol
 		getChildren().add(back);
 		back.setTranslateX(-100);
 		back.setTranslateY(-240);
@@ -76,11 +74,6 @@ public class Innere_Verletzung extends Basis {
 		nein.getStyleClass().add("button_nein");
 	}
 
-	/**
-	 * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
-	 * 
-	 * @return Der weiter-Button
-	 */
 	Button getButton_ja() {
 		return ja;
 	}

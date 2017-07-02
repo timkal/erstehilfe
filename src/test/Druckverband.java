@@ -6,47 +6,40 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Line;
 
-/**
- * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert
- * sind
- */
 public class Druckverband extends Basis {
 
 	// ------------------------------------------------------------------------------------------
 
 	// Zurück Button und Symbol
-	Button back = new Button("Zurueck");
+	Button back = new Button("Zurück");
 	Image back_image = new Image("file:images/back_symbol.png");
 	ImageView back_view = new ImageView("file:images/back_symbol.png");
 
 	// ------------------------------------------------------------------------------------------
 
-	// =================================
-	// Weitere Elemente
-	// =================================
+	/* =================================
+	Seitenspezifische Elemente 
+	 =================================*/
 
 	// Linie darunter
 	Line line2 = new Line();
 
-	// Zurueck zur Reanimation Button
+	// Zurück zur Reanimation Button
 	Button weiter = new Button("Weiter");
 
 	// Druckverband Label
 	Label druckverband = new Label("Druckverband");
 
 	// Druckverband Label 2
-	Label druckverband2 = new Label("1. Betroffenes Koerperteil hochhalten\n" + "2. Wunde mit steriler Wundauflage\n"
+	Label druckverband2 = new Label("1. Betroffenes Körperteil hochhalten\n" + "2. Wunde mit steriler Wundauflage\n"
 			+ "    bedecken\n" + "   (Alternative = sauberes Taschentuch)\n"
-			+ "3. Nicht saugfaehiger Druckkoerper auf der\n" + "    bereits abgedeckten Wunde fixieren");
+			+ "3. Nicht saugfähigen Druckkörper auf der\n" + "    bereits abgedeckten Wunde fixieren");
 
 	// Druckverband Image
 	Image druckverbandbild = new Image("file:images/Druckverband.png");
 	ImageView druckverbandbild_view = new ImageView("file:images/Druckverband.png");
 
-	/**
-	 * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich
-	 * die Aufrufe von add auf Pane1 selbst.
-	 */
+
 	public Druckverband() {
 
 		getStylesheets().add("test/styles.css");
@@ -55,9 +48,9 @@ public class Druckverband extends Basis {
 
 		getStyleClass().add("custom-stack");
 
-		// =================================
-		// TOP Bar importieren und anordnen
-		// =================================
+		/*=================================
+		TOP Bar importieren und anordnen
+		 =================================*/
 
 		// Button Weiter
 		getChildren().add(weiter);
@@ -65,7 +58,7 @@ public class Druckverband extends Basis {
 		weiter.setTranslateY(185);
 		weiter.getStyleClass().add("button_weiter");
 
-		// Zuruck Button und Symbol
+		// Button Zurück, Symbol Zurück 
 		getChildren().add(back);
 		back.setTranslateX(-100);
 		back.setTranslateY(-240);
@@ -76,7 +69,7 @@ public class Druckverband extends Basis {
 		back_view.setTranslateX(-135);
 		back_view.setTranslateY(-240);
 
-		// Weitere Elemente hinzufügen
+		// Seitenspezifische Elemente formatieren
 
 		// Linie 2
 		getChildren().add(line2);
@@ -87,19 +80,19 @@ public class Druckverband extends Basis {
 		line2.setStrokeWidth(1.5);
 		line2.setTranslateY(-10);
 
-		// Druckverband Label
+		// Label Druckverband
 		getChildren().add(druckverband);
 		druckverband.setTranslateX(0);
 		druckverband.setTranslateY(-185);
 		druckverband.getStyleClass().add("button_ueberschrift");
 
-		// Druckverband Label 2
+		// Label Druckverband 2
 		getChildren().add(druckverband2);
 		druckverband2.setTranslateX(0);
 		druckverband2.setTranslateY(50);
 		druckverband2.getStyleClass().add("beatmunginfo_label");
 
-		// Druckverband Image
+		// Image Druckverband
 		getChildren().add(druckverbandbild_view);
 		druckverbandbild_view.setFitHeight(123);
 		druckverbandbild_view.setFitWidth(150);
@@ -107,12 +100,6 @@ public class Druckverband extends Basis {
 		druckverbandbild_view.setTranslateY(-85);
 
 	}
-
-	/**
-	 * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
-	 * 
-	 * @return Der weiter-Button
-	 */
 
 	Button getButton_weiter() {
 		return weiter;

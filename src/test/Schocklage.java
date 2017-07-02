@@ -5,16 +5,12 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-/**
- * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert
- * sind
- */
 public class Schocklage extends Basis {
 
 	// ------------------------------------------------------------------------------------------
 
 	// Zurück Button und Symbol
-	Button back = new Button("Zurueck");
+	Button back = new Button("Zurück");
 	Image back_image = new Image("file:images/back_symbol.png");
 	ImageView back_view = new ImageView("file:images/back_symbol.png");
 
@@ -32,16 +28,12 @@ public class Schocklage extends Basis {
 
 	// Schocklage Label 2
 	Label schocklage2 = new Label("- Person zudecken\n" + 
-			"- beengende Kleidung\n   oeffnen");
+			"- beengende Kleidung\n   öffnen");
 
 	// Schocklage Image
 	Image schocklagebild = new Image("file:images/Schocklage.png");
 	ImageView schocklagebild_view = new ImageView("file:images/Schocklage.png");
 
-	/**
-	 * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich
-	 * die Aufrufe von add auf Pane1 selbst.
-	 */
 	public Schocklage() {
 
 		getStylesheets().add("test/styles.css");
@@ -90,11 +82,6 @@ public class Schocklage extends Basis {
 
 	}
 
-	/**
-	 * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
-	 * 
-	 * @return Der weiter-Button
-	 */
 
 	Button getButton_weiter() {
 		return weiter;

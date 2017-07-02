@@ -5,16 +5,12 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-/**
- * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert
- * sind
- */
-public class Knochenbrueche extends Basis {
+public class Knochenbrüche extends Basis {
 
 	// ------------------------------------------------------------------------------------------
 
 	// Zurück Button und Symbol
-	Button back = new Button("Zurueck");
+	Button back = new Button("Zurück");
 	Image back_image = new Image("file:images/back_symbol.png");
 	ImageView back_view = new ImageView("file:images/back_symbol.png");
 
@@ -27,26 +23,23 @@ public class Knochenbrueche extends Basis {
 	// Weiter Button
 	Button weiter = new Button("Weiter");
 
-	// Knochenbrueche Label
-	Label knochenbrueche = new Label("Knochenbrueche");
+	// Knochenbrüche Label
+	Label knochenbrueche = new Label("Knochenbrüche");
 
-	// Knochenbrueche Label 2
+	// Knochenbrüche Label 2
 	Label knochenbrueche2 = new Label("   Bruchstelle\nnicht bewegen!");
 
-	// Knochenbrueche Label 3
+	// Knochenbrüche Label 3
 	Label knochenbrueche3 = new Label("Offener Bruch:\n" + "Mit keimfreier\n" + "Wundauflage\n" + "bedecken");
 
-	// Knochenbrueche Label 4
-	Label knochenbrueche4 = new Label("Geschlossener\n" + "Bruch: Kuehlen\n");
+	// Knochenbrüche Label 4
+	Label knochenbrueche4 = new Label("Geschlossener\n" + "Bruch: Kühlen\n");
 
-	// Knochenbrueche Label 5
-	Label knochenbrueche5 = new Label("Abgetrennte Koerperteile\n" + "             sichern");
+	// Knochenbrüche Label 5
+	Label knochenbrueche5 = new Label("Abgetrennte Körperteile\n" + "             sichern");
 
-	/**
-	 * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich
-	 * die Aufrufe von add auf Pane1 selbst.
-	 */
-	public Knochenbrueche() {
+
+	public Knochenbrüche() {
 
 		getStylesheets().add("test/styles.css");
 
@@ -54,7 +47,7 @@ public class Knochenbrueche extends Basis {
 
 		getStyleClass().add("custom-stack");
 
-		// Zuruck Button und Symbol
+		// Zurück Button und Symbol
 		getChildren().add(back);
 		back.setTranslateX(-100);
 		back.setTranslateY(-240);
@@ -73,30 +66,30 @@ public class Knochenbrueche extends Basis {
 		weiter.setTranslateY(185);
 		weiter.getStyleClass().add("button_weiter");
 
-		// Knochenbrueche Label
+		// Knochenbrüche Label
 		getChildren().add(knochenbrueche);
 		knochenbrueche.setTranslateX(0);
 		knochenbrueche.setTranslateY(-185);
 		knochenbrueche.getStyleClass().add("button_ueberschrift");
 
-		// Knochenbrueche Label 2
+		// Knochenbrüche Label 2
 		getChildren().add(knochenbrueche2);
 		knochenbrueche2.setTranslateX(0);
 		knochenbrueche2.setTranslateY(-105);
 
-		// Knochenbrueche Label 3
+		// Knochenbrüche Label 3
 		getChildren().add(knochenbrueche3);
 		knochenbrueche3.setTranslateX(0);
 		knochenbrueche3.setTranslateY(0);
 		knochenbrueche3.getStyleClass().add("brueche_label");
 
-		// Knochenbrueche Label 4
+		// Knochenbrüche Label 4
 		getChildren().add(knochenbrueche4);
 		knochenbrueche4.setTranslateX(0);
 		knochenbrueche4.setTranslateY(80);
 		knochenbrueche4.getStyleClass().add("brueche_label");
 
-		// Knochenbrueche Label 5
+		// Knochenbrüche Label 5
 		getChildren().add(knochenbrueche5);
 		knochenbrueche5.setTranslateX(0);
 		knochenbrueche5.setTranslateY(140);
@@ -104,11 +97,6 @@ public class Knochenbrueche extends Basis {
 
 	}
 
-	/**
-	 * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
-	 * 
-	 * @return Der weiter-Button
-	 */
 
 	Button getButton_weiter() {
 		return weiter;

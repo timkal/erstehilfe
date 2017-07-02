@@ -4,16 +4,12 @@ import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-/**
- * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls plaziert
- * sind
- */
 public class Menu extends Basis {
 
 	// ------------------------------------------------------------------------------------------
 
 	// Zurück Button und Symbol
-	Button back = new Button("Zurueck");
+	Button back = new Button("Zurück");
 	Image back_image = new Image("file:images/back_symbol.png");
 	ImageView back_view = new ImageView("file:images/back_symbol.png");
 
@@ -27,10 +23,6 @@ public class Menu extends Basis {
 
 	Button verletzt = new Button("Verletzte Person");
 
-	/**
-	 * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, bezeihen sich
-	 * die Aufrufe von add auf Pane1 selbst.
-	 */
 	public Menu() {
 
 		getStylesheets().add("test/styles.css");
@@ -39,7 +31,7 @@ public class Menu extends Basis {
 
 		getStyleClass().add("custom-stack");
 
-		// Zuruck Button und Symbol
+		// Zurück Button und Symbol
 		getChildren().add(back);
 		back.setTranslateX(-100);
 		back.setTranslateY(-240);
@@ -62,11 +54,7 @@ public class Menu extends Basis {
 
 	}
 
-	/**
-	 * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
-	 * 
-	 * @return Der weiter-Button
-	 */
+
 	Button getButton_back() {
 		return back;
 	}

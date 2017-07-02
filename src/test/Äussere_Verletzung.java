@@ -7,38 +7,42 @@ import javafx.scene.image.ImageView;
 import javafx.scene.shape.Line;
 import javafx.scene.text.TextAlignment;
 
-public class Aeussere_Verletzung extends Basis {
+public class Äussere_Verletzung extends Basis {
 
-	// Zur�ck Button und Symbol
-	Button back = new Button("Zurueck");
-	Image back_image = new Image("file:images/back_symbol.png");
-	ImageView back_view = new ImageView("file:images/back_symbol.png");
+/*------------------------------------
+Seitenspezifische Elemente erzeugen
+------------------------------------*/
+	
+		// Button Zurück und Image Zurück
+		Button back = new Button("Zurück");
+		Image back_image = new Image("file:images/back_symbol.png");
+		ImageView back_view = new ImageView("file:images/back_symbol.png");
 
-	// =================================
-	// Weitere Elemente
-	// =================================
+		// Label Äussere Verletzung 
+		Label aeussereverletzung = new Label("Hat die Person äussere\nVerletzungen?");
 
-	// Aeussere Verletzung Label
-	Label aeussereverletzung = new Label("Hat die Person aeussere\nVerletzungen?");
+		// Linie 
+		Line line2 = new Line();
 
-	// Linie darunter
-	Line line2 = new Line();
+		// Button Ja
+		Button ja = new Button("Ja");
 
-	// Button Ja
-	Button ja = new Button("Ja");
+		// Button Nein
+		Button nein = new Button("Nein");
 
-	// Button Nein
-	Button nein = new Button("Nein");
-
-	public Aeussere_Verletzung() {
+		public Äussere_Verletzung() {
 
 		getStylesheets().add("test/styles.css");
-
-		// ------------------------------------------------------------------------------------------
+		
+// ------------------------------------------------------------------------------------------
 
 		getStyleClass().add("custom-stack");
-
-		// Zuruck Button und Symbol
+		
+/*------------------------------------
+Seitenspezifische Elemente formatieren
+------------------------------------*/
+		
+		// Button Zurück und Image Zurück
 		getChildren().add(back);
 		back.setTranslateX(-100);
 		back.setTranslateY(-240);
@@ -49,14 +53,13 @@ public class Aeussere_Verletzung extends Basis {
 		back_view.setTranslateX(-135);
 		back_view.setTranslateY(-240);
 
-		// Aeussere Verletzung Label
+		// Label Äussere Verletzung 
 		getChildren().add(aeussereverletzung);
 		aeussereverletzung.setTranslateX(0);
 		aeussereverletzung.setTranslateY(-175);
 		aeussereverletzung.setTextAlignment(TextAlignment.CENTER);
 
-
-		// Linie 2
+		// Linie 
 		getChildren().add(line2);
 		line2.setStartX(0);
 		line2.setStartY(0);
@@ -65,45 +68,40 @@ public class Aeussere_Verletzung extends Basis {
 		line2.setStrokeWidth(1.5);
 		line2.setTranslateY(-130);
 
-		// Button ja
+		// Button Ja
 		getChildren().add(ja);
 		ja.setTranslateX(62.5);
 		ja.setTranslateY(50);
 		ja.getStyleClass().add("button_ja");
 
-		// Button nein
+		// Button Nein
 		getChildren().add(nein);
 		nein.setTranslateX(-62.5);
 		nein.setTranslateY(50);
 		nein.getStyleClass().add("button_nein");
 	}
 
-	/**
-	 * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
-	 * 
-	 * @return Der weiter-Button
-	 */
-	Button getButton_ja() {
+		Button getButton_ja() {
 		return ja;
 	}
 
-	Button getButton_nein() {
+		Button getButton_nein() {
 		return nein;
 	}
 
-	Button getButton_back() {
+		Button getButton_back() {
 		return back;
 	}
 
-	Button getButton_menu() {
+		Button getButton_menu() {
 		return menu;
 	}
 
-	Button getButton_notruf() {
+		Button getButton_notruf() {
 		return notruf;
 	}
 	
-	Button getButton_krankenhaus() {
+		Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
 }

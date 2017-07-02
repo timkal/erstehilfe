@@ -9,8 +9,8 @@ import javafx.scene.text.TextAlignment;
 
 public class Blutet_Person extends Basis {
 
-	// Zurueck Button und Symbol
-	Button back = new Button("Zurueck");
+	// Zurück Button und Symbol
+	Button back = new Button("Zurück");
 	Image back_image = new Image("file:images/back_symbol.png");
 	ImageView back_view = new ImageView("file:images/back_symbol.png");
 
@@ -74,11 +74,7 @@ public class Blutet_Person extends Basis {
 		nein.getStyleClass().add("button_nein");
 	}
 
-	/**
-	 * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
-	 * 
-	 * @return Der weiter-Button
-	 */
+
 	Button getButton_ja() {
 		return ja;
 	}

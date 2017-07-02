@@ -8,8 +8,8 @@ import javafx.scene.shape.Line;
 
 public class Person_Atmung extends Basis {
 
-	// Zurueck Button und Symbol
-	Button back = new Button("Zurueck");
+	// Zurück Button und Symbol
+	Button back = new Button("Zurück");
 	Image back_image = new Image("file:images/back_symbol.png");
 	ImageView back_view = new ImageView("file:images/back_symbol.png");
 
@@ -30,7 +30,7 @@ public class Person_Atmung extends Basis {
 
 	// Label Atmung Info
 	Label atmunginfo = new Label(
-			"Sehen (Brustbewegung, Hautfarbe)\n" + "Hoeren (Atemgeraeusche)\n" + "Fuehlen (Atemhauch)");
+			"Sehen (Brustbewegung, Hautfarbe)\n" + "Hören (Atemgeräusche)\n" + "Fühlen (Atemhauch)");
 
 	// Atem-Check Symbol
 	Image atemcheck_image = new Image("file:images/Atem-Check.png");
@@ -128,11 +128,6 @@ public class Person_Atmung extends Basis {
 		atemwege_view.setTranslateY(-38);
 	}
 
-	/**
-	 * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
-	 * 
-	 * @return Der weiter-Button
-	 */
 	Button getButton_ja() {
 		return ja;
 	}

@@ -14,16 +14,12 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaPlayer.Status;
 
-/**
- * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert
- * sind
- */
 public class Reanimation extends Basis {
 
 	// ------------------------------------------------------------------------------------------
 
 	// Zurück Button und Symbol
-	Button back = new Button("Zurueck");
+	Button back = new Button("Zurück");
 	Image back_image = new Image("file:images/back_symbol.png");
 	ImageView back_view = new ImageView("file:images/back_symbol.png");
 
@@ -37,13 +33,13 @@ public class Reanimation extends Basis {
 	Button anleitung = new Button("Anleitung");
 
 	// Reanimation Label
-	Label reanimation = new Label("Reanimation\nWiederholen bis\nder Notarzt da ist");
+	Label reanimation = new Label("Reanimation\nwiederholen bis\nder Notarzt da ist");
 
 	// Beatmung Label
 	Label beatmung1 = new Label("2x beatmen");
 
 	// Herzdruck Label
-	Label herzdruck2 = new Label("30x druecken");
+	Label herzdruck2 = new Label("30x drücken");
 
 	// Herzdruckmassage Image
 	Image herzdruck = new Image("file:images/Herzdruckmassage.png");
@@ -62,10 +58,6 @@ public class Reanimation extends Basis {
 	Media hit = new Media(uri1.toString());
 	MediaPlayer player = new MediaPlayer(hit);
 
-	/**
-	 * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich
-	 * die Aufrufe von add auf Pane1 selbst.
-	 */
 	public Reanimation() {
 
 		getStylesheets().add("test/styles.css");
@@ -74,7 +66,7 @@ public class Reanimation extends Basis {
 
 		getStyleClass().add("custom-stack");
 
-		// Zuruck Button und Symbol
+		// Zurück Button und Symbol
 		getChildren().add(back);
 		back.setTranslateX(-100);
 		back.setTranslateY(-240);
@@ -153,11 +145,6 @@ public class Reanimation extends Basis {
 
 	}
 
-	/**
-	 * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
-	 * 
-	 * @return Der weiter-Button
-	 */
 
 	Button getButton_anleitung() {
 		return anleitung;

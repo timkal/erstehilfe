@@ -5,56 +5,44 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-/**
- * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert
- * sind
- */
 public class Absicherung extends Basis {
 
-	// ------------------------------------------------------------------------------------------
+/*------------------------------------
+Seitenspezifische Elemente erzeugen
+------------------------------------*/
+	
+		// Button Zurück und Image Zurück
+		Button back = new Button("Zurück");
+		Image back_image = new Image("file:images/back_symbol.png");
+		ImageView back_view = new ImageView("file:images/back_symbol.png");
 
-	// =================================
-	// Zurück
-	// =================================
-
-	// Zurück Button und Symbol
-	Button back = new Button("Zurueck");
-	Image back_image = new Image("file:images/back_symbol.png");
-	ImageView back_view = new ImageView("file:images/back_symbol.png");
-
-	// ------------------------------------------------------------------------------------------
-
-	// =================================
-	// Weitere Elemente
-	// =================================
-
-	// Infos Label
-	Label infos2 = new Label("1. Wenn moeglich, Fahrzeug\n" + "     an den Fahrbahnrand\n" + "2. Warnweste anlegen \n"
+		// Label Infos
+		Label infos2 = new Label("1. Wenn möglich, Fahrzeug\n" + "     an den Fahrbahnrand\n" + "2. Warnweste anlegen \n"
 			+ "3. Warndreieck aufstellen\n" + "        Innerorts: 50 m\n" + 
 			"        Landstrasse: 100 m\n" + "        Autobahn: 150 m\n");
 	
-	// Button weiter
-	Button weiter = new Button("Weiter");
+		// Button Weiter
+		Button weiter = new Button("Weiter");
 	
-	// Label Absicherung&Symbol
-	Label absicherung = new Label("Absicherung der\nUnfallstelle");
-	Image absicherung_image = new Image("file:images/Absicherung Unfallstelle.png");
-	ImageView absicherung_view = new ImageView("file:images/Absicherung Unfallstelle.png");
+		// Label Absicherung und Image Absicherung
+		Label absicherung = new Label("Absicherung der\nUnfallstelle");
+		Image absicherung_image = new Image("file:images/Absicherung Unfallstelle.png");
+		ImageView absicherung_view = new ImageView("file:images/Absicherung Unfallstelle.png");
 
 	
-	/**
-	 * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, beziehen sich
-	 * die Aufrufe von add auf Pane1 selbst.
-	 */
-	public Absicherung() {
+		public Absicherung() {
 
 		getStylesheets().add("test/styles.css");
 
-		// ------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 		getStyleClass().add("custom-stack");
-
-		// Zuruck Button und Symbol
+		
+/*------------------------------------
+Seitenspezifische Elemente formatieren
+------------------------------------*/
+		
+		// Button Zurück und Image Zurück
 		getChildren().add(back);
 		back.setTranslateX(-100);
 		back.setTranslateY(-240);
@@ -65,8 +53,6 @@ public class Absicherung extends Basis {
 		back_view.setTranslateX(-135);
 		back_view.setTranslateY(-240);
 
-		// Weitere Elemente hinzufügen
-		
 		// Button Weiter
 		getChildren().add(weiter);
 		weiter.setTranslateX(0);
@@ -79,7 +65,7 @@ public class Absicherung extends Basis {
 		absicherung.setTranslateY(-165);
 		absicherung.getStyleClass().add("button_ueberschrift");
 
-		// Absicherung Image
+		// Image Absicherung
 		getChildren().add(absicherung_view);
 		absicherung_view.setFitHeight(120);
 		absicherung_view.setFitWidth(120);
@@ -94,30 +80,23 @@ public class Absicherung extends Basis {
 
 	}
 
-	/**
-	 * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
-	 * 
-	 * @return Der weiter-Button
-	 */
-
-	Button getButton_weiter() {
+		Button getButton_weiter() {
 		return weiter;
-
 	}
 
-	Button getButton_back() {
+		Button getButton_back() {
 		return back;
 	}
 
-	Button getButton_menu() {
+		Button getButton_menu() {
 		return menu;
 	}
 
-	Button getButton_notruf() {
+		Button getButton_notruf() {
 		return notruf;
 	}
 	
-	Button getButton_krankenhaus() {
+		Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
 

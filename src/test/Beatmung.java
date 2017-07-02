@@ -7,10 +7,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.shape.Line;
 import javafx.scene.text.TextAlignment;
 
-/**
- * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls platziert
- * sind
- */
 public class Beatmung extends Basis {
 
 	// ------------------------------------------------------------------------------------------
@@ -22,15 +18,15 @@ public class Beatmung extends Basis {
 
 	// ------------------------------------------------------------------------------------------
 
-	// =================================
+/*=================================
 	// Weitere Elemente
-	// =================================
+ =================================*/
 
 	// Linie darunter
 	Line line2 = new Line();
 
 	// Zurueck zur Reanimation Button
-	Button back_reanimation = new Button("Zurueck zur Reanimation");
+	Button back_reanimation = new Button("Zurück zur Reanimation");
 
 	// Reanimation Label
 	Label reanimation = new Label("2. Beatmung");
@@ -40,13 +36,13 @@ public class Beatmung extends Basis {
 
 	// Beatmung Label 2
 	Label beatmung2 = new Label("- Nase der Person bei der Mund zu Mund\n   Beatmung verschliessen\n"
-			+ "- Beatmungsphase betraegt eine Sekunde\n"
-			+ "- 30 mal kurz und kraeftig herunterduecken\n"
-			+ "- Bei richtiger Durchfuehrung hebt sich der\n   Brustkorb der Person sichtbar");
+			+ "- Beatmungsphase beträgt eine Sekunde\n"
+			+ "- 30 mal kurz und kräftig herunterdrücken\n"
+			+ "- Bei richtiger Durchführung hebt sich der\n   Brustkorb der Person sichtbar");
 
 	// Beatmung Label 3
 	Label beatmung3 = new Label("Schritt 1 und 2 solange wiederholen,\n" + "bis der Notarzt da ist oder keine\n"
-			+ "Reanimation mehr benoetigt wird");
+			+ "Reanimation mehr benötigt wird");
 
 	// Beatmung Image
 	Image beatmung = new Image("file:images/Beatmung.png");
@@ -121,12 +117,6 @@ public class Beatmung extends Basis {
 		beatmung3.setTextAlignment(TextAlignment.CENTER);
 
 	}
-
-	/**
-	 * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
-	 * 
-	 * @return Der weiter-Button
-	 */
 
 	Button getButton_back_reanimation() {
 		return back_reanimation;

@@ -6,16 +6,12 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Line;
 
-/**
- * Description: Pane1 ist ein GridPane, auf dem schon zwei Controls plaziert
- * sind
- */
 public class Telefonnummern extends Basis {
 
 	// ------------------------------------------------------------------------------------------
 
-	// Zurueck Button und Symbol
-	Button back = new Button("Zurueck");
+	// Zurück Button und Symbol
+	Button back = new Button("Zurück");
 	Image back_image = new Image("file:images/back_symbol.png");
 	ImageView back_view = new ImageView("file:images/back_symbol.png");
 
@@ -38,10 +34,6 @@ public class Telefonnummern extends Basis {
 	// Weitere Elemente
 	// =================================
 
-	/**
-	 * Konstruktor von Pane1. Da Pane1 selbst ein GridPane ist, bezeihen sich
-	 * die Aufrufe von add auf Pane1 selbst.
-	 */
 	public Telefonnummern() {
 
 		getStylesheets().add("test/styles.css");
@@ -50,7 +42,7 @@ public class Telefonnummern extends Basis {
 
 		getStyleClass().add("custom-stack");
 
-		// Zuruck Button und Symbol
+		// Zurück Button und Symbol
 		getChildren().add(back);
 		back.setTranslateX(-100);
 		back.setTranslateY(-240);
@@ -91,11 +83,6 @@ public class Telefonnummern extends Basis {
 
 	}
 
-	/**
-	 * Diese Methode gibt eine Referenz auf den weiter-Button zur�ck
-	 * 
-	 * @return Der weiter-Button
-	 */
 	Button getButton_back() {
 		return back;
 	}
