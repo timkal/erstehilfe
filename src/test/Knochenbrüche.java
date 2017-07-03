@@ -7,116 +7,113 @@ import javafx.scene.image.ImageView;
 
 public class Knochenbrüche extends Basis {
 
-	// ------------------------------------------------------------------------------------------
+/*------------------------------------
+Seitenspezifische Elemente erzeugen
+------------------------------------*/
+	
+		// Button Zurück 
+		Button back = new Button("Zurück");
+		
+		// Image Zurück
+		Image back_image = new Image("file:images/back_symbol.png");
+		ImageView back_view = new ImageView("file:images/back_symbol.png");
+		
+		// Button Weiter
+		Button weiter = new Button("Weiter");
 
-	// Zurück Button und Symbol
-	Button back = new Button("Zurück");
-	Image back_image = new Image("file:images/back_symbol.png");
-	ImageView back_view = new ImageView("file:images/back_symbol.png");
+		// Label Knochenbrüche
+		Label knochenbrueche = new Label("Knochenbrüche");
 
-	// ------------------------------------------------------------------------------------------
+		// Label 2 Knochenbrüche
+		Label knochenbrueche2 = new Label("   Bruchstelle\nnicht bewegen!");
 
-	// =================================
-	// Weitere Elemente
-	// =================================
+		// Label 3 Knochenbrüche 
+		Label knochenbrueche3 = new Label("Offener Bruch:\n" + "Mit keimfreier\n" + "Wundauflage\n" + "bedecken");
 
-	// Weiter Button
-	Button weiter = new Button("Weiter");
+		// Label 4 Knochenbrüche 
+		Label knochenbrueche4 = new Label("Geschlossener\n" + "Bruch: Kühlen\n");
 
-	// Knochenbrüche Label
-	Label knochenbrueche = new Label("Knochenbrüche");
+		// Label 5 Knochenbrüche
+		Label knochenbrueche5 = new Label("Abgetrennte Körperteile\n" + "             sichern");
 
-	// Knochenbrüche Label 2
-	Label knochenbrueche2 = new Label("   Bruchstelle\nnicht bewegen!");
-
-	// Knochenbrüche Label 3
-	Label knochenbrueche3 = new Label("Offener Bruch:\n" + "Mit keimfreier\n" + "Wundauflage\n" + "bedecken");
-
-	// Knochenbrüche Label 4
-	Label knochenbrueche4 = new Label("Geschlossener\n" + "Bruch: Kühlen\n");
-
-	// Knochenbrüche Label 5
-	Label knochenbrueche5 = new Label("Abgetrennte Körperteile\n" + "             sichern");
-
-
-	public Knochenbrüche() {
+		public Knochenbrüche() {
 
 		getStylesheets().add("test/styles.css");
 
-		// ------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 		getStyleClass().add("custom-stack");
+		
+/*------------------------------------
+Seitenspezifische Elemente formatieren
+------------------------------------*/
 
-		// Zurück Button und Symbol
+		// Button Zurück 
 		getChildren().add(back);
 		back.setTranslateX(-100);
 		back.setTranslateY(-240);
 		back.getStyleClass().add("button_back");
+		
+		// Image Zurück
 		getChildren().add(back_view);
 		back_view.setFitHeight(15);
 		back_view.setFitWidth(10);
 		back_view.setTranslateX(-135);
 		back_view.setTranslateY(-240);
 
-		// Weitere Elemente hinzufügen
-		
 		// Button Weiter
 		getChildren().add(weiter);
 		weiter.setTranslateX(0);
 		weiter.setTranslateY(185);
 		weiter.getStyleClass().add("button_weiter");
 
-		// Knochenbrüche Label
+		// Label Knochenbrüche
 		getChildren().add(knochenbrueche);
 		knochenbrueche.setTranslateX(0);
 		knochenbrueche.setTranslateY(-185);
 		knochenbrueche.getStyleClass().add("button_ueberschrift");
 
-		// Knochenbrüche Label 2
+		// Label 2 Knochenbrüche
 		getChildren().add(knochenbrueche2);
 		knochenbrueche2.setTranslateX(0);
 		knochenbrueche2.setTranslateY(-105);
 
-		// Knochenbrüche Label 3
+		// Label 3 Knochenbrüche
 		getChildren().add(knochenbrueche3);
 		knochenbrueche3.setTranslateX(0);
 		knochenbrueche3.setTranslateY(0);
 		knochenbrueche3.getStyleClass().add("brueche_label");
 
-		// Knochenbrüche Label 4
+		// Label 4 Knochenbrüche
 		getChildren().add(knochenbrueche4);
 		knochenbrueche4.setTranslateX(0);
 		knochenbrueche4.setTranslateY(80);
 		knochenbrueche4.getStyleClass().add("brueche_label");
 
-		// Knochenbrüche Label 5
+		// Label 5 Knochenbrüche 
 		getChildren().add(knochenbrueche5);
 		knochenbrueche5.setTranslateX(0);
 		knochenbrueche5.setTranslateY(140);
 		knochenbrueche5.getStyleClass().add("anweisungen_label2");
-
 	}
 
-
-	Button getButton_weiter() {
+		Button getButton_weiter() {
 		return weiter;
-
 	}
 
-	Button getButton_back() {
+		Button getButton_back() {
 		return back;
 	}
 
-	Button getButton_menu() {
+		Button getButton_menu() {
 		return menu;
 	}
 
-	Button getButton_notruf() {
+		Button getButton_notruf() {
 		return notruf;
 	}
 	
-	Button getButton_krankenhaus() {
+		Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
-
 }

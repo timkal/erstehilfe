@@ -11,25 +11,28 @@ public class Absicherung extends Basis {
 Seitenspezifische Elemente erzeugen
 ------------------------------------*/
 	
-		// Button Zurück und Image Zurück
+		// Button Zurück 
 		Button back = new Button("Zurück");
+		
+		// Image Zurück
 		Image back_image = new Image("file:images/back_symbol.png");
 		ImageView back_view = new ImageView("file:images/back_symbol.png");
+
+		// Button Weiter
+		Button weiter = new Button("Weiter");
+				
+		// Label Absicherung 
+		Label absicherung = new Label("Absicherung der\nUnfallstelle");
+		
+		// Image Absicherung
+		Image absicherung_image = new Image("file:images/Absicherung Unfallstelle.png");
+		ImageView absicherung_view = new ImageView("file:images/Absicherung Unfallstelle.png");
 
 		// Label Infos
 		Label infos2 = new Label("1. Wenn möglich, Fahrzeug\n" + "     an den Fahrbahnrand\n" + "2. Warnweste anlegen \n"
 			+ "3. Warndreieck aufstellen\n" + "        Innerorts: 50 m\n" + 
 			"        Landstrasse: 100 m\n" + "        Autobahn: 150 m\n");
-	
-		// Button Weiter
-		Button weiter = new Button("Weiter");
-	
-		// Label Absicherung und Image Absicherung
-		Label absicherung = new Label("Absicherung der\nUnfallstelle");
-		Image absicherung_image = new Image("file:images/Absicherung Unfallstelle.png");
-		ImageView absicherung_view = new ImageView("file:images/Absicherung Unfallstelle.png");
-
-	
+		
 		public Absicherung() {
 
 		getStylesheets().add("test/styles.css");
@@ -42,11 +45,13 @@ Seitenspezifische Elemente erzeugen
 Seitenspezifische Elemente formatieren
 ------------------------------------*/
 		
-		// Button Zurück und Image Zurück
+		// Button Zurück 
 		getChildren().add(back);
 		back.setTranslateX(-100);
 		back.setTranslateY(-240);
 		back.getStyleClass().add("button_back");
+		
+		// Image Zurück
 		getChildren().add(back_view);
 		back_view.setFitHeight(15);
 		back_view.setFitWidth(10);
@@ -77,7 +82,6 @@ Seitenspezifische Elemente formatieren
 		infos2.setTranslateX(0);
 		infos2.setTranslateY(88);
 		infos2.getStyleClass().add("infos_label2");
-
 	}
 
 		Button getButton_weiter() {
@@ -99,5 +103,4 @@ Seitenspezifische Elemente formatieren
 		Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
-
 }

@@ -8,52 +8,56 @@ import javafx.scene.shape.Line;
 
 public class Telefonnummern extends Basis {
 
-	// ------------------------------------------------------------------------------------------
+/*------------------------------------
+Seitenspezifische Elemente erzeugen
+------------------------------------*/
+	
+		// Button Zurück 
+		Button back = new Button("Zurück");
+	
+		// Image Zurück
+		Image back_image = new Image("file:images/back_symbol.png");
+		ImageView back_view = new ImageView("file:images/back_symbol.png");
 
-	// Zurück Button und Symbol
-	Button back = new Button("Zurück");
-	Image back_image = new Image("file:images/back_symbol.png");
-	ImageView back_view = new ImageView("file:images/back_symbol.png");
+		// Linie 
+		Line line2 = new Line();
 
-	// Linie 2
-	Line line2 = new Line();
+		// Label Nummer EU
+		Label europa = new Label("European Union:     112");
 
-	// Oberes Label Nummer
-	Label europa = new Label("European Union:     112");
-
-	// Unteres Label Nummern
-	Label allelaender = new Label("Argentinia:\nAustralia:\nBrasil:\nCanada:\nChina:\nHongkong:\nIsrael:\nJapan:\nMexico:\n"
+		// Label Nummern Länder
+		Label allelaender = new Label("Argentinia:\nAustralia:\nBrasil:\nCanada:\nChina:\nHongkong:\nIsrael:\nJapan:\nMexico:\n"
 			+ "New Zealand:\nNorway:\nSwitzerland:\nTurkey:\nUK:\nUSA:");
 	
-	// Zahlen Label
-	Label zahlen = new Label("107\n000\n192\n911\n120\n999\n101\n119\n006\n111\n113\n144\n112\n999\n911");
+		// Label Zahlen
+		Label zahlen = new Label("107\n000\n192\n911\n120\n999\n101\n119\n006\n111\n113\n144\n112\n999\n911");
 
-	// ------------------------------------------------------------------------------------------
-
-	// =================================
-	// Weitere Elemente
-	// =================================
-
-	public Telefonnummern() {
+		public Telefonnummern() {
 
 		getStylesheets().add("test/styles.css");
 
-		// ------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 		getStyleClass().add("custom-stack");
 
-		// Zurück Button und Symbol
+/*------------------------------------
+Seitenspezifische Elemente formatieren
+------------------------------------*/
+		
+		// Button Zurück
 		getChildren().add(back);
 		back.setTranslateX(-100);
 		back.setTranslateY(-240);
 		back.getStyleClass().add("button_back");
+		
+		// Image Zurück
 		getChildren().add(back_view);
 		back_view.setFitHeight(15);
 		back_view.setFitWidth(10);
 		back_view.setTranslateX(-135);
 		back_view.setTranslateY(-240);
 
-		// Linie 2
+		// Linie 
 		getChildren().add(line2);
 		line.setStartX(0);
 		line.setStartY(0);
@@ -62,41 +66,37 @@ public class Telefonnummern extends Basis {
 		line.setStrokeWidth(0.5);
 		line.setTranslateY(-160);
 
-		// Oberes Label Nummer 
+		// Label Nummer EU
 		getChildren().add(europa);
 		europa.setTranslateX(0);
 		europa.setTranslateY(-190);
 
-		// Unteres Label Nummern
+		// Label Nummern Länder
 		getChildren().add(allelaender);
 		allelaender.setTranslateX(-30);
 		allelaender.setTranslateY(28);
 		allelaender.getStyleClass().add("land_label");
 		
-		// Zahlen Label
+		// Label Zahlen
 		getChildren().add(zahlen);
 		zahlen.setTranslateX(60);
 		zahlen.setTranslateY(28);
 		zahlen.getStyleClass().add("zahlen_label");
-
-		// Weitere Elemente hinzufügen
-
 	}
 
-	Button getButton_back() {
+		Button getButton_back() {
 		return back;
 	}
 
-	Button getButton_menu() {
+		Button getButton_menu() {
 		return menu;
 	}
 
-	Button getButton_notruf() {
+		Button getButton_notruf() {
 		return notruf;
 	}
 	
-	Button getButton_krankenhaus() {
+		Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
-
 }

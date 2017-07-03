@@ -16,108 +16,110 @@ import javafx.scene.media.MediaPlayer.Status;
 
 public class Reanimation extends Basis {
 
-	// ------------------------------------------------------------------------------------------
+/*------------------------------------
+Seitenspezifische Elemente erzeugen
+------------------------------------*/
+	
+		// Button Zurück 	
+		Button back = new Button("Zurück");
+		
+		// Image Zurück
+		Image back_image = new Image("file:images/back_symbol.png");
+		ImageView back_view = new ImageView("file:images/back_symbol.png");
 
-	// Zurück Button und Symbol
-	Button back = new Button("Zurück");
-	Image back_image = new Image("file:images/back_symbol.png");
-	ImageView back_view = new ImageView("file:images/back_symbol.png");
+		// Button Anleitung
+		Button anleitung = new Button("Anleitung");
 
-	// ------------------------------------------------------------------------------------------
+		// Label Reanimation 
+		Label reanimation = new Label("Reanimation\nwiederholen bis\nder Notarzt da ist");
 
-	// =================================
-	// Weitere Elemente
-	// =================================
+		// Label Beatmung 
+		Label beatmung1 = new Label("2x beatmen");
 
-	// Anleitung Button
-	Button anleitung = new Button("Anleitung");
+		// Label Herzdruck 
+		Label herzdruck2 = new Label("30x drücken");
 
-	// Reanimation Label
-	Label reanimation = new Label("Reanimation\nwiederholen bis\nder Notarzt da ist");
+		// Image Herzdruckmassage
+		Image herzdruck = new Image("file:images/Herzdruckmassage.png");
+		ImageView herzdruck_view = new ImageView("file:images/Herzdruckmassage.png");
 
-	// Beatmung Label
-	Label beatmung1 = new Label("2x beatmen");
+		// Image Beatmung
+		Image beatmung = new Image("file:images/Beatmung.png");
+		ImageView beatmung_view = new ImageView("file:images/Beatmung.png");
 
-	// Herzdruck Label
-	Label herzdruck2 = new Label("30x drücken");
+		// Button Druckfrequenz
+		Button druckfrequenz = new Button("▷");
 
-	// Herzdruckmassage Image
-	Image herzdruck = new Image("file:images/Herzdruckmassage.png");
-	ImageView herzdruck_view = new ImageView("file:images/Herzdruckmassage.png");
+		// Media-Player + Audio-Datei einbinden
+		Path path1 = Paths.get("src", "Audio", "reanimation.mp3"); // src/audio/reanimate1.mp3
+		URI uri1 = path1.toUri();
+		Media hit = new Media(uri1.toString());
+		MediaPlayer player = new MediaPlayer(hit);
 
-	// Beatmung Image
-	Image beatmung = new Image("file:images/Beatmung.png");
-	ImageView beatmung_view = new ImageView("file:images/Beatmung.png");
-
-	// Button Druckfrequenz
-	Button druckfrequenz = new Button("▷");
-
-	// Media-Player + Audio-Datei einbinden
-	Path path1 = Paths.get("src", "Audio", "reanimation.mp3"); // src/audio/reanimate1.mp3
-	URI uri1 = path1.toUri();
-	Media hit = new Media(uri1.toString());
-	MediaPlayer player = new MediaPlayer(hit);
-
-	public Reanimation() {
+		public Reanimation() {
 
 		getStylesheets().add("test/styles.css");
 
-		// ------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 		getStyleClass().add("custom-stack");
-
-		// Zurück Button und Symbol
+		
+/*------------------------------------
+Seitenspezifische Elemente formatieren
+------------------------------------*/
+		
+		// Button Zurück 
 		getChildren().add(back);
 		back.setTranslateX(-100);
 		back.setTranslateY(-240);
 		back.getStyleClass().add("button_back");
+		
+		// Image Zurück
 		getChildren().add(back_view);
 		back_view.setFitHeight(15);
 		back_view.setFitWidth(10);
 		back_view.setTranslateX(-135);
 		back_view.setTranslateY(-240);
 
-		// Weitere Elemente hinzufügen
-
-		// Anleitung Button
+		// Button Anleitung
 		getChildren().add(anleitung);
 		anleitung.setTranslateX(0);
 		anleitung.setTranslateY(185);
 		anleitung.getStyleClass().add("button_anleitung");
 
-		// Reanimation Label
+		// Label Reanimation
 		getChildren().add(reanimation);
 		reanimation.setTranslateX(0);
 		reanimation.setTranslateY(-160);
 		reanimation.getStyleClass().add("button_ueberschrift");
 
-		// Beatmung Label
+		// Label Beatmung
 		getChildren().add(beatmung1);
 		beatmung1.setTranslateX(-70);
 		beatmung1.setTranslateY(90);
 		beatmung1.getStyleClass().add("button_zusatzinfos");
 
-		// Herzdruck Label
+		// Label Herzdruck
 		getChildren().add(herzdruck2);
 		herzdruck2.setTranslateX(70);
 		herzdruck2.setTranslateY(10);
 		herzdruck2.getStyleClass().add("button_zusatzinfos");
 
-		// Herzdruckmassage Image
+		// Image Herzdruckmassage 
 		getChildren().add(herzdruck_view);
 		herzdruck_view.setFitHeight(150);
 		herzdruck_view.setFitWidth(126);
 		herzdruck_view.setTranslateX(-70);
 		herzdruck_view.setTranslateY(-20);
 
-		// Beatmung Image
+		// Image Beatmung
 		getChildren().add(beatmung_view);
 		beatmung_view.setFitHeight(100);
 		beatmung_view.setFitWidth(91);
 		beatmung_view.setTranslateX(65);
 		beatmung_view.setTranslateY(100);
 
-		// Druckfrequenz Button
+		// Button Druckfrequenz
 		getChildren().add(druckfrequenz);
 		druckfrequenz.setTranslateX(70);
 		druckfrequenz.setTranslateY(-62);
@@ -134,40 +136,35 @@ public class Reanimation extends Basis {
 						player.stop();
 					} else {
 						player.play();
-
 					}
-
 				}
 			};
 		};
 
 		druckfrequenz.setOnAction(e1);
-
 	}
-
-
-	Button getButton_anleitung() {
+		
+		Button getButton_anleitung() {
 		return anleitung;
 	}
 
-	Button getButton_back() {
+		Button getButton_back() {
 		return back;
 	}
 
-	Button getButton_menu() {
+		Button getButton_menu() {
 		return menu;
 	}
 
-	Button getButton_notruf() {
+		Button getButton_notruf() {
 		return notruf;
 	}
-
-	Button getButton_druckfrequenz() {
+		
+		Button getButton_druckfrequenz() {
 		return druckfrequenz;
 	}
 	
-	Button getButton_krankenhaus() {
+		Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
-
 }

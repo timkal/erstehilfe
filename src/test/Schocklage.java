@@ -7,53 +7,55 @@ import javafx.scene.image.ImageView;
 
 public class Schocklage extends Basis {
 
-	// ------------------------------------------------------------------------------------------
+/*------------------------------------
+Seitenspezifische Elemente erzeugen
+------------------------------------*/
+	
+		// Button Zurück
+		Button back = new Button("Zurück");
+	
+		// Image Zurück
+		Image back_image = new Image("file:images/back_symbol.png");
+		ImageView back_view = new ImageView("file:images/back_symbol.png");
 
-	// Zurück Button und Symbol
-	Button back = new Button("Zurück");
-	Image back_image = new Image("file:images/back_symbol.png");
-	ImageView back_view = new ImageView("file:images/back_symbol.png");
+		// Button Weiter
+		Button weiter = new Button("Weiter");
 
-	// ------------------------------------------------------------------------------------------
+		// Label Schocklage
+		Label schocklage = new Label("Schocklage");
 
-	// =================================
-	// Weitere Elemente
-	// =================================
-
-	// Weiter Button
-	Button weiter = new Button("Weiter");
-
-	// Schocklage Label
-	Label schocklage = new Label("Schocklage");
-
-	// Schocklage Label 2
-	Label schocklage2 = new Label("- Person zudecken\n" + 
+		// Label 2 Schocklage
+		Label schocklage2 = new Label("- Person zudecken\n" + 
 			"- beengende Kleidung\n   öffnen");
 
-	// Schocklage Image
-	Image schocklagebild = new Image("file:images/Schocklage.png");
-	ImageView schocklagebild_view = new ImageView("file:images/Schocklage.png");
+		// Image Schocklage
+		Image schocklagebild = new Image("file:images/Schocklage.png");
+		ImageView schocklagebild_view = new ImageView("file:images/Schocklage.png");
 
-	public Schocklage() {
+		public Schocklage() {
 
 		getStylesheets().add("test/styles.css");
 
-		// ------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 		getStyleClass().add("custom-stack");
 
-		// Zuruck Button und Symbol
+/*------------------------------------
+Seitenspezifische Elemente formatieren
+------------------------------------*/
+		
+		// Button Zurück
 		getChildren().add(back);
 		back.setTranslateX(-100);
 		back.setTranslateY(-240);
 		back.getStyleClass().add("button_back");
+		
+		//Image Zurück
 		getChildren().add(back_view);
 		back_view.setFitHeight(15);
 		back_view.setFitWidth(10);
 		back_view.setTranslateX(-135);
 		back_view.setTranslateY(-240);
-
-		// Weitere Elemente hinzufügen
 
 		// Button Weiter
 		getChildren().add(weiter);
@@ -61,47 +63,43 @@ public class Schocklage extends Basis {
 		weiter.setTranslateY(185);
 		weiter.getStyleClass().add("button_weiter");
 				
-		// Schocklage Label
+		// Label Schocklage
 		getChildren().add(schocklage);
 		schocklage.setTranslateX(0);
 		schocklage.setTranslateY(-185);
 		schocklage.getStyleClass().add("button_ueberschrift");
 
-		// Schocklage Label 2
+		// Label 2 Schocklage
 		getChildren().add(schocklage2);
 		schocklage2.setTranslateX(0);
 		schocklage2.setTranslateY(95);
 		schocklage2.getStyleClass().add("anweisungen_label2");
 
-		// Schocklage Image
+		// Image Schocklage
 		getChildren().add(schocklagebild_view);
 		schocklagebild_view.setFitHeight(213);
 		schocklagebild_view.setFitWidth(290);
 		schocklagebild_view.setTranslateX(0);
 		schocklagebild_view.setTranslateY(-50);
-
 	}
 
-
-	Button getButton_weiter() {
+		Button getButton_weiter() {
 		return weiter;
-
 	}
-
-	Button getButton_back() {
+		
+		Button getButton_back() {
 		return back;
 	}
 
-	Button getButton_menu() {
+		Button getButton_menu() {
 		return menu;
 	}
 
-	Button getButton_notruf() {
+		Button getButton_notruf() {
 		return notruf;
 	}
 	
-	Button getButton_krankenhaus() {
+		Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
-
 }

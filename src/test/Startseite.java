@@ -12,35 +12,33 @@ import javafx.scene.shape.Line;
 
 public class Startseite extends Basis {
 
-	// ------------------------------------------------------------------------------------------
+/*------------------------------------
+Seitenspezifische Elemente erzeugen
+------------------------------------*/
 
+		// Image Erste Hilfe
+		Image erstehilfe = new Image("file:images/Startseite Logo.png");
+		ImageView erstehilfe_view = new ImageView("file:images/Startseite Logo.png");
+
+		// Progress Bar
+		ProgressBar progressBar = new ProgressBar();
 	
-	// Linie
-	Line line = new Line();
+		// Button Weiter
+		Button weiter = new Button("Start");
 
-	// Label Lebensretter
-	Label lebensretter = new Label("Lebensretter");
-
-	// Erste Hilfe Symbol
-	Image erstehilfe = new Image("file:images/Startseite Logo.png");
-	ImageView erstehilfe_view = new ImageView("file:images/Startseite Logo.png");
-
-	// Progress Bar
-	ProgressBar progressBar = new ProgressBar();
-	
-	Button weiter = new Button("Start");
-
-	// ------------------------------------------------------------------------------------------
-
-	public Startseite() {
+		public Startseite() {
 
 		getStylesheets().add("test/styles.css");
 
-		// ------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 		getStyleClass().add("custom-stack");
 
-		//TAB BAR ausblenden
+/*------------------------------------
+Seitenspezifische Elemente formatieren
+------------------------------------*/
+		
+		//Tab Bar ausblenden
 		menu.setVisible(false);
 		home_view.setVisible(false);
 		krankenhaus.setVisible(false);
@@ -48,7 +46,7 @@ public class Startseite extends Basis {
 		notruf.setVisible(false);
 		notruf_view.setVisible(false);
 
-		// Erste Hilfe Symbol
+		// Image Erste Hilfe
 		getChildren().add(erstehilfe_view);
 		erstehilfe_view.setFitHeight(300);
 		erstehilfe_view.setFitWidth(300);
@@ -62,7 +60,7 @@ public class Startseite extends Basis {
 		progressBar.setMaxHeight(20);
 		progressBar.setMaxWidth(180);
 		
-		
+		// Button Weiter
 		getChildren().add(weiter);
 		weiter.getStyleClass().add("button_weiter");
 		weiter.setTranslateX(0);
@@ -96,18 +94,9 @@ public class Startseite extends Basis {
         });
 
 		new Thread(sleeper).start();
-		
-		
-
-		// ------------------------------------------------------------------------------------------
-
-	
 	}
 
-	
-	
-	Button getButton_weiter() {
+		Button getButton_weiter() {
 		return weiter;
 	}
-
 }
