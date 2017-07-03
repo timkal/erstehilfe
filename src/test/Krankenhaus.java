@@ -52,7 +52,7 @@ Seitenspezifische Elemente formatieren
 		getChildren().add(browser);
 		webEngine.load("http://www.maps.google.com");
 		browser.setMaxWidth(300);
-		browser.setMaxHeight(442);
+		browser.setMaxHeight(430);
 	}
 
 		Button getButton_menu() {

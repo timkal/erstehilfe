@@ -384,11 +384,8 @@ public class Main extends Application {
 		p43.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s45));
 		p44.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s45));
 
-		// Testbereich für Media-Player
-		// p11.getButton_druckfrequenz().setOnAction(e1);
-
 		primaryStage.setScene(s0);
-		primaryStage.setTitle("Startscreen");
+		primaryStage.setTitle("Erste Hilfe");
 		primaryStage.setResizable(false);
 		primaryStage.show();
 	}
