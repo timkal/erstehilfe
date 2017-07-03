@@ -22,6 +22,11 @@ Seitenspezifische Elemente erzeugen
 
 		// Label Innere Verletzung 
 		Label innereverletzung = new Label("Hat die Person innere\nVerletzungen?");
+		
+		// Label Anzeichen
+		Label anzeichen = new Label ("Anzeichen:\n"
+				+ "- Bauch der Person formt sich kugelrund\n"
+				+ "- Die Person hat Schaum vor dem Mund\n");
 
 		// Linie 
 		Line line2 = new Line();
@@ -62,6 +67,12 @@ Seitenspezifische Elemente erzeugen
 		innereverletzung.setTranslateX(0);
 		innereverletzung.setTranslateY(-175);
 		innereverletzung.setTextAlignment(TextAlignment.CENTER);
+		
+		// Label Anzeichen
+		getChildren().add(anzeichen);
+		anzeichen.setTranslateX(0);
+		anzeichen.setTranslateY(-90);
+		anzeichen.getStyleClass().add("anzeichen_label");
 
 		// Linie
 		getChildren().add(line2);

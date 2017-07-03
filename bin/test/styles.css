@@ -213,7 +213,7 @@
 	-fx-border-color: #ffffff;
 	-fx-background-color: #ffffff;
 	-fx-border-radius: 0;
-	-fx-padding: 10 10 10 10;
+	-fx-padding: 0 0 0 0;
 	-fx-font-size: 14px;
 	-fx-font-family: Helvetica;
 }
@@ -324,5 +324,15 @@
 	-fx-font-family: Helvetica;
 	-fx-text-alignment: center;
 }
+
+.anzeichen_label {
+	-fx-text-fill: #000000;
+	-fx-border-color: #ffffff;
+	-fx-background-color: #ffffff;
+	-fx-border-radius: 0;
+	-fx-padding: 0 30 0 30;
+	-fx-font-size: 12px;
+	-fx-font-family: Helvetica;
+}	
 
 
