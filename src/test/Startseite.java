@@ -16,15 +16,15 @@ public class Startseite extends Basis {
 Seitenspezifische Elemente erzeugen
 ------------------------------------*/
 
-		// Image Erste Hilfe
-		Image erstehilfe = new Image("file:images/Startseite Logo.png");
-		ImageView erstehilfe_view = new ImageView("file:images/Startseite Logo.png");
+		// Image logo
+		Image logo = new Image("file:images/Startseite Logo.png");
+		ImageView logo_view = new ImageView("file:images/Startseite Logo.png");
 
 		// Progress Bar
 		ProgressBar progressBar = new ProgressBar();
 	
 		// Button Weiter
-		Button weiter = new Button("Start");
+		Button start = new Button("Start");
 
 		public Startseite() {
 
@@ -47,25 +47,26 @@ Seitenspezifische Elemente formatieren
 		notruf_view.setVisible(false);
 
 		// Image Erste Hilfe
-		getChildren().add(erstehilfe_view);
-		erstehilfe_view.setFitHeight(300);
-		erstehilfe_view.setFitWidth(300);
-		erstehilfe_view.setTranslateX(0);
-		erstehilfe_view.setTranslateY(-71);
+		getChildren().add(logo_view);
+		logo_view.setFitHeight(190);
+		logo_view.setFitWidth(180);
+		logo_view.setTranslateX(0);
+		logo_view.setTranslateY(-60);
 
 		// Progress Bar
 		getChildren().add(progressBar);
 		progressBar.setTranslateX(0);
-		progressBar.setTranslateY(180);
+		progressBar.setTranslateY(70);
 		progressBar.setMaxHeight(20);
 		progressBar.setMaxWidth(180);
+		progressBar.getStyleClass().add("button_start");
 		
 		// Button Weiter
-		getChildren().add(weiter);
-		weiter.getStyleClass().add("button_weiter");
-		weiter.setTranslateX(0);
-		weiter.setTranslateY(220);
-		weiter.setVisible(false);
+		getChildren().add(start);
+		start.getStyleClass().add("button_start");
+		start.setTranslateX(0);
+		start.setTranslateY(70);
+		start.setVisible(false);
 
 		Task<Void> sleeper = new Task<Void>() {
 			@Override
@@ -89,14 +90,14 @@ Seitenspezifische Elemente formatieren
 		sleeper.setOnSucceeded(new EventHandler<WorkerStateEvent>() {
             @Override
             public void handle(WorkerStateEvent event) {
-                weiter.setVisible(true);
+                start.setVisible(true);
             }
         });
 
 		new Thread(sleeper).start();
 	}
 
-		Button getButton_weiter() {
-		return weiter;
+		Button getButton_start() {
+		return start;
 	}
 }
