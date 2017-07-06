@@ -39,12 +39,12 @@ Seitenspezifische Elemente formatieren
 
 		// Linie 
 		getChildren().add(line2);
-		line.setStartX(0);
-		line.setStartY(0);
-		line.setEndX(300);
-		line.setEndY(0);
-		line.setStrokeWidth(0.5);
-		line.setTranslateY(-160);
+		line2.setStartX(0);
+		line2.setStartY(0);
+		line2.setEndX(300);
+		line2.setEndY(0);
+		line2.setStrokeWidth(0.5);
+		line2.setTranslateY(-160);
 
 		// Label Nummer EU
 		getChildren().add(europa);
