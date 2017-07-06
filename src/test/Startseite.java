@@ -36,6 +36,10 @@ Seitenspezifische Elemente erzeugen
 Seitenspezifische Elemente formatieren
 ------------------------------------*/
 		
+		// Button Zurück ausblenden
+		back.setVisible(false);
+		back_view.setVisible(false);
+		
 		//Tab Bar ausblenden
 		menu.setVisible(false);
 		home_view.setVisible(false);
