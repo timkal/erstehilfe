@@ -71,12 +71,17 @@ Seitenspezifische Elemente formatieren
 		Task<Void> sleeper = new Task<Void>() {
 			@Override
 			protected Void call() throws Exception {
+				
+				try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                }
 
 				final int zähler = 130;
 				for (int i = 0; i < zähler; i++) {
 					updateProgress(i, zähler);
 					try {
-						Thread.sleep(30);
+						Thread.sleep(10);
 					} catch (InterruptedException e) {
 					}
 				}
