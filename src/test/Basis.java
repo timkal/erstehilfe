@@ -27,6 +27,14 @@ Basis-Elemente Top Bar erzeugen
 		// Rechteck
 		Rectangle top = new Rectangle(300, 60);
 		
+		// Button Zurück 
+		Button back = new Button("Zurück");
+				
+		// Image Zurück
+		Image back_image = new Image("file:images/back_symbol.png");
+		ImageView back_view = new ImageView("file:images/back_symbol.png");
+
+		
 		// Label Titel
 		Label title = new Label("Lebensretter");
 		
@@ -89,6 +97,17 @@ Elemente der Top Bar formatieren
 		getChildren().add(top);
 		top.setTranslateX(0);
 		top.setTranslateY(-250); 
+		
+		// Button Zurück 
+		getChildren().add(back);
+		getChildren().add(back_view);
+		back.setTranslateX(-100);
+		back.setTranslateY(-240);				
+		back_view.setFitHeight(15);
+		back_view.setFitWidth(10);
+		back_view.setTranslateX(-135);
+		back_view.setTranslateY(-240);
+		back.getStyleClass().add("button_back");
 
 		// Label Titel
 		getChildren().add(title);

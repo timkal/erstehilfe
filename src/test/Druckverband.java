@@ -11,13 +11,6 @@ public class Druckverband extends Basis {
 /*------------------------------------
 Seitenspezifische Elemente erzeugen
 ------------------------------------*/
-		
-		// Button Zurück 
-		Button back = new Button("Zurück");
-		
-		// Image Zurück
-		Image back_image = new Image("file:images/back_symbol.png");
-		ImageView back_view = new ImageView("file:images/back_symbol.png");
 	
 		// Button Weiter 
 		Button weiter = new Button("Weiter");
@@ -48,19 +41,6 @@ Seitenspezifische Elemente erzeugen
 /*------------------------------------
 Seitenspezifische Elemente formatieren
 ------------------------------------*/
-
-		// Button Zurück 
-		getChildren().add(back);
-		back.setTranslateX(-100);
-		back.setTranslateY(-240);
-		back.getStyleClass().add("button_back");
-		
-		// Image Zurück 
-		getChildren().add(back_view);
-		back_view.setFitHeight(15);
-		back_view.setFitWidth(10);
-		back_view.setTranslateX(-135);
-		back_view.setTranslateY(-240);
 		
 		// Button Weiter
 		getChildren().add(weiter);
