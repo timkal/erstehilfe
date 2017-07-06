@@ -24,10 +24,6 @@ Seitenspezifische Elemente erzeugen
 		public Stabile_Seitenlage() {
 
 		getStylesheets().add("test/styles.css");
-
-// ------------------------------------------------------------------------------------------
-
-		getStyleClass().add("custom-stack");
 		
 /*------------------------------------
 Seitenspezifische Elemente formatieren
@@ -43,7 +39,7 @@ Seitenspezifische Elemente formatieren
 		getChildren().add(stabileseitenlage);
 		stabileseitenlage.setTranslateX(0);
 		stabileseitenlage.setTranslateY(-175);
-		stabileseitenlage.getStyleClass().add("button_ueberschrift");
+		stabileseitenlage.getStyleClass().add("label_ueberschrift");
 
 		// Image Stabile Seitenlage 
 		getChildren().add(stabileseitenlagebild_view);

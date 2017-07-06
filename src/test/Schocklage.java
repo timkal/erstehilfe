@@ -29,10 +29,6 @@ Seitenspezifische Elemente erzeugen
 
 		getStylesheets().add("test/styles.css");
 
-// ------------------------------------------------------------------------------------------
-
-		getStyleClass().add("custom-stack");
-
 /*------------------------------------
 Seitenspezifische Elemente formatieren
 ------------------------------------*/
@@ -47,7 +43,7 @@ Seitenspezifische Elemente formatieren
 		getChildren().add(schocklage);
 		schocklage.setTranslateX(0);
 		schocklage.setTranslateY(-185);
-		schocklage.getStyleClass().add("button_ueberschrift");
+		schocklage.getStyleClass().add("label_ueberschrift");
 
 		// Label 2 Schocklage
 		getChildren().add(schocklage2);

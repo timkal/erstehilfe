@@ -30,10 +30,6 @@ Seitenspezifische Elemente erzeugen
 
 		getStylesheets().add("test/styles.css");
 
-// ------------------------------------------------------------------------------------------
-
-		getStyleClass().add("custom-stack");
-		
 /*------------------------------------
 Seitenspezifische Elemente formatieren
 ------------------------------------*/
@@ -48,7 +44,7 @@ Seitenspezifische Elemente formatieren
 		getChildren().add(absicherung);
 		absicherung.setTranslateX(0);
 		absicherung.setTranslateY(-165);
-		absicherung.getStyleClass().add("button_ueberschrift");
+		absicherung.getStyleClass().add("label_ueberschrift");
 
 		// Image Absicherung
 		getChildren().add(absicherung_view);

@@ -24,10 +24,6 @@ Seitenspezifische Elemente erzeugen
 		public Bedürfnisse_Person() {
 
 		getStylesheets().add("test/styles.css");
-
-// ------------------------------------------------------------------------------------------
-
-		getStyleClass().add("custom-stack");
 		
 /*------------------------------------
 Seitenspezifische Elemente formatieren
@@ -37,7 +33,7 @@ Seitenspezifische Elemente formatieren
 		getChildren().add(beduerfnisse);
 		beduerfnisse.setTranslateX(0);
 		beduerfnisse.setTranslateY(-160);
-		beduerfnisse.getStyleClass().add("button_ueberschrift");
+		beduerfnisse.getStyleClass().add("label_ueberschrift");
 
 		// Label 2 Bedürfnisse Person 
 		getChildren().add(beduerfnisse2);

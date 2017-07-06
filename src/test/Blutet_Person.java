@@ -26,10 +26,6 @@ Seitenspezifische Elemente erzeugen
 		public Blutet_Person() {
 
 		getStylesheets().add("test/styles.css");
-
-// ------------------------------------------------------------------------------------------
-
-		getStyleClass().add("custom-stack");
 		
 /*------------------------------------
 Seitenspezifische Elemente formatieren

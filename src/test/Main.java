@@ -149,7 +149,7 @@ public class Main extends Application {
 
 		public void start(Stage primaryStage) throws Exception {
 
-		// Aktion des Buttons in der Szene 0
+		// Verknüpfung der Klassen mit Lambda-Ausdruck
 		
 		p0.getButton_start().setOnAction(e -> primaryStage.setScene(s1));
 		p1.getButton_ja().setOnAction(e -> primaryStage.setScene(s2));

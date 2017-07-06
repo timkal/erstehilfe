@@ -24,10 +24,6 @@ Seitenspezifische Elemente erzeugen
 		public Rettungsgriff() {
 
 		getStylesheets().add("test/styles.css");
-
-// ------------------------------------------------------------------------------------------
-
-		getStyleClass().add("custom-stack");
 		
 /*------------------------------------
 Seitenspezifische Elemente formatieren
@@ -43,7 +39,7 @@ Seitenspezifische Elemente formatieren
 		getChildren().add(rettungsgriff);
 		rettungsgriff.setTranslateX(0);
 		rettungsgriff.setTranslateY(-175);
-		rettungsgriff.getStyleClass().add("button_ueberschrift");
+		rettungsgriff.getStyleClass().add("label_ueberschrift");
 
 		// Image Rettungsgriff
 		getChildren().add(rettungsgriffbild_view);

@@ -32,10 +32,6 @@ Seitenspezifische Elemente erzeugen
 		public Notruf_absetzen() {
 
 		getStylesheets().add("test/styles.css");
-
-// ------------------------------------------------------------------------------------------
-
-		getStyleClass().add("custom-stack");
 		
 /*------------------------------------
 Seitenspezifische Elemente formatieren

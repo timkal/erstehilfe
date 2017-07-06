@@ -17,10 +17,6 @@ Seitenspezifische Elemente erzeugen
 		public Krankenhaus() {
 
 		getStylesheets().add("test/styles.css");
-
-// ------------------------------------------------------------------------------------------
-
-		getStyleClass().add("custom-stack");
 		
 /*------------------------------------
 Seitenspezifische Elemente formatieren

@@ -53,10 +53,6 @@ Seitenspezifische Elemente erzeugen
 		public Herzdruckmassage() {
 
 		getStylesheets().add("test/styles.css");
-
-// ------------------------------------------------------------------------------------------
-
-		getStyleClass().add("custom-stack");
 		
 /*------------------------------------
 Seitenspezifische Elemente formatieren
@@ -81,7 +77,7 @@ Seitenspezifische Elemente formatieren
 		getChildren().add(herzdruck1);
 		herzdruck1.setTranslateX(0);
 		herzdruck1.setTranslateY(-185);
-		herzdruck1.getStyleClass().add("button_ueberschrift");
+		herzdruck1.getStyleClass().add("label_ueberschrift");
 
 		// Label 2 Herzdruckmassage
 		getChildren().add(herzdruck2);

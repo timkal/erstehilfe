@@ -26,13 +26,13 @@ Seitenspezifische Elemente erzeugen
 
 		getStylesheets().add("test/styles.css");
 
-// ------------------------------------------------------------------------------------------
-
-		getStyleClass().add("custom-stack");
-
 /*------------------------------------
 Seitenspezifische Elemente formatieren
 ------------------------------------*/
+		
+		// Button Zurück und Image Zurück ausblenden
+		back.setVisible(false);
+		back_view.setVisible(false);
 		
 		// Label Notruf gewählt
 		getChildren().add(notrufgewaehlt);

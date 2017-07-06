@@ -34,10 +34,6 @@ Seitenspezifische Elemente erzeugen
 
 		getStylesheets().add("test/styles.css");
 
-// ------------------------------------------------------------------------------------------
-
-		getStyleClass().add("custom-stack");
-
 /*------------------------------------
 Seitenspezifische Elemente formatieren
 ------------------------------------*/
@@ -61,7 +57,7 @@ Seitenspezifische Elemente formatieren
 		getChildren().add(druckverband);
 		druckverband.setTranslateX(0);
 		druckverband.setTranslateY(-185);
-		druckverband.getStyleClass().add("button_ueberschrift");
+		druckverband.getStyleClass().add("label_ueberschrift");
 
 		// Label 2 Druckverband 
 		getChildren().add(druckverband2);

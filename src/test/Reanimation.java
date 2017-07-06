@@ -52,10 +52,6 @@ Seitenspezifische Elemente erzeugen
 		public Reanimation() {
 
 		getStylesheets().add("test/styles.css");
-
-// ------------------------------------------------------------------------------------------
-
-		getStyleClass().add("custom-stack");
 		
 /*------------------------------------
 Seitenspezifische Elemente formatieren
@@ -71,7 +67,7 @@ Seitenspezifische Elemente formatieren
 		getChildren().add(reanimation);
 		reanimation.setTranslateX(0);
 		reanimation.setTranslateY(-160);
-		reanimation.getStyleClass().add("button_ueberschrift");
+		reanimation.getStyleClass().add("label_ueberschrift");
 
 		// Label Beatmung
 		getChildren().add(beatmung1);

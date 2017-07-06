@@ -31,10 +31,6 @@ Seitenspezifische Elemente erzeugen
 
 		getStylesheets().add("test/styles.css");
 
-// ------------------------------------------------------------------------------------------
-
-		getStyleClass().add("custom-stack");
-		
 /*------------------------------------
 Seitenspezifische Elemente formatieren
 ------------------------------------*/
@@ -49,7 +45,7 @@ Seitenspezifische Elemente formatieren
 		getChildren().add(knochenbrueche);
 		knochenbrueche.setTranslateX(0);
 		knochenbrueche.setTranslateY(-185);
-		knochenbrueche.getStyleClass().add("button_ueberschrift");
+		knochenbrueche.getStyleClass().add("label_ueberschrift");
 
 		// Label 2 Knochenbrüche
 		getChildren().add(knochenbrueche2);

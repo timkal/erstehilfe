@@ -31,10 +31,6 @@ Seitenspezifische Elemente erzeugen
 		public Innere_Verletzung() {
 
 		getStylesheets().add("test/styles.css");
-
-// ------------------------------------------------------------------------------------------
-
-		getStyleClass().add("custom-stack");
 		
 /*------------------------------------
 Seitenspezifische Elemente erzeugen
