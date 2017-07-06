@@ -37,9 +37,8 @@ Seitenspezifische Elemente erzeugen
 		Line line2 = new Line();
 
 		// Label 2 Beatmung
-		Label beatmung2 = new Label("- Nase der Person bei der Mund zu Mund\n   Beatmung verschliessen\n"
+		Label beatmung2 = new Label("- Nase der Person bei der Mund-zu-Mund\n   Beatmung verschliessen\n"
 			+ "- Beatmungsphase beträgt eine Sekunde\n"
-			+ "- 30 mal kurz und kräftig herunterdrücken\n"
 			+ "- Bei richtiger Durchführung hebt sich der\n   Brustkorb der Person sichtbar");
 
 		// Label 3 Beatmung

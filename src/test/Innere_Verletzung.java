@@ -26,7 +26,7 @@ Seitenspezifische Elemente erzeugen
 		// Label Anzeichen
 		Label anzeichen = new Label ("Anzeichen:\n"
 				+ "- Bauch der Person formt sich kugelrund\n"
-				+ "- Die Person hat Schaum vor dem Mund\n");
+				+ "- Person hat Schaum vor dem Mund\n");
 
 		// Linie 
 		Line line2 = new Line();
