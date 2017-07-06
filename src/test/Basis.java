@@ -60,7 +60,7 @@ Basis-Elemente Tab Bar erzeugen
 =================================*/
 
 		// Button Menü 
-		Button menu = new Button("\nMenu");
+		Button menu = new Button("\nMenü");
 			
 		// Image Menü
 		Image home_image = new Image("file:images/Home.png");
@@ -158,7 +158,7 @@ Elemente der Top Bar formatieren
 Elemente der Tab Bar formatieren
 =================================*/
 		
-		// Button Menu und Image Menü
+		// Button Menü und Image Menü
 		getChildren().add(menu);
 		getChildren().add(home_view);
 		home_view.setFitHeight(19);
