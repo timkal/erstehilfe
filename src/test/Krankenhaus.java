@@ -20,8 +20,8 @@ Seitenspezifische Elemente erzeugen
 		ImageView back_view = new ImageView("file:images/back_symbol.png");
 		
 		// Web-View Integration
-		final WebView browser = new WebView();
-		final WebEngine webEngine = browser.getEngine();
+		WebView browser = new WebView();
+		WebEngine webEngine = browser.getEngine();
 
 		public Krankenhaus() {
 
@@ -52,7 +52,8 @@ Seitenspezifische Elemente formatieren
 		getChildren().add(browser);
 		webEngine.load("http://www.maps.google.com");
 		browser.setMaxWidth(300);
-		browser.setMaxHeight(430);
+		browser.setMaxHeight(436);
+		browser.setTranslateY(-3);
 	}
 
 		Button getButton_menu() {
