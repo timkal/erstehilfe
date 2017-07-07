@@ -14,7 +14,7 @@ public class Startseite extends Basis {
 Seitenspezifische Elemente erzeugen
 ------------------------------------*/
 
-		// Image logo
+		// Image Logo
 		Image logo = new Image("file:images/Logo.png");
 		ImageView logo_view = new ImageView("file:images/Logo.png");
 
@@ -75,14 +75,14 @@ Seitenspezifische Elemente formatieren
 
 		Task<Void> sleeper = new Task<Void>() {
 			@Override
-			protected Void call() throws Exception {
+			public Void call() throws Exception {
 				
 				try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
                 }
 
-				final int zähler = 130;
+				int zähler = 130;
 				for (int i = 0; i < zähler; i++) {
 					updateProgress(i, zähler);
 					try {
