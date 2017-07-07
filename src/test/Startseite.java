@@ -32,11 +32,18 @@ Seitenspezifische Elemente erzeugen
 Seitenspezifische Elemente formatieren
 ------------------------------------*/
 		
-		// Button Zurück und Image Zurück ausblenden
+		// Top Bar ausblenden
+		top.setVisible(false);
 		back.setVisible(false);
 		back_view.setVisible(false);
+		title.setVisible(false);
+		akku_view.setVisible(false);
+		prozent.setVisible(false);
+		empfang_view.setVisible(false);
+		line.setVisible(false);
+		zeit.setVisible(false);
 		
-		//Tab Bar ausblenden
+		// Tab Bar ausblenden
 		menu.setVisible(false);
 		home_view.setVisible(false);
 		krankenhaus.setVisible(false);
