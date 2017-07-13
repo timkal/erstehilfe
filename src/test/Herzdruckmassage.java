@@ -16,49 +16,50 @@ import javafx.scene.media.MediaPlayer.Status;
 import javafx.scene.shape.Line;
 
 public class Herzdruckmassage extends Basis {
-	
-/*------------------------------------
-Seitenspezifische Elemente erzeugen
-------------------------------------*/
 
-		// Linie 
-		Line line2 = new Line();
+	/*------------------------------------
+	Seitenspezifische Elemente erzeugen
+	------------------------------------*/
 
-		// Button Schritt 2
-		Button schritt2 = new Button("Schritt 2");
+	// Linie
+	Line line2 = new Line();
 
-		// Label Herzdruckmassage 
-		Label herzdruck1 = new Label("1. Herzdruckmassage");
+	// Button Schritt 2
+	Button schritt2 = new Button("Schritt 2");
 
-		// Label 2 Herzdruckmassage 
-		Label herzdruck2 = new Label("30x drücken");
+	// Label Herzdruckmassage
+	Label herzdruck1 = new Label("1. Herzdruckmassage");
 
-		// Label 3 Herzdruckmassage 
-		Label herzdruck3 = new Label("- Brustkorb freimachen\n" + "- Druckpunkt auf der Mitte des Brustkorbes\n"
-			+ "- 30 mal kurz und kräftig herunterdrücken\n" + "- Zwischen Pumpstössen Brustkorb komplett\n   entlasten");
+	// Label 2 Herzdruckmassage
+	Label herzdruck2 = new Label("30x drücken");
 
-		// Image Herzdruckmassage
-		Image herzdruck = new Image("file:images/Herzdruckmassage.png");
-		ImageView herzdruck_view = new ImageView("file:images/Herzdruckmassage.png");
+	// Label 3 Herzdruckmassage
+	Label herzdruck3 = new Label("- Brustkorb freimachen\n" + "- Druckpunkt auf der Mitte des Brustkorbes\n"
+			+ "- 30 mal kurz und kräftig herunterdrücken\n"
+			+ "- Zwischen Pumpstössen Brustkorb komplett\n   entlasten");
 
-		// Button Druckfrequenz
-		Button druckfrequenz = new Button("▷");
-		
-		// Media-Player + Audio-Datei einbinden
-		Path path1 = Paths.get("src", "Audio", "reanimation.mp3"); // src/audio/reanimate1.mp3
-		URI uri1 = path1.toUri();
-		Media hit = new Media(uri1.toString());	
-		MediaPlayer player = new MediaPlayer(hit);
+	// Image Herzdruckmassage
+	Image herzdruck = new Image("file:images/Herzdruckmassage.png");
+	ImageView herzdruck_view = new ImageView("file:images/Herzdruckmassage.png");
 
-		public Herzdruckmassage() {
+	// Button Druckfrequenz
+	Button druckfrequenz = new Button("▷");
+
+	// Media-Player + Audio-Datei einbinden
+	Path path1 = Paths.get("src", "Audio", "reanimation.mp3"); // src/audio/reanimate1.mp3
+	URI uri1 = path1.toUri();
+	Media hit = new Media(uri1.toString());
+	MediaPlayer player = new MediaPlayer(hit);
+
+	public Herzdruckmassage() {
 
 		getStylesheets().add("test/styles.css");
-		
-/*------------------------------------
-Seitenspezifische Elemente formatieren
-------------------------------------*/
-		
-		// Linie 
+
+		/*------------------------------------
+		Seitenspezifische Elemente formatieren
+		------------------------------------*/
+
+		// Linie
 		getChildren().add(line2);
 		line2.setStartX(0);
 		line2.setStartY(0);
@@ -72,8 +73,8 @@ Seitenspezifische Elemente formatieren
 		schritt2.setTranslateX(0);
 		schritt2.setTranslateY(185);
 		schritt2.getStyleClass().add("button_weiter");
-				
-		// Label Herzdruckmassage 
+
+		// Label Herzdruckmassage
 		getChildren().add(herzdruck1);
 		herzdruck1.setTranslateX(0);
 		herzdruck1.setTranslateY(-185);
@@ -98,12 +99,12 @@ Seitenspezifische Elemente formatieren
 		herzdruck_view.setTranslateX(-70);
 		herzdruck_view.setTranslateY(-50);
 
-		// Button Druckfrequenz 
+		// Button Druckfrequenz
 		getChildren().add(druckfrequenz);
 		druckfrequenz.setTranslateX(70);
 		druckfrequenz.setTranslateY(-78);
 		druckfrequenz.getStyleClass().add("button_druckfrequenz");
-		
+
 		// Event-Handler und Action
 		EventHandler<ActionEvent> e1 = new EventHandler<ActionEvent>() {
 
@@ -124,24 +125,24 @@ Seitenspezifische Elemente formatieren
 
 		druckfrequenz.setOnAction(e1);
 	}
-		
-		Button getButton_schritt2() {
+
+	Button getButton_schritt2() {
 		return schritt2;
 	}
 
-		Button getButton_back() {
+	Button getButton_back() {
 		return back;
 	}
 
-		Button getButton_menu() {
+	Button getButton_menu() {
 		return menu;
 	}
 
-		Button getButton_notruf() {
+	Button getButton_notruf() {
 		return notruf;
 	}
-	
-		Button getButton_krankenhaus() {
+
+	Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
 }

@@ -5,41 +5,41 @@ import javafx.scene.control.Label;
 import javafx.scene.shape.Line;
 
 public class Notruf_gewählt extends Basis {
-	
-/*------------------------------------
-Seitenspezifische Elemente erzeugen
-------------------------------------*/	
-	
-		// Label Notruf gewählt
-		Label notrufgewaehlt = new Label("Notruf gewählt?");
 
-		// Linie 
-		Line line2 = new Line();
+	/*------------------------------------
+	Seitenspezifische Elemente erzeugen
+	------------------------------------*/
 
-		// Button Ja
-		Button ja = new Button("Ja");
+	// Label Notruf gewählt
+	Label notrufgewaehlt = new Label("Notruf gewählt?");
 
-		// Button Nein
-		Button nein = new Button("Nein");
+	// Linie
+	Line line2 = new Line();
 
-		public Notruf_gewählt() {
+	// Button Ja
+	Button ja = new Button("Ja");
+
+	// Button Nein
+	Button nein = new Button("Nein");
+
+	public Notruf_gewählt() {
 
 		getStylesheets().add("test/styles.css");
 
-/*------------------------------------
-Seitenspezifische Elemente formatieren
-------------------------------------*/
-		
+		/*------------------------------------
+		Seitenspezifische Elemente formatieren
+		------------------------------------*/
+
 		// Button Zurück und Image Zurück ausblenden
 		back.setVisible(false);
 		back_view.setVisible(false);
-		
+
 		// Label Notruf gewählt
 		getChildren().add(notrufgewaehlt);
 		notrufgewaehlt.setTranslateX(0);
 		notrufgewaehlt.setTranslateY(-175);
 
-		// Linie 
+		// Linie
 		getChildren().add(line2);
 		line2.setStartX(0);
 		line2.setStartY(0);
@@ -61,23 +61,23 @@ Seitenspezifische Elemente formatieren
 		nein.getStyleClass().add("button_nein");
 	}
 
-		Button getButton_ja() {
+	Button getButton_ja() {
 		return ja;
 	}
 
-		Button getButton_nein() {
+	Button getButton_nein() {
 		return nein;
 	}
 
-		Button getButton_menu() {
+	Button getButton_menu() {
 		return menu;
 	}
 
-		Button getButton_notruf() {
+	Button getButton_notruf() {
 		return notruf;
 	}
-	
-		Button getButton_krankenhaus() {
+
+	Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
 }

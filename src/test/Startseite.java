@@ -10,28 +10,28 @@ import javafx.scene.image.ImageView;
 
 public class Startseite extends Basis {
 
-/*------------------------------------
-Seitenspezifische Elemente erzeugen
-------------------------------------*/
+	/*------------------------------------
+	Seitenspezifische Elemente erzeugen
+	------------------------------------*/
 
-		// Image Logo
-		Image logo = new Image("file:images/Logo.png");
-		ImageView logo_view = new ImageView("file:images/Logo.png");
+	// Image Logo
+	Image logo = new Image("file:images/Logo.png");
+	ImageView logo_view = new ImageView("file:images/Logo.png");
 
-		// Progress Bar
-		ProgressBar progressBar = new ProgressBar();
-	
-		// Button Weiter
-		Button start = new Button("Start");
+	// Progress Bar
+	ProgressBar progressBar = new ProgressBar();
 
-		public Startseite() {
+	// Button Weiter
+	Button start = new Button("Start");
+
+	public Startseite() {
 
 		getStylesheets().add("test/styles.css");
 
-/*------------------------------------
-Seitenspezifische Elemente formatieren
-------------------------------------*/
-		
+		/*------------------------------------
+		Seitenspezifische Elemente formatieren
+		------------------------------------*/
+
 		// Top Bar ausblenden
 		top.setVisible(false);
 		back.setVisible(false);
@@ -42,7 +42,7 @@ Seitenspezifische Elemente formatieren
 		empfang_view.setVisible(false);
 		line.setVisible(false);
 		zeit.setVisible(false);
-		
+
 		// Tab Bar ausblenden
 		menu.setVisible(false);
 		home_view.setVisible(false);
@@ -65,7 +65,7 @@ Seitenspezifische Elemente formatieren
 		progressBar.setMaxHeight(20);
 		progressBar.setMaxWidth(180);
 		progressBar.getStyleClass().add("button_start");
-		
+
 		// Button Weiter
 		getChildren().add(start);
 		start.getStyleClass().add("button_start");
@@ -76,11 +76,11 @@ Seitenspezifische Elemente formatieren
 		Task<Void> sleeper = new Task<Void>() {
 			@Override
 			public Void call() throws Exception {
-				
+
 				try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                }
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+				}
 
 				int zähler = 130;
 				for (int i = 0; i < zähler; i++) {
@@ -96,18 +96,18 @@ Seitenspezifische Elemente formatieren
 		};
 
 		progressBar.progressProperty().bind(sleeper.progressProperty());
-		
+
 		sleeper.setOnSucceeded(new EventHandler<WorkerStateEvent>() {
-            @Override
-            public void handle(WorkerStateEvent event) {
-                start.setVisible(true);
-            }
-        });
+			@Override
+			public void handle(WorkerStateEvent event) {
+				start.setVisible(true);
+			}
+		});
 
 		new Thread(sleeper).start();
 	}
 
-		Button getButton_start() {
+	Button getButton_start() {
 		return start;
 	}
 }

@@ -9,42 +9,42 @@ import javafx.scene.text.TextAlignment;
 
 public class Beatmung extends Basis {
 
-/*------------------------------------
-Seitenspezifische Elemente erzeugen
-------------------------------------*/
-	
-		// Button Zurück zur Reanimation 
-		Button back_reanimation = new Button("Zurück zur Reanimation");
-		
-		// Label Reanimation
-		Label reanimation = new Label("2. Beatmung");
+	/*------------------------------------
+	Seitenspezifische Elemente erzeugen
+	------------------------------------*/
 
-		// Label Beatmung
-		Label beatmung1 = new Label("2x beatmen");
-		
-		// Image Beatmung
-		Image beatmung = new Image("file:images/Beatmung.png");
-		ImageView beatmung_view = new ImageView("file:images/Beatmung.png");
-		
-		// Linie
-		Line line2 = new Line();
+	// Button Zurück zur Reanimation
+	Button back_reanimation = new Button("Zurück zur Reanimation");
 
-		// Label 2 Beatmung
-		Label beatmung2 = new Label("- Nase der Person bei der Mund-zu-Mund\n   Beatmung verschliessen\n"
+	// Label Reanimation
+	Label reanimation = new Label("2. Beatmung");
+
+	// Label Beatmung
+	Label beatmung1 = new Label("2x beatmen");
+
+	// Image Beatmung
+	Image beatmung = new Image("file:images/Beatmung.png");
+	ImageView beatmung_view = new ImageView("file:images/Beatmung.png");
+
+	// Linie
+	Line line2 = new Line();
+
+	// Label 2 Beatmung
+	Label beatmung2 = new Label("- Nase der Person bei der Mund-zu-Mund\n   Beatmung verschliessen\n"
 			+ "- Beatmungsphase beträgt eine Sekunde\n"
 			+ "- Bei richtiger Durchführung hebt sich der\n   Brustkorb der Person sichtbar");
 
-		// Label 3 Beatmung
-		Label beatmung3 = new Label("Schritt 1 und 2 solange wiederholen,\n" + "bis der Notarzt da ist oder keine\n"
+	// Label 3 Beatmung
+	Label beatmung3 = new Label("Schritt 1 und 2 solange wiederholen,\n" + "bis der Notarzt da ist oder keine\n"
 			+ "Reanimation mehr benötigt wird");
 
-		public Beatmung() {
+	public Beatmung() {
 
 		getStylesheets().add("test/styles.css");
-		
-/*------------------------------------
-Seitenspezifische Elemente formatieren
-------------------------------------*/
+
+		/*------------------------------------
+		Seitenspezifische Elemente formatieren
+		------------------------------------*/
 
 		// Button Zurück zur Reanimation
 		getChildren().add(back_reanimation);
@@ -71,7 +71,7 @@ Seitenspezifische Elemente formatieren
 		beatmung_view.setTranslateX(-65);
 		beatmung_view.setTranslateY(-90);
 
-		// Linie 
+		// Linie
 		getChildren().add(line2);
 		line2.setStartX(0);
 		line2.setStartY(0);
@@ -94,23 +94,23 @@ Seitenspezifische Elemente formatieren
 		beatmung3.setTextAlignment(TextAlignment.CENTER);
 	}
 
-		Button getButton_back_reanimation() {
+	Button getButton_back_reanimation() {
 		return back_reanimation;
 	}
 
-		Button getButton_back() {
+	Button getButton_back() {
 		return back;
 	}
 
-		Button getButton_menu() {
+	Button getButton_menu() {
 		return menu;
 	}
 
-		Button getButton_notruf() {
+	Button getButton_notruf() {
 		return notruf;
 	}
-	
-		Button getButton_krankenhaus() {
+
+	Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
 }

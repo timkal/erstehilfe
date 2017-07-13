@@ -7,29 +7,29 @@ import javafx.scene.text.TextAlignment;
 
 public class Person_Bewusstsein extends Basis {
 
-/*------------------------------------
-Seitenspezifische Elemente erzeugen
-------------------------------------*/
+	/*------------------------------------
+	Seitenspezifische Elemente erzeugen
+	------------------------------------*/
 
-		// Label Person bei Bewusstsein
-		Label personbewusstsein = new Label("Ist die Person bei\nBewusstsein?");
+	// Label Person bei Bewusstsein
+	Label personbewusstsein = new Label("Ist die Person bei\nBewusstsein?");
 
-		// Linie 
-		Line line2 = new Line();
+	// Linie
+	Line line2 = new Line();
 
-		// Button Ja
-		Button ja = new Button("Ja");
+	// Button Ja
+	Button ja = new Button("Ja");
 
-		// Button Nein
-		Button nein = new Button("Nein");
+	// Button Nein
+	Button nein = new Button("Nein");
 
-		public Person_Bewusstsein() {
+	public Person_Bewusstsein() {
 
 		getStylesheets().add("test/styles.css");
 
-/*------------------------------------
-Seitenspezifische Elemente formatieren
-------------------------------------*/
+		/*------------------------------------
+		Seitenspezifische Elemente formatieren
+		------------------------------------*/
 
 		// Label Person bei Bewusstsein
 		getChildren().add(personbewusstsein);
@@ -37,7 +37,7 @@ Seitenspezifische Elemente formatieren
 		personbewusstsein.setTranslateY(-175);
 		personbewusstsein.setTextAlignment(TextAlignment.CENTER);
 
-		// Linie 
+		// Linie
 		getChildren().add(line2);
 		line2.setStartX(0);
 		line2.setStartY(0);
@@ -59,27 +59,27 @@ Seitenspezifische Elemente formatieren
 		nein.getStyleClass().add("button_nein");
 	}
 
-		Button getButton_ja() {
+	Button getButton_ja() {
 		return ja;
 	}
 
-		Button getButton_nein() {
+	Button getButton_nein() {
 		return nein;
 	}
 
-		Button getButton_back() {
+	Button getButton_back() {
 		return back;
 	}
 
-		Button getButton_menu() {
+	Button getButton_menu() {
 		return menu;
 	}
 
-		Button getButton_notruf() {
+	Button getButton_notruf() {
 		return notruf;
 	}
-	
-		Button getButton_krankenhaus() {
+
+	Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
 }

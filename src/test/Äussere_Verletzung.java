@@ -7,37 +7,37 @@ import javafx.scene.text.TextAlignment;
 
 public class Äussere_Verletzung extends Basis {
 
-/*------------------------------------
-Seitenspezifische Elemente erzeugen
-------------------------------------*/
+	/*------------------------------------
+	Seitenspezifische Elemente erzeugen
+	------------------------------------*/
 
-		// Label Äussere Verletzung 
-		Label aeussereverletzung = new Label("Hat die Person äussere\nVerletzungen?");
+	// Label Äussere Verletzung
+	Label aeussereverletzung = new Label("Hat die Person äussere\nVerletzungen?");
 
-		// Linie 
-		Line line2 = new Line();
+	// Linie
+	Line line2 = new Line();
 
-		// Button Ja
-		Button ja = new Button("Ja");
+	// Button Ja
+	Button ja = new Button("Ja");
 
-		// Button Nein
-		Button nein = new Button("Nein");
+	// Button Nein
+	Button nein = new Button("Nein");
 
-		public Äussere_Verletzung() {
+	public Äussere_Verletzung() {
 
 		getStylesheets().add("test/styles.css");
-		
-/*------------------------------------
-Seitenspezifische Elemente formatieren
-------------------------------------*/
 
-		// Label Äussere Verletzung 
+		/*------------------------------------
+		Seitenspezifische Elemente formatieren
+		------------------------------------*/
+
+		// Label Äussere Verletzung
 		getChildren().add(aeussereverletzung);
 		aeussereverletzung.setTranslateX(0);
 		aeussereverletzung.setTranslateY(-175);
 		aeussereverletzung.setTextAlignment(TextAlignment.CENTER);
 
-		// Linie 
+		// Linie
 		getChildren().add(line2);
 		line2.setStartX(0);
 		line2.setStartY(0);
@@ -59,27 +59,27 @@ Seitenspezifische Elemente formatieren
 		nein.getStyleClass().add("button_nein");
 	}
 
-		Button getButton_ja() {
+	Button getButton_ja() {
 		return ja;
 	}
 
-		Button getButton_nein() {
+	Button getButton_nein() {
 		return nein;
 	}
 
-		Button getButton_back() {
+	Button getButton_back() {
 		return back;
 	}
 
-		Button getButton_menu() {
+	Button getButton_menu() {
 		return menu;
 	}
 
-		Button getButton_notruf() {
+	Button getButton_notruf() {
 		return notruf;
 	}
-	
-		Button getButton_krankenhaus() {
+
+	Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
 }

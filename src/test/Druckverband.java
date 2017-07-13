@@ -8,43 +8,43 @@ import javafx.scene.shape.Line;
 
 public class Druckverband extends Basis {
 
-/*------------------------------------
-Seitenspezifische Elemente erzeugen
-------------------------------------*/
-	
-		// Button Weiter 
-		Button weiter = new Button("Weiter");
-		
-		// Linie
-		Line line2 = new Line();
+	/*------------------------------------
+	Seitenspezifische Elemente erzeugen
+	------------------------------------*/
 
-		// Label Druckverband 
-		Label druckverband = new Label("Druckverband");
+	// Button Weiter
+	Button weiter = new Button("Weiter");
 
-		// Label 2 Druckverband 
-		Label druckverband2 = new Label("1. Betroffenes Körperteil hochhalten\n" + "2. Wunde mit steriler Wundauflage\n"
+	// Linie
+	Line line2 = new Line();
+
+	// Label Druckverband
+	Label druckverband = new Label("Druckverband");
+
+	// Label 2 Druckverband
+	Label druckverband2 = new Label("1. Betroffenes Körperteil hochhalten\n" + "2. Wunde mit steriler Wundauflage\n"
 			+ "    bedecken\n" + "   (Alternative = sauberes Taschentuch)\n"
 			+ "3. Nicht saugfähigen Druckkörper auf der\n" + "    bereits abgedeckten Wunde fixieren");
 
-		// Image Druckverband 
-		Image druckverbandbild = new Image("file:images/Druckverband.png");
-		ImageView druckverbandbild_view = new ImageView("file:images/Druckverband.png");
+	// Image Druckverband
+	Image druckverbandbild = new Image("file:images/Druckverband.png");
+	ImageView druckverbandbild_view = new ImageView("file:images/Druckverband.png");
 
-		public Druckverband() {
+	public Druckverband() {
 
 		getStylesheets().add("test/styles.css");
 
-/*------------------------------------
-Seitenspezifische Elemente formatieren
-------------------------------------*/
-		
+		/*------------------------------------
+		Seitenspezifische Elemente formatieren
+		------------------------------------*/
+
 		// Button Weiter
 		getChildren().add(weiter);
 		weiter.setTranslateX(0);
 		weiter.setTranslateY(185);
 		weiter.getStyleClass().add("button_weiter");
 
-		// Linie 
+		// Linie
 		getChildren().add(line2);
 		line2.setStartX(0);
 		line2.setStartY(0);
@@ -59,7 +59,7 @@ Seitenspezifische Elemente formatieren
 		druckverband.setTranslateY(-185);
 		druckverband.getStyleClass().add("label_ueberschrift");
 
-		// Label 2 Druckverband 
+		// Label 2 Druckverband
 		getChildren().add(druckverband2);
 		druckverband2.setTranslateX(0);
 		druckverband2.setTranslateY(50);
@@ -73,23 +73,23 @@ Seitenspezifische Elemente formatieren
 		druckverbandbild_view.setTranslateY(-85);
 	}
 
-		Button getButton_weiter() {
+	Button getButton_weiter() {
 		return weiter;
 	}
 
-		Button getButton_back() {
+	Button getButton_back() {
 		return back;
 	}
 
-		Button getButton_menu() {
+	Button getButton_menu() {
 		return menu;
 	}
 
-		Button getButton_notruf() {
+	Button getButton_notruf() {
 		return notruf;
 	}
-	
-		Button getButton_krankenhaus() {
+
+	Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
 }

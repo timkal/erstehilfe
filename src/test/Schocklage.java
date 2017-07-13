@@ -7,38 +7,37 @@ import javafx.scene.image.ImageView;
 
 public class Schocklage extends Basis {
 
-/*------------------------------------
-Seitenspezifische Elemente erzeugen
-------------------------------------*/
-	
-		// Button Weiter
-		Button weiter = new Button("Weiter");
+	/*------------------------------------
+	Seitenspezifische Elemente erzeugen
+	------------------------------------*/
 
-		// Label Schocklage
-		Label schocklage = new Label("Schocklage");
+	// Button Weiter
+	Button weiter = new Button("Weiter");
 
-		// Label 2 Schocklage
-		Label schocklage2 = new Label("- Person zudecken\n" + 
-			"- beengende Kleidung\n   öffnen");
+	// Label Schocklage
+	Label schocklage = new Label("Schocklage");
 
-		// Image Schocklage
-		Image schocklagebild = new Image("file:images/Schocklage.png");
-		ImageView schocklagebild_view = new ImageView("file:images/Schocklage.png");
+	// Label 2 Schocklage
+	Label schocklage2 = new Label("- Person zudecken\n" + "- beengende Kleidung\n   öffnen");
 
-		public Schocklage() {
+	// Image Schocklage
+	Image schocklagebild = new Image("file:images/Schocklage.png");
+	ImageView schocklagebild_view = new ImageView("file:images/Schocklage.png");
+
+	public Schocklage() {
 
 		getStylesheets().add("test/styles.css");
 
-/*------------------------------------
-Seitenspezifische Elemente formatieren
-------------------------------------*/
+		/*------------------------------------
+		Seitenspezifische Elemente formatieren
+		------------------------------------*/
 
 		// Button Weiter
 		getChildren().add(weiter);
 		weiter.setTranslateX(0);
 		weiter.setTranslateY(185);
 		weiter.getStyleClass().add("button_weiter");
-				
+
 		// Label Schocklage
 		getChildren().add(schocklage);
 		schocklage.setTranslateX(0);
@@ -59,23 +58,23 @@ Seitenspezifische Elemente formatieren
 		schocklagebild_view.setTranslateY(-50);
 	}
 
-		Button getButton_weiter() {
+	Button getButton_weiter() {
 		return weiter;
 	}
-		
-		Button getButton_back() {
+
+	Button getButton_back() {
 		return back;
 	}
 
-		Button getButton_menu() {
+	Button getButton_menu() {
 		return menu;
 	}
 
-		Button getButton_notruf() {
+	Button getButton_notruf() {
 		return notruf;
 	}
-	
-		Button getButton_krankenhaus() {
+
+	Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
 }

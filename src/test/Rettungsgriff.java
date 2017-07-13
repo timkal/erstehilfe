@@ -7,34 +7,34 @@ import javafx.scene.image.ImageView;
 
 public class Rettungsgriff extends Basis {
 
-/*------------------------------------
-Seitenspezifische Elemente erzeugen
-------------------------------------*/
+	/*------------------------------------
+	Seitenspezifische Elemente erzeugen
+	------------------------------------*/
 
-		// Button Weiter 
-		Button weiter = new Button("Weiter");
+	// Button Weiter
+	Button weiter = new Button("Weiter");
 
-		// Label Rettungsgriff 
-		Label rettungsgriff = new Label("Rettungsgriff");
-		
-		// Image Rettungsgriff
-		Image rettungsgriffbild = new Image("file:images/Rettungsgriff.png");
-		ImageView rettungsgriffbild_view = new ImageView("file:images/Rettungsgriff.png");
+	// Label Rettungsgriff
+	Label rettungsgriff = new Label("Rettungsgriff");
 
-		public Rettungsgriff() {
+	// Image Rettungsgriff
+	Image rettungsgriffbild = new Image("file:images/Rettungsgriff.png");
+	ImageView rettungsgriffbild_view = new ImageView("file:images/Rettungsgriff.png");
+
+	public Rettungsgriff() {
 
 		getStylesheets().add("test/styles.css");
-		
-/*------------------------------------
-Seitenspezifische Elemente formatieren
-------------------------------------*/
-		
+
+		/*------------------------------------
+		Seitenspezifische Elemente formatieren
+		------------------------------------*/
+
 		// Button Weiter
 		getChildren().add(weiter);
 		weiter.setTranslateX(0);
 		weiter.setTranslateY(185);
 		weiter.getStyleClass().add("button_weiter");
-		
+
 		// Label Rettungsgriff
 		getChildren().add(rettungsgriff);
 		rettungsgriff.setTranslateX(0);
@@ -49,23 +49,23 @@ Seitenspezifische Elemente formatieren
 		rettungsgriffbild_view.setTranslateY(0);
 	}
 
-		Button getButton_weiter() {
+	Button getButton_weiter() {
 		return weiter;
 	}
 
-		Button getButton_back() {
+	Button getButton_back() {
 		return back;
 	}
 
-		Button getButton_menu() {
+	Button getButton_menu() {
 		return menu;
 	}
 
-		Button getButton_notruf() {
+	Button getButton_notruf() {
 		return notruf;
 	}
-	
-		Button getButton_krankenhaus() {
+
+	Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
 }

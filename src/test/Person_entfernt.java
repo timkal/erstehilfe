@@ -6,41 +6,41 @@ import javafx.scene.shape.Line;
 import javafx.scene.text.TextAlignment;
 
 public class Person_entfernt extends Basis {
-	
-/*------------------------------------
-Seitenspezifische Elemente erzeugen
-------------------------------------*/
 
-		// Label Person entfernt
-		Label personentfernt = new Label("Person vom Unfallort\nentfernt?");
+	/*------------------------------------
+	Seitenspezifische Elemente erzeugen
+	------------------------------------*/
 
-		// Label Hinweis
-		Label hinweis = new Label("Beachte:\n" + "Bei Verdacht auf eine\n" + "Wirbelsäulenverletzung nur\n"
+	// Label Person entfernt
+	Label personentfernt = new Label("Person vom Unfallort\nentfernt?");
+
+	// Label Hinweis
+	Label hinweis = new Label("Beachte:\n" + "Bei Verdacht auf eine\n" + "Wirbelsäulenverletzung nur\n"
 			+ "aus lebensgefährlicher\n" + "Umgebung entfernen!");
-		
-		// Linie 
-		Line line2 = new Line();
 
-		// Button Ja
-		Button ja = new Button("Ja");
+	// Linie
+	Line line2 = new Line();
 
-		// Button Nein
-		Button nein = new Button("Nein");
+	// Button Ja
+	Button ja = new Button("Ja");
 
-		public Person_entfernt() {
+	// Button Nein
+	Button nein = new Button("Nein");
+
+	public Person_entfernt() {
 
 		getStylesheets().add("test/styles.css");
 
-/*------------------------------------
-Seitenspezifische Elemente formatieren
-------------------------------------*/
+		/*------------------------------------
+		Seitenspezifische Elemente formatieren
+		------------------------------------*/
 
-		// Label Person entfernt 
+		// Label Person entfernt
 		getChildren().add(personentfernt);
 		personentfernt.setTranslateX(0);
 		personentfernt.setTranslateY(-175);
-        personentfernt.setTextAlignment(TextAlignment.CENTER);
-        
+		personentfernt.setTextAlignment(TextAlignment.CENTER);
+
 		// Label Hinweis
 		getChildren().add(hinweis);
 		hinweis.setTranslateX(0);
@@ -48,7 +48,7 @@ Seitenspezifische Elemente formatieren
 		hinweis.getStyleClass().add("hinweis_label");
 		hinweis.setTextAlignment(TextAlignment.CENTER);
 
-		// Linie 
+		// Linie
 		getChildren().add(line2);
 		line2.setStartX(0);
 		line2.setStartY(0);
@@ -70,27 +70,27 @@ Seitenspezifische Elemente formatieren
 		nein.getStyleClass().add("button_nein");
 	}
 
-		Button getButton_ja() {
+	Button getButton_ja() {
 		return ja;
 	}
 
-		Button getButton_nein() {
+	Button getButton_nein() {
 		return nein;
 	}
 
-		Button getButton_back() {
+	Button getButton_back() {
 		return back;
 	}
 
-		Button getButton_menu() {
+	Button getButton_menu() {
 		return menu;
 	}
 
-		Button getButton_notruf() {
+	Button getButton_notruf() {
 		return notruf;
 	}
-	
-		Button getButton_krankenhaus() {
+
+	Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
 }

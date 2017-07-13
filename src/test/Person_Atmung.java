@@ -7,55 +7,55 @@ import javafx.scene.image.ImageView;
 import javafx.scene.shape.Line;
 
 public class Person_Atmung extends Basis {
-	
-/*------------------------------------
-Seitenspezifische Elemente erzeugen
-------------------------------------*/
 
-		// Label Atmet Person
-		Label atmetpersonfrage = new Label("Atmet die Person?");
+	/*------------------------------------
+	Seitenspezifische Elemente erzeugen
+	------------------------------------*/
 
-		// Linie 
-		Line line2 = new Line();
+	// Label Atmet Person
+	Label atmetpersonfrage = new Label("Atmet die Person?");
 
-		// Linie 2
-		Line line3 = new Line();
+	// Linie
+	Line line2 = new Line();
 
-		// Button Ja
-		Button ja = new Button("Ja");
+	// Linie 2
+	Line line3 = new Line();
 
-		// Button Nein
-		Button nein = new Button("Nein");
+	// Button Ja
+	Button ja = new Button("Ja");
 
-		// Label Atmung Info
-		Label atmunginfo = new Label(
+	// Button Nein
+	Button nein = new Button("Nein");
+
+	// Label Atmung Info
+	Label atmunginfo = new Label(
 			"Sehen (Brustbewegung, Hautfarbe)\n" + "Hören (Atemgeräusche)\n" + "Fühlen (Atemhauch)");
 
-		// Label Atmung Info 2
-		Label atmunginfo2 = new Label("Atemwege\nfreimachen!");
-		
-		// Image Atem-Check
-		Image atemcheck_image = new Image("file:images/Atem-Check.png");
-		ImageView atemcheck_view = new ImageView("file:images/Atem-Check.png");
+	// Label Atmung Info 2
+	Label atmunginfo2 = new Label("Atemwege\nfreimachen!");
 
-		// Image Atemwege
-		Image atemwege_image = new Image("file:images/Atemwege.png");
-		ImageView atemwege_view = new ImageView("file:images/Atemwege.png");
+	// Image Atem-Check
+	Image atemcheck_image = new Image("file:images/Atem-Check.png");
+	ImageView atemcheck_view = new ImageView("file:images/Atem-Check.png");
 
-		public Person_Atmung() {
+	// Image Atemwege
+	Image atemwege_image = new Image("file:images/Atemwege.png");
+	ImageView atemwege_view = new ImageView("file:images/Atemwege.png");
+
+	public Person_Atmung() {
 
 		getStylesheets().add("test/styles.css");
 
-/*------------------------------------
-Seitenspezifische Elemente formatieren
-------------------------------------*/	
+		/*------------------------------------
+		Seitenspezifische Elemente formatieren
+		------------------------------------*/
 
 		// Label Atmet Person
 		getChildren().add(atmetpersonfrage);
 		atmetpersonfrage.setTranslateX(0);
 		atmetpersonfrage.setTranslateY(-175);
-		
-		// Linie 
+
+		// Linie
 		getChildren().add(line2);
 		line2.setStartX(0);
 		line2.setStartY(0);
@@ -112,27 +112,27 @@ Seitenspezifische Elemente formatieren
 		atemwege_view.setTranslateY(-38);
 	}
 
-		Button getButton_ja() {
+	Button getButton_ja() {
 		return ja;
 	}
 
-		Button getButton_nein() {
+	Button getButton_nein() {
 		return nein;
 	}
 
-		Button getButton_back() {
+	Button getButton_back() {
 		return back;
 	}
 
-		Button getButton_menu() {
+	Button getButton_menu() {
 		return menu;
 	}
 
-		Button getButton_notruf() {
+	Button getButton_notruf() {
 		return notruf;
 	}
-	
-		Button getButton_krankenhaus() {
+
+	Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
 }

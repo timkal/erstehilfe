@@ -16,46 +16,46 @@ import javafx.scene.media.MediaPlayer.Status;
 
 public class Reanimation extends Basis {
 
-/*------------------------------------
-Seitenspezifische Elemente erzeugen
-------------------------------------*/
-	
-		// Button Anleitung
-		Button anleitung = new Button("Anleitung");
+	/*------------------------------------
+	Seitenspezifische Elemente erzeugen
+	------------------------------------*/
 
-		// Label Reanimation 
-		Label reanimation = new Label("Reanimation\nwiederholen bis\nder Notarzt da ist");
+	// Button Anleitung
+	Button anleitung = new Button("Anleitung");
 
-		// Label Beatmung 
-		Label beatmung1 = new Label("2x beatmen");
+	// Label Reanimation
+	Label reanimation = new Label("Reanimation\nwiederholen bis\nder Notarzt da ist");
 
-		// Label Herzdruck 
-		Label herzdruck2 = new Label("30x drücken");
+	// Label Beatmung
+	Label beatmung1 = new Label("2x beatmen");
 
-		// Image Herzdruckmassage
-		Image herzdruck = new Image("file:images/Herzdruckmassage.png");
-		ImageView herzdruck_view = new ImageView("file:images/Herzdruckmassage.png");
+	// Label Herzdruck
+	Label herzdruck2 = new Label("30x drücken");
 
-		// Image Beatmung
-		Image beatmung = new Image("file:images/Beatmung.png");
-		ImageView beatmung_view = new ImageView("file:images/Beatmung.png");
+	// Image Herzdruckmassage
+	Image herzdruck = new Image("file:images/Herzdruckmassage.png");
+	ImageView herzdruck_view = new ImageView("file:images/Herzdruckmassage.png");
 
-		// Button Druckfrequenz
-		Button druckfrequenz = new Button("▷");
+	// Image Beatmung
+	Image beatmung = new Image("file:images/Beatmung.png");
+	ImageView beatmung_view = new ImageView("file:images/Beatmung.png");
 
-		// Media-Player + Audio-Datei einbinden
-		Path path1 = Paths.get("src", "Audio", "reanimation.mp3"); // src/audio/reanimate1.mp3
-		URI uri1 = path1.toUri();
-		Media hit = new Media(uri1.toString());
-		MediaPlayer player = new MediaPlayer(hit);
+	// Button Druckfrequenz
+	Button druckfrequenz = new Button("▷");
 
-		public Reanimation() {
+	// Media-Player + Audio-Datei einbinden
+	Path path1 = Paths.get("src", "Audio", "reanimation.mp3"); // src/audio/reanimate1.mp3
+	URI uri1 = path1.toUri();
+	Media hit = new Media(uri1.toString());
+	MediaPlayer player = new MediaPlayer(hit);
+
+	public Reanimation() {
 
 		getStylesheets().add("test/styles.css");
-		
-/*------------------------------------
-Seitenspezifische Elemente formatieren
-------------------------------------*/
+
+		/*------------------------------------
+		Seitenspezifische Elemente formatieren
+		------------------------------------*/
 
 		// Button Anleitung
 		getChildren().add(anleitung);
@@ -81,7 +81,7 @@ Seitenspezifische Elemente formatieren
 		herzdruck2.setTranslateY(10);
 		herzdruck2.getStyleClass().add("button_zusatzinfos");
 
-		// Image Herzdruckmassage 
+		// Image Herzdruckmassage
 		getChildren().add(herzdruck_view);
 		herzdruck_view.setFitHeight(150);
 		herzdruck_view.setFitWidth(126);
@@ -100,7 +100,7 @@ Seitenspezifische Elemente formatieren
 		druckfrequenz.setTranslateX(70);
 		druckfrequenz.setTranslateY(-62);
 		druckfrequenz.getStyleClass().add("button_druckfrequenz");
-		
+
 		// Event-Handler und Action
 		EventHandler<ActionEvent> e1 = new EventHandler<ActionEvent>() {
 
@@ -119,28 +119,28 @@ Seitenspezifische Elemente formatieren
 
 		druckfrequenz.setOnAction(e1);
 	}
-		
-		Button getButton_anleitung() {
+
+	Button getButton_anleitung() {
 		return anleitung;
 	}
 
-		Button getButton_back() {
+	Button getButton_back() {
 		return back;
 	}
 
-		Button getButton_menu() {
+	Button getButton_menu() {
 		return menu;
 	}
 
-		Button getButton_notruf() {
+	Button getButton_notruf() {
 		return notruf;
 	}
-		
-		Button getButton_druckfrequenz() {
+
+	Button getButton_druckfrequenz() {
 		return druckfrequenz;
 	}
-	
-		Button getButton_krankenhaus() {
+
+	Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
 }

@@ -6,42 +6,41 @@ import javafx.scene.shape.Line;
 import javafx.scene.text.TextAlignment;
 
 public class Innere_Verletzung extends Basis {
-	
-/*------------------------------------
-Seitenspezifische Elemente erzeugen
-------------------------------------*/
 
-		// Label Innere Verletzung 
-		Label innereverletzung = new Label("Hat die Person innere\nVerletzungen?");
-		
-		// Label Anzeichen
-		Label anzeichen = new Label ("Anzeichen:\n"
-				+ "- Bauch der Person formt sich kugelrund\n"
-				+ "- Person hat Schaum vor dem Mund\n");
+	/*------------------------------------
+	Seitenspezifische Elemente erzeugen
+	------------------------------------*/
 
-		// Linie 
-		Line line2 = new Line();
+	// Label Innere Verletzung
+	Label innereverletzung = new Label("Hat die Person innere\nVerletzungen?");
 
-		// Button Ja
-		Button ja = new Button("Ja");
+	// Label Anzeichen
+	Label anzeichen = new Label(
+			"Anzeichen:\n" + "- Bauch der Person formt sich kugelrund\n" + "- Person hat Schaum vor dem Mund\n");
 
-		// Button Nein
-		Button nein = new Button("Nein");
+	// Linie
+	Line line2 = new Line();
 
-		public Innere_Verletzung() {
+	// Button Ja
+	Button ja = new Button("Ja");
+
+	// Button Nein
+	Button nein = new Button("Nein");
+
+	public Innere_Verletzung() {
 
 		getStylesheets().add("test/styles.css");
-		
-/*------------------------------------
-Seitenspezifische Elemente erzeugen
-------------------------------------*/
 
-		// Label Innere Verletzung 
+		/*------------------------------------
+		Seitenspezifische Elemente erzeugen
+		------------------------------------*/
+
+		// Label Innere Verletzung
 		getChildren().add(innereverletzung);
 		innereverletzung.setTranslateX(0);
 		innereverletzung.setTranslateY(-175);
 		innereverletzung.setTextAlignment(TextAlignment.CENTER);
-		
+
 		// Label Anzeichen
 		getChildren().add(anzeichen);
 		anzeichen.setTranslateX(0);
@@ -70,27 +69,27 @@ Seitenspezifische Elemente erzeugen
 		nein.getStyleClass().add("button_nein");
 	}
 
-		Button getButton_ja() {
+	Button getButton_ja() {
 		return ja;
 	}
 
-		Button getButton_nein() {
+	Button getButton_nein() {
 		return nein;
 	}
 
-		Button getButton_back() {
+	Button getButton_back() {
 		return back;
 	}
 
-		Button getButton_menu() {
+	Button getButton_menu() {
 		return menu;
 	}
-		
-		Button getButton_notruf() {
+
+	Button getButton_notruf() {
 		return notruf;
 	}
-	
-		Button getButton_krankenhaus() {
+
+	Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
 }
