@@ -10,144 +10,147 @@ public class Main extends Application {
 	 * Panes und Szenen aller Klassen definieren Panes abgekürzt mit pZAHL,
 	 * Scenes mit sZAHL
 	 */
+	
+	int x= 300;
+	int y= 550;
 
 	Startseite p0 = new Startseite();
-	Scene s0 = new Scene(p0, 300, 550);
+	Scene s0 = new Scene(p0, x, y);
 
 	Notruf_gewählt p1 = new Notruf_gewählt();
-	Scene s1 = new Scene(p1, 300, 550);
+	Scene s1 = new Scene(p1, x, y);
 
 	Menu p2 = new Menu();
-	Scene s2 = new Scene(p2, 300, 550);
+	Scene s2 = new Scene(p2, x, y);
 
 	Notruf_absetzen p3 = new Notruf_absetzen();
-	Scene s3 = new Scene(p3, 300, 550);
+	Scene s3 = new Scene(p3, x, y);
 
 	Telefonnummern p4 = new Telefonnummern();
-	Scene s4 = new Scene(p4, 300, 550);
+	Scene s4 = new Scene(p4, x, y);
 
 	Unfallstelle_abgesichert p5 = new Unfallstelle_abgesichert();
-	Scene s5 = new Scene(p5, 300, 550);
+	Scene s5 = new Scene(p5, x, y);
 
 	Absicherung p6 = new Absicherung();
-	Scene s6 = new Scene(p6, 300, 550);
+	Scene s6 = new Scene(p6, x, y);
 
 	Person_entfernt p7 = new Person_entfernt();
-	Scene s7 = new Scene(p7, 300, 550);
+	Scene s7 = new Scene(p7, x, y);
 
 	Rettungsgriff p8 = new Rettungsgriff();
-	Scene s8 = new Scene(p8, 300, 550);
+	Scene s8 = new Scene(p8, x, y);
 
 	Person_Bewusstsein p9 = new Person_Bewusstsein();
-	Scene s9 = new Scene(p9, 300, 550);
+	Scene s9 = new Scene(p9, x, y);
 
 	Person_Bewusstsein p10 = new Person_Bewusstsein();
-	Scene s10 = new Scene(p10, 300, 550);
+	Scene s10 = new Scene(p10, x, y);
 
 	Person_Atmung p11 = new Person_Atmung();
-	Scene s11 = new Scene(p11, 300, 550);
+	Scene s11 = new Scene(p11, x, y);
 
 	Person_Atmung p12 = new Person_Atmung();
-	Scene s12 = new Scene(p12, 300, 550);
+	Scene s12 = new Scene(p12, x, y);
 
 	Reanimation p13 = new Reanimation();
-	Scene s13 = new Scene(p13, 300, 550);
+	Scene s13 = new Scene(p13, x, y);
 
 	Reanimation p14 = new Reanimation();
-	Scene s14 = new Scene(p14, 300, 550);
+	Scene s14 = new Scene(p14, x, y);
 
 	Herzdruckmassage p15 = new Herzdruckmassage();
-	Scene s15 = new Scene(p15, 300, 550);
+	Scene s15 = new Scene(p15, x, y);
 
 	Herzdruckmassage p16 = new Herzdruckmassage();
-	Scene s16 = new Scene(p16, 300, 550);
+	Scene s16 = new Scene(p16, x, y);
 
 	Beatmung p17 = new Beatmung();
-	Scene s17 = new Scene(p17, 300, 550);
+	Scene s17 = new Scene(p17, x, y);
 
 	Beatmung p18 = new Beatmung();
-	Scene s18 = new Scene(p18, 300, 550);
+	Scene s18 = new Scene(p18, x, y);
 
 	Äussere_Verletzung p19 = new Äussere_Verletzung();
-	Scene s19 = new Scene(p19, 300, 550);
+	Scene s19 = new Scene(p19, x, y);
 
 	Äussere_Verletzung p20 = new Äussere_Verletzung();
-	Scene s20 = new Scene(p20, 300, 550);
+	Scene s20 = new Scene(p20, x, y);
 
 	Innere_Verletzung p21 = new Innere_Verletzung();
-	Scene s21 = new Scene(p21, 300, 550);
+	Scene s21 = new Scene(p21, x, y);
 
 	Innere_Verletzung p22 = new Innere_Verletzung();
-	Scene s22 = new Scene(p22, 300, 550);
+	Scene s22 = new Scene(p22, x, y);
 
 	Stabile_Seitenlage p23 = new Stabile_Seitenlage();
-	Scene s23 = new Scene(p23, 300, 550);
+	Scene s23 = new Scene(p23, x, y);
 
 	Stabile_Seitenlage p24 = new Stabile_Seitenlage();
-	Scene s24 = new Scene(p24, 300, 550);
+	Scene s24 = new Scene(p24, x, y);
 
 	Stabile_Seitenlage p25 = new Stabile_Seitenlage();
-	Scene s25 = new Scene(p25, 300, 550);
+	Scene s25 = new Scene(p25, x, y);
 
 	Stabile_Seitenlage p26 = new Stabile_Seitenlage();
-	Scene s26 = new Scene(p26, 300, 550);
+	Scene s26 = new Scene(p26, x, y);
 
 	Bedürfnisse_Person p27 = new Bedürfnisse_Person();
-	Scene s27 = new Scene(p27, 300, 550);
+	Scene s27 = new Scene(p27, x, y);
 
 	Bedürfnisse_Person p28 = new Bedürfnisse_Person();
-	Scene s28 = new Scene(p28, 300, 550);
+	Scene s28 = new Scene(p28, x, y);
 
 	Bedürfnisse_Person p29 = new Bedürfnisse_Person();
-	Scene s29 = new Scene(p29, 300, 550);
+	Scene s29 = new Scene(p29, x, y);
 
 	Bedürfnisse_Person p30 = new Bedürfnisse_Person();
-	Scene s30 = new Scene(p30, 300, 550);
+	Scene s30 = new Scene(p30, x, y);
 
 	Bedürfnisse_Person p31 = new Bedürfnisse_Person();
-	Scene s31 = new Scene(p31, 300, 550);
+	Scene s31 = new Scene(p31, x, y);
 
 	Bedürfnisse_Person p32 = new Bedürfnisse_Person();
-	Scene s32 = new Scene(p32, 300, 550);
+	Scene s32 = new Scene(p32, x, y);
 
 	Bedürfnisse_Person p33 = new Bedürfnisse_Person();
-	Scene s33 = new Scene(p33, 300, 550);
+	Scene s33 = new Scene(p33, x, y);
 
 	Bedürfnisse_Person p34 = new Bedürfnisse_Person();
-	Scene s34 = new Scene(p34, 300, 550);
+	Scene s34 = new Scene(p34, x, y);
 
 	Schocklage p35 = new Schocklage();
-	Scene s35 = new Scene(p35, 300, 550);
+	Scene s35 = new Scene(p35, x, y);
 
 	Schocklage p36 = new Schocklage();
-	Scene s36 = new Scene(p36, 300, 550);
+	Scene s36 = new Scene(p36, x, y);
 
 	Blutet_Person p37 = new Blutet_Person();
-	Scene s37 = new Scene(p37, 300, 550);
+	Scene s37 = new Scene(p37, x, y);
 
 	Blutet_Person p38 = new Blutet_Person();
-	Scene s38 = new Scene(p38, 300, 550);
+	Scene s38 = new Scene(p38, x, y);
 
 	Druckverband p39 = new Druckverband();
-	Scene s39 = new Scene(p39, 300, 550);
+	Scene s39 = new Scene(p39, x, y);
 
 	Druckverband p40 = new Druckverband();
-	Scene s40 = new Scene(p40, 300, 550);
+	Scene s40 = new Scene(p40, x, y);
 
 	Knochen_verletzt p41 = new Knochen_verletzt();
-	Scene s41 = new Scene(p41, 300, 550);
+	Scene s41 = new Scene(p41, x, y);
 
 	Knochen_verletzt p42 = new Knochen_verletzt();
-	Scene s42 = new Scene(p42, 300, 550);
+	Scene s42 = new Scene(p42, x, y);
 
 	Knochenbrüche p43 = new Knochenbrüche();
-	Scene s43 = new Scene(p43, 300, 550);
+	Scene s43 = new Scene(p43, x, y);
 
 	Knochenbrüche p44 = new Knochenbrüche();
-	Scene s44 = new Scene(p44, 300, 550);
+	Scene s44 = new Scene(p44, x, y);
 
 	Krankenhaus p45 = new Krankenhaus();
-	Scene s45 = new Scene(p45, 300, 550);
+	Scene s45 = new Scene(p45, x, y);
 
 	public void start(Stage primaryStage) throws Exception {
 
