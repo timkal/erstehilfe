@@ -89,7 +89,7 @@ public class Herzdruckmassage extends Basis {
 		getChildren().add(druckfrequenz);
 		druckfrequenz.setTranslateX(70);
 		druckfrequenz.setTranslateY(-78);
-		druckfrequenz.getStyleClass().add("button_druckfrequenz");
+		druckfrequenz.getStyleClass().add("button_mediastart");
 
 		// Event-Handler und Action
 		EventHandler<ActionEvent> e1 = new EventHandler<ActionEvent>() {
