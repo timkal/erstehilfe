@@ -11,16 +11,12 @@ public class Unfallstelle_abgesichert extends Basis {
 	Seitenspezifische Elemente erzeugen
 	------------------------------------*/
 
-	// Label Unfallstelle abgesichert
 	Label unfallstelleabgesichert = new Label("Unfallstelle\nabgesichert?");
 
-	// Linie
 	Line line2 = new Line();
 
-	// Button Ja
 	Button ja = new Button("Ja");
 
-	// Button Nein
 	Button nein = new Button("Nein");
 
 	public Unfallstelle_abgesichert() {
@@ -31,13 +27,11 @@ public class Unfallstelle_abgesichert extends Basis {
 		Seitenspezifische Elemente formatieren
 		------------------------------------*/
 
-		// Label Unfallstelle abgesichert
 		getChildren().add(unfallstelleabgesichert);
 		unfallstelleabgesichert.setTranslateX(0);
 		unfallstelleabgesichert.setTranslateY(-175);
 		unfallstelleabgesichert.setTextAlignment(TextAlignment.CENTER);
 
-		// Linie
 		getChildren().add(line2);
 		line2.setStartX(0);
 		line2.setStartY(0);
@@ -46,13 +40,11 @@ public class Unfallstelle_abgesichert extends Basis {
 		line2.setStrokeWidth(1.5);
 		line2.setTranslateY(-130);
 
-		// Button Ja
 		getChildren().add(ja);
 		ja.setTranslateX(62.5);
 		ja.setTranslateY(50);
 		ja.getStyleClass().add("button_ja");
 
-		// Button Nein
 		getChildren().add(nein);
 		nein.setTranslateX(-62.5);
 		nein.setTranslateY(50);

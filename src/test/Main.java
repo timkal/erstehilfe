@@ -5,12 +5,11 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-
-	/*
-	 * Panes und Szenen aller Klassen definieren Panes abgekürzt mit pZAHL,
-	 * Scenes mit sZAHL
-	 */
 	
+	/*------------------------------------
+    Panes und Szenen aller Klassen definieren Panes abgekürzt mit pZAHL, Scenes mit sZAHL
+    ------------------------------------*/
+
 	int x= 300;
 	int y= 550;
 
@@ -154,8 +153,12 @@ public class Main extends Application {
 
 	public void start(Stage primaryStage) throws Exception {
 
-		// Verknüpfung der Klassen mit Lambda-Ausdruck
-
+		/*------------------------------------
+		Verknüpfung der Klassen mit Lambda-Ausdruck. Dies ist eine alternative Schreibweise des klassischen
+		Event-Handlers und wird verwendet, um den Code möglichst komprimiert darzustellen.
+		------------------------------------*/
+		
+		// Verlinkungen der Screens
 		p0.getButton_start().setOnAction(e -> primaryStage.setScene(s1));
 		p1.getButton_ja().setOnAction(e -> primaryStage.setScene(s2));
 		p1.getButton_nein().setOnAction(e -> primaryStage.setScene(s3));
@@ -254,6 +257,7 @@ public class Main extends Application {
 		p40.getButton_weiter().setOnAction(e -> primaryStage.setScene(s42));
 		p45.getButton_back().setOnAction(e -> primaryStage.setScene(s1));
 
+		// Verlinkungen der Screens mit der Tab Bar, hier mit dem Menü
 		p1.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 		p3.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 		p4.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
@@ -299,6 +303,7 @@ public class Main extends Application {
 		p44.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 		p45.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 
+		// Verlinkungen der Screens mit der Tab Bar, hier mit dem Notruf
 		p1.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p2.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p4.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
@@ -344,6 +349,7 @@ public class Main extends Application {
 		p44.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p45.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 
+		// Verlinkungen der Screens mit der Tab Bar, hier mit dem Krankenhaus
 		p1.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s45));
 		p2.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s45));
 		p3.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s45));

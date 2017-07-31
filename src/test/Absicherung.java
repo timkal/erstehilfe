@@ -11,17 +11,13 @@ public class Absicherung extends Basis {
 	Seitenspezifische Elemente erzeugen
 	------------------------------------*/
 
-	// Button Weiter
 	Button weiter = new Button("Weiter");
 
-	// Label Absicherung
 	Label absicherung = new Label("Absicherung der\nUnfallstelle");
 
-	// Image Absicherung
 	Image absicherung_image = new Image("file:images/Absicherung Unfallstelle.png");
 	ImageView absicherung_view = new ImageView("file:images/Absicherung Unfallstelle.png");
 
-	// Label Infos
 	Label infos2 = new Label("1. Wenn möglich, Fahrzeug\n" + "     an den Fahrbahnrand\n" + "2. Warnweste anlegen \n"
 			+ "3. Warndreieck aufstellen\n" + "        Innerorts: 50 m\n" + "        Landstrasse: 100 m\n"
 			+ "        Autobahn: 150 m\n");
@@ -34,26 +30,22 @@ public class Absicherung extends Basis {
 		Seitenspezifische Elemente formatieren
 		------------------------------------*/
 
-		// Button Weiter
 		getChildren().add(weiter);
 		weiter.setTranslateX(0);
 		weiter.setTranslateY(185);
 		weiter.getStyleClass().add("button_weiter");
 
-		// Label Absicherung
 		getChildren().add(absicherung);
 		absicherung.setTranslateX(0);
 		absicherung.setTranslateY(-165);
 		absicherung.getStyleClass().add("label_ueberschrift");
 
-		// Image Absicherung
 		getChildren().add(absicherung_view);
 		absicherung_view.setFitHeight(120);
 		absicherung_view.setFitWidth(120);
 		absicherung_view.setTranslateX(0);
 		absicherung_view.setTranslateY(-55);
 
-		// Label Infos
 		getChildren().add(infos2);
 		infos2.setTranslateX(0);
 		infos2.setTranslateY(88);

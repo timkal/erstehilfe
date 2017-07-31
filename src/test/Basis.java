@@ -16,68 +16,55 @@ import javafx.scene.shape.Rectangle;
 
 public class Basis extends StackPane {
 
-	// Pane und Scene
+	/*------------------------------------ 
+	Stack Pane in der Basis erstellen
+	------------------------------------*/
+	
 	StackPane stack = new StackPane();
 	Scene szene = new Scene(stack, 300, 550);
+	
+	/*------------------------------------ 
+	Basis-Elemente Top Bar erzeugen	
+	------------------------------------*/
 
-	/*
-	 * ================================= Basis-Elemente Top Bar erzeugen
-	 * =================================
-	 */
-
-	// Rechteck
 	Rectangle top = new Rectangle(300, 60);
 
-	// Button Zurück
 	Button back = new Button("Zurück");
 
-	// Image Zurück
 	Image back_image = new Image("file:images/back_symbol.png");
 	ImageView back_view = new ImageView("file:images/back_symbol.png");
 
-	// Label Titel
 	Label title = new Label("Lebensretter");
 
-	// Image Akku
 	Image akku = new Image("file:images/Akku.png");
 	ImageView akku_view = new ImageView("file:images/Akku.png");
 
-	// Label Prozent
 	Label prozent = new Label("100%");
 
-	// Image Empfang
 	Image empfang = new Image("file:images/Empfang3.png");
 	ImageView empfang_view = new ImageView("file:images/Empfang3.png");
 
-	// Linie
 	Line line = new Line();
 
-	// Label Uhrzeit
 	Label zeit = new Label(LocalTime.now().toString().substring(0, 5));
 
-	/*
-	 * ================================= Basis-Elemente Tab Bar erzeugen
-	 * =================================
-	 */
+	
+	/*------------------------------------ 
+	Basis-Elemente Tab Bar erzeugen	
+	------------------------------------*/
 
-	// Button Menü
 	Button menu = new Button("\nMenü");
 
-	// Image Menü
 	Image home_image = new Image("file:images/Home.png");
 	ImageView home_view = new ImageView("file:images/Home.png");
 
-	// Button Krankenhaus
 	Button krankenhaus = new Button("\nHospital");
 
-	// Image Krankenhaus
 	Image krankenhaus_image = new Image("file:images/Hospital.png");
 	ImageView krankenhaus_view = new ImageView("file:images/Hospital.png");
 
-	// Button Notruf
 	Button notruf = new Button("\nNotruf");
 
-	// Image Notruf
 	Image notruf_image = new Image("file:images/Notruf.png");
 	ImageView notruf_view = new ImageView("file:images/Notruf.png");
 
@@ -85,22 +72,21 @@ public class Basis extends StackPane {
 
 		getStylesheets().add("test/styles.css");
 
-		// ------------------------------------------------------------------------------------------
-
+		/*------------------------------------ 
+		Stack Pane formatieren (via CSS)	
+		------------------------------------*/
+		
 		getStyleClass().add("custom-stack");
 
-		/*
-		 * ================================= Elemente der Top Bar formatieren
-		 * =================================
-		 */
+		/*------------------------------------ 
+		Elemente der Top Bar formatieren	
+		------------------------------------*/
 
-		// Rechteck
 		top.setFill(Color.web("#F9F9F9"));
 		getChildren().add(top);
 		top.setTranslateX(0);
 		top.setTranslateY(-250);
 
-		// Button Zurück
 		getChildren().add(back);
 		getChildren().add(back_view);
 		back.setTranslateX(-100);
@@ -111,31 +97,26 @@ public class Basis extends StackPane {
 		back_view.setTranslateY(-240);
 		back.getStyleClass().add("button_back");
 
-		// Label Titel
 		getChildren().add(title);
 		title.setTranslateX(0);
 		title.setTranslateY(-240);
 		title.getStyleClass().add("title_label");
 
-		// Image Akku
 		getChildren().add(akku_view);
 		akku_view.setFitHeight(10);
 		akku_view.setFitWidth(32);
 		setAlignment(akku_view, Pos.TOP_RIGHT);
 
-		// Label Prozent
 		getChildren().add(prozent);
 		prozent.getStyleClass().add("topbar_label");
 		prozent.setTranslateX(103);
 		prozent.setTranslateY(-270);
 
-		// Image Empfang
 		getChildren().add(empfang_view);
 		empfang_view.setFitHeight(10);
 		empfang_view.setFitWidth(75);
 		setAlignment(empfang_view, Pos.TOP_LEFT);
 
-		// Linie
 		getChildren().add(line);
 		line.setStartX(0);
 		line.setStartY(0);
@@ -144,7 +125,6 @@ public class Basis extends StackPane {
 		line.setStrokeWidth(0.5);
 		line.setTranslateY(-222);
 
-		// Label Uhrzeit und Echtzeit einbauen
 		getChildren().add(zeit);
 		zeit.getStyleClass().add("topbar_label");
 		setAlignment(zeit, Pos.TOP_CENTER);
@@ -156,12 +136,10 @@ public class Basis extends StackPane {
 			}
 		}.start();
 
-		/*
-		 * ================================= Elemente der Tab Bar formatieren
-		 * =================================
-		 */
+		/*------------------------------------ 
+		Elemente der Tab Bar formatieren
+		------------------------------------*/
 
-		// Button Menü und Image Menü
 		getChildren().add(menu);
 		getChildren().add(home_view);
 		home_view.setFitHeight(19);
@@ -172,7 +150,6 @@ public class Basis extends StackPane {
 		menu.getStyleClass().add("button_tapbar");
 		menu.getStyleClass().add("button_menu");
 
-		// Button Krankenhaus und Image Krankenhaus
 		getChildren().add(krankenhaus);
 		getChildren().add(krankenhaus_view);
 		krankenhaus_view.setFitHeight(20);
@@ -183,7 +160,6 @@ public class Basis extends StackPane {
 		krankenhaus.getStyleClass().add("button_tapbar");
 		krankenhaus.getStyleClass().add("button_hospital");
 
-		// Button Notruf und Image Notruf
 		getChildren().add(notruf);
 		getChildren().add(notruf_view);
 		notruf_view.setFitHeight(20);

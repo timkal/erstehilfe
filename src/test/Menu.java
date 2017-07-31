@@ -8,10 +8,8 @@ public class Menu extends Basis {
 	Seitenspezifische Elemente erzeugen
 	------------------------------------*/
 
-	// Button Verkehrsunfall
 	Button unfall = new Button("Verkehrsunfall");
 
-	// Button Verletzte Person
 	Button verletzt = new Button("Verletzte Person");
 
 	public Menu() {
@@ -22,12 +20,10 @@ public class Menu extends Basis {
 		Seitenspezifische Elemente formatieren
 		------------------------------------*/
 
-		// Button Verkehrsunfall
 		getChildren().add(unfall);
 		unfall.getStyleClass().add("button_menue");
 		unfall.setTranslateY(50);
 
-		// Button Verletzte Person
 		getChildren().add(verletzt);
 		verletzt.getStyleClass().add("button_menue");
 		verletzt.setTranslateY(-50);

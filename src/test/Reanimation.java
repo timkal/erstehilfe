@@ -20,27 +20,20 @@ public class Reanimation extends Basis {
 	Seitenspezifische Elemente erzeugen
 	------------------------------------*/
 
-	// Button Anleitung
 	Button anleitung = new Button("Anleitung");
 
-	// Label Reanimation
 	Label reanimation = new Label("Reanimation\nwiederholen bis\nder Notarzt da ist");
 
-	// Label Beatmung
 	Label beatmung1 = new Label("2x beatmen");
 
-	// Label Herzdruck
 	Label herzdruck2 = new Label("30x drücken");
 
-	// Image Herzdruckmassage
 	Image herzdruck = new Image("file:images/Herzdruckmassage.png");
 	ImageView herzdruck_view = new ImageView("file:images/Herzdruckmassage.png");
 
-	// Image Beatmung
 	Image beatmung = new Image("file:images/Beatmung.png");
 	ImageView beatmung_view = new ImageView("file:images/Beatmung.png");
 
-	// Button Druckfrequenz
 	Button druckfrequenz = new Button("▷");
 
 	// Media-Player + Audio-Datei einbinden
@@ -57,45 +50,38 @@ public class Reanimation extends Basis {
 		Seitenspezifische Elemente formatieren
 		------------------------------------*/
 
-		// Button Anleitung
 		getChildren().add(anleitung);
 		anleitung.setTranslateX(0);
 		anleitung.setTranslateY(185);
 		anleitung.getStyleClass().add("button_anleitung");
 
-		// Label Reanimation
 		getChildren().add(reanimation);
 		reanimation.setTranslateX(0);
 		reanimation.setTranslateY(-160);
 		reanimation.getStyleClass().add("label_ueberschrift");
 
-		// Label Beatmung
 		getChildren().add(beatmung1);
 		beatmung1.setTranslateX(-70);
 		beatmung1.setTranslateY(90);
 		beatmung1.getStyleClass().add("button_zusatzinfos");
 
-		// Label Herzdruck
 		getChildren().add(herzdruck2);
 		herzdruck2.setTranslateX(70);
 		herzdruck2.setTranslateY(10);
 		herzdruck2.getStyleClass().add("button_zusatzinfos");
 
-		// Image Herzdruckmassage
 		getChildren().add(herzdruck_view);
 		herzdruck_view.setFitHeight(150);
 		herzdruck_view.setFitWidth(126);
 		herzdruck_view.setTranslateX(-70);
 		herzdruck_view.setTranslateY(-20);
 
-		// Image Beatmung
 		getChildren().add(beatmung_view);
 		beatmung_view.setFitHeight(100);
 		beatmung_view.setFitWidth(91);
 		beatmung_view.setTranslateX(65);
 		beatmung_view.setTranslateY(100);
 
-		// Button Druckfrequenz
 		getChildren().add(druckfrequenz);
 		druckfrequenz.setTranslateX(70);
 		druckfrequenz.setTranslateY(-62);

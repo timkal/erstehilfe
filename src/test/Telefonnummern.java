@@ -10,18 +10,14 @@ public class Telefonnummern extends Basis {
 	Seitenspezifische Elemente erzeugen
 	------------------------------------*/
 
-	// Linie
 	Line line2 = new Line();
 
-	// Label Nummer EU
 	Label europa = new Label("European Union:     112");
 
-	// Label Nummern Länder
 	Label allelaender = new Label(
 			"Argentinia:\nAustralia:\nBrasil:\nCanada:\nChina:\nHongkong:\nIsrael:\nJapan:\nMexico:\n"
 					+ "New Zealand:\nNorway:\nSwitzerland:\nTurkey:\nUK:\nUSA:");
 
-	// Label Zahlen
 	Label zahlen = new Label("107\n000\n192\n911\n120\n999\n101\n119\n006\n111\n113\n144\n112\n999\n911");
 
 	public Telefonnummern() {
@@ -32,7 +28,6 @@ public class Telefonnummern extends Basis {
 		Seitenspezifische Elemente formatieren
 		------------------------------------*/
 
-		// Linie
 		getChildren().add(line2);
 		line2.setStartX(0);
 		line2.setStartY(0);
@@ -41,18 +36,15 @@ public class Telefonnummern extends Basis {
 		line2.setStrokeWidth(0.5);
 		line2.setTranslateY(-160);
 
-		// Label Nummer EU
 		getChildren().add(europa);
 		europa.setTranslateX(0);
 		europa.setTranslateY(-190);
 
-		// Label Nummern Länder
 		getChildren().add(allelaender);
 		allelaender.setTranslateX(-30);
 		allelaender.setTranslateY(28);
 		allelaender.getStyleClass().add("land_label");
 
-		// Label Zahlen
 		getChildren().add(zahlen);
 		zahlen.setTranslateX(60);
 		zahlen.setTranslateY(28);

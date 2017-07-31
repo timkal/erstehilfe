@@ -21,28 +21,21 @@ public class Herzdruckmassage extends Basis {
 	Seitenspezifische Elemente erzeugen
 	------------------------------------*/
 
-	// Linie
 	Line line2 = new Line();
 
-	// Button Schritt 2
 	Button schritt2 = new Button("Schritt 2");
 
-	// Label Herzdruckmassage
 	Label herzdruck1 = new Label("1. Herzdruckmassage");
 
-	// Label 2 Herzdruckmassage
 	Label herzdruck2 = new Label("30x drücken");
 
-	// Label 3 Herzdruckmassage
 	Label herzdruck3 = new Label("- Brustkorb freimachen\n" + "- Druckpunkt auf der Mitte des Brustkorbes\n"
 			+ "- 30 mal kurz und kräftig herunterdrücken\n"
 			+ "- Zwischen Pumpstössen Brustkorb komplett\n   entlasten");
 
-	// Image Herzdruckmassage
 	Image herzdruck = new Image("file:images/Herzdruckmassage.png");
 	ImageView herzdruck_view = new ImageView("file:images/Herzdruckmassage.png");
 
-	// Button Druckfrequenz
 	Button druckfrequenz = new Button("▷");
 
 	// Media-Player + Audio-Datei einbinden
@@ -59,7 +52,6 @@ public class Herzdruckmassage extends Basis {
 		Seitenspezifische Elemente formatieren
 		------------------------------------*/
 
-		// Linie
 		getChildren().add(line2);
 		line2.setStartX(0);
 		line2.setStartY(0);
@@ -68,38 +60,32 @@ public class Herzdruckmassage extends Basis {
 		line2.setStrokeWidth(1.5);
 		line2.setTranslateY(55);
 
-		// Button Schritt 2
 		getChildren().add(schritt2);
 		schritt2.setTranslateX(0);
 		schritt2.setTranslateY(185);
 		schritt2.getStyleClass().add("button_weiter");
 
-		// Label Herzdruckmassage
 		getChildren().add(herzdruck1);
 		herzdruck1.setTranslateX(0);
 		herzdruck1.setTranslateY(-185);
 		herzdruck1.getStyleClass().add("label_ueberschrift");
 
-		// Label 2 Herzdruckmassage
 		getChildren().add(herzdruck2);
 		herzdruck2.setTranslateX(70);
 		herzdruck2.setTranslateY(-5);
 		herzdruck2.getStyleClass().add("button_zusatzinfos");
 
-		// Label 3 Herzdruckmassage
 		getChildren().add(herzdruck3);
 		herzdruck3.setTranslateX(0);
 		herzdruck3.setTranslateY(105);
 		herzdruck3.getStyleClass().add("anweisungen_label");
 
-		// Image Herzdruckmassage
 		getChildren().add(herzdruck_view);
 		herzdruck_view.setFitHeight(150);
 		herzdruck_view.setFitWidth(126);
 		herzdruck_view.setTranslateX(-70);
 		herzdruck_view.setTranslateY(-50);
 
-		// Button Druckfrequenz
 		getChildren().add(druckfrequenz);
 		druckfrequenz.setTranslateX(70);
 		druckfrequenz.setTranslateY(-78);

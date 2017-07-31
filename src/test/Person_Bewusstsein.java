@@ -11,16 +11,12 @@ public class Person_Bewusstsein extends Basis {
 	Seitenspezifische Elemente erzeugen
 	------------------------------------*/
 
-	// Label Person bei Bewusstsein
 	Label personbewusstsein = new Label("Ist die Person bei\nBewusstsein?");
 
-	// Linie
 	Line line2 = new Line();
 
-	// Button Ja
 	Button ja = new Button("Ja");
 
-	// Button Nein
 	Button nein = new Button("Nein");
 
 	public Person_Bewusstsein() {
@@ -31,13 +27,11 @@ public class Person_Bewusstsein extends Basis {
 		Seitenspezifische Elemente formatieren
 		------------------------------------*/
 
-		// Label Person bei Bewusstsein
 		getChildren().add(personbewusstsein);
 		personbewusstsein.setTranslateX(0);
 		personbewusstsein.setTranslateY(-175);
 		personbewusstsein.setTextAlignment(TextAlignment.CENTER);
 
-		// Linie
 		getChildren().add(line2);
 		line2.setStartX(0);
 		line2.setStartY(0);
@@ -46,13 +40,11 @@ public class Person_Bewusstsein extends Basis {
 		line2.setStrokeWidth(1.5);
 		line2.setTranslateY(-130);
 
-		// Button Ja
 		getChildren().add(ja);
 		ja.setTranslateX(62.5);
 		ja.setTranslateY(50);
 		ja.getStyleClass().add("button_ja");
 
-		// Button Nein
 		getChildren().add(nein);
 		nein.setTranslateX(-62.5);
 		nein.setTranslateY(50);

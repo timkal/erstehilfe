@@ -12,21 +12,16 @@ public class Druckverband extends Basis {
 	Seitenspezifische Elemente erzeugen
 	------------------------------------*/
 
-	// Button Weiter
 	Button weiter = new Button("Weiter");
 
-	// Linie
 	Line line2 = new Line();
 
-	// Label Druckverband
 	Label druckverband = new Label("Druckverband");
 
-	// Label 2 Druckverband
 	Label druckverband2 = new Label("1. Betroffenes Körperteil hochhalten\n" + "2. Wunde mit steriler Wundauflage\n"
 			+ "    bedecken\n" + "   (Alternative = sauberes Taschentuch)\n"
 			+ "3. Nicht saugfähigen Druckkörper auf der\n" + "    bereits abgedeckten Wunde fixieren");
 
-	// Image Druckverband
 	Image druckverbandbild = new Image("file:images/Druckverband.png");
 	ImageView druckverbandbild_view = new ImageView("file:images/Druckverband.png");
 
@@ -38,13 +33,11 @@ public class Druckverband extends Basis {
 		Seitenspezifische Elemente formatieren
 		------------------------------------*/
 
-		// Button Weiter
 		getChildren().add(weiter);
 		weiter.setTranslateX(0);
 		weiter.setTranslateY(185);
 		weiter.getStyleClass().add("button_weiter");
 
-		// Linie
 		getChildren().add(line2);
 		line2.setStartX(0);
 		line2.setStartY(0);
@@ -53,19 +46,16 @@ public class Druckverband extends Basis {
 		line2.setStrokeWidth(1.5);
 		line2.setTranslateY(-10);
 
-		// Label Druckverband
 		getChildren().add(druckverband);
 		druckverband.setTranslateX(0);
 		druckverband.setTranslateY(-185);
 		druckverband.getStyleClass().add("label_ueberschrift");
 
-		// Label 2 Druckverband
 		getChildren().add(druckverband2);
 		druckverband2.setTranslateX(0);
 		druckverband2.setTranslateY(50);
 		druckverband2.getStyleClass().add("anweisungen_label");
 
-		// Image Druckverband
 		getChildren().add(druckverbandbild_view);
 		druckverbandbild_view.setFitHeight(123);
 		druckverbandbild_view.setFitWidth(150);

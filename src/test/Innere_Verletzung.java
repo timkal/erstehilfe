@@ -11,20 +11,15 @@ public class Innere_Verletzung extends Basis {
 	Seitenspezifische Elemente erzeugen
 	------------------------------------*/
 
-	// Label Innere Verletzung
 	Label innereverletzung = new Label("Hat die Person innere\nVerletzungen?");
 
-	// Label Anzeichen
 	Label anzeichen = new Label(
 			"Anzeichen:\n" + "- Bauch der Person formt sich kugelrund\n" + "- Person hat Schaum vor dem Mund\n");
 
-	// Linie
 	Line line2 = new Line();
 
-	// Button Ja
 	Button ja = new Button("Ja");
 
-	// Button Nein
 	Button nein = new Button("Nein");
 
 	public Innere_Verletzung() {
@@ -35,19 +30,16 @@ public class Innere_Verletzung extends Basis {
 		Seitenspezifische Elemente erzeugen
 		------------------------------------*/
 
-		// Label Innere Verletzung
 		getChildren().add(innereverletzung);
 		innereverletzung.setTranslateX(0);
 		innereverletzung.setTranslateY(-175);
 		innereverletzung.setTextAlignment(TextAlignment.CENTER);
 
-		// Label Anzeichen
 		getChildren().add(anzeichen);
 		anzeichen.setTranslateX(0);
 		anzeichen.setTranslateY(-90);
 		anzeichen.getStyleClass().add("anzeichen_label");
 
-		// Linie
 		getChildren().add(line2);
 		line2.setStartX(0);
 		line2.setStartY(0);
@@ -56,13 +48,11 @@ public class Innere_Verletzung extends Basis {
 		line2.setStrokeWidth(1.5);
 		line2.setTranslateY(-130);
 
-		// Button Ja
 		getChildren().add(ja);
 		ja.setTranslateX(62.5);
 		ja.setTranslateY(50);
 		ja.getStyleClass().add("button_ja");
 
-		// Button Nein
 		getChildren().add(nein);
 		nein.setTranslateX(-62.5);
 		nein.setTranslateY(50);

@@ -11,13 +11,10 @@ public class Rettungsgriff extends Basis {
 	Seitenspezifische Elemente erzeugen
 	------------------------------------*/
 
-	// Button Weiter
 	Button weiter = new Button("Weiter");
 
-	// Label Rettungsgriff
 	Label rettungsgriff = new Label("Rettungsgriff");
 
-	// Image Rettungsgriff
 	Image rettungsgriffbild = new Image("file:images/Rettungsgriff.png");
 	ImageView rettungsgriffbild_view = new ImageView("file:images/Rettungsgriff.png");
 
@@ -29,19 +26,16 @@ public class Rettungsgriff extends Basis {
 		Seitenspezifische Elemente formatieren
 		------------------------------------*/
 
-		// Button Weiter
 		getChildren().add(weiter);
 		weiter.setTranslateX(0);
 		weiter.setTranslateY(185);
 		weiter.getStyleClass().add("button_weiter");
 
-		// Label Rettungsgriff
 		getChildren().add(rettungsgriff);
 		rettungsgriff.setTranslateX(0);
 		rettungsgriff.setTranslateY(-175);
 		rettungsgriff.getStyleClass().add("label_ueberschrift");
 
-		// Image Rettungsgriff
 		getChildren().add(rettungsgriffbild_view);
 		rettungsgriffbild_view.setFitHeight(220);
 		rettungsgriffbild_view.setFitWidth(220);

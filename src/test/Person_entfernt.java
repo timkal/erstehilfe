@@ -11,20 +11,15 @@ public class Person_entfernt extends Basis {
 	Seitenspezifische Elemente erzeugen
 	------------------------------------*/
 
-	// Label Person entfernt
 	Label personentfernt = new Label("Person vom Unfallort\nentfernt?");
 
-	// Label Hinweis
 	Label hinweis = new Label("Beachte:\n" + "Bei Verdacht auf eine\n" + "Wirbelsäulenverletzung nur\n"
 			+ "aus lebensgefährlicher\n" + "Umgebung entfernen!");
 
-	// Linie
 	Line line2 = new Line();
 
-	// Button Ja
 	Button ja = new Button("Ja");
 
-	// Button Nein
 	Button nein = new Button("Nein");
 
 	public Person_entfernt() {
@@ -35,20 +30,17 @@ public class Person_entfernt extends Basis {
 		Seitenspezifische Elemente formatieren
 		------------------------------------*/
 
-		// Label Person entfernt
 		getChildren().add(personentfernt);
 		personentfernt.setTranslateX(0);
 		personentfernt.setTranslateY(-175);
 		personentfernt.setTextAlignment(TextAlignment.CENTER);
 
-		// Label Hinweis
 		getChildren().add(hinweis);
 		hinweis.setTranslateX(0);
 		hinweis.setTranslateY(-60);
 		hinweis.getStyleClass().add("hinweis_label");
 		hinweis.setTextAlignment(TextAlignment.CENTER);
 
-		// Linie
 		getChildren().add(line2);
 		line2.setStartX(0);
 		line2.setStartY(0);
@@ -57,13 +49,11 @@ public class Person_entfernt extends Basis {
 		line2.setStrokeWidth(1.5);
 		line2.setTranslateY(-130);
 
-		// Button Ja
 		getChildren().add(ja);
 		ja.setTranslateX(62.5);
 		ja.setTranslateY(50);
 		ja.getStyleClass().add("button_ja");
 
-		// Button Nein
 		getChildren().add(nein);
 		nein.setTranslateX(-62.5);
 		nein.setTranslateY(50);

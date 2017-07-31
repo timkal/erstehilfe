@@ -14,14 +14,11 @@ public class Startseite extends Basis {
 	Seitenspezifische Elemente erzeugen
 	------------------------------------*/
 
-	// Image Logo
 	Image logo = new Image("file:images/Logo.png");
 	ImageView logo_view = new ImageView("file:images/Logo.png");
 
-	// Progress Bar
 	ProgressBar progressBar = new ProgressBar();
 
-	// Button Weiter
 	Button start = new Button("Start");
 
 	public Startseite() {
@@ -51,14 +48,12 @@ public class Startseite extends Basis {
 		notruf.setVisible(false);
 		notruf_view.setVisible(false);
 
-		// Image Erste Hilfe
 		getChildren().add(logo_view);
 		logo_view.setFitHeight(190);
 		logo_view.setFitWidth(180);
 		logo_view.setTranslateX(0);
 		logo_view.setTranslateY(-40);
 
-		// Progress Bar
 		getChildren().add(progressBar);
 		progressBar.setTranslateX(0);
 		progressBar.setTranslateY(120);
@@ -66,7 +61,6 @@ public class Startseite extends Basis {
 		progressBar.setMaxWidth(180);
 		progressBar.getStyleClass().add("button_start");
 
-		// Button Weiter
 		getChildren().add(start);
 		start.getStyleClass().add("button_start");
 		start.setTranslateX(0);
