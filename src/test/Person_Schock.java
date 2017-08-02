@@ -5,16 +5,16 @@ import javafx.scene.control.Label;
 import javafx.scene.shape.Line;
 import javafx.scene.text.TextAlignment;
 
-public class Innere_Verletzung extends Basis {
+public class Person_Schock extends Basis {
 
 	/*------------------------------------
 	Seitenspezifische Elemente erzeugen
 	------------------------------------*/
 
-	Label innereverletzung = new Label("Hat die Person innere\nVerletzungen?");
+	Label innereverletzung = new Label("Hat die Person einen\nSchock?");
 
 	Label anzeichen = new Label(
-			"Anzeichen:\n" + "- Bauch der Person formt sich kugelrund\n" + "- Person hat Schaum vor dem Mund\n");
+			"Anzeichen:\n" + "- beschleunigte Atmung\n" + "- blasse, kühle Haut\n" + "- unklare Äußerungen des Betroffenen\n");
 
 	Line line2 = new Line();
 
@@ -22,7 +22,7 @@ public class Innere_Verletzung extends Basis {
 
 	Button nein = new Button("Nein");
 
-	public Innere_Verletzung() {
+	public Person_Schock() {
 
 		getStylesheets().add("test/styles.css");
 

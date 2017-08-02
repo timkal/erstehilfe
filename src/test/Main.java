@@ -76,10 +76,10 @@ public class Main extends Application {
 	Äussere_Verletzung p20 = new Äussere_Verletzung();
 	Scene s20 = new Scene(p20, x, y);
 
-	Innere_Verletzung p21 = new Innere_Verletzung();
+	Person_Schock p21 = new Person_Schock();
 	Scene s21 = new Scene(p21, x, y);
 
-	Innere_Verletzung p22 = new Innere_Verletzung();
+	Person_Schock p22 = new Person_Schock();
 	Scene s22 = new Scene(p22, x, y);
 
 	Stabile_Seitenlage p23 = new Stabile_Seitenlage();
