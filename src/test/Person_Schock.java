@@ -11,7 +11,7 @@ public class Person_Schock extends Basis {
 	Seitenspezifische Elemente erzeugen
 	------------------------------------*/
 
-	Label innereverletzung = new Label("Hat die Person einen\nSchock?");
+	Label schock = new Label("Hat die Person einen\nSchock?");
 
 	Label anzeichen = new Label(
 			"Anzeichen:\n" + "- beschleunigte Atmung\n" + "- blasse, kühle Haut\n" + "- unklare Äußerungen des Betroffenen\n");
@@ -30,10 +30,10 @@ public class Person_Schock extends Basis {
 		Seitenspezifische Elemente erzeugen
 		------------------------------------*/
 
-		getChildren().add(innereverletzung);
-		innereverletzung.setTranslateX(0);
-		innereverletzung.setTranslateY(-175);
-		innereverletzung.setTextAlignment(TextAlignment.CENTER);
+		getChildren().add(schock);
+		schock.setTranslateX(0);
+		schock.setTranslateY(-175);
+		schock.setTextAlignment(TextAlignment.CENTER);
 
 		getChildren().add(anzeichen);
 		anzeichen.setTranslateX(0);
