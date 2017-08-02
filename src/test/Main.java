@@ -336,7 +336,7 @@ public class Main extends Application {
 		p24.getButton_nein().setOnAction(e -> primaryStage.setScene(s31));
 		p31.getButton_back().setOnAction(e -> primaryStage.setScene(s24));
 		p34.getButton_weiter().setOnAction(e -> primaryStage.setScene(s32));
-		p32.getButton_back().setOnAction(e -> primaryStage.setScene(s31));
+		p32.getButton_back().setOnAction(e -> primaryStage.setScene(s34));
 
 		// Verlinkungen der Screens mit der Tab Bar, hier mit dem Menü
 		p1.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
