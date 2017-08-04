@@ -345,3 +345,13 @@
 	-fx-font-size: 12px;
 	-fx-font-family: Helvetica;
 }
+
+.anruf_läuft_label {
+	-fx-text-fill: #000000;
+	-fx-background-color: #06D35B;
+	-fx-border-radius: 5;
+	-fx-padding: 20 40 20 40;
+	-fx-font-size: 18px;
+	-fx-font-family: Helvetica;
+	
+}

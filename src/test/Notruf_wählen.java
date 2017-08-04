@@ -1,6 +1,7 @@
 package test;
 
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class Notruf_wählen extends Basis {
@@ -22,6 +23,9 @@ public class Notruf_wählen extends Basis {
 	Button Anrufen = new Button("Anrufen");
 	Button Auflegen = new Button("Auflegen");
 	Button delete = new Button("Löschen");
+	
+	Label anruf_läuft = new Label("Wähle Rufnummer...");
+	
 
 	TextField feld = new TextField();
 
@@ -35,12 +39,16 @@ public class Notruf_wählen extends Basis {
 		------------------------------------*/
 
 		getChildren().addAll(Null, Eins, Zwei, Drei, Vier, Fünf, Sechs, Sieben, Acht, Neun, Anrufen, Auflegen, delete);
-		getChildren().add(feld);
+		getChildren().addAll(feld, anruf_läuft);
 
 		feld.setTranslateX(-70);
 		feld.setTranslateY(-130);
 		feld.setMaxSize(140, 50);
 		feld.setDisable(false);
+		
+		anruf_läuft.getStyleClass().add("");
+		anruf_läuft.setTranslateY(-185);
+		anruf_läuft.setVisible(false);
 
 		delete.setTranslateX(40);
 
@@ -94,6 +102,8 @@ public class Notruf_wählen extends Basis {
 		getButton_Acht().setOnAction(e -> feld.appendText("8"));
 		getButton_Neun().setOnAction(e -> feld.appendText("9"));
 		getButton_delete().setOnAction(e -> feld.clear());
+		getButton_Anrufen().setOnAction(e -> anruf_läuft.setVisible(true));
+		getButton_Auflegen().setOnAction(e -> anruf_läuft.setVisible(false));
 
 	}
 
@@ -139,6 +149,14 @@ public class Notruf_wählen extends Basis {
 
 	Button getButton_delete() {
 		return delete;
+	}
+	
+	Button getButton_Anrufen() {
+		return Anrufen;
+	}
+	
+	Button getButton_Auflegen() {
+		return Auflegen;
 	}
 
 	Button getButton_menu() {
