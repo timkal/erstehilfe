@@ -102,7 +102,7 @@ public class Reanimation extends Basis {
 				}
 			};
 		};
-
+ 
 		druckfrequenz.setOnAction(e1);
 	}
 

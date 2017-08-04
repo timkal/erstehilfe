@@ -167,6 +167,12 @@
 	-fx-overflow: hidden;
 }
 
+.button_transparent {
+	-fx-background-color: Transparent;
+	-fx-padding: 40 30 10 220;
+	
+}
+
 /* Labels */
 .topbar_label {
 	-fx-text-fill: rgb(0, 0, 0);

@@ -12,6 +12,8 @@ public class Notruf_absetzen extends Basis {
 	------------------------------------*/
 
 	Label notrufabsetzen = new Label("Notruf\nabsetzen");
+	
+	Button notrufwählen = new Button();
 
 	Image phone = new Image("file:images/Phone.png");
 	ImageView phone_view = new ImageView("file:images/Phone.png");
@@ -56,6 +58,12 @@ public class Notruf_absetzen extends Basis {
 		notrufabsetzeninfo.setTranslateX(0);
 		notrufabsetzeninfo.setTranslateY(64);
 		notrufabsetzeninfo.getStyleClass().add("infos_label");
+		
+		getChildren().add(notrufwählen);
+		notrufwählen.getStyleClass().add("button_transparent");
+		notrufwählen.setTranslateY(-150);
+		
+		
 	}
 
 	Button getButton_land() {
@@ -76,5 +84,9 @@ public class Notruf_absetzen extends Basis {
 
 	Button getButton_krankenhaus() {
 		return krankenhaus;
+	}
+	
+	Button getButton_notrufwählen() {
+		return notrufwählen;
 	}
 }

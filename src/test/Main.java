@@ -289,6 +289,9 @@ public class Main extends Application {
 	Krankenhaus p91 = new Krankenhaus();
 	Scene s91 = new Scene(p91, x, y);
 	
+	Notruf_wählen p92 = new Notruf_wählen();
+	Scene s92 = new Scene (p92, x, y);
+	
 	public void start(Stage primaryStage) throws Exception {
 
 		/*------------------------------------
@@ -490,6 +493,8 @@ public class Main extends Application {
 		p47.getButton_back().setOnAction(e -> primaryStage.setScene(s28));
 		p62.getButton_weiter().setOnAction(e -> primaryStage.setScene(s48));
 		p48.getButton_back().setOnAction(e -> primaryStage.setScene(s62));
+		p3.getButton_notrufwählen().setOnAction(e -> primaryStage.setScene(s92));
+		p92.getButton_back().setOnAction(e -> primaryStage.setScene(s3));
 
 		// Verlinkungen der Screens mit der Tab Bar, hier mit dem Menü
 		p1.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
@@ -582,6 +587,7 @@ public class Main extends Application {
 		p89.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 		p90.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 		p91.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
+		p92.getButton_menu().setOnAction(e -> primaryStage.setScene(s2));
 
 		// Verlinkungen der Screens mit der Tab Bar, hier mit dem Notruf
 		p1.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
@@ -674,6 +680,7 @@ public class Main extends Application {
 		p89.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p90.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p91.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
+		p92.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		
 		// Verlinkungen der Screens mit der Tab Bar, hier mit dem Krankenhaus
 		p1.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
@@ -766,6 +773,7 @@ public class Main extends Application {
 		p88.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 		p89.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 		p90.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
+		p92.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 
 		
 		primaryStage.setScene(s0);
