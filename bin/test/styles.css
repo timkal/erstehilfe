@@ -173,6 +173,43 @@
 	
 }
 
+.button_feld {
+	-fx-text-fill: #ffffff;
+	-fx-border-color: Transparent;
+	-fx-background-color: #6a716f;
+	-fx-font-size: 30px;
+	-fx-font-family: Helvetica;
+	-fx-font-weight: bold;
+	-fx-border: 1px;
+	-fx-display: block;
+	-fx-border-radius: 50%;
+
+}
+
+.button_anrufen {
+	-fx-text-fill: #06D35B;
+	-fx-border-color: Transparent;
+	-fx-background-color: #06D35B;
+	-fx-font-size: 30px;
+	-fx-font-family: Helvetica;
+	-fx-font-weight: bold;
+	-fx-border: 1px;
+	-fx-display: block;
+	-fx-border-radius: 50%;
+}
+
+.button_auflegen {
+	-fx-text-fill: #FF4242;
+	-fx-border-color: Transparent;
+	-fx-background-color: #FF4242;
+	-fx-font-size: 30px;
+	-fx-font-family: Helvetica;
+	-fx-font-weight: bold;
+	-fx-border: 1px;
+	-fx-display: block;
+	-fx-border-radius: 50%;
+}
+
 /* Labels */
 .topbar_label {
 	-fx-text-fill: rgb(0, 0, 0);

@@ -3,6 +3,8 @@ package test;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 public class Notruf_wählen extends Basis {
 
@@ -20,11 +22,17 @@ public class Notruf_wählen extends Basis {
 	Button Sieben = new Button("7");
 	Button Acht = new Button("8");
 	Button Neun = new Button("9");
-	Button Anrufen = new Button("Anrufen");
-	Button Auflegen = new Button("Auflegen");
-	Button delete = new Button("Löschen");
+	Button Anrufen = new Button("_");
+	Button Auflegen = new Button("_");
+	Button delete = new Button("X");
 	
 	Label anruf_läuft = new Label("Wähle Rufnummer...");
+	
+	Image pickup = new Image ("file:images/pickup.png");
+	ImageView pickup_view = new ImageView("file:images/pickup.png");
+	
+	Image hangup = new Image ("file:images/hangup.png");
+	ImageView hangup_view = new ImageView("file:images/hangup.png");
 	
 
 	TextField feld = new TextField();
@@ -41,56 +49,82 @@ public class Notruf_wählen extends Basis {
 		getChildren().addAll(Null, Eins, Zwei, Drei, Vier, Fünf, Sechs, Sieben, Acht, Neun, Anrufen, Auflegen, delete);
 		getChildren().addAll(feld, anruf_läuft);
 
-		feld.setTranslateX(-70);
-		feld.setTranslateY(-130);
-		feld.setMaxSize(140, 50);
+		feld.setTranslateX(-30);
+		feld.setTranslateY(-100);
+		feld.setMaxSize(110, 60);
 		feld.setDisable(false);
 		
-		anruf_läuft.getStyleClass().add("");
+	
 		anruf_läuft.setTranslateY(-185);
 		anruf_läuft.setVisible(false);
 
 		delete.setTranslateX(40);
 
 		Null.setTranslateX(0);
-		Null.setTranslateY(160);
-
-		Eins.setTranslateX(-50);
-		Eins.setTranslateY(10);
+		Null.setTranslateY(180);
+		Null.getStyleClass().add("button_feld");
+		
+		Eins.setTranslateX(-60);
+		Eins.setTranslateY(0);
+		Eins.getStyleClass().add("button_feld");
 
 		Zwei.setTranslateX(0);
-		Zwei.setTranslateY(10);
+		Zwei.setTranslateY(0);
+		Zwei.getStyleClass().add("button_feld");
 
-		Drei.setTranslateX(50);
-		Drei.setTranslateY(10);
+		Drei.setTranslateX(60);
+		Drei.setTranslateY(0);
+		Drei.getStyleClass().add("button_feld");
 
-		Vier.setTranslateX(-50);
+		Vier.setTranslateX(-60);
 		Vier.setTranslateY(60);
+		Vier.getStyleClass().add("button_feld");
 
 		Fünf.setTranslateX(0);
 		Fünf.setTranslateY(60);
+		Fünf.getStyleClass().add("button_feld");
 
-		Sechs.setTranslateX(50);
+		Sechs.setTranslateX(60);
 		Sechs.setTranslateY(60);
+		Sechs.getStyleClass().add("button_feld");
 
-		Sieben.setTranslateX(-50);
-		Sieben.setTranslateY(110);
+		Sieben.setTranslateX(-60);
+		Sieben.setTranslateY(120);
+		Sieben.getStyleClass().add("button_feld");
 
 		Acht.setTranslateX(0);
-		Acht.setTranslateY(110);
+		Acht.setTranslateY(120);
+		Acht.getStyleClass().add("button_feld");
 
-		Neun.setTranslateX(50);
-		Neun.setTranslateY(110);
+		Neun.setTranslateX(60);
+		Neun.setTranslateY(120);
+		Neun.getStyleClass().add("button_feld");
 
-		Auflegen.setTranslateX(-80);
-		Auflegen.setTranslateY(-50);
+		Auflegen.setTranslateX(-60);
+		Auflegen.setTranslateY(180);
+		Auflegen.getStyleClass().add("button_auflegen");
 
-		Anrufen.setTranslateX(80);
-		Anrufen.setTranslateY(-50);
+		Anrufen.setTranslateX(60);
+		Anrufen.setTranslateY(180);
+		Anrufen.getStyleClass().add("button_anrufen");
 		
-		delete.setTranslateX(80);
-		delete.setTranslateY(-130);
-
+		delete.setTranslateX(60);
+		delete.setTranslateY(-100);
+		delete.getStyleClass().add("button_feld");
+		
+		getChildren().add(pickup_view);
+		pickup_view.setTranslateX(60);
+		pickup_view.setTranslateY(180);
+		pickup_view.setFitHeight(45);
+		pickup_view.setFitWidth(45);
+		
+		getChildren().add(hangup_view);
+		hangup_view.setTranslateX(-60);
+		hangup_view.setTranslateY(180);
+		hangup_view.setFitHeight(25);
+		hangup_view.setFitWidth(50);
+		
+		
 		getButton_Null().setOnAction(e -> feld.appendText("0"));
 		getButton_Eins().setOnAction(e -> feld.appendText("1"));
 		getButton_Zwei().setOnAction(e -> feld.appendText("2"));
@@ -104,6 +138,7 @@ public class Notruf_wählen extends Basis {
 		getButton_delete().setOnAction(e -> feld.clear());
 		getButton_Anrufen().setOnAction(e -> anruf_läuft.setVisible(true));
 		getButton_Auflegen().setOnAction(e -> anruf_läuft.setVisible(false));
+		
 
 	}
 
