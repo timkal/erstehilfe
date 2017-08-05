@@ -36,7 +36,13 @@ public class Reanimation extends Basis {
 
 	Button druckfrequenz = new Button("▷");
 
-	// Media-Player + Audio-Datei einbinden
+	/**
+	 * Media-Player + Audio-Datei einbinden: Zunächst wird ein Dateipfad
+	 * angegeben, um die Datei aus dem Verzeichnis aufzurufen Dieser wird einem
+	 * Uniform Resource Unifier übergeben, welcher dann an eine Media Resource
+	 * übergeben wird. Der MediaPlayer kann Media abspielen und bekommt das
+	 * Media Objekt übergeben.
+	 */
 	Path path1 = Paths.get("src", "Audio", "reanimation.mp3"); // src/audio/reanimate1.mp3
 	URI uri1 = path1.toUri();
 	Media hit = new Media(uri1.toString());
@@ -87,8 +93,17 @@ public class Reanimation extends Basis {
 		druckfrequenz.setTranslateY(-62);
 		druckfrequenz.getStyleClass().add("button_mediastart");
 
-		// Event-Handler und Action
-		EventHandler<ActionEvent> e1 = new EventHandler<ActionEvent>() {
+		/**
+		 * Event-Handler und ActionEvent für das Abspielen des Tons: Es wird ein
+		 * EventHandler erzeugt, welcher für das abspielen des Tons zuständig
+		 * ist. Der Button Druckfrequenz wird an das Event geknüpft. Das erste
+		 * if-Statement sorgt dafür, dass beim Betätigen des Buttons das zweite
+		 * if-Statement ausgeführt wird. Es wird geprüft, ob der Ton bereits
+		 * gespielt wird (getStatus) - ist dies der Fall, wird der Ton gestoppt.
+		 * Ist dies nicht der Fall, wird der Ton über den MediaPlayer
+		 * abgespielt.
+		 */
+		EventHandler<ActionEvent> abspielen = new EventHandler<ActionEvent>() {
 
 			public void handle(ActionEvent event) {
 
@@ -102,8 +117,8 @@ public class Reanimation extends Basis {
 				}
 			};
 		};
- 
-		druckfrequenz.setOnAction(e1);
+
+		druckfrequenz.setOnAction(abspielen);
 	}
 
 	Button getButton_anleitung() {

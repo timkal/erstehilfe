@@ -5,13 +5,14 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-	
-	/*------------------------------------
-    Panes und Szenen aller Klassen definieren Panes abgekürzt mit pZAHL, Scenes mit sZAHL
-    ------------------------------------*/
 
-	int x= 300;
-	int y= 550;
+	/*------------------------------------
+	Panes und Szenen aller Klassen definieren Panes abgekürzt mit pZAHL, Scenes mit sZAHL
+	------------------------------------*/
+
+	// Diese Variablen geben die Größe der Scene an.
+	int x = 300;
+	int y = 550;
 
 	Startseite p0 = new Startseite();
 	Scene s0 = new Scene(p0, x, y);
@@ -93,25 +94,25 @@ public class Main extends Application {
 
 	Person_Schock p26 = new Person_Schock();
 	Scene s26 = new Scene(p26, x, y);
-	
+
 	Person_Schock p27 = new Person_Schock();
 	Scene s27 = new Scene(p27, x, y);
 
 	Person_Schock p28 = new Person_Schock();
 	Scene s28 = new Scene(p28, x, y);
-	
+
 	Person_Schock p29 = new Person_Schock();
 	Scene s29 = new Scene(p29, x, y);
 
 	Person_Schock p30 = new Person_Schock();
 	Scene s30 = new Scene(p30, x, y);
-	
+
 	Person_Schock p31 = new Person_Schock();
 	Scene s31 = new Scene(p31, x, y);
 
 	Person_Schock p32 = new Person_Schock();
 	Scene s32 = new Scene(p32, x, y);
-	
+
 	Stabile_Seitenlage p33 = new Stabile_Seitenlage();
 	Scene s33 = new Scene(p33, x, y);
 
@@ -129,85 +130,85 @@ public class Main extends Application {
 
 	Bedürfnisse_Person p38 = new Bedürfnisse_Person();
 	Scene s38 = new Scene(p38, x, y);
-	
+
 	Bedürfnisse_Person p39 = new Bedürfnisse_Person();
 	Scene s39 = new Scene(p39, x, y);
 
 	Bedürfnisse_Person p40 = new Bedürfnisse_Person();
 	Scene s40 = new Scene(p40, x, y);
-	
+
 	Bedürfnisse_Person p41 = new Bedürfnisse_Person();
 	Scene s41 = new Scene(p41, x, y);
 
 	Bedürfnisse_Person p42 = new Bedürfnisse_Person();
 	Scene s42 = new Scene(p42, x, y);
-	
+
 	Bedürfnisse_Person p43 = new Bedürfnisse_Person();
 	Scene s43 = new Scene(p43, x, y);
 
 	Bedürfnisse_Person p44 = new Bedürfnisse_Person();
 	Scene s44 = new Scene(p44, x, y);
-	
+
 	Bedürfnisse_Person p45 = new Bedürfnisse_Person();
 	Scene s45 = new Scene(p45, x, y);
 
 	Bedürfnisse_Person p46 = new Bedürfnisse_Person();
 	Scene s46 = new Scene(p46, x, y);
-	
+
 	Bedürfnisse_Person p47 = new Bedürfnisse_Person();
 	Scene s47 = new Scene(p47, x, y);
 
 	Bedürfnisse_Person p48 = new Bedürfnisse_Person();
 	Scene s48 = new Scene(p48, x, y);
-	
+
 	Bedürfnisse_Person p49 = new Bedürfnisse_Person();
 	Scene s49 = new Scene(p49, x, y);
 
 	Bedürfnisse_Person p50 = new Bedürfnisse_Person();
 	Scene s50 = new Scene(p50, x, y);
-	
+
 	Bedürfnisse_Person p51 = new Bedürfnisse_Person();
 	Scene s51 = new Scene(p51, x, y);
 
 	Bedürfnisse_Person p52 = new Bedürfnisse_Person();
 	Scene s52 = new Scene(p52, x, y);
-	
+
 	Bedürfnisse_Person p53 = new Bedürfnisse_Person();
 	Scene s53 = new Scene(p53, x, y);
 
 	Bedürfnisse_Person p54 = new Bedürfnisse_Person();
 	Scene s54 = new Scene(p54, x, y);
-	
+
 	Bedürfnisse_Person p55 = new Bedürfnisse_Person();
 	Scene s55 = new Scene(p55, x, y);
 
 	Bedürfnisse_Person p56 = new Bedürfnisse_Person();
 	Scene s56 = new Scene(p56, x, y);
-	
+
 	Schocklage p57 = new Schocklage();
 	Scene s57 = new Scene(p57, x, y);
 
 	Schocklage p58 = new Schocklage();
 	Scene s58 = new Scene(p58, x, y);
-	
+
 	Schocklage p59 = new Schocklage();
 	Scene s59 = new Scene(p59, x, y);
 
 	Schocklage p60 = new Schocklage();
 	Scene s60 = new Scene(p60, x, y);
-	
+
 	Schocklage p61 = new Schocklage();
 	Scene s61 = new Scene(p61, x, y);
 
 	Schocklage p62 = new Schocklage();
 	Scene s62 = new Scene(p62, x, y);
-	
+
 	Schocklage p63 = new Schocklage();
 	Scene s63 = new Scene(p63, x, y);
 
 	Schocklage p64 = new Schocklage();
 	Scene s64 = new Scene(p64, x, y);
-	
+
 	Schocklage p65 = new Schocklage();
 	Scene s65 = new Scene(p65, x, y);
 
@@ -249,7 +250,7 @@ public class Main extends Application {
 
 	Knochen_verletzt p78 = new Knochen_verletzt();
 	Scene s78 = new Scene(p78, x, y);
-	
+
 	Knochen_verletzt p79 = new Knochen_verletzt();
 	Scene s79 = new Scene(p79, x, y);
 
@@ -264,41 +265,41 @@ public class Main extends Application {
 
 	Knochenbrüche p83 = new Knochenbrüche();
 	Scene s83 = new Scene(p83, x, y);
-	
+
 	Knochenbrüche p84 = new Knochenbrüche();
 	Scene s84 = new Scene(p84, x, y);
-	
+
 	Knochenbrüche p85 = new Knochenbrüche();
 	Scene s85 = new Scene(p85, x, y);
-	
+
 	Knochenbrüche p86 = new Knochenbrüche();
 	Scene s86 = new Scene(p86, x, y);
-	
+
 	Knochenbrüche p87 = new Knochenbrüche();
 	Scene s87 = new Scene(p87, x, y);
-	
+
 	Knochenbrüche p88 = new Knochenbrüche();
 	Scene s88 = new Scene(p88, x, y);
-	
+
 	Knochenbrüche p89 = new Knochenbrüche();
 	Scene s89 = new Scene(p89, x, y);
-	
+
 	Knochenbrüche p90 = new Knochenbrüche();
 	Scene s90 = new Scene(p90, x, y);
 
 	Krankenhaus p91 = new Krankenhaus();
 	Scene s91 = new Scene(p91, x, y);
-	
+
 	Notruf_wählen p92 = new Notruf_wählen();
-	Scene s92 = new Scene (p92, x, y);
-	
+	Scene s92 = new Scene(p92, x, y);
+
 	public void start(Stage primaryStage) throws Exception {
 
 		/*------------------------------------
 		Verknüpfung der Klassen mit Lambda-Ausdruck. Dies ist eine alternative Schreibweise des klassischen
 		Event-Handlers und wird verwendet, um den Code möglichst komprimiert darzustellen.
 		------------------------------------*/
-		
+
 		// Verlinkungen der Screens
 		p0.getButton_start().setOnAction(e -> primaryStage.setScene(s1));
 		p1.getButton_ja().setOnAction(e -> primaryStage.setScene(s2));
@@ -681,7 +682,7 @@ public class Main extends Application {
 		p90.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p91.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
 		p92.getButton_notruf().setOnAction(e -> primaryStage.setScene(s3));
-		
+
 		// Verlinkungen der Screens mit der Tab Bar, hier mit dem Krankenhaus
 		p1.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 		p2.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
@@ -714,7 +715,7 @@ public class Main extends Application {
 		p29.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 		p30.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 		p31.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
-		p32.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));	
+		p32.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 		p33.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 		p34.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 		p35.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
@@ -731,7 +732,7 @@ public class Main extends Application {
 		p46.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 		p47.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 		p48.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
-		p49.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));	
+		p49.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 		p50.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 		p51.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 		p52.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
@@ -742,7 +743,7 @@ public class Main extends Application {
 		p57.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 		p58.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 		p59.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
-		p60.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));	
+		p60.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 		p61.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 		p62.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 		p63.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
@@ -775,7 +776,6 @@ public class Main extends Application {
 		p90.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 		p92.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 
-		
 		primaryStage.setScene(s0);
 		primaryStage.setTitle("Erste Hilfe");
 		primaryStage.setResizable(false);

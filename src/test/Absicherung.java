@@ -52,6 +52,8 @@ public class Absicherung extends Basis {
 		infos2.getStyleClass().add("infos_label2");
 	}
 
+	// getButton Methode gibt den unter return angegebenen Button zurück, um als
+	// Referenz für die ActionEvents zu dienen
 	Button getButton_weiter() {
 		return weiter;
 	}

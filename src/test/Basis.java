@@ -19,10 +19,10 @@ public class Basis extends StackPane {
 	/*------------------------------------ 
 	Stack Pane in der Basis erstellen
 	------------------------------------*/
-	
+
 	StackPane stack = new StackPane();
 	Scene szene = new Scene(stack, 300, 550);
-	
+
 	/*------------------------------------ 
 	Basis-Elemente Top Bar erzeugen	
 	------------------------------------*/
@@ -48,7 +48,6 @@ public class Basis extends StackPane {
 
 	Label zeit = new Label(LocalTime.now().toString().substring(0, 5));
 
-	
 	/*------------------------------------ 
 	Basis-Elemente Tab Bar erzeugen	
 	------------------------------------*/
@@ -75,15 +74,18 @@ public class Basis extends StackPane {
 		/*------------------------------------ 
 		Stack Pane formatieren (via CSS)	
 		------------------------------------*/
-		
+
 		getStyleClass().add("custom-stack");
 
 		/*------------------------------------ 
 		Elemente der Top Bar formatieren	
 		------------------------------------*/
 
+		// dem Rechteck top wird eine Farbe zugeordnet
 		top.setFill(Color.web("#F9F9F9"));
+		// mit getChildren().add() wird das Element top auf der Pane abgebildet
 		getChildren().add(top);
+		// setTransalteX/Y gibt die Koordinaten des Objekts auf der StackPane an
 		top.setTranslateX(0);
 		top.setTranslateY(-250);
 
@@ -91,6 +93,7 @@ public class Basis extends StackPane {
 		getChildren().add(back_view);
 		back.setTranslateX(-100);
 		back.setTranslateY(-240);
+		// setFitWidth/Height gibt eine feste Größe für ein Objekt an
 		back_view.setFitHeight(15);
 		back_view.setFitWidth(10);
 		back_view.setTranslateX(-135);
@@ -105,6 +108,8 @@ public class Basis extends StackPane {
 		getChildren().add(akku_view);
 		akku_view.setFitHeight(10);
 		akku_view.setFitWidth(32);
+		// setAlignment ist praktisch um nicht XY Werte angeben zu müssen,
+		// funktioniert allerdings nur bei "" Positionen
 		setAlignment(akku_view, Pos.TOP_RIGHT);
 
 		getChildren().add(prozent);
@@ -129,6 +134,19 @@ public class Basis extends StackPane {
 		zeit.getStyleClass().add("topbar_label");
 		setAlignment(zeit, Pos.TOP_CENTER);
 
+		/**
+		 * Der AnimationTimer erzeugt einen Timer, welcher die Uhrzeit anzeigen
+		 * soll. Damit die Zeit durchgehend, also "live" abgerufen wird, ist
+		 * eine "handle" Methode notwendig. Diese spezifische mit (long now)
+		 * sorgt dafür, dass die Methode in jedem Frame aufgerufen wird und sich
+		 * die Uhrzeit so ständig aktualisiert. Die Uhrzeit wird durch LocalTime
+		 * von der Systemzeit des Computers abgefragt und dann in das oben
+		 * definierte Label "zeit" gesettet. toString verpackt die LocalTime in
+		 * einen String. Der Substring 0-5 (HH:mm) wird genutzt, damit die
+		 * Uhrzeit nicht auf die Nanosekunde angezeigt wird. .start() startet
+		 * diese Methode - Ein Stopp ist nicht notwendig, da sich die Uhrzeit
+		 * durchgehend aktualisieren soll.
+		 */
 		new AnimationTimer() {
 			@Override
 			public void handle(long now) {
