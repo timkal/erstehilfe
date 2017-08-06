@@ -1,19 +1,9 @@
 package test;
 
-import java.net.URI;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
-import javafx.scene.media.MediaPlayer.Status;
-import javafx.util.Pair;
 
 public class Stabile_Seitenlage extends Basis {
 
@@ -27,15 +17,6 @@ public class Stabile_Seitenlage extends Basis {
 
 	Image stabileseitenlagebild = new Image("file:images/Stabile Seitenlage.png");
 	ImageView stabileseitenlagebild_view = new ImageView("file:images/Stabile Seitenlage.png");
-	
-	Button videostart = new Button("▷");
-
-	// Media-Player + Video-Datei einbinden
-	Path path1 = Paths.get("src", "Video", "Erste_Hilfe_Stabile_Seitenlage.mp4"); 
-	URI uri = path1.toUri();
-	Media hit = new Media(uri.toString());
-	MediaPlayer player = new MediaPlayer(hit);
-
 
 	public Stabile_Seitenlage() {
 
@@ -60,37 +41,12 @@ public class Stabile_Seitenlage extends Basis {
 		stabileseitenlagebild_view.setFitWidth(292);
 		stabileseitenlagebild_view.setTranslateX(0);
 		stabileseitenlagebild_view.setTranslateY(0);
-		
-		getChildren().add(videostart);
-		videostart.setTranslateX(0);
-		videostart.setTranslateY(120);
-		videostart.getStyleClass().add("button_mediastart");
-		
-		// Event-Handler und Action
-				EventHandler<ActionEvent> e1 = new EventHandler<ActionEvent>() {
-
-					public void handle(ActionEvent event) {
-
-						if (event.getSource() == videostart) {
-
-							if (player.getStatus() == Status.PLAYING) {
-								player.stop();
-							} else {
-								player.play();
-
-							}
-
-						}
-					};
-				};
-
-				videostart.setOnAction(e1);
-			}
+	}	
 	
-
+	// getButton Methode gibt den unter return angegebenen Button zurück, um als
+	// Referenz für die ActionEvents zu dienen
 	Button getButton_weiter() {
 		return weiter;
-
 	}
 
 	Button getButton_back() {

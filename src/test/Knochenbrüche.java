@@ -59,6 +59,8 @@ public class Knochenbrüche extends Basis {
 		knochenbrueche5.getStyleClass().add("anweisungen_label2");
 	}
 
+	// getButton Methode gibt den unter return angegebenen Button zurück, um als
+	// Referenz für die ActionEvents zu dienen
 	Button getButton_weiter() {
 		return weiter;
 	}

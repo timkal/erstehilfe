@@ -63,6 +63,8 @@ public class Druckverband extends Basis {
 		druckverbandbild_view.setTranslateY(-85);
 	}
 
+	// getButton Methode gibt den unter return angegebenen Button zurück, um als
+	// Referenz für die ActionEvents zu dienen
 	Button getButton_weiter() {
 		return weiter;
 	}

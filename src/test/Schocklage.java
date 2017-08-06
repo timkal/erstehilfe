@@ -50,6 +50,8 @@ public class Schocklage extends Basis {
 		schocklagebild_view.setTranslateY(-50);
 	}
 
+	// getButton Methode gibt den unter return angegebenen Button zurück, um als
+	// Referenz für die ActionEvents zu dienen
 	Button getButton_weiter() {
 		return weiter;
 	}

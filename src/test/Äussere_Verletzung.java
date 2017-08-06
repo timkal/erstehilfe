@@ -50,7 +50,9 @@ public class Äussere_Verletzung extends Basis {
 		nein.setTranslateY(50);
 		nein.getStyleClass().add("button_nein");
 	}
-
+	
+	// getButton Methode gibt den unter return angegebenen Button zurück, um als
+	// Referenz für die ActionEvents zu dienen
 	Button getButton_ja() {
 		return ja;
 	}

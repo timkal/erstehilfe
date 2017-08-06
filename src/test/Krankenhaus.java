@@ -49,6 +49,8 @@ public class Krankenhaus extends Basis {
 		browser.setTranslateY(-3);
 	}
 
+	// getButton Methode gibt den unter return angegebenen Button zurück, um als
+	// Referenz für die ActionEvents zu dienen
 	Button getButton_menu() {
 		return menu;
 	}

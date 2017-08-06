@@ -29,6 +29,8 @@ public class Menu extends Basis {
 		verletzt.setTranslateY(-50);
 	}
 
+	// getButton Methode gibt den unter return angegebenen Button zurück, um als
+	// Referenz für die ActionEvents zu dienen
 	Button getButton_back() {
 		return back;
 	}

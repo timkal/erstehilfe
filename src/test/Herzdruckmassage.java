@@ -112,6 +112,8 @@ public class Herzdruckmassage extends Basis {
 		druckfrequenz.setOnAction(e1);
 	}
 
+	// getButton Methode gibt den unter return angegebenen Button zurück, um als
+	// Referenz für die ActionEvents zu dienen
 	Button getButton_schritt2() {
 		return schritt2;
 	}

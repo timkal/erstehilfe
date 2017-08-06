@@ -138,10 +138,10 @@ public class Notruf_wählen extends Basis {
 		getButton_delete().setOnAction(e -> feld.clear());
 		getButton_Anrufen().setOnAction(e -> anruf_läuft.setVisible(true));
 		getButton_Auflegen().setOnAction(e -> anruf_läuft.setVisible(false));
-		
-
 	}
 
+	// getButton Methode gibt den unter return angegebenen Button zurück, um als
+	// Referenz für die ActionEvents zu dienen
 	Button getButton_Null() {
 		return Null;
 	}

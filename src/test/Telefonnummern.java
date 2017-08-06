@@ -51,6 +51,8 @@ public class Telefonnummern extends Basis {
 		zahlen.getStyleClass().add("zahlen_label");
 	}
 
+	// getButton Methode gibt den unter return angegebenen Button zurück, um als
+	// Referenz für die ActionEvents zu dienen
 	Button getButton_back() {
 		return back;
 	}

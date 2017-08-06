@@ -41,6 +41,8 @@ public class Bedürfnisse_Person extends Basis {
 		beduerfnisse3.getStyleClass().add("beduerfnisse_label2");
 	}
 
+	// getButton Methode gibt den unter return angegebenen Button zurück, um als
+	// Referenz für die ActionEvents zu dienen
 	Button getButton_menu() {
 		return menu;
 	}

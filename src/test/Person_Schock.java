@@ -59,6 +59,8 @@ public class Person_Schock extends Basis {
 		nein.getStyleClass().add("button_nein");
 	}
 
+	// getButton Methode gibt den unter return angegebenen Button zurück, um als
+	// Referenz für die ActionEvents zu dienen
 	Button getButton_ja() {
 		return ja;
 	}

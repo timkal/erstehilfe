@@ -80,6 +80,8 @@ public class Beatmung extends Basis {
 		beatmung3.setTextAlignment(TextAlignment.CENTER);
 	}
 
+	// getButton Methode gibt den unter return angegebenen Button zurück, um als
+	// Referenz für die ActionEvents zu dienen
 	Button getButton_back_reanimation() {
 		return back_reanimation;
 	}

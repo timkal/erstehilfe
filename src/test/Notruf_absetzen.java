@@ -61,11 +61,11 @@ public class Notruf_absetzen extends Basis {
 		
 		getChildren().add(notrufwählen);
 		notrufwählen.getStyleClass().add("button_transparent");
-		notrufwählen.setTranslateY(-150);
-		
-		
+		notrufwählen.setTranslateY(-150);	
 	}
 
+	// getButton Methode gibt den unter return angegebenen Button zurück, um als
+	// Referenz für die ActionEvents zu dienen
 	Button getButton_land() {
 		return anderesland;
 	}

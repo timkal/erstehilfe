@@ -100,7 +100,9 @@ public class Startseite extends Basis {
 
 		new Thread(sleeper).start();
 	}
-
+	
+	// getButton Methode gibt den unter return angegebenen Button zurück, um als
+	// Referenz für die ActionEvents zu dienen
 	Button getButton_start() {
 		return start;
 	}
