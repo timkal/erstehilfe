@@ -296,7 +296,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) throws Exception {
 
 		/*------------------------------------
-		Verknüpfung der Klassen mit Lambda-Ausdruck. Dies ist eine alternative Schreibweise des klassischen
+		Verknüpfung der Klassen mit dem Lambda-Ausdruck. Dies ist eine alternative Schreibweise des klassischen
 		Event-Handlers und wird verwendet, um den Code möglichst komprimiert darzustellen.
 		------------------------------------*/
 
