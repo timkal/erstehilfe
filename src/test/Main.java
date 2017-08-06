@@ -297,7 +297,9 @@ public class Main extends Application {
 
 		/*------------------------------------
 		Verknüpfung der Klassen mit dem Lambda-Ausdruck. Dies ist eine alternative Schreibweise des klassischen
-		Event-Handlers und wird verwendet, um den Code möglichst komprimiert darzustellen.
+		Event-Handlers und wird verwendet, um den Code möglichst komprimiert darzustellen. Die Struktur des Lambda Ausdrucks
+		wurde von der Website https://javabeginners.de/Klassen_und_Interfaces/Lambda_Ausdruecke.php übernommen, 
+	 	auf welcher der Ausdruck anhand des ActionListeners erklärt wird. 
 		------------------------------------*/
 
 		// Verlinkungen der Screens
