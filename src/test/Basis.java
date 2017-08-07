@@ -108,8 +108,11 @@ public class Basis extends StackPane {
 		getChildren().add(akku_view);
 		akku_view.setFitHeight(10);
 		akku_view.setFitWidth(32);
-		// setAlignment ist praktisch um nicht XY Werte angeben zu müssen,
-		// funktioniert allerdings nur bei "" Positionen
+		/* setAlignment ist praktisch um nicht XY Werte angeben zu müssen,
+		 * funktioniert allerdings nur bei "festgelegten" Positionen, 
+		 * wie "oben rechts".
+		 */
+		 
 		setAlignment(akku_view, Pos.TOP_RIGHT);
 
 		getChildren().add(prozent);
@@ -135,13 +138,13 @@ public class Basis extends StackPane {
 		setAlignment(zeit, Pos.TOP_CENTER);
 
 		/**
-		 * Der AnimationTimer erzeugt einen Timer, welcher die Uhrzeit anzeigen
+		 * Die Klasse @AnimationTimer erzeugt einen Timer, welcher die Uhrzeit anzeigen
 		 * soll. Damit die Zeit durchgehend, also "live" abgerufen wird, ist
 		 * eine "handle" Methode notwendig. Diese spezifische mit (long now)
 		 * sorgt dafür, dass die Methode in jedem Frame aufgerufen wird und sich
-		 * die Uhrzeit so ständig aktualisiert. Die Uhrzeit wird durch LocalTime
+		 * die Uhrzeit so ständig aktualisiert. Die Uhrzeit wird durch LocalTime.now
 		 * von der Systemzeit des Computers abgefragt und dann in das oben
-		 * definierte Label "zeit" gesettet. toString verpackt die LocalTime in
+		 * definierte Label zeit "gesettet". "toString" verpackt die LocalTime in
 		 * einen String. Der Substring 0-5 (HH:mm) wird genutzt, damit die
 		 * Uhrzeit nicht auf die Nanosekunde angezeigt wird. .start() startet
 		 * diese Methode - Ein Stopp ist nicht notwendig, da sich die Uhrzeit

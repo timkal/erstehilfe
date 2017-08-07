@@ -37,7 +37,7 @@ public class Reanimation extends Basis {
 	Button druckfrequenz = new Button("▷");
 
 	/**
-	 * Media-Player + Audio-Datei einbinden: Zunächst wird ein Dateipfad
+	 * Media-Player + Audio-Datei Elemente erzeugen: Zunächst wird ein Dateipfad
 	 * angegeben, um die Datei aus dem Verzeichnis aufzurufen Dieser wird einem
 	 * Uniform Resource Unifier übergeben, welcher dann an eine Media Resource
 	 * übergeben wird. Der MediaPlayer kann Media abspielen und bekommt das
@@ -55,6 +55,12 @@ public class Reanimation extends Basis {
 		/*------------------------------------
 		Seitenspezifische Elemente formatieren
 		------------------------------------*/
+		
+		/*
+		 * 
+		 * 
+		 * 
+		 */
 
 		getChildren().add(anleitung);
 		anleitung.setTranslateX(0);
@@ -102,6 +108,7 @@ public class Reanimation extends Basis {
 		 * gespielt wird (getStatus) - ist dies der Fall, wird der Ton gestoppt.
 		 * Ist dies nicht der Fall, wird der Ton über den MediaPlayer
 		 * abgespielt.
+		 * player.play() startet den Ton
 		 */
 		EventHandler<ActionEvent> abspielen = new EventHandler<ActionEvent>() {
 
