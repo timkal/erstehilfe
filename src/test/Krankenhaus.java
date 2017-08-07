@@ -14,7 +14,7 @@ public class Krankenhaus extends Basis {
 	------------------------------------*/
 
 	/**
-	 * Web-View Integration: Der WebView in Verbindung mit dem WebEngine stellt
+	 * Web-View Integration: Der @WebView in Verbindung mit dem @WebEngine stellt
 	 * die Webseite dar: Der WebEngine lädt die Webseite aus dem Internet und
 	 * stellt den HTML Content dar. Der WebView steuert die Eingabe über Maus
 	 * und Keyboard und regelt das Scrollen. WebEngine und WebView werden
@@ -33,24 +33,35 @@ public class Krankenhaus extends Basis {
 
 		// Web-View wird auf die StackPane gesetzt
 		getChildren().add(browser);
-		// Das HTML Document wird über einen Uniform Resource Identifier in eine
-		// File gepackt.
-		URI htmldoc = new File("map.html").toURI();
+		/*
+		 * Das HTML Dokument wird über einen Uniform Resource Identifier in eine
+		 * File gepackt.
+		 */
 
-		// Das HTML Document wird geladen. Der Weg ueber HTML ist notwendig da
-		// GoogleMap Embeded Directions API v1 nur aus iFrames heraus
-		// funktioniert.
-		// Dokumentation:
-		// https://developers.google.com/maps/documentation/embed/guide?hl=de
+		URI map = new File("map.html").toURI();
 
-		browser.getEngine().load(htmldoc.toString());
+		/*
+		 * Das HTML Dokument wird geladen. Der Weg ueber HTML ist notwendig da
+		 * GoogleMap Embeded Directions API v1 nur aus iFrames heraus
+		 * funktioniert. Dokumentation:
+		 * https://developers.google.com/maps/documentation/embed/guide?hl=de
+		 * https://developers.google.com/maps/documentation/embed/guide?hl=de#
+		 * directions_mode
+		 */
+
+		browser.getEngine().load(map.toString());
 		browser.setMaxWidth(285);
 		browser.setMaxHeight(436);
 		browser.setTranslateY(-3);
 	}
 
-	// getButton Methode gibt den unter return angegebenen Button zurück, um als
-	// Referenz für die ActionEvents zu dienen
+	/**
+	 * getButton Methode gibt den unter return angegebenen Button zurück, um als
+	 * Referenz für die ActionEvents zu dienen und damit die Verlinkung der
+	 * Seiten in der @Main Klasse ermöglichen. Die EventHandler greifen dann auf
+	 * die getButton Methode zu und "finden" darin den entsprechenden Button.
+	 */
+
 	Button getButton_menu() {
 		return menu;
 	}

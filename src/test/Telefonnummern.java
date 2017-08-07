@@ -51,8 +51,12 @@ public class Telefonnummern extends Basis {
 		zahlen.getStyleClass().add("zahlen_label");
 	}
 
-	// getButton Methode gibt den unter return angegebenen Button zurück, um als
-	// Referenz für die ActionEvents zu dienen
+	/**
+	 * getButton Methode gibt den unter return angegebenen Button zurück, um als
+	 * Referenz für die ActionEvents zu dienen und damit die Verlinkung der
+	 * Seiten in der @Main Klasse ermöglichen. Die EventHandler greifen dann auf
+	 * die getButton Methode zu und "finden" darin den entsprechenden Button.
+	 */
 	Button getButton_back() {
 		return back;
 	}

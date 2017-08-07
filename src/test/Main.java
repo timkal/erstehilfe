@@ -4,6 +4,14 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * Hier werden alle Klassen (Objekte) erzeugt. Panes und Scenes werden
+ * definiert. Alle "Verlinkungen" zwischen den Klassen über die Buttons werden
+ * erstellt.
+ * 
+ * @author Tim
+ *
+ */
 public class Main extends Application {
 
 	/*------------------------------------
@@ -299,7 +307,7 @@ public class Main extends Application {
 		Verknüpfung der Klassen mit dem Lambda-Ausdruck. Dies ist eine alternative Schreibweise des klassischen
 		Event-Handlers und wird verwendet, um den Code möglichst komprimiert darzustellen. Die Struktur des Lambda Ausdrucks
 		wurde von der Website https://javabeginners.de/Klassen_und_Interfaces/Lambda_Ausdruecke.php übernommen, 
-	 	auf welcher der Ausdruck anhand des ActionListeners erklärt wird. 
+		auf welcher der Ausdruck anhand des ActionListeners erklärt wird. 
 		------------------------------------*/
 
 		// Verlinkungen der Screens
@@ -778,6 +786,13 @@ public class Main extends Application {
 		p90.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 		p92.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 
+		/*
+		 * Unsere Scene wird auf die Stage gesetzt. Der Titel wird erstellt. Wir
+		 * haben die Größe aller Elemente genau festgelegt, weshalb wir die
+		 * Stage auf setResizable(false) gesetzt haben, da sich sonst alle
+		 * Elemente "verschieben" würden bzw. in einer nicht nutzerfreundlichen
+		 * Anordnung und Größe dargestellt würden.
+		 */
 		primaryStage.setScene(s0);
 		primaryStage.setTitle("Erste Hilfe");
 		primaryStage.setResizable(false);

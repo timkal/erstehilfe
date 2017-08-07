@@ -29,8 +29,12 @@ public class Menu extends Basis {
 		verletzt.setTranslateY(-50);
 	}
 
-	// getButton Methode gibt den unter return angegebenen Button zurück, um als
-	// Referenz für die ActionEvents zu dienen
+	/**
+	 * getButton Methode gibt den unter return angegebenen Button zurück, um als
+	 * Referenz für die ActionEvents zu dienen und damit die Verlinkung der
+	 * Seiten in der @Main Klasse ermöglichen. Die EventHandler greifen dann auf
+	 * die getButton Methode zu und "finden" darin den entsprechenden Button.
+	 */
 	Button getButton_back() {
 		return back;
 	}
