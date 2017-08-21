@@ -13,26 +13,30 @@ public class Krankenhaus extends Basis {
 	Seitenspezifische Elemente erzeugen
 	------------------------------------*/
 
-	/**
-	 * Web-View Integration: Der @WebView in Verbindung mit dem @WebEngine stellt
-	 * die Webseite dar: Der WebEngine lädt die Webseite aus dem Internet und
-	 * stellt den HTML Content dar. Der WebView steuert die Eingabe über Maus
-	 * und Keyboard und regelt das Scrollen. WebEngine und WebView werden
+	/*
+	 * Web-View Integration: Der @WebView in Verbindung mit dem @WebEngine
+	 * stellt die Webseite dar: Der WebEngine lädt die Webseite aus dem Internet
+	 * und stellt den HTML-Content dar. Der WebView steuert die Eingabe über
+	 * Maus und Keyboard und regelt das Scrollen. WebEngine und WebView werden
 	 * miteinander verknüpft ("getEngine").
 	 */
+
 	WebView browser = new WebView();
 	WebEngine webEngine = browser.getEngine();
 
 	public Krankenhaus() {
 
-		getStylesheets().add("test/styles.css");
-
 		/*------------------------------------
 		Seitenspezifische Elemente formatieren
 		------------------------------------*/
 
+		// Zurück-Button ausblenden
+		back.setVisible(false);
+		back_view.setVisible(false);
+
 		// Web-View wird auf die StackPane gesetzt
 		getChildren().add(browser);
+
 		/*
 		 * Das HTML Dokument wird über einen Uniform Resource Identifier in eine
 		 * File gepackt.
@@ -41,8 +45,8 @@ public class Krankenhaus extends Basis {
 		URI map = new File("map.html").toURI();
 
 		/*
-		 * Das HTML Dokument wird geladen. Der Weg ueber HTML ist notwendig da
-		 * GoogleMap Embeded Directions API v1 nur aus iFrames heraus
+		 * Das HTML Dokument wird geladen. Der Weg über HTML ist notwendig, da
+		 * GoogleMaps Embeded Directions API V1 nur aus iFrames heraus
 		 * funktioniert. Dokumentation:
 		 * https://developers.google.com/maps/documentation/embed/guide?hl=de
 		 * https://developers.google.com/maps/documentation/embed/guide?hl=de#
@@ -55,7 +59,7 @@ public class Krankenhaus extends Basis {
 		browser.setTranslateY(-3);
 	}
 
-	/**
+	/*
 	 * getButton Methode gibt den unter return angegebenen Button zurück, um als
 	 * Referenz für die ActionEvents zu dienen und damit die Verlinkung der
 	 * Seiten in der @Main Klasse ermöglichen. Die EventHandler greifen dann auf

@@ -23,8 +23,6 @@ public class Startseite extends Basis {
 
 	public Startseite() {
 
-		getStylesheets().add("test/styles.css");
-
 		/*------------------------------------
 		Seitenspezifische Elemente formatieren
 		------------------------------------*/
@@ -67,20 +65,21 @@ public class Startseite extends Basis {
 		start.setTranslateY(120);
 		start.setVisible(false);
 
-		/**
+		/*
 		 * Diese Task ist dafür zuständig, dass die ProgressBar in 130
 		 * Abschnitte unterteilt wird, welche jeweils mit einer Unterbrechung
-		 * (Wartezeit) von 10ms "aufgefüllt werden. Das Warten wird in einem
-		 * sogenannten try und catch statement geregelt. Dieses statement ist
-		 * notwendig, da das Programm während dem Wartevorgang mittem im Prozess
-		 * „stillsteht“ und dies normalerweise eine Fehlermeldung ergeben würde.
-		 * Daher gibt es auch ein try und catch statement zu Beginn, welches
-		 * dafür sorgen soll, dass das Laden des Balkens erst dann beginnt, wenn
-		 * das Programm schon durch den Compiler gelaufen ist, da die Animation
-		 * sonst nicht zu sehen ist. Diese Wartezeit (1000ms) ist jedoch
-		 * abhängig von der Geschwindigkeit des Computers auf dem das Programm
-		 * läuft und kann daher gerne individuell angepasst werden.
+		 * (Wartezeit) von 10ms "aufgefüllt werden". Das Warten wird in einem
+		 * sogenannten try und catch Statement geregelt. Dieses Statement ist
+		 * notwendig, da das Programm während des Wartevorganges mittem im
+		 * Prozess „stillsteht“ und dies normalerweise eine Fehlermeldung
+		 * ergeben würde. Daher gibt es auch ein try und catch Statement zu
+		 * Beginn, welches dafür sorgen soll, dass das Laden des Balkens erst
+		 * dann beginnt, wenn das Programm auf dem Bildschirm angezeigt wird, da
+		 * der Ladeprozess sonst nicht zu sehen ist. Diese Wartezeit (1000ms)
+		 * ist jedoch abhängig von der Geschwindigkeit des Computers auf dem das
+		 * Programm läuft und kann daher gerne individuell angepasst werden.
 		 */
+
 		Task<Void> sleeper = new Task<Void>() {
 			@Override
 			public Void call() throws Exception {
@@ -102,30 +101,33 @@ public class Startseite extends Basis {
 				return null;
 			}
 		};
-
-		//Bar und Task werden zusammengeführt.
+		
+		// Bar und Task werden zusammengeführt.
 		progressBar.progressProperty().bind(sleeper.progressProperty());
 
 		/*
-		 * Hier wird geregelt, dass der Start Button angezeigt wird sobald die
+		 * Hier wird geregelt, dass der Button start angezeigt wird, sobald die
 		 * Task vollständig durchgeführt wurde.
 		 */
+
 		sleeper.setOnSucceeded(new EventHandler<WorkerStateEvent>() {
 			@Override
 			public void handle(WorkerStateEvent event) {
 				start.setVisible(true);
 			}
 		});
-		// Der Thread muss gestartet werden
+		
+		// Der Thread muss gestartet werden.
 		new Thread(sleeper).start();
 	}
 
-	/**
+	/*
 	 * getButton Methode gibt den unter return angegebenen Button zurück, um als
 	 * Referenz für die ActionEvents zu dienen und damit die Verlinkung der
 	 * Seiten in der @Main Klasse ermöglichen. Die EventHandler greifen dann auf
 	 * die getButton Methode zu und "finden" darin den entsprechenden Button.
 	 */
+
 	Button getButton_start() {
 		return start;
 	}

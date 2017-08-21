@@ -6,6 +6,13 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
+/**
+ * In dieser Klasse wird ein Tastenfeld erzeugt, welches veranschaulicht, wie
+ * ein Notruf direkt aus der App ablaufen könnte.
+ * 
+ * @author marleneschlorf
+ *
+ */
 public class Notruf_wählen extends Basis {
 
 	/*------------------------------------
@@ -22,39 +29,37 @@ public class Notruf_wählen extends Basis {
 	Button Sieben = new Button("7");
 	Button Acht = new Button("8");
 	Button Neun = new Button("9");
-	Button Anrufen = new Button("_");
-	Button Auflegen = new Button("_");
+	Button anrufen = new Button("_");
+	Button auflegen = new Button("_");
 	Button delete = new Button("X");
-	
+
 	Label anruf_läuft = new Label("Wähle Rufnummer...");
-	
-	Image pickup = new Image ("file:images/pickup.png");
+
+	Image pickup = new Image("file:images/pickup.png");
 	ImageView pickup_view = new ImageView("file:images/pickup.png");
-	
-	Image hangup = new Image ("file:images/hangup.png");
+
+	Image hangup = new Image("file:images/hangup.png");
 	ImageView hangup_view = new ImageView("file:images/hangup.png");
-	
 
 	TextField feld = new TextField();
 
 	public Notruf_wählen() {
 
-		getStylesheets().add("test/styles.css");
-
-
 		/*------------------------------------
 		Seitenspezifische Elemente formatieren
 		------------------------------------*/
 
-		getChildren().addAll(Null, Eins, Zwei, Drei, Vier, Fünf, Sechs, Sieben, Acht, Neun, Anrufen, Auflegen, delete);
+		// Um mehrere Elemente in einem Ausdruck hinzuzufügen, wird addAll
+		// verwendet
+
+		getChildren().addAll(Null, Eins, Zwei, Drei, Vier, Fünf, Sechs, Sieben, Acht, Neun, anrufen, auflegen, delete);
 		getChildren().addAll(feld, anruf_läuft);
 
 		feld.setTranslateX(-30);
 		feld.setTranslateY(-100);
 		feld.setMaxSize(110, 60);
 		feld.setDisable(false);
-		
-	
+
 		anruf_läuft.setTranslateY(-185);
 		anruf_läuft.setVisible(false);
 
@@ -63,7 +68,7 @@ public class Notruf_wählen extends Basis {
 		Null.setTranslateX(0);
 		Null.setTranslateY(180);
 		Null.getStyleClass().add("button_feld");
-		
+
 		Eins.setTranslateX(-60);
 		Eins.setTranslateY(0);
 		Eins.getStyleClass().add("button_feld");
@@ -100,31 +105,32 @@ public class Notruf_wählen extends Basis {
 		Neun.setTranslateY(120);
 		Neun.getStyleClass().add("button_feld");
 
-		Auflegen.setTranslateX(-60);
-		Auflegen.setTranslateY(180);
-		Auflegen.getStyleClass().add("button_auflegen");
+		auflegen.setTranslateX(-60);
+		auflegen.setTranslateY(180);
+		auflegen.getStyleClass().add("button_auflegen");
 
-		Anrufen.setTranslateX(60);
-		Anrufen.setTranslateY(180);
-		Anrufen.getStyleClass().add("button_anrufen");
-		
+		anrufen.setTranslateX(60);
+		anrufen.setTranslateY(180);
+		anrufen.getStyleClass().add("button_anrufen");
+
 		delete.setTranslateX(60);
 		delete.setTranslateY(-100);
 		delete.getStyleClass().add("button_feld");
-		
+
 		getChildren().add(pickup_view);
 		pickup_view.setTranslateX(60);
 		pickup_view.setTranslateY(180);
 		pickup_view.setFitHeight(45);
 		pickup_view.setFitWidth(45);
-		
+
 		getChildren().add(hangup_view);
 		hangup_view.setTranslateX(-60);
 		hangup_view.setTranslateY(180);
 		hangup_view.setFitHeight(25);
 		hangup_view.setFitWidth(50);
 		
-		
+		// Lambda-Ausdruck wird verwendet, um die Zahlen in das Textfeld anzufügen.
+ 
 		getButton_Null().setOnAction(e -> feld.appendText("0"));
 		getButton_Eins().setOnAction(e -> feld.appendText("1"));
 		getButton_Zwei().setOnAction(e -> feld.appendText("2"));
@@ -140,12 +146,13 @@ public class Notruf_wählen extends Basis {
 		getButton_Auflegen().setOnAction(e -> anruf_läuft.setVisible(false));
 	}
 
-	/**
+	/*
 	 * getButton Methode gibt den unter return angegebenen Button zurück, um als
 	 * Referenz für die ActionEvents zu dienen und damit die Verlinkung der
 	 * Seiten in der @Main Klasse ermöglichen. Die EventHandler greifen dann auf
 	 * die getButton Methode zu und "finden" darin den entsprechenden Button.
 	 */
+
 	Button getButton_Null() {
 		return Null;
 	}
@@ -189,13 +196,13 @@ public class Notruf_wählen extends Basis {
 	Button getButton_delete() {
 		return delete;
 	}
-	
+
 	Button getButton_Anrufen() {
-		return Anrufen;
+		return anrufen;
 	}
-	
+
 	Button getButton_Auflegen() {
-		return Auflegen;
+		return auflegen;
 	}
 
 	Button getButton_menu() {
@@ -209,7 +216,7 @@ public class Notruf_wählen extends Basis {
 	Button getButton_krankenhaus() {
 		return krankenhaus;
 	}
-	
+
 	Button getButton_back() {
 		return back;
 	}

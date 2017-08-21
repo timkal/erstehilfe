@@ -24,8 +24,6 @@ public class Absicherung extends Basis {
 
 	public Absicherung() {
 
-		getStylesheets().add("test/styles.css");
-
 		/*------------------------------------
 		Seitenspezifische Elemente formatieren
 		------------------------------------*/
@@ -52,12 +50,14 @@ public class Absicherung extends Basis {
 		infos2.getStyleClass().add("infos_label2");
 	}
 
-	/**
+	/*
 	 * getButton Methode gibt den unter return angegebenen Button zurück, um als
 	 * Referenz für die ActionEvents zu dienen und damit die Verlinkung der
-	 * Seiten in der @Main Klasse ermöglichen. Die EventHandler greifen dann auf
-	 * die getButton Methode zu und "finden" darin den entsprechenden Button.
+	 * Seiten in der @Main Klasse zu ermöglichen. Die EventHandler greifen dann
+	 * auf die getButton Methode zu und "finden" darin den entsprechenden
+	 * Button.
 	 */
+
 	Button getButton_weiter() {
 		return weiter;
 	}

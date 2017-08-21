@@ -24,8 +24,6 @@ public class Person_entfernt extends Basis {
 
 	public Person_entfernt() {
 
-		getStylesheets().add("test/styles.css");
-
 		/*------------------------------------
 		Seitenspezifische Elemente formatieren
 		------------------------------------*/
@@ -59,13 +57,14 @@ public class Person_entfernt extends Basis {
 		nein.setTranslateY(50);
 		nein.getStyleClass().add("button_nein");
 	}
-	
-	/**
+
+	/*
 	 * getButton Methode gibt den unter return angegebenen Button zurück, um als
 	 * Referenz für die ActionEvents zu dienen und damit die Verlinkung der
 	 * Seiten in der @Main Klasse ermöglichen. Die EventHandler greifen dann auf
 	 * die getButton Methode zu und "finden" darin den entsprechenden Button.
 	 */
+
 	Button getButton_ja() {
 		return ja;
 	}

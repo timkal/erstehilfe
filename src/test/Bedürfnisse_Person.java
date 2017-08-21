@@ -19,8 +19,6 @@ public class Bedürfnisse_Person extends Basis {
 
 	public Bedürfnisse_Person() {
 
-		getStylesheets().add("test/styles.css");
-
 		/*------------------------------------
 		Seitenspezifische Elemente formatieren
 		------------------------------------*/
@@ -41,12 +39,13 @@ public class Bedürfnisse_Person extends Basis {
 		beduerfnisse3.getStyleClass().add("beduerfnisse_label2");
 	}
 
-	/**
+	/*
 	 * getButton Methode gibt den unter return angegebenen Button zurück, um als
 	 * Referenz für die ActionEvents zu dienen und damit die Verlinkung der
 	 * Seiten in der @Main Klasse ermöglichen. Die EventHandler greifen dann auf
 	 * die getButton Methode zu und "finden" darin den entsprechenden Button.
 	 */
+
 	Button getButton_menu() {
 		return menu;
 	}

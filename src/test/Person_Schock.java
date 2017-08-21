@@ -13,8 +13,8 @@ public class Person_Schock extends Basis {
 
 	Label schock = new Label("Hat die Person einen\nSchock?");
 
-	Label anzeichen = new Label(
-			"Anzeichen:\n" + "- beschleunigte Atmung\n" + "- blasse, kühle Haut\n" + "- unklare Äußerungen des Betroffenen\n");
+	Label anzeichen = new Label("Anzeichen:\n" + "- beschleunigte Atmung\n" + "- blasse, kühle Haut\n"
+			+ "- unklare Äußerungen des Betroffenen\n");
 
 	Line line2 = new Line();
 
@@ -23,8 +23,6 @@ public class Person_Schock extends Basis {
 	Button nein = new Button("Nein");
 
 	public Person_Schock() {
-
-		getStylesheets().add("test/styles.css");
 
 		/*------------------------------------
 		Seitenspezifische Elemente erzeugen
@@ -59,12 +57,13 @@ public class Person_Schock extends Basis {
 		nein.getStyleClass().add("button_nein");
 	}
 
-	/**
+	/*
 	 * getButton Methode gibt den unter return angegebenen Button zurück, um als
 	 * Referenz für die ActionEvents zu dienen und damit die Verlinkung der
 	 * Seiten in der @Main Klasse ermöglichen. Die EventHandler greifen dann auf
 	 * die getButton Methode zu und "finden" darin den entsprechenden Button.
 	 */
+
 	Button getButton_ja() {
 		return ja;
 	}

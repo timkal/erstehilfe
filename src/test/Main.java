@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
 	/*------------------------------------
-	Panes und Szenen aller Klassen definieren Panes abgekürzt mit pZAHL, Scenes mit sZAHL
+	Panes und Szenen aller Klassen erzeugen: Panes abgekürzt mit pZAHL, Scenes mit sZAHL
 	------------------------------------*/
 
 	// Diese Variablen geben die Größe der Scene an.
@@ -303,12 +303,15 @@ public class Main extends Application {
 
 	public void start(Stage primaryStage) throws Exception {
 
-		/*------------------------------------
-		Verknüpfung der Klassen mit dem Lambda-Ausdruck. Dies ist eine alternative Schreibweise des klassischen
-		Event-Handlers und wird verwendet, um den Code möglichst komprimiert darzustellen. Die Struktur des Lambda Ausdrucks
-		wurde von der Website https://javabeginners.de/Klassen_und_Interfaces/Lambda_Ausdruecke.php übernommen, 
-		auf welcher der Ausdruck anhand des ActionListeners erklärt wird. 
-		------------------------------------*/
+		/*
+		 * Verknüpfung der Klassen mit dem Lambda-Ausdruck. Dies ist eine
+		 * alternative Schreibweise des klassischen EventHandlers und wird
+		 * verwendet, um den Code möglichst komprimiert darzustellen. Die
+		 * Struktur des Lambda-Ausdrucks wurde von der Webseite
+		 * https://javabeginners.de/Klassen_und_Interfaces/Lambda_Ausdruecke.php
+		 * übernommen, auf welcher der Ausdruck anhand des ActionListeners
+		 * erklärt wird.
+		 */
 
 		// Verlinkungen der Screens
 		p0.getButton_start().setOnAction(e -> primaryStage.setScene(s1));
@@ -787,11 +790,11 @@ public class Main extends Application {
 		p92.getButton_krankenhaus().setOnAction(e -> primaryStage.setScene(s91));
 
 		/*
-		 * Unsere Scene wird auf die Stage gesetzt. Der Titel wird erstellt. Wir
-		 * haben die Größe aller Elemente genau festgelegt, weshalb wir die
+		 * Unsere Scene 0 wird auf die Stage gesetzt. Der Titel wird erstellt.
+		 * Wir haben die Größe aller Elemente genau festgelegt, weshalb wir die
 		 * Stage auf setResizable(false) gesetzt haben, da sich sonst alle
 		 * Elemente "verschieben" würden bzw. in einer nicht nutzerfreundlichen
-		 * Anordnung und Größe dargestellt würden.
+		 * Anordnung und Größe dargestellt werden würden.
 		 */
 		primaryStage.setScene(s0);
 		primaryStage.setTitle("Erste Hilfe");

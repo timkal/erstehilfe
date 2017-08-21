@@ -21,8 +21,6 @@ public class Unfallstelle_abgesichert extends Basis {
 
 	public Unfallstelle_abgesichert() {
 
-		getStylesheets().add("test/styles.css");
-
 		/*------------------------------------
 		Seitenspezifische Elemente formatieren
 		------------------------------------*/
@@ -51,12 +49,13 @@ public class Unfallstelle_abgesichert extends Basis {
 		nein.getStyleClass().add("button_nein");
 	}
 
-	/**
+	/*
 	 * getButton Methode gibt den unter return angegebenen Button zurück, um als
 	 * Referenz für die ActionEvents zu dienen und damit die Verlinkung der
 	 * Seiten in der @Main Klasse ermöglichen. Die EventHandler greifen dann auf
 	 * die getButton Methode zu und "finden" darin den entsprechenden Button.
 	 */
+
 	Button getButton_ja() {
 		return ja;
 	}

@@ -38,15 +38,20 @@ public class Herzdruckmassage extends Basis {
 
 	Button druckfrequenz = new Button("▷");
 
-	// Media-Player + Audio-Datei einbinden
-	Path path1 = Paths.get("src", "Audio", "reanimation.mp3"); // src/audio/reanimate1.mp3
+	/*
+	 * Zunächst wird ein Dateipfad erzeugt, der die Musikdatei aus dem
+	 * Source-Ordner bezieht. Dieser Dateipfad wird in ein Uniform Resource
+	 * Identifier (URI) umgewandet, welcher die Referenz für unsere Musikdatei
+	 * ist. Zuletzt wird dieser URI an die Media-Klasse übergeben, welche dann
+	 * mit Hilfe des MediaPlayers abgespielt werden kann.
+	 */
+
+	Path path1 = Paths.get("src", "Audio", "reanimation.mp3");
 	URI uri1 = path1.toUri();
 	Media hit = new Media(uri1.toString());
 	MediaPlayer player = new MediaPlayer(hit);
 
 	public Herzdruckmassage() {
-
-		getStylesheets().add("test/styles.css");
 
 		/*------------------------------------
 		Seitenspezifische Elemente formatieren
@@ -91,7 +96,17 @@ public class Herzdruckmassage extends Basis {
 		druckfrequenz.setTranslateY(-78);
 		druckfrequenz.getStyleClass().add("button_mediastart");
 
-		// Event-Handler und Action
+		/*
+		 * Es wird ein EventHandler erzeugt, welcher für das Abspielen des Tons zuständig
+		 * ist. Der Button druckfrequenz wird an das Event geknüpft. Das erste
+		 * if-Statement sorgt dafür, dass beim Betätigen des Buttons das zweite
+		 * if-Statement ausgeführt wird. Es wird geprüft, ob der Ton bereits
+		 * gespielt wird (getStatus) - ist dies der Fall, wird der Ton gestoppt.
+		 * Ist dies nicht der Fall, wird der Ton über den MediaPlayer
+		 * abgespielt.
+		 * player.play() startet den Ton
+		 */
+
 		EventHandler<ActionEvent> e1 = new EventHandler<ActionEvent>() {
 
 			public void handle(ActionEvent event) {
@@ -112,12 +127,13 @@ public class Herzdruckmassage extends Basis {
 		druckfrequenz.setOnAction(e1);
 	}
 
-	/**
+	/*
 	 * getButton Methode gibt den unter return angegebenen Button zurück, um als
 	 * Referenz für die ActionEvents zu dienen und damit die Verlinkung der
 	 * Seiten in der @Main Klasse ermöglichen. Die EventHandler greifen dann auf
 	 * die getButton Methode zu und "finden" darin den entsprechenden Button.
 	 */
+
 	Button getButton_schritt2() {
 		return schritt2;
 	}

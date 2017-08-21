@@ -20,8 +20,6 @@ public class Stabile_Seitenlage extends Basis {
 
 	public Stabile_Seitenlage() {
 
-		getStylesheets().add("test/styles.css");
-
 		/*------------------------------------
 		Seitenspezifische Elemente formatieren
 		------------------------------------*/
@@ -41,14 +39,15 @@ public class Stabile_Seitenlage extends Basis {
 		stabileseitenlagebild_view.setFitWidth(292);
 		stabileseitenlagebild_view.setTranslateX(0);
 		stabileseitenlagebild_view.setTranslateY(0);
-	}	
-	
-	/**
+	}
+
+	/*
 	 * getButton Methode gibt den unter return angegebenen Button zurück, um als
 	 * Referenz für die ActionEvents zu dienen und damit die Verlinkung der
 	 * Seiten in der @Main Klasse ermöglichen. Die EventHandler greifen dann auf
 	 * die getButton Methode zu und "finden" darin den entsprechenden Button.
 	 */
+
 	Button getButton_weiter() {
 		return weiter;
 	}
