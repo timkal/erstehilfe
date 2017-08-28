@@ -31,8 +31,8 @@ public class Basis extends StackPane {
 
 	Button back = new Button("Zurück");
 
-	Image back_image = new Image("file:images/back_symbol.png");
-	ImageView back_view = new ImageView("file:images/back_symbol.png");
+	Image back_image = new Image("file:images/Back-Symbol.png");
+	ImageView back_view = new ImageView("file:images/Back-Symbol.png");
 
 	Label title = new Label("Lebensretter");
 
@@ -41,8 +41,8 @@ public class Basis extends StackPane {
 
 	Label prozent = new Label("100%");
 
-	Image empfang = new Image("file:images/Empfang3.png");
-	ImageView empfang_view = new ImageView("file:images/Empfang3.png");
+	Image empfang = new Image("file:images/Empfang.png");
+	ImageView empfang_view = new ImageView("file:images/Empfang.png");
 
 	Line line = new Line();
 

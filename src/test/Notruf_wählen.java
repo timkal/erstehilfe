@@ -35,11 +35,11 @@ public class Notruf_wählen extends Basis {
 
 	Label anruf_läuft = new Label("Wähle Rufnummer...");
 
-	Image pickup = new Image("file:images/pickup.png");
-	ImageView pickup_view = new ImageView("file:images/pickup.png");
+	Image pickup = new Image("file:images/Pickup.png");
+	ImageView pickup_view = new ImageView("file:images/Pickup.png");
 
-	Image hangup = new Image("file:images/hangup.png");
-	ImageView hangup_view = new ImageView("file:images/hangup.png");
+	Image hangup = new Image("file:images/Hangup.png");
+	ImageView hangup_view = new ImageView("file:images/Hangup.png");
 
 	TextField feld = new TextField();
 
